@@ -2,9 +2,9 @@
 
 Framez is an animation plugin for Roblox Studio. Get it from the Creator Store, then open it from the Plugins tab.
 
-This repository has the **Framez Helper** and the **Framez guide**.
+This repository has the **Framez Helper** and the **Framez Manual**.
 
-Guide: https://lsxldierl.github.io/framez/
+Manual: https://lsxldierl.github.io/framez/
 
 ## Framez Helper
 

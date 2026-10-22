@@ -1,293 +1,974 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Scene - Framez Docs</title><meta name="description" content="A scene is the open animation with more than one thing in it: rigs, props, cameras, lights, sounds, effects and subtitles. Everything shares one timeline, "><link rel="icon" href="assets/favicon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"><link rel="stylesheet" href="assets/site.css"><script>try{var t=localStorage.getItem("framez-theme");if(t)document.documentElement.dataset.look=t}catch(e){}</script></head><body><div class="shell"><nav class="side" id="side" aria-label="Docs"><div class="side-head"><a class="brand" href="index.html"><svg class="mark" viewBox="-34.0 -34.0 68.0 68.0" aria-hidden="true"><polygon points="-28.00,0.00 0.00,-28.00 28.00,0.00 0.00,28.00" fill="#3c4045"/><polygon points="-18.50,0.00 0.00,-18.50 0.00,0.00" fill="#e8443c"/><polygon points="0.00,-18.50 9.25,-9.25 0.00,0.00" fill="#9e2b2b"/><polygon points="9.25,-9.25 9.25,0.00 0.00,0.00" fill="#ffffff"/><polygon points="9.25,-9.25 18.50,0.00 9.25,0.00" fill="#e8443c"/><polygon points="-18.50,0.00 0.00,0.00 -9.25,9.25" fill="#9e2b2b"/><polygon points="-9.25,9.25 0.00,0.00 0.00,18.50" fill="#ffffff"/><polygon points="0.00,0.00 18.50,0.00 0.00,18.50" fill="#ffffff"/><polygon points="26.30,-22.51 23.03,-18.03 17.70,-16.49 20.97,-20.97" fill="#e8443c"/><polygon points="-16.73,16.57 -17.63,18.42 -19.67,18.63 -18.77,16.78" fill="#e8443c"/></svg><i class="sep"></i><span>Docs</span></a><button class="iconbtn" type="button" data-search aria-label="Search the docs (Ctrl+K)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg></button></div><div class="side-scroll"><details class="grp"><summary><span>Getting started</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="start.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="5.14,9.23 5.40,8.66 5.70,8.11 6.06,7.59 6.45,7.10 6.89,6.65 7.36,6.24 7.86,5.87 8.40,5.54 8.96,5.25 9.54,5.02 10.14,4.84 10.75,4.71 11.37,4.63 12.00,4.60 12.63,4.63 13.25,4.71 13.86,4.84 14.46,5.02 15.04,5.25 15.60,5.54 16.14,5.87 16.64,6.24 17.11,6.65 17.55,7.10 17.94,7.59 18.30,8.11 18.60,8.66 18.86,9.23"/><polyline points="18.86,14.77 18.60,15.34 18.30,15.89 17.94,16.41 17.55,16.90 17.11,17.35 16.64,17.76 16.14,18.13 15.60,18.46 15.04,18.75 14.46,18.98 13.86,19.16 13.25,19.29 12.63,19.37 12.00,19.40 11.37,19.37 10.75,19.29 10.14,19.16 9.54,18.98 8.96,18.75 8.40,18.46 7.86,18.13 7.36,17.76 6.89,17.35 6.45,16.90 6.06,16.41 5.70,15.89 5.40,15.34 5.14,14.77"/><polyline points="18.86,9.23 16.11,7.23"/><polyline points="18.86,9.23 19.45,5.88"/><polyline points="5.14,14.77 7.89,16.77"/><polyline points="5.14,14.77 4.55,18.12"/></svg><span>Getting started</span></a><a href="anytool.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.40,13.60 4.60,8.80 9.40,4.00"/><polyline points="4.60,8.80 14.40,8.80 15.47,8.92 16.48,9.28 17.39,9.85 18.15,10.61 18.72,11.52 19.08,12.53 19.20,13.60 19.08,14.67 18.72,15.68 18.15,16.59 17.39,17.35 16.48,17.92 15.47,18.28 14.40,18.40 11.00,18.40"/></svg><span>How tools work</span></a><a href="recipes.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Tutorials</span></a><a href="workspaces.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.40,6.60 19.60,6.60"/><polyline points="4.40,12.00 19.60,12.00"/><polyline points="4.40,17.40 19.60,17.40"/></svg><span>Workspaces</span></a><a href="windows.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>The windows</span></a><a href="setup.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="9.60,8.60 10.13,8.64 10.65,8.77 11.14,8.97 11.60,9.25 12.00,9.60 12.35,10.00 12.63,10.46 12.83,10.95 12.96,11.47 13.00,12.00 13.00,12.00 12.96,12.53 12.83,13.05 12.63,13.54 12.35,14.00 12.00,14.40 11.60,14.75 11.14,15.03 10.65,15.23 10.13,15.36 9.60,15.40 6.00,15.40 5.47,15.36 4.95,15.23 4.46,15.03 4.00,14.75 3.60,14.40 3.25,14.00 2.97,13.54 2.77,13.05 2.64,12.53 2.60,12.00 2.60,12.00 2.64,11.47 2.77,10.95 2.97,10.46 3.25,10.00 3.60,9.60 4.00,9.25 4.46,8.97 4.95,8.77 5.47,8.64 6.00,8.60"/><polygon points="18.00,8.60 18.53,8.64 19.05,8.77 19.54,8.97 20.00,9.25 20.40,9.60 20.75,10.00 21.03,10.46 21.23,10.95 21.36,11.47 21.40,12.00 21.40,12.00 21.36,12.53 21.23,13.05 21.03,13.54 20.75,14.00 20.40,14.40 20.00,14.75 19.54,15.03 19.05,15.23 18.53,15.36 18.00,15.40 14.40,15.40 13.87,15.36 13.35,15.23 12.86,15.03 12.40,14.75 12.00,14.40 11.65,14.00 11.37,13.54 11.17,13.05 11.04,12.53 11.00,12.00 11.00,12.00 11.04,11.47 11.17,10.95 11.37,10.46 11.65,10.00 12.00,9.60 12.40,9.25 12.86,8.97 13.35,8.77 13.87,8.64 14.40,8.60"/></svg><span>Install the helper</span></a></div></details><details class="grp" open><summary><span>Menus</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="file.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="12.00,3.60 12.00,15.20"/><polyline points="7.20,10.60 12.00,15.40 16.80,10.60"/><polyline points="4.60,20.40 19.40,20.40"/></svg><span>File</span></a><a href="edit.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.40,13.60 4.60,8.80 9.40,4.00"/><polyline points="4.60,8.80 14.40,8.80 15.47,8.92 16.48,9.28 17.39,9.85 18.15,10.61 18.72,11.52 19.08,12.53 19.20,13.60 19.08,14.67 18.72,15.68 18.15,16.59 17.39,17.35 16.48,17.92 15.47,18.28 14.40,18.40 11.00,18.40"/></svg><span>Edit</span></a><a href="key.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon class="f" points="12.00,3.00 21.00,12.00 12.00,21.00 3.00,12.00"/></svg><span>Key</span></a><a href="pose.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="14.60,6.20 14.53,6.78 14.34,7.33 14.03,7.82 13.62,8.23 13.13,8.54 12.58,8.73 12.00,8.80 11.42,8.73 10.87,8.54 10.38,8.23 9.97,7.82 9.66,7.33 9.47,6.78 9.40,6.20 9.47,5.62 9.66,5.07 9.97,4.58 10.38,4.17 10.87,3.86 11.42,3.67 12.00,3.60 12.58,3.67 13.13,3.86 13.62,4.17 14.03,4.58 14.34,5.07 14.53,5.62 14.60,6.20"/><polyline points="12.00,9.40 12.00,15.20"/><polyline points="12.00,15.20 8.60,20.40"/><polyline points="12.00,15.20 15.40,20.40"/><polyline points="7.00,12.00 17.00,12.00"/></svg><span>Pose</span></a><a href="face.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.20,8.00 16.09,8.93 15.78,9.82 15.28,10.62 14.62,11.28 13.82,11.78 12.93,12.09 12.00,12.20 11.07,12.09 10.18,11.78 9.38,11.28 8.72,10.62 8.22,9.82 7.91,8.93 7.80,8.00 7.91,7.07 8.22,6.18 8.72,5.38 9.38,4.72 10.18,4.22 11.07,3.91 12.00,3.80 12.93,3.91 13.82,4.22 14.62,4.72 15.28,5.38 15.78,6.18 16.09,7.07 16.20,8.00"/><polyline points="5.14,18.83 5.40,18.26 5.70,17.71 6.06,17.19 6.45,16.70 6.89,16.25 7.36,15.84 7.86,15.47 8.40,15.14 8.96,14.85 9.54,14.62 10.14,14.44 10.75,14.31 11.37,14.23 12.00,14.20 12.63,14.23 13.25,14.31 13.86,14.44 14.46,14.62 15.04,14.85 15.60,15.14 16.14,15.47 16.64,15.84 17.11,16.25 17.55,16.70 17.94,17.19 18.30,17.71 18.60,18.26 18.86,18.83"/></svg><span>Face</span></a><a href="scene.html" aria-current="page"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13.40,7.00 13.74,7.03 14.08,7.11 14.40,7.24 14.69,7.42 14.96,7.64 15.18,7.91 15.36,8.20 15.49,8.52 15.57,8.86 15.60,9.20 15.60,14.80 15.57,15.14 15.49,15.48 15.36,15.80 15.18,16.09 14.96,16.36 14.69,16.58 14.40,16.76 14.08,16.89 13.74,16.97 13.40,17.00 5.00,17.00 4.66,16.97 4.32,16.89 4.00,16.76 3.71,16.58 3.44,16.36 3.22,16.09 3.04,15.80 2.91,15.48 2.83,15.14 2.80,14.80 2.80,9.20 2.83,8.86 2.91,8.52 3.04,8.20 3.22,7.91 3.44,7.64 3.71,7.42 4.00,7.24 4.32,7.11 4.66,7.03 5.00,7.00"/><polygon points="15.60,10.60 21.20,7.60 21.20,16.40 15.60,13.40"/></svg><span>Scene</span></a><a href="game.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6.00,21.00 6.00,3.80"/><polyline points="6.00,4.60 18.40,4.60 15.60,8.60 18.40,12.60 6.00,12.60"/></svg><span>Game</span></a><a href="view.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="2.60,12.00 3.09,11.26 3.62,10.57 4.19,9.93 4.80,9.36 5.43,8.83 6.09,8.36 6.77,7.95 7.48,7.59 8.21,7.29 8.95,7.04 9.70,6.85 10.46,6.71 11.23,6.63 12.00,6.60 12.77,6.63 13.54,6.71 14.30,6.85 15.05,7.04 15.79,7.29 16.52,7.59 17.23,7.95 17.91,8.36 18.57,8.83 19.20,9.36 19.81,9.93 20.38,10.57 20.91,11.26 21.40,12.00 20.91,12.74 20.38,13.43 19.81,14.07 19.20,14.64 18.57,15.17 17.91,15.64 17.22,16.05 16.52,16.41 15.79,16.71 15.05,16.96 14.30,17.15 13.54,17.29 12.77,17.37 12.00,17.40 11.23,17.37 10.46,17.29 9.70,17.15 8.95,16.96 8.21,16.71 7.48,16.41 6.77,16.05 6.09,15.64 5.43,15.17 4.80,14.64 4.19,14.07 3.62,13.43 3.09,12.74 2.60,12.00"/><polygon points="15.00,12.00 14.92,12.67 14.70,13.30 14.35,13.87 13.87,14.35 13.30,14.70 12.67,14.92 12.00,15.00 11.33,14.92 10.70,14.70 10.13,14.35 9.65,13.87 9.30,13.30 9.08,12.67 9.00,12.00 9.08,11.33 9.30,10.70 9.65,10.13 10.13,9.65 10.70,9.30 11.33,9.08 12.00,9.00 12.67,9.08 13.30,9.30 13.87,9.65 14.35,10.13 14.70,10.70 14.92,11.33 15.00,12.00"/></svg><span>View</span></a><a href="help.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="5.60,12.00 9.80,16.20 18.40,6.80"/></svg><span>Help</span></a></div></details><details class="grp"><summary><span>Windows</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="inspector.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="19.00,12.00 18.82,13.56 18.31,15.04 17.47,16.36 16.36,17.47 15.04,18.31 13.56,18.82 12.00,19.00 10.44,18.82 8.96,18.31 7.64,17.47 6.53,16.36 5.69,15.04 5.18,13.56 5.00,12.00 5.18,10.44 5.69,8.96 6.53,7.64 7.64,6.53 8.96,5.69 10.44,5.18 12.00,5.00 13.56,5.18 15.04,5.69 16.36,6.53 17.47,7.64 18.31,8.96 18.82,10.44 19.00,12.00"/><ellipse class="f" cx="12.00" cy="12.00" rx="2.40" ry="2.40"/></svg><span>Inspector</span></a><a href="reference.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="18.20,5.20 18.58,5.23 18.94,5.32 19.29,5.46 19.61,5.66 19.90,5.90 20.14,6.19 20.34,6.51 20.48,6.86 20.57,7.22 20.60,7.60 20.60,16.40 20.57,16.78 20.48,17.14 20.34,17.49 20.14,17.81 19.90,18.10 19.61,18.34 19.29,18.54 18.94,18.68 18.58,18.77 18.20,18.80 5.80,18.80 5.42,18.77 5.06,18.68 4.71,18.54 4.39,18.34 4.10,18.10 3.86,17.81 3.66,17.49 3.52,17.14 3.43,16.78 3.40,16.40 3.40,7.60 3.43,7.22 3.52,6.86 3.66,6.51 3.86,6.19 4.10,5.90 4.39,5.66 4.71,5.46 5.06,5.32 5.42,5.23 5.80,5.20"/><polygon points="10.00,9.40 15.00,12.00 10.00,14.60"/></svg><span>Reference video</span></a><a href="curves.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="3.60,19.00 4.27,18.95 4.91,18.80 5.52,18.55 6.10,18.22 6.67,17.82 7.21,17.35 7.74,16.81 8.26,16.22 8.77,15.59 9.27,14.92 9.76,14.22 10.25,13.49 10.75,12.75 11.25,12.00 11.76,11.25 12.28,10.51 12.81,9.78 13.36,9.08 13.93,8.41 14.52,7.78 15.13,7.19 15.78,6.65 16.45,6.18 17.16,5.78 17.91,5.45 18.69,5.20 19.52,5.05 20.40,5.00"/><ellipse class="f" cx="12.00" cy="12.00" rx="1.60" ry="1.60"/></svg><span>Curves</span></a><a href="timeline.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="7.40,5.00 18.60,12.00 7.40,19.00"/></svg><span>Timeline and toolbar</span></a></div></details><details class="grp"><summary><span>Reference</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="shortcuts.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="5.40" cy="12.00" rx="1.70" ry="1.70"/><ellipse class="f" cx="12.00" cy="12.00" rx="1.70" ry="1.70"/><ellipse class="f" cx="18.60" cy="12.00" rx="1.70" ry="1.70"/></svg><span>Shortcuts</span></a><a href="trouble.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6.00,21.00 6.00,3.80"/><polyline points="6.00,4.60 18.40,4.60 15.60,8.60 18.40,12.60 6.00,12.60"/></svg><span>Troubleshooting</span></a></div></details></div><div class="side-foot"><a href="index.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Docs</span></a><a href="https://github.com/lsxldierl/framez/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="9.60,8.60 10.13,8.64 10.65,8.77 11.14,8.97 11.60,9.25 12.00,9.60 12.35,10.00 12.63,10.46 12.83,10.95 12.96,11.47 13.00,12.00 13.00,12.00 12.96,12.53 12.83,13.05 12.63,13.54 12.35,14.00 12.00,14.40 11.60,14.75 11.14,15.03 10.65,15.23 10.13,15.36 9.60,15.40 6.00,15.40 5.47,15.36 4.95,15.23 4.46,15.03 4.00,14.75 3.60,14.40 3.25,14.00 2.97,13.54 2.77,13.05 2.64,12.53 2.60,12.00 2.60,12.00 2.64,11.47 2.77,10.95 2.97,10.46 3.25,10.00 3.60,9.60 4.00,9.25 4.46,8.97 4.95,8.77 5.47,8.64 6.00,8.60"/><polygon points="18.00,8.60 18.53,8.64 19.05,8.77 19.54,8.97 20.00,9.25 20.40,9.60 20.75,10.00 21.03,10.46 21.23,10.95 21.36,11.47 21.40,12.00 21.40,12.00 21.36,12.53 21.23,13.05 21.03,13.54 20.75,14.00 20.40,14.40 20.00,14.75 19.54,15.03 19.05,15.23 18.53,15.36 18.00,15.40 14.40,15.40 13.87,15.36 13.35,15.23 12.86,15.03 12.40,14.75 12.00,14.40 11.65,14.00 11.37,13.54 11.17,13.05 11.04,12.53 11.00,12.00 11.00,12.00 11.04,11.47 11.17,10.95 11.37,10.46 11.65,10.00 12.00,9.60 12.40,9.25 12.86,8.97 13.35,8.77 13.87,8.64 14.40,8.60"/></svg><span>Download the helper</span></a></div></nav><div class="main"><header class="topbar"><button class="iconbtn only-narrow" type="button" data-menu aria-label="Menu"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.40,6.60 19.60,6.60"/><polyline points="4.40,12.00 19.60,12.00"/><polyline points="4.40,17.40 19.60,17.40"/></svg></button><div class="crumb"><span>Menus</span><i>/</i><b>Scene</b></div><div class="top-actions"><button class="iconbtn" type="button" data-search aria-label="Search the docs (Ctrl+K)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg></button><button class="iconbtn" type="button" data-theme-toggle aria-label="Light or dark"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg></button><a class="pill" href="https://github.com/lsxldierl/framez/releases/latest">Get the helper</a></div></header><div class="layout"><article class="doc"><h1>Scene</h1><p class="lead">A scene is the open animation with more than one thing in it: rigs, props, cameras, lights, sounds, effects and subtitles. Everything shares one timeline, and one Save keeps it all.</p>
-      <div class="shots"><figure class="shot"><img src="img/menu-scene.png" width="692" height="416" alt="Scene &gt; Add" loading="lazy"><figcaption>Scene &gt; Add</figcaption></figure></div>
-      <div class="group">
-        <div class="entry" id="f-sceneadd" data-use="acting skill"><div class="head"><span class="name">Add to the scene</span><span class="where">Scene &gt; Add, or + at the right of the Filter strip</span></div>
-          <p class="what">Puts another character, a prop, a camera, a light, a sound, an effect, a path or subtitles on the scene's timeline. Each one gets its own row.</p>
-          <ul class="opts">
-            <li><b>Rig</b>: another character, picked from the rigs in this place.</li>
-            <li><b>Prop picked in the Explorer</b>: any part or model without joints. It is greyed while that prop is already in the scene (<a class="f" href="#f-sceneprop">Props</a>).</li>
-            <li><b>Camera, from this view</b>: a camera placed where Studio's view is (<a class="f" href="#f-scenecam">Camera</a>).</li>
-            <li><b>Light</b>: a PointLight, SpotLight or SurfaceLight, picked from the lights in this place (<a class="f" href="#f-scenelight">Lights</a>).</li>
-            <li><b>Sound...</b>: an asset id or link, or one of the Sounds in this place (<a class="f" href="#f-scenesound">Sound</a>).</li>
-            <li><b>Screen effects</b>: letterbox bars, a vignette, a fade, camera shake and subtitle lines over the shot (<a class="f" href="#f-screenfx">Screen effects</a>).</li>
-            <li><b>Scene look</b>: the time of day, fog, colour grade, bloom and depth of field (<a class="f" href="#f-worldlook">Scene look</a>).</li>
-            <li><b>Effect picked in the Explorer</b>: a ParticleEmitter, Trail, Beam, Fire, Smoke or Sparkles, or a part holding them (<a class="f" href="#f-fxtimeline">Effects on the timeline</a>).</li>
-            <li><b>New effect on</b> the picked limb (the menu names the limb): Particles, Trail, Beam, one of the <a class="f" href="#f-fxstart">Framez starting effects</a> or one of <a class="f" href="#f-myfx">My effects</a>.</li>
-            <li><b>Object picked in the Explorer</b>: any other object (<a class="f" href="#f-keyprop">Key any property</a>).</li>
-            <li><b>Path (click points in the view)</b>: a path on the ground (<a class="f" href="#f-path">Paths</a>).</li>
-            <li><b>Clip block for</b> the open rig: a saved clip played as a block (<a class="f" href="#f-blocks">Clip blocks</a>).</li>
-            <li><b>Walk a path</b>: the open rig walks a path. It is greyed until a path is drawn (<a class="f" href="#f-walkpath">Walk a path</a>).</li>
-            <li><b>Subtitles</b>: a row of timed dialogue lines (<a class="f" href="#f-subtitles">Subtitles</a>).</li>
-          </ul>
-          <p class="when">anything that moves with the character: another character, a weapon on a table, a door, the camera.</p></div>
-        <div class="entry" id="f-scenepose" data-use="acting skill"><div class="head"><span class="name">Posing another rig</span><span class="where">click its limb or its row, or Scene &gt; Pose this rig</span></div>
-          <p class="what">Chooses which rig of the scene you pose. The posed rig's row is open with a "posing" tag, and the handles, IK, the Inspector, Curves and every Pose tool work on it. The other rigs fold to one lane of diamonds and play their own keys. Click any of their limbs in the viewport to pose that rig, with the clicked limb picked.</p>
-          <p class="tip">Pose this rig is greyed until the scene has a second rig. Undo goes back through every rig in order, switching to the one each step was made on.</p></div>
-        <div class="entry" id="f-sceneprop" data-use="acting"><div class="head"><span class="name">Props</span><span class="where">a box row</span></div>
-          <p class="what">Moves a part or model through the scene and keys where it rests. Pick the prop (its row, or click it) and move it with Studio's own Move and Rotate (<kbd>Ctrl+2</kbd>, <kbd>Ctrl+4</kbd>). When it comes to rest it is keyed at the playhead. Its row shows the keys; the Inspector shows its place as numbers.</p></div>
-        <div class="entry" id="f-sceneparent" data-use="acting skill"><div class="head"><span class="name">Parent to... / Follow a part</span><span class="where">Scene &gt; Follow, aim and ease &gt; Follow a part, or right-click a prop's or camera's row &gt; Parent to...</span></div>
-          <p class="what">Makes a prop or a camera ride a part from the playhead on: a hand, the head or the torso of a rig, any other part, another prop, a camera, or the place. For limbs, whole rigs and held objects, see <a class="f" href="pose.html#f-scenefollow">Parent to...</a>.</p>
-          <ol class="how"><li>Pick the prop or the camera in the list.</li><li>Choose Scene &gt; Follow, aim and ease &gt; Follow a part, or right-click its row and choose Parent to...</li><li>Pick the part: click it in the view, or choose it from the list.</li></ol>
-          <ul class="opts">
-            <li><b>Click a part in the view</b>: any part of a rig, a prop, a camera's body or the place.</li>
-            <li><b>Keep where it is</b>: the prop or camera stays where it is and rides from there, with no jump. <b>Snap to it</b>: puts it on the part with no offset.</li>
-            <li><b>World (stays put)</b>: lets it go; it stays where it is.</li>
-            <li><b>Inspector &gt; Parent</b>: shows the frame and the parent at the playhead, Keep or Snap, and a list of switches (frame, parent, Keep or Snap). Click a switch to go to it. Right-click a switch for Keep, Snap, Blend over, Move to the playhead and Delete. The buttons are Parent to... and World here.</li>
-            <li><b>Parent row</b>: a row under the prop or camera shows a block per switch, named and coloured by its parent (World grey, a lost parent red). Click a block to go there; right-click it for its menu. The events lane names the ride, for example "RightHand on Head".</li>
-          </ul>
-          <p class="when">a cup carried across a cutscene, a camera locked on a character's head, a camera bolted to a car.</p>
-          <p class="tip">A part cannot follow what follows it: Framez refuses with "That part follows the child." When the parent has gone, the prop or camera stays where it was and shows red; pick a new parent.</p></div>
-        <div class="entry" id="f-scenelook" data-use="acting"><div class="head"><span class="name">A prop's look</span><span class="where">Inspector, a picked prop: Look, Colour</span></div>
-          <p class="what">Keys a prop's Transparency, Scale and Colour. Type a value to key it at the playhead, as for a light's numbers. They show as rows under the prop and play in the game.</p></div>
-        <div class="entry" id="f-scenecam" data-use="acting"><div class="head"><span class="name">Camera</span><span class="where">Scene &gt; Add &gt; Camera, from this view; a camera row</span></div>
-          <p class="what">Adds a camera to the scene, keyed where Studio's view is. It is drawn as a camera body with its view as lines. Its Inspector page has its place, Field of view (a Roblox Camera's FieldOfView, top to bottom), Look through it, Key camera here and Cut here.</p></div>
-        <div class="entry" id="f-look-through" data-use="acting"><div class="head"><span class="name">Look through the camera</span><span class="where">Scene &gt; Look through the camera, the toolbar's camera, the row's camera</span><kbd>C</kbd></div>
-          <p class="what">Shows the shot in the viewport, with the shot's frame drawn and the outside dimmed. Fly Studio's camera and the scene camera moves with it; <kbd>K</kbd> keys it. Moving the playhead without keying puts it back on its keys. <kbd>C</kbd> again gives Studio its own view back.</p>
-          <p class="when">framing every shot, and watching the cutscene as players will.</p>
-          <p class="tip">It is greyed until the scene has a camera.</p></div>
-        <div class="entry" id="f-camkey" data-use="acting"><div class="head"><span class="name">Key the camera here</span><span class="where">Scene &gt; Key the camera here</span><kbd>K</kbd></div>
-          <p class="what">Saves the scene camera's place and field of view as a key at the playhead.</p>
-          <p class="when">a push-in: key the camera, move the playhead on a few frames, fly the view closer and key again.</p>
-          <p class="tip">It is greyed until the scene has a camera. The Camera preview has a Key button too.</p></div>
-        <div class="entry" id="f-cutto" data-use="acting"><div class="head"><span class="name">Cut to the camera here</span><span class="where">Scene &gt; Cuts &gt; Cut to the camera here</span></div>
-          <p class="what">Starts a shot with the picked camera at the playhead: the view cuts to it on this frame. The cut shows as a block on the <a class="f" href="#f-shots">Shots row</a>.</p>
-          <p class="tip">It is greyed until a camera is picked in the list. A camera's Inspector page has a Cut here button as well.</p></div>
-        <div class="entry" id="f-campath" data-use="acting"><div class="head"><span class="name">Camera paths</span><span class="where">Scene &gt; Follow, aim and ease &gt; Moves; Inspector &gt; Path</span></div>
-          <p class="what">Moves a camera or a prop along a smooth curve through its keyed places, turning smoothly as it goes. It moves at an even speed between two keys, and each key's easing shapes that speed.</p>
-          <ul class="opts">
-            <li><b>Smooth path</b>: the curve passes through the keys. <b>Straight moves</b>: goes from key to key in straight lines.</li>
-            <li><b>Even speed</b>: retimes its keys to give one speed from its first key to its last.</li>
-            <li><b>Tension</b> (Inspector &gt; Path): straightens the curve; 1 gives straight lines.</li>
-            <li><b>In the view</b>: a picked item draws its path, a dot for each frame and a red marker for each key. Drag a marker to move that key (<kbd>X</kbd>, <kbd>Y</kbd> or <kbd>Z</kbd> keeps it to one axis, <kbd>Esc</kbd> cancels). Drag a dot to key it there.</li>
-          </ul>
-          <p class="when">dolly and crane moves, a camera circling a character, a prop thrown along an arc.</p></div>
-        <div class="entry" id="f-lookat" data-use="acting"><div class="head"><span class="name">Look at</span><span class="where">Scene &gt; Follow, aim and ease &gt; Look at, or right-click a camera or prop &gt; Look at</span></div>
-          <p class="what">Turns a camera or a prop to keep a target in the shot from the playhead on. The target is a rig's head, torso, root or a hand, another item, or the part picked in the Explorer. Its own place keys still move it.</p>
-          <ul class="opts">
-            <li><b>Frame at</b>: puts the target anywhere in the shot: Left third, Centre, Right third, or X / Y in %.</li>
-            <li><b>Lag</b>: lets the item trail a fast target and settle, like a camera operator.</li>
-            <li><b>Blend</b>: turns over that many frames.</li>
-            <li><b>Offset</b>: aims beside the part.</li>
-            <li><b>Stop looking here</b>: hands it back to its keys over the same blend.</li>
-          </ul>
-          <p class="when">keeping a running character framed, a tracking shot, a turret that follows its target.</p></div>
-        <div class="entry" id="f-path" data-use="acting"><div class="head"><span class="name">Paths</span><span class="where">Scene &gt; Add &gt; Path (click points in the view); a curve row</span></div>
-          <p class="what">Draws a path on the ground that a prop, a camera or a walking rig can follow.</p>
-          <ol class="how"><li>Choose Scene &gt; Add &gt; Path (click points in the view).</li><li>Click points on the ground in the view.</li><li>Press <kbd>Enter</kbd> or double-click to end it. <kbd>Backspace</kbd> takes the last point back; <kbd>Esc</kbd> cancels.</li></ol>
-          <ul class="opts">
-            <li><b>Move a point</b>: pick the path and drag a point. It stays on the ground; <kbd>Shift</kbd> drags it up and down.</li>
-            <li><b>Add or remove a point</b>: <kbd>Alt</kbd>+click the curve adds one; <kbd>Alt</kbd>+click a point removes it.</li>
-            <li><b>Its page</b>: Closed loop, Points stay on the ground, Tension, Add points..., Reverse.</li>
-          </ul></div>
-        <div class="entry" id="f-ride" data-use="acting"><div class="head"><span class="name">Follow a path</span><span class="where">Scene &gt; Follow, aim and ease &gt; Follow a path, or right-click a camera or prop &gt; Follow a path</span></div>
-          <p class="what">Makes a camera or a prop ride a path from start to end, starting at the playhead. It keeps its height over the ground and the way it faced against the path: a sideways dolly stays sideways. New path from here draws a path starting under it.</p>
-          <p class="what">A bar on its lane shows the ride; drag its ends to change it. Its page: Speed, Frames, From / To %, ease, Turns with the path, Bank, Up, Side, Bake to keys, Stop riding.</p>
-          <p class="when">a car along a road, a dolly track, a flying camera over a battlefield.</p></div>
-        <div class="entry" id="f-shotview" data-use="acting"><div class="head"><span class="name">Camera preview</span><span class="where">View &gt; Windows &gt; Camera preview, or right-click a camera &gt; Preview it</span></div>
-          <p class="what">A window that shows the shot while you pose from any angle. It shows the camera the game sees at the playhead, following the cuts, or the one camera you pick at its top. Float it, dock it, or drag it to a second screen.</p>
-          <ul class="opts">
-            <li><b>Header</b>: the picker (the camera the game sees, or one camera from the list), the camera and frame, the eye (<a class="f" href="#f-cleanview">Clean view</a>), Key and the more menu.</li>
-            <li><b>Picture</b>: sits in a dark well. Only the guides and the screen effects are drawn over it.</li>
-            <li><b>Rail</b>: five icon buttons beside the picture set what a drag does: Turn, Orbit, Slide, Dolly and Lens. Point at one to see its name and what its drag does; the picked mode is filled. Drag inside the picture to fly the camera in that mode. The field of view sits under the rail.</li>
-            <li><b>Key</b> (or <kbd>K</kbd>): keys the camera at the playhead.</li>
-            <li><b>More menu</b>: Guides, Brightness, Copy the place again and Clean view.</li>
-          </ul>
-          <p class="when">posing a character while watching the shot the player will see.</p>
-          <p class="tip">It draws parts, meshes, characters, the sky and the terrain. Shadows, particles, beams and trails show when you look through the camera (<kbd>C</kbd>). It is listed in View &gt; Windows in the Scene workspace.</p></div>
-        <div class="entry" id="f-cleanview" data-use="acting"><div class="head"><span class="name">Clean view</span><span class="where">Camera preview &gt; the eye in the header, or more menu &gt; Clean view</span></div>
-          <p class="what">Hides the header, the rail and the guides: the picture fills the whole Camera preview window.</p>
-          <ol class="how"><li>Click the eye in the header, or choose Clean view in the more menu.</li><li>To bring the controls back, move the mouse over the window and click the eye in its top right corner.</li></ol>
-          <p class="tip">The eye in the corner shows only while the mouse is over the window. The setting is remembered.</p></div>
-        <div class="entry" id="f-blocks" data-use="acting skill"><div class="head"><span class="name">Clip blocks</span><span class="where">Scene &gt; Add &gt; Clip block for the rig, or right-click the Clips row</span></div>
-          <p class="what">Plays a saved clip as a block over your keys from a frame, on a Clips row under the rig. From another rig lists the saves of other rigs. Each block starts where the one before ends, so walks and steps carry on.</p>
-          <ul class="opts">
-            <li><b>Move and trim</b>: drag a block's middle to move it, an end to trim it.</li>
-            <li><b>Loop and speed</b>: <kbd>Alt</kbd>+drag the right end to loop it; <kbd>Ctrl</kbd>+drag it to change its speed.</li>
-            <li><b>Crossfade</b>: overlap two blocks.</li>
-            <li><b>Right-click a block</b>: Loop, Speed, Blend in and out, Line up with the block before, Holds its last pose, Body mask (the parts it plays on), Open the clip, Bake to keys, Remove (<kbd>Del</kbd>).</li>
-            <li><b>Block page</b>: a picked block's values are on the Inspector's first page.</li>
-          </ul>
-          <p class="what">Posing a part inside a block keys it on a Tweaks layer over the block: the clip keeps its motion and takes your change. Outside every block your keys go to the clip itself.</p>
-          <p class="when">long cutscenes from walks, idles and gestures; combos chained from saved skills.</p>
-          <p class="tip">Saving bakes the blocks into the clip, so games and other editors play what you see. The blocks stay editable in Framez.</p></div>
-        <div class="entry" id="f-walkpath" data-use="acting"><div class="head"><span class="name">Walk a path</span><span class="where">Scene &gt; Add &gt; Walk a path, or right-click the Clips row</span></div>
-          <p class="what">Makes the rig walk or run a path from the playhead. It eases up to its pace and stops at the end, facing along the path and following the ground. R6 feet are planted on footprints.</p>
-          <p class="what">Its Inspector page has Walk or Run, Pace (studs a second), Ease (frames) and From / To %. The rig holds where it arrives; add a clip block after it (an idle) and that block starts there.</p>
-          <p class="tip">The row is greyed until a path is drawn: Scene &gt; Add &gt; Path.</p></div>
-        <div class="entry" id="f-framing" data-use="acting"><div class="head"><span class="name">Framing</span><span class="where">Scene &gt; Framing</span></div>
-          <p class="what">Sets the shape of the shot and draws composition guides over it while you look through the camera. The frame, the camera's lines, the screen effects and the playblast of the scene camera all take the shape.</p>
-          <ul class="opts">
-            <li><b>Shape</b>: 16:9 (the game, video), 9:16 (vertical: shorts), 2.39:1 (cinema wide), 1.85:1 (cinema), 4:3, 1:1 (square) or The screen's own.</li>
-            <li><b>Show the frame</b>: draws the shot's frame.</li>
-            <li><b>Thirds</b> and <b>Safe areas</b>: guides over the shot.</li>
-            <li><b>More guides</b>: Grid, Centre, Diagonals, Golden ratio, Golden spiral, Triangles, Your image and Roblox's top bar. <b>Turn the spiral</b> moves the Golden spiral's eye to the next corner.</li>
-            <li><b>Guide sets</b>: Save these guides... keeps the guides that are on as a set. Pick a set later to turn the same guides on again, or delete it.</li>
-            <li><b>Guide settings...</b>: grid size, safe area %, line width (1 to 6), colour and opacity, the spiral's eye, Triangles rising or falling, and Your image (an asset id, shown Fit, Fill or Stretch at the guides' opacity).</li>
-          </ul>
-          <p class="when">vertical shorts, a cinema-wide cutscene, keeping a face on a third, keeping text inside the safe area.</p></div>
-        <div class="entry" id="f-shots" data-use="acting"><div class="head"><span class="name">Shots row (cuts)</span><span class="where">above the cameras, with two or more</span></div>
-          <p class="what">Shows one block per shot with its name and camera. A second camera added at a frame cuts in there. Drag where a block starts to move the cut.</p>
-          <p class="what">Right-click a block:</p>
-          <ul class="opts">
-            <li><b>Play this shot</b>: loops its frames.</li>
-            <li><b>Playblast this shot...</b>: films it through the scene camera.</li>
-            <li><b>Rename shot...</b>, <b>Colour</b> and <b>Camera</b>: change the block.</li>
-            <li><b>Take thumbnails</b>: puts each shot's first frame on its block.</li>
-            <li><b>Remove this cut</b>: takes the cut out.</li>
-          </ul></div>
-        <div class="entry" id="f-scenelight" data-use="acting"><div class="head"><span class="name">Lights</span><span class="where">Scene &gt; Add &gt; Light; a bulb row: Brightness, Colour, Range</span></div>
-          <p class="what">Keys a light's Brightness, Colour and Range. Type a value on the light's Inspector page and it is keyed at the playhead; values ease between keys like any key.</p>
-          <p class="tip">To move the light, add the part it is in as a prop.</p></div>
-        <div class="entry" id="f-scenesound" data-use="acting skill dance"><div class="head"><span class="name">Sound</span><span class="where">Scene &gt; Add &gt; Sound...; a speaker row with a block</span></div>
-          <p class="what">Puts a sound on the timeline. The block starts where the sound starts and shows its loudness. It plays with the animation, and a slice plays while scrubbing (<a class="f" href="#f-scrubsound">Sound while scrubbing</a>).</p>
-          <ul class="opts">
-            <li><b>Move</b>: drag the block. It snaps to keys and events.</li>
-            <li><b>Trim</b>: drag its ends.</li>
-            <li><b>Fade</b>: drag the white handle at a top corner inward to fade in or out (<a class="f" href="#f-soundfade">Fades and speed</a>).</li>
-            <li><b>Speed</b>: <kbd>Alt</kbd>+drag its right end.</li>
-            <li><b>Inspector page</b>: Volume, trim, fades and speed.</li>
-          </ul>
-          <p class="tip">The sound must have permission to play in this place, as in the game.</p></div>
-        <div class="entry" id="f-soundfade" data-use="acting"><div class="head"><span class="name">Fades and speed</span><span class="where">Inspector &gt; a picked sound</span></div>
-          <p class="what">Fades a sound in and out and changes how fast it plays. Put in the game, the scene plays the same fades and speed.</p>
-          <ul class="opts">
-            <li><b>Fade in</b> and <b>Fade out</b>: seconds from each end of the block.</li>
-            <li><b>Shape</b>: Linear or Smooth.</li>
-            <li><b>Speed</b>: 25 to 400 %.</li>
-            <li><b>Keep pitch</b>: from 50 to 200 %.</li>
-          </ul></div>
-        <div class="entry" id="f-screenfx" data-use="acting"><div class="head"><span class="name">Screen effects</span><span class="where">Scene &gt; Add &gt; Screen effects; a film row</span></div>
-          <p class="what">Adds letterbox bars, a vignette, a fade to any colour, camera shake and subtitle lines over the shot. Each is keyed like a light's values: type it on the row's Inspector page and it is keyed at the playhead.</p>
-          <ul class="opts">
-            <li><b>Subtitle line</b>: shows from its key until the next one. An empty key ends it. The Inspector's Subtitle style sets its font, size, colour, outline, place, width and alignment. For timed dialogue with looks and motion, use <a class="f" href="#f-subtitles">Subtitles</a>.</li>
-            <li><b>Where it shows</b>: while looking through the camera (<kbd>C</kbd>), and in the game when the scene is put there.</li>
-          </ul>
-          <p class="when">cutscenes: a cinematic letterbox, a fade to black between shots, a white flash on a hit, a shake on an impact, spoken lines.</p></div>
-        <div class="entry" id="f-subtitles" data-use="acting"><div class="head"><span class="name">Subtitles</span><span class="where">Scene &gt; Add &gt; Subtitles; a Subtitles row with a CC mark</span></div>
-          <p class="what">Puts timed dialogue lines over the shot, one block per line on a Subtitles row, coloured by who says it. The lines show while looking through the camera and in the game. The row appears in the Scene workspace.</p>
-          <ol class="how"><li>Choose Scene &gt; Add &gt; Subtitles. With no camera in the scene, Framez adds one from the view and looks through it. From another workspace, it goes to Scene.</li><li>Double-click the Subtitles row to add a line at that frame.</li><li>Drag a block's middle to move it. Drag an end to trim it; near the playhead, the end snaps to it.</li><li>Open the Inspector's subtitle page to write the line and change its look (<a class="f" href="#f-subpage">The subtitle page</a>).</li></ol>
-          <ul class="opts">
-            <li><b>Colours</b>: each speaker gets a colour, in the order they first speak.</li>
-            <li><b>Right-click a block</b>: Look, Split at the playhead, Subtitle lines (opens the <a class="f" href="#f-sublines">Subtitle lines</a> window) and Delete (<kbd>Del</kbd>).</li>
-            <li><b>A new line</b>: copies its speaker's last look and moves, or the last line's when the speaker is new.</li>
-            <li><b>Undo and redo</b>: work on the text and the speaker.</li>
-          </ul>
-          <p class="when">dialogue between two speakers with portraits, short-video captions with the said word on a pill, a shouted line, a chapter title.</p>
-          <p class="tip">They show while looking through the camera (<kbd>C</kbd>), and <a class="f" href="#f-sceneexport">Scene &gt; Put in the game...</a> takes them with the scene.</p></div>
-        <div class="entry" id="f-subpage" data-use="acting"><div class="head"><span class="name">The subtitle page</span><span class="where">Inspector &gt; subtitle</span></div>
-          <p class="what">Writes a subtitle line and sets how it looks, moves and reads word by word. A strip of parts at the top shows a green dot when a part holds the line's own values. A picked limb, key, block or scene item takes the Inspector before this page.</p>
-          <ul class="opts">
-            <li><b>Text</b>: the line, Speaker, Look, Starts, Length and At a time. At a time shows a long line as pages of that many words, each timed by the length of its words. A page also ends at a full stop, an exclamation mark or a question mark.</li>
-            <li><b>Look</b>: font (five kinds, each shown in its own face), weight, size, Fill or Gradient to (a swatch from the palette, plus a hex value), letter gap, italic, capitals, outline, shadow, glow and box. Place sets Top, Middle or Bottom, with Margin (Offset in the middle, up positive), Across, Width and Align. It also holds the speaker's name and a portrait (an image's asset id, its side, shape and size).</li>
-            <li><b>Motion</b>: In, During and Out, each a list of moves. Add a move opens the move box; the trash icon on a move removes it. Start from fills a part in.</li>
-            <li><b>Words</b>: a chip for each word, with a dot on a chip that has its own look. A word can have its own fill, weight, size, shake, a pill behind it and italic.</li>
-          </ul>
-          <p class="what"><b>The move box</b> edits one move. A move changes the line as a whole, word by word or letter by letter: fade, move, size, turn, colour, reveal or type on. It has From X and From Y for a move, From size, From angle and From colour. Overlap and Order (first, last, centre, random) show only for word by word and letter by letter moves; Type on has no easing. Moves under During keep running while the line shows: Wave, Shake, Pulse, Colour and Said word (Pill, Lit, So far, a colour and a pop).</p>
-          <p class="what"><b>Starting looks</b>: pick one in the Look row of Text and it fills every value in: Film, Captions, Karaoke, Title, Shout, Whisper, Lower third or Typewriter. Change any value and the row reads Custom. Save this look as mine keeps your own in My looks, in every place. A line starts with the Film look: white SemiBold with a soft shadow, 7 % from the bottom.</p>
-          <p class="tip">Fonts include Montserrat, Nunito, Roboto, Source Sans and Titillium, in weights from Light to Heavy.</p></div>
-        <div class="entry" id="f-sublines" data-use="acting"><div class="head"><span class="name">Subtitle lines</span><span class="where">View &gt; Windows &gt; Subtitle lines (Scene workspace), or right-click a subtitle block &gt; Subtitle lines</span></div>
-          <p class="what">A window that lists every subtitle line of the scene and adds many lines at once from a pasted script or an .srt file. Each row shows the time, the speaker and the line; the picked line is tinted. Click a row to go to that line.</p>
-          <ol class="how"><li>Paste the script into the paste box, one line each as <code>Name: line</code>, or paste the contents of an .srt file.</li><li>Press Add the lines.</li></ol>
-          <ul class="opts">
-            <li><b>Name: line</b>: the lines are timed from the playhead by reading speed, at least 1 s each and 0.2 s apart.</li>
-            <li><b>.srt</b>: the lines keep their own times and their tags are dropped.</li>
-          </ul>
-          <p class="when">adding a whole dialogue at once, or bringing in captions from a video editor.</p></div>
-        <div class="entry" id="f-worldlook" data-use="acting"><div class="head"><span class="name">Scene look</span><span class="where">+ next to Filter &gt; Scene look, or Scene &gt; Add &gt; Scene look</span></div>
-          <p class="what">Sets the time of day, fog, colour grade, bloom and depth of field for the shot. There is one per scene. Its Inspector page has five sections:</p>
-          <ul class="opts">
-            <li><b>Time and sky</b>: Time of day, Brightness, Exposure.</li>
-            <li><b>Fog</b>: Density, Haze and colour of the place's Atmosphere; or Fog start, Fog end and Fog colour when the place has no Atmosphere.</li>
-            <li><b>Colour grade</b>: Brightness, Contrast, Saturation, Tint.</li>
-            <li><b>Bloom</b>: Intensity, Size, Threshold.</li>
-            <li><b>Depth of field</b>: Focus distance, In-focus radius, Near blur, Far blur.</li>
-          </ul>
-          <p class="what"><b>Focus on</b>: pick a part in the Explorer and press Picked part; the focus follows it from the camera. Press it with nothing picked to stop following. For a focus pull, pick a new part at a later frame.</p>
-          <p class="what">Typing a value keys it at the playhead. The place's lighting goes back as it was when the scene closes.</p>
-          <p class="tip">In the game, the look goes with the scene (<a class="f" href="#f-sceneexport">Scene &gt; Put in the game...</a>). The scene player sets it on the player's screen and puts it back when the scene ends.</p></div>
-        <div class="entry" id="f-fxtimeline" data-use="acting skill"><div class="head"><span class="name">Effects on the timeline</span><span class="where">+ next to Filter, or Scene &gt; Add &gt; Effect picked in the Explorer</span></div>
-          <p class="what">Puts particles, trails and beams on the timeline, to fire on the frames you choose. Each effect gets its own row, named with the part that holds it, in every workspace. The row shows On blocks (drag either end to move one) and bursts (a star with how many particles).</p>
-          <ul class="opts">
-            <li><b>Effect picked in the Explorer</b>: a ParticleEmitter, Trail, Beam, Fire, Smoke or Sparkles, or a part holding them.</li>
-            <li><b>New effect on</b> the picked limb: Particles (a burst at the playhead, out of the limb's end), Trail (across the hand or foot, on for 10 frames), Beam (from the limb's end, on for 20 frames), a <a class="f" href="#f-fxstart">Framez starting effect</a> or one of <a class="f" href="#f-myfx">My effects</a>.</li>
-            <li><b>Right-click the row</b>: Emit here..., Turn on here, Turn off here, <a class="f" href="#f-fxplace">Place it &gt;</a>, <a class="f" href="#f-fxloop">Loop around it</a>, <a class="f" href="#f-keyprop">Key a property...</a>, Save as my effect... and Select in the Explorer.</li>
-          </ul>
-          <p class="what">While scrubbing, particles move with the playhead and hold still where it stops. Each frame shows that frame's moment, and stepping one frame moves them one frame. Going back past a burst clears it. A paused trail is drawn where it is at that frame.</p>
-          <p class="tip">To play it in the game, see <a class="f" href="game.html#f-fxgame">Effects in the game</a>. A pack's effects are in <a class="f" href="#f-vfxpacks">VFX packs</a>.</p></div>
-        <div class="entry" id="f-fxstart" data-use="acting skill"><div class="head"><span class="name">Framez starting effects</span><span class="where">Scene &gt; Add &gt; New effect on <em>limb</em> &gt; Framez starting effects</span></div>
-          <p class="what">Makes a ready effect at the picked limb's end: Hit sparks, Impact glow, Shock ring, Dust burst, Smoke puff, Fire burst, Energy burst, Explosion, Slash arc or Debris. It is made in a point at the limb's end, emitting out of it, with a burst at the playhead. When another character is near, it is placed where it hits (<a class="f" href="#f-fxplace">Place an effect</a>).</p>
-          <p class="what">Each is made of ordinary particle emitters: every value is yours to change in Studio's Properties window: colour, size, speed, lifetime, count and texture. Most have several layers, each its own row. Hit sparks has a flash and sparks. Dust burst has dust and rocks. Fire burst has a fireball, flame tongues and embers. Explosion has a flash, a fireball, flame tongues, a ring, smoke, rocks and sparks.</p>
-          <p class="what">Their textures come with Framez (<a class="f" href="#f-fxtexture">Framez textures</a>): smoke, dust, explosions and fire as flipbooks, and white sparks, glows, rings, stars, slashes and crackles that take any Color.</p>
-          <p class="when">a first version of a hit, a landing, a blast or a cast, to shape into your own.</p>
-          <p class="tip">Use <a class="f" href="#f-fxloop">Loop around it</a> to change the look while it plays. To play it in the game, see <a class="f" href="game.html#f-fxgame">Effects in the game</a>.</p></div>
-        <div class="entry" id="f-myfx" data-use="acting skill"><div class="head"><span class="name">My effects</span><span class="where">Scene &gt; Add &gt; New effect on <em>limb</em> &gt; My effects</span></div>
-          <p class="what">Keeps an effect you built and lists it under My effects, ready to add again.</p>
-          <ol class="how"><li>Right-click the effect's row and choose Save as my effect...</li><li>Later, pick the limb and choose Scene &gt; Add &gt; New effect on the limb &gt; My effects, then the effect.</li><li>Choose Rename or delete... in the same list to rename or remove a saved effect.</li></ol>
-          <p class="tip">The My effects list is greyed until you have saved one.</p></div>
-        <div class="entry" id="f-fxtexture" data-use="acting skill"><div class="head"><span class="name">Framez textures</span><span class="where">click an effect's row &gt; Inspector &gt; Framez texture...</span></div>
-          <p class="what">Puts one of Framez's textures on any ParticleEmitter, Beam or Trail.</p>
-          <ul class="opts">
-            <li><b>Drawn</b>: Spark, Glow, Shock ring, Impact star, Slash, Crackle, Streak.</li>
-            <li><b>Rendered in Blender</b>: Smoke, Dust, Explosion, Ground blast, Fire, Debris.</li>
-            <li><b>Flipbooks</b> come with their grid and how they play: once over each particle's life, as a loop (Fire), at random (Crackle), or one rock for each particle (Debris).</li>
-            <li><b>Colour</b>: white textures take the emitter's Color.</li>
-            <li><b>As it was</b>: puts back the image the emitter had when it was added.</li>
-          </ul>
-          <p class="tip">A streak (Spark) lies along the particle's flight with Orientation VelocityParallel; a negative Squash makes it longer.</p></div>
-        <div class="entry" id="f-fxplace" data-use="acting skill"><div class="head"><span class="name">Place an effect</span><span class="where">right-click the effect's row &gt; Place it, or Inspector &gt; Place</span></div>
-          <p class="what">Moves the point an effect fires from, and keys that place. An effect in a point (an Attachment) has a Place row on the timeline. Its keys move, ease and delete like other scene keys. Picking the effect's row picks its point in Studio. Move or turn the point with Studio's Move and Rotate tools and the new place is keyed at the playhead.</p>
-          <p class="what">Right-click the effect's row &gt; Place it, or use the Inspector's Place section. Each choice places the point at the playhead and keys it:</p>
-          <ul class="opts">
-            <li><b>Where it hits</b>: the nearest point of another character's body at that frame.</li>
-            <li><b>Where I click</b>: the next click in the view.</li>
-            <li><b>At the limb's end</b>: back at the end of the limb that holds it.</li>
-            <li><b>Aim at the camera</b>: turns the point: the particles leave towards the camera.</li>
-            <li><b>Aim along the swing</b> (Along the swing in the Inspector): turns the point the way it travels at that frame.</li>
-            <li><b>Particles move with the limb</b> (Inspector &gt; Place): on, the particles travel with the limb as it moves; off, they stay where they were emitted.</li>
-          </ul>
-          <p class="when">an impact that must land on the other character's body, and a spray that must face the camera or follow a swing.</p>
-          <p class="tip">An effect with several layers in one point moves as one: its Place keys are on its first row. Closing the animation puts the point back where it was. The Place keys are saved with the clip. To play it in the game, see <a class="f" href="game.html#f-fxgame">Effects in the game</a>.</p></div>
-        <div class="entry" id="f-fxloop" data-use="acting skill"><div class="head"><span class="name">Loop around it</span><span class="where">right-click the effect's row, or Inspector</span></div>
-          <p class="what">Plays the frames around an effect over and over while you change the emitter and watch the result. The loop covers its bursts and On blocks, the time its particles live, and a few frames each side. It sets the play range, as <a class="f" href="view.html#f-range">Play only the picked keys</a> does. Change the emitter in Studio's Properties window while it loops. Changes made while it plays are not keyed.</p>
-          <p class="what">While it loops, the same row and button read Stop looping. Stop looping ends it.</p>
-          <p class="when">tuning a spark's colour, size, speed or lifetime until it reads right.</p></div>
-        <div class="entry" id="f-vfxpacks" data-use="acting skill"><div class="head"><span class="name">VFX packs</span><span class="where">Scene &gt; Add &gt; Effect picked in the Explorer, with a pack's part, attachment or model picked</span></div>
-          <p class="what">Plays an effect pack's effects the way their maker built them. A pack effect is made with emit attributes (EmitCount, EmitDelay, EmitDuration). Framez adds it as one effect, and each burst fires every emitter inside it with its own count, delay and length.</p>
-          <ol class="how"><li>Pick the pack's part, attachment or model in the Explorer.</li><li>Choose Scene &gt; Add &gt; Effect picked in the Explorer.</li><li>To play it in the game, choose Game &gt; In the game &gt; Effects in the game.</li></ol>
-          <ul class="opts">
-            <li><b>Scrubbing</b>: follows the effect, and so does the game.</li>
-            <li><b>Part-Icles</b>: an effect made with Part-Icles plays through its own Part_Icles module in ReplicatedStorage.</li>
-          </ul>
-          <p class="tip">Run Effects in the game again on a game that already has it, to bring its FramezEffects script up to date with pack support.</p></div>
-        <div class="entry" id="f-keyprop" data-use="acting skill"><div class="head"><span class="name">Key any property</span><span class="where">Studio's Properties window, or right-click a row &gt; Key a property...</span></div>
-          <p class="what">Keys any property of a scene item with an object: a prop, a light, an effect, or any other object added with Scene &gt; Add &gt; Object picked in the Explorer, GUI objects included. Change a value in Studio's Properties window and it is keyed at the playhead. Or right-click a row and choose Key a property... to pick from the object's properties (Studio's own groups, with search).</p>
-          <p class="what">Numbers, colours, vectors, sizes, positions and ranges blend between keys with Framez's curves. Switches, choices, text and sequences hold until the next key. Everything goes back as it was when the scene closes.</p>
-          <p class="tip">To play it in the game, see <a class="f" href="game.html#f-fxgame">Effects in the game</a>.</p></div>
-        <div class="entry" id="f-scenekeys" data-use="acting"><div class="head"><span class="name">Scene keys</span><span class="where">a prop's, camera's or light's lane; Scene &gt; Follow, aim and ease &gt; Ease the picked keys</span></div>
-          <p class="what">Picks, moves, eases and deletes the keys on a scene item's lane. Click a key to pick it (<kbd>Shift</kbd> adds), drag to move it, <kbd>Del</kbd> deletes the picked ones.</p>
-          <ul class="opts">
-            <li><b>Right-click a key</b>: Ease to the next key (Linear, Smooth, Ease out, Ease in, Hold, Overshoot, Bounce) or Delete.</li>
-            <li><b>Ease the picked keys</b>: Scene &gt; Follow, aim and ease &gt; Ease the picked keys gives the same seven styles to every picked key. It is greyed until keys are picked in the scene's rows.</li>
-          </ul></div>
-        <div class="entry" id="f-scenesave" data-use="acting"><div class="head"><span class="name">Saving a scene</span><span class="where">File &gt; Save</span><kbd>Ctrl+S</kbd></div>
-          <p class="what">Saves every rig's clip and the scene itself with one Save. Every rig's clip is saved under its own rig, an ordinary save Studio's editor can open too, and the scene itself in ServerStorage.FramezScenes. Opening any of the rigs' clips opens the whole scene.</p></div>
-        <div class="entry" id="f-sceneexport" data-use="acting skill"><div class="head"><span class="name">Put in the game...</span><span class="where">Scene &gt; Put in the game..., or Game &gt; In the game &gt; Put the scene in the game...</span></div>
-          <p class="what">Writes the scene into the game as something players can play: from a button, when a part is touched, when a player joins, on a signal or from your code. A new scene starts on Button with its motion In the scene: a first try needs no code and no upload.</p>
-          <ol class="how"><li>Choose Scene &gt; Put in the game... One dialog opens, titled with the scene's name.</li><li>Set how it Starts, who sees it, its motion, its look and how players skip it.</li><li>Press Put in the game.</li></ol>
-          <ul class="opts">
-            <li><b>Starts</b>: five tiles. <b>Button</b>: the game puts a button for the scene at the bottom right of each player's screen, hidden while a scene plays; its label starts as "Play cutscene". <b>Touch</b>: when a player touches a part; pick the part in the Explorer, then press Use the picked part. <b>Join</b>: when a player joins. <b>Signal</b>: when a server script fires the scene's Start signal (the code is in the tip below). <b>Code</b>: only when your code plays it.</li>
-            <li><b>Who sees it</b>: the player, or everyone. Also: every time, or once for each player.</li>
-            <li><b>Skip</b>: Off, press, or hold a key for some seconds. Key is Space by default.</li>
-            <li><b>Rows</b>: Part touched (Touch), Button (Button), Hold (with Hold) and Key (unless Skip is Off) show only when they apply. Changing Starts or Skip reopens the dialog with the right rows.</li>
-            <li><b>Motion</b>: In the scene or Uploaded animations. In the scene bakes every rig's motion beside the scene; nothing is uploaded, and it plays in group games and in other people's games. Uploaded animations plays each character's published clip; with a clip that is not published, the dialog offers Carry the motion in the scene instead.</li>
-            <li><b>Look</b>: The place's look now, or The game's own look. The place's Lighting, Atmosphere, Sky, bloom, depth of field, sun rays and blur are set as the scene starts, under its keyed look, and put back after.</li>
-            <li><b>Goes in</b>: lists what is read from the scene: rigs and cameras, effects, subtitles, held objects, the look's parts, the README and the Framez copy.</li>
-          </ul>
-          <p class="what">The scene goes into ReplicatedStorage.FramezScenes as a ModuleScript, with FramezScenePlayer beside it. Every start but Code also adds a FramezSceneStart script in ServerScriptService and a FramezScenesClient script for players. A scene with effects adds FramezEffects when the game has none, and one with held objects adds FramezHeld; the dialog names both. A README in ReplicatedStorage.FramezScenes lists the scenes there, how they start, how to play one from code, MarkerReached, signals, motion, and how to change or remove a scene.</p>
-          <p class="what">Every rig's clip markers go out with the scene. Impact frames, effects and held objects still play with the motion In the scene. With StreamingEnabled, the player streams in the scene's place and rigs first. After it, a message tells how to try it: press Play, then the button; touch the part.</p>
-          <p class="tip">A clip that is not published plays in Studio only: Publish it, then Put in the game again. To start a scene from another server script: <code>FramezSceneStart_NAME.Start:Fire(player)</code>. The command is greyed until the scene has a second item.</p></div>
-        <div class="entry" id="f-sceneplay" data-use="acting skill"><div class="head"><span class="name">Playing a scene in the game</span><span class="where">the game script</span></div>
-          <p class="what">A cutscene, from a LocalScript:</p>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Scene Menu - Framez Manual</title><meta name="description" content="The Scene menu holds everything that turns one animation into a scene: adding rigs, props, cameras, lights, sounds, effects and subtitles, looking through "><link rel="icon" href="assets/favicon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"><link rel="stylesheet" href="assets/site.css"><script>try{var t=localStorage.getItem("framez-theme");if(t)document.documentElement.dataset.look=t}catch(e){}</script></head><body><div class="shell"><nav class="side" id="side" aria-label="Docs"><div class="side-head"><a class="brand" href="index.html"><svg class="mark" viewBox="-34.0 -34.0 68.0 68.0" aria-hidden="true"><polygon points="-28.00,0.00 0.00,-28.00 28.00,0.00 0.00,28.00" fill="#3c4045"/><polygon points="-18.50,0.00 0.00,-18.50 0.00,0.00" fill="#e8443c"/><polygon points="0.00,-18.50 9.25,-9.25 0.00,0.00" fill="#9e2b2b"/><polygon points="9.25,-9.25 9.25,0.00 0.00,0.00" fill="#ffffff"/><polygon points="9.25,-9.25 18.50,0.00 9.25,0.00" fill="#e8443c"/><polygon points="-18.50,0.00 0.00,0.00 -9.25,9.25" fill="#9e2b2b"/><polygon points="-9.25,9.25 0.00,0.00 0.00,18.50" fill="#ffffff"/><polygon points="0.00,0.00 18.50,0.00 0.00,18.50" fill="#ffffff"/><polygon points="26.30,-22.51 23.03,-18.03 17.70,-16.49 20.97,-20.97" fill="#e8443c"/><polygon points="-16.73,16.57 -17.63,18.42 -19.67,18.63 -18.77,16.78" fill="#e8443c"/></svg><i class="sep"></i><span>Manual</span></a><button class="iconbtn" type="button" data-search aria-label="Search the manual (Ctrl+K)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg></button></div><div class="side-scroll"><details class="grp"><summary><span>Getting Started</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="start.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="5.14,9.23 5.40,8.66 5.70,8.11 6.06,7.59 6.45,7.10 6.89,6.65 7.36,6.24 7.86,5.87 8.40,5.54 8.96,5.25 9.54,5.02 10.14,4.84 10.75,4.71 11.37,4.63 12.00,4.60 12.63,4.63 13.25,4.71 13.86,4.84 14.46,5.02 15.04,5.25 15.60,5.54 16.14,5.87 16.64,6.24 17.11,6.65 17.55,7.10 17.94,7.59 18.30,8.11 18.60,8.66 18.86,9.23"/><polyline points="18.86,14.77 18.60,15.34 18.30,15.89 17.94,16.41 17.55,16.90 17.11,17.35 16.64,17.76 16.14,18.13 15.60,18.46 15.04,18.75 14.46,18.98 13.86,19.16 13.25,19.29 12.63,19.37 12.00,19.40 11.37,19.37 10.75,19.29 10.14,19.16 9.54,18.98 8.96,18.75 8.40,18.46 7.86,18.13 7.36,17.76 6.89,17.35 6.45,16.90 6.06,16.41 5.70,15.89 5.40,15.34 5.14,14.77"/><polyline points="18.86,9.23 16.11,7.23"/><polyline points="18.86,9.23 19.45,5.88"/><polyline points="5.14,14.77 7.89,16.77"/><polyline points="5.14,14.77 4.55,18.12"/></svg><span>Getting Started</span></a><a href="setup.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="9.60,8.60 10.13,8.64 10.65,8.77 11.14,8.97 11.60,9.25 12.00,9.60 12.35,10.00 12.63,10.46 12.83,10.95 12.96,11.47 13.00,12.00 13.00,12.00 12.96,12.53 12.83,13.05 12.63,13.54 12.35,14.00 12.00,14.40 11.60,14.75 11.14,15.03 10.65,15.23 10.13,15.36 9.60,15.40 6.00,15.40 5.47,15.36 4.95,15.23 4.46,15.03 4.00,14.75 3.60,14.40 3.25,14.00 2.97,13.54 2.77,13.05 2.64,12.53 2.60,12.00 2.60,12.00 2.64,11.47 2.77,10.95 2.97,10.46 3.25,10.00 3.60,9.60 4.00,9.25 4.46,8.97 4.95,8.77 5.47,8.64 6.00,8.60"/><polygon points="18.00,8.60 18.53,8.64 19.05,8.77 19.54,8.97 20.00,9.25 20.40,9.60 20.75,10.00 21.03,10.46 21.23,10.95 21.36,11.47 21.40,12.00 21.40,12.00 21.36,12.53 21.23,13.05 21.03,13.54 20.75,14.00 20.40,14.40 20.00,14.75 19.54,15.03 19.05,15.23 18.53,15.36 18.00,15.40 14.40,15.40 13.87,15.36 13.35,15.23 12.86,15.03 12.40,14.75 12.00,14.40 11.65,14.00 11.37,13.54 11.17,13.05 11.04,12.53 11.00,12.00 11.00,12.00 11.04,11.47 11.17,10.95 11.37,10.46 11.65,10.00 12.00,9.60 12.40,9.25 12.86,8.97 13.35,8.77 13.87,8.64 14.40,8.60"/></svg><span>Installing the Framez Helper</span></a></div></details><details class="grp"><summary><span>Interface</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="window.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>The Framez Window</span></a><a href="workspaces.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.40,6.60 19.60,6.60"/><polyline points="4.40,12.00 19.60,12.00"/><polyline points="4.40,17.40 19.60,17.40"/></svg><span>Workspaces</span></a><a href="timeline.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="7.40,5.00 18.60,12.00 7.40,19.00"/></svg><span>Timeline and Toolbar</span></a><a href="anytool.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.40,13.60 4.60,8.80 9.40,4.00"/><polyline points="4.60,8.80 14.40,8.80 15.47,8.92 16.48,9.28 17.39,9.85 18.15,10.61 18.72,11.52 19.08,12.53 19.20,13.60 19.08,14.67 18.72,15.68 18.15,16.59 17.39,17.35 16.48,17.92 15.47,18.28 14.40,18.40 11.00,18.40"/></svg><span>Working with Tools</span></a></div></details><details class="grp" open><summary><span>Menus</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="file.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="12.00,3.60 12.00,15.20"/><polyline points="7.20,10.60 12.00,15.40 16.80,10.60"/><polyline points="4.60,20.40 19.40,20.40"/></svg><span>File</span></a><a href="edit.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.40,13.60 4.60,8.80 9.40,4.00"/><polyline points="4.60,8.80 14.40,8.80 15.47,8.92 16.48,9.28 17.39,9.85 18.15,10.61 18.72,11.52 19.08,12.53 19.20,13.60 19.08,14.67 18.72,15.68 18.15,16.59 17.39,17.35 16.48,17.92 15.47,18.28 14.40,18.40 11.00,18.40"/></svg><span>Edit</span></a><a href="key.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon class="f" points="12.00,3.00 21.00,12.00 12.00,21.00 3.00,12.00"/></svg><span>Key</span></a><a href="pose.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="14.60,6.20 14.53,6.78 14.34,7.33 14.03,7.82 13.62,8.23 13.13,8.54 12.58,8.73 12.00,8.80 11.42,8.73 10.87,8.54 10.38,8.23 9.97,7.82 9.66,7.33 9.47,6.78 9.40,6.20 9.47,5.62 9.66,5.07 9.97,4.58 10.38,4.17 10.87,3.86 11.42,3.67 12.00,3.60 12.58,3.67 13.13,3.86 13.62,4.17 14.03,4.58 14.34,5.07 14.53,5.62 14.60,6.20"/><polyline points="12.00,9.40 12.00,15.20"/><polyline points="12.00,15.20 8.60,20.40"/><polyline points="12.00,15.20 15.40,20.40"/><polyline points="7.00,12.00 17.00,12.00"/></svg><span>Pose</span></a><a href="face.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.20,8.00 16.09,8.93 15.78,9.82 15.28,10.62 14.62,11.28 13.82,11.78 12.93,12.09 12.00,12.20 11.07,12.09 10.18,11.78 9.38,11.28 8.72,10.62 8.22,9.82 7.91,8.93 7.80,8.00 7.91,7.07 8.22,6.18 8.72,5.38 9.38,4.72 10.18,4.22 11.07,3.91 12.00,3.80 12.93,3.91 13.82,4.22 14.62,4.72 15.28,5.38 15.78,6.18 16.09,7.07 16.20,8.00"/><polyline points="5.14,18.83 5.40,18.26 5.70,17.71 6.06,17.19 6.45,16.70 6.89,16.25 7.36,15.84 7.86,15.47 8.40,15.14 8.96,14.85 9.54,14.62 10.14,14.44 10.75,14.31 11.37,14.23 12.00,14.20 12.63,14.23 13.25,14.31 13.86,14.44 14.46,14.62 15.04,14.85 15.60,15.14 16.14,15.47 16.64,15.84 17.11,16.25 17.55,16.70 17.94,17.19 18.30,17.71 18.60,18.26 18.86,18.83"/></svg><span>Face</span></a><a href="scene.html" aria-current="page"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13.40,7.00 13.74,7.03 14.08,7.11 14.40,7.24 14.69,7.42 14.96,7.64 15.18,7.91 15.36,8.20 15.49,8.52 15.57,8.86 15.60,9.20 15.60,14.80 15.57,15.14 15.49,15.48 15.36,15.80 15.18,16.09 14.96,16.36 14.69,16.58 14.40,16.76 14.08,16.89 13.74,16.97 13.40,17.00 5.00,17.00 4.66,16.97 4.32,16.89 4.00,16.76 3.71,16.58 3.44,16.36 3.22,16.09 3.04,15.80 2.91,15.48 2.83,15.14 2.80,14.80 2.80,9.20 2.83,8.86 2.91,8.52 3.04,8.20 3.22,7.91 3.44,7.64 3.71,7.42 4.00,7.24 4.32,7.11 4.66,7.03 5.00,7.00"/><polygon points="15.60,10.60 21.20,7.60 21.20,16.40 15.60,13.40"/></svg><span>Scene</span></a><a href="game.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6.00,21.00 6.00,3.80"/><polyline points="6.00,4.60 18.40,4.60 15.60,8.60 18.40,12.60 6.00,12.60"/></svg><span>Game</span></a><a href="view.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="2.60,12.00 3.09,11.26 3.62,10.57 4.19,9.93 4.80,9.36 5.43,8.83 6.09,8.36 6.77,7.95 7.48,7.59 8.21,7.29 8.95,7.04 9.70,6.85 10.46,6.71 11.23,6.63 12.00,6.60 12.77,6.63 13.54,6.71 14.30,6.85 15.05,7.04 15.79,7.29 16.52,7.59 17.23,7.95 17.91,8.36 18.57,8.83 19.20,9.36 19.81,9.93 20.38,10.57 20.91,11.26 21.40,12.00 20.91,12.74 20.38,13.43 19.81,14.07 19.20,14.64 18.57,15.17 17.91,15.64 17.22,16.05 16.52,16.41 15.79,16.71 15.05,16.96 14.30,17.15 13.54,17.29 12.77,17.37 12.00,17.40 11.23,17.37 10.46,17.29 9.70,17.15 8.95,16.96 8.21,16.71 7.48,16.41 6.77,16.05 6.09,15.64 5.43,15.17 4.80,14.64 4.19,14.07 3.62,13.43 3.09,12.74 2.60,12.00"/><polygon points="15.00,12.00 14.92,12.67 14.70,13.30 14.35,13.87 13.87,14.35 13.30,14.70 12.67,14.92 12.00,15.00 11.33,14.92 10.70,14.70 10.13,14.35 9.65,13.87 9.30,13.30 9.08,12.67 9.00,12.00 9.08,11.33 9.30,10.70 9.65,10.13 10.13,9.65 10.70,9.30 11.33,9.08 12.00,9.00 12.67,9.08 13.30,9.30 13.87,9.65 14.35,10.13 14.70,10.70 14.92,11.33 15.00,12.00"/></svg><span>View</span></a><a href="help.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="5.60,12.00 9.80,16.20 18.40,6.80"/></svg><span>Help</span></a></div></details><details class="grp"><summary><span>Windows</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="inspector.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="19.00,12.00 18.82,13.56 18.31,15.04 17.47,16.36 16.36,17.47 15.04,18.31 13.56,18.82 12.00,19.00 10.44,18.82 8.96,18.31 7.64,17.47 6.53,16.36 5.69,15.04 5.18,13.56 5.00,12.00 5.18,10.44 5.69,8.96 6.53,7.64 7.64,6.53 8.96,5.69 10.44,5.18 12.00,5.00 13.56,5.18 15.04,5.69 16.36,6.53 17.47,7.64 18.31,8.96 18.82,10.44 19.00,12.00"/><ellipse class="f" cx="12.00" cy="12.00" rx="2.40" ry="2.40"/></svg><span>Inspector</span></a><a href="curves.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="3.60,19.00 4.27,18.95 4.91,18.80 5.52,18.55 6.10,18.22 6.67,17.82 7.21,17.35 7.74,16.81 8.26,16.22 8.77,15.59 9.27,14.92 9.76,14.22 10.25,13.49 10.75,12.75 11.25,12.00 11.76,11.25 12.28,10.51 12.81,9.78 13.36,9.08 13.93,8.41 14.52,7.78 15.13,7.19 15.78,6.65 16.45,6.18 17.16,5.78 17.91,5.45 18.69,5.20 19.52,5.05 20.40,5.00"/><ellipse class="f" cx="12.00" cy="12.00" rx="1.60" ry="1.60"/></svg><span>Curve Editor</span></a><a href="modifiers.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Modifiers</span></a><a href="physics.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Physics</span></a><a href="reference.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="18.20,5.20 18.58,5.23 18.94,5.32 19.29,5.46 19.61,5.66 19.90,5.90 20.14,6.19 20.34,6.51 20.48,6.86 20.57,7.22 20.60,7.60 20.60,16.40 20.57,16.78 20.48,17.14 20.34,17.49 20.14,17.81 19.90,18.10 19.61,18.34 19.29,18.54 18.94,18.68 18.58,18.77 18.20,18.80 5.80,18.80 5.42,18.77 5.06,18.68 4.71,18.54 4.39,18.34 4.10,18.10 3.86,17.81 3.66,17.49 3.52,17.14 3.43,16.78 3.40,16.40 3.40,7.60 3.43,7.22 3.52,6.86 3.66,6.51 3.86,6.19 4.10,5.90 4.39,5.66 4.71,5.46 5.06,5.32 5.42,5.23 5.80,5.20"/><polygon points="10.00,9.40 15.00,12.00 10.00,14.60"/></svg><span>Reference Video</span></a><a href="poses.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Poses</span></a><a href="camera.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13.40,7.00 13.74,7.03 14.08,7.11 14.40,7.24 14.69,7.42 14.96,7.64 15.18,7.91 15.36,8.20 15.49,8.52 15.57,8.86 15.60,9.20 15.60,14.80 15.57,15.14 15.49,15.48 15.36,15.80 15.18,16.09 14.96,16.36 14.69,16.58 14.40,16.76 14.08,16.89 13.74,16.97 13.40,17.00 5.00,17.00 4.66,16.97 4.32,16.89 4.00,16.76 3.71,16.58 3.44,16.36 3.22,16.09 3.04,15.80 2.91,15.48 2.83,15.14 2.80,14.80 2.80,9.20 2.83,8.86 2.91,8.52 3.04,8.20 3.22,7.91 3.44,7.64 3.71,7.42 4.00,7.24 4.32,7.11 4.66,7.03 5.00,7.00"/><polygon points="15.60,10.60 21.20,7.60 21.20,16.40 15.60,13.40"/></svg><span>Camera Preview</span></a><a href="sublines.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Subtitle Lines</span></a><a href="bench.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Test Bench</span></a><a href="check.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Check Animation</span></a><a href="prefs.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Preferences</span></a><a href="keyboard.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Keyboard Shortcuts</span></a><a href="scripting.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Scripting</span></a></div></details><details class="grp"><summary><span>Tutorials</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="recipes.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Tutorials</span></a><a href="r-skill.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Combat Skill</span></a><a href="r-animehit.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Hit with Effects</span></a><a href="r-idle.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making an Idle or Fidget</span></a><a href="r-cycle.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Walk, Run, Strafe or Backpedal</span></a><a href="r-video.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Copying a Move from a Video</span></a><a href="r-dance.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating a Dance to Music</span></a><a href="r-ugc.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making an Emote to Sell</span></a><a href="r-pack.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making an Animation Pack</span></a><a href="r-acro.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating Jumps, Flips and Spins</span></a><a href="r-ragdoll.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Ragdoll Fall or Hit Reaction</span></a><a href="r-acting.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating Talking, Reacting and Pointing</span></a><a href="r-cutscene.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Cutscene</span></a><a href="r-grab.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating a Grab, Throw or Finisher</span></a><a href="r-hold.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Picking Up, Passing and Throwing an Object</span></a><a href="r-faces.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating Faces on a Classic Head</span></a><a href="r-dynface.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating Faces on a Dynamic Head</span></a><a href="r-lipsync.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Setting up Lip Sync</span></a><a href="r-capture.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Capturing a Face from a Webcam</span></a><a href="r-bench.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Testing an Animation in the Game</span></a><a href="r-blender.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Editing an Animation in Blender</span></a><a href="r-import.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Starting from an Existing Animation</span></a><a href="r-graph.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Previewing Blends, Layers and Aim Offsets</span></a><a href="r-rig.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Setting up R15, Creature and Custom Rigs</span></a><a href="r-keys.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Setting Your Own Keyboard Shortcuts</span></a></div></details><details class="grp"><summary><span>Reference</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="shortcuts.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="5.40" cy="12.00" rx="1.70" ry="1.70"/><ellipse class="f" cx="12.00" cy="12.00" rx="1.70" ry="1.70"/><ellipse class="f" cx="18.60" cy="12.00" rx="1.70" ry="1.70"/></svg><span>Shortcut List</span></a><a href="trouble.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6.00,21.00 6.00,3.80"/><polyline points="6.00,4.60 18.40,4.60 15.60,8.60 18.40,12.60 6.00,12.60"/></svg><span>Troubleshooting</span></a></div></details></div><div class="side-foot"><a href="index.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Manual</span></a><a href="https://github.com/lsxldierl/framez/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="9.60,8.60 10.13,8.64 10.65,8.77 11.14,8.97 11.60,9.25 12.00,9.60 12.35,10.00 12.63,10.46 12.83,10.95 12.96,11.47 13.00,12.00 13.00,12.00 12.96,12.53 12.83,13.05 12.63,13.54 12.35,14.00 12.00,14.40 11.60,14.75 11.14,15.03 10.65,15.23 10.13,15.36 9.60,15.40 6.00,15.40 5.47,15.36 4.95,15.23 4.46,15.03 4.00,14.75 3.60,14.40 3.25,14.00 2.97,13.54 2.77,13.05 2.64,12.53 2.60,12.00 2.60,12.00 2.64,11.47 2.77,10.95 2.97,10.46 3.25,10.00 3.60,9.60 4.00,9.25 4.46,8.97 4.95,8.77 5.47,8.64 6.00,8.60"/><polygon points="18.00,8.60 18.53,8.64 19.05,8.77 19.54,8.97 20.00,9.25 20.40,9.60 20.75,10.00 21.03,10.46 21.23,10.95 21.36,11.47 21.40,12.00 21.40,12.00 21.36,12.53 21.23,13.05 21.03,13.54 20.75,14.00 20.40,14.40 20.00,14.75 19.54,15.03 19.05,15.23 18.53,15.36 18.00,15.40 14.40,15.40 13.87,15.36 13.35,15.23 12.86,15.03 12.40,14.75 12.00,14.40 11.65,14.00 11.37,13.54 11.17,13.05 11.04,12.53 11.00,12.00 11.00,12.00 11.04,11.47 11.17,10.95 11.37,10.46 11.65,10.00 12.00,9.60 12.40,9.25 12.86,8.97 13.35,8.77 13.87,8.64 14.40,8.60"/></svg><span>Download the helper</span></a></div></nav><div class="main"><header class="topbar"><button class="iconbtn only-narrow" type="button" data-menu aria-label="Menu"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.40,6.60 19.60,6.60"/><polyline points="4.40,12.00 19.60,12.00"/><polyline points="4.40,17.40 19.60,17.40"/></svg></button><div class="crumb"><span>Menus</span><i>/</i><b>Scene</b></div><div class="top-actions"><button class="iconbtn" type="button" data-search aria-label="Search the manual (Ctrl+K)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg></button><button class="iconbtn" type="button" data-theme-toggle aria-label="Light or dark"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg></button><a class="pill" href="https://github.com/lsxldierl/framez/releases/latest">Get the helper</a></div></header><div class="layout"><article class="doc"><h1>Scene Menu</h1><p class="lead">The Scene menu holds everything that turns one animation into a scene: adding rigs, props, cameras, lights, sounds, effects and subtitles, looking through and cutting between cameras, moving props and cameras along paths, framing the shot, and putting the finished scene in the game. It shows in the Scene workspace.</p>
+
+  <h2 class="part" id="scene-about">About Scenes</h2>
+  <p>A scene is an animation with more than one thing in it. It begins as soon as you add anything to the animation that is open: another rig, a prop, a camera, a light, a sound, a screen effect, an effect, a path or subtitles. Everything shares the one timeline, so a camera move, a door opening and two characters fighting are all keyed against the same frames, and one Save keeps all of it.</p>
+  <p>Every item in a scene has a row in the track list. A rig is drawn as a figure, a prop as a box, a camera as a camera, a light as a bulb and a sound as a speaker, and screen effects, the scene look, effects and paths have icons of their own. The first item is the rig the animation was opened on, and it stays until the animation is closed. At the right end of most rows is a key diamond that keys the item at the playhead, and a camera's row has a button that looks through it. Rows that hold values open to rows of their own, so a camera shows its place and field of view and a light shows its brightness, colour and range. Click a row to select its item, press <kbd>F2</kbd> to rename a prop, camera or other item, and use the row's right-click menu for the commands that belong to it.</p>
+  <p>Only one rig is posed at a time. The posed rig carries a "posing" tag and opens to its limbs, and the handles, IK, the Inspector, the Curve editor and every pose tool work on it. The other rigs fold to one lane of diamonds and play their own keys. Select another rig, or click one of its limbs in the viewport, to pose that rig instead.</p>
+  <p>Keys on a scene row behave like keys on a limb. Click a key to select it, hold <kbd>Shift</kbd> to add more, drag to move them, and press <kbd>Del</kbd> to delete them. Typing a value in the Inspector keys it at the playhead, and the value eases into the next key like any other.</p>
+  <p>Props, lights, effects and other objects in a scene are the real objects of your place. Framez moves them while the scene is open and puts them back exactly as it found them when their item leaves the scene or the animation closes. Cameras are drawn by Framez as small camera bodies in the viewport and are never saved with the place.</p>
+
+  <article class="tool" id="f-scenesave">
+    <h3>Saving a Scene</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Save</dd>
+      <dt>Shortcut</dt><dd><kbd>Ctrl</kbd>+<kbd>S</kbd></dd>
+    </dl>
+    <p>Save stores every rig's clip and the scene itself in one step. Each rig's clip is saved under its own rig as an ordinary animation, so Roblox's animation editor can open it too. The scene's record, which holds the props, cameras, lights, sounds, effects, cuts and everything else, is kept in ServerStorage under FramezScenes, named after the scene. Opening any one of the rigs' clips afterwards opens the whole scene.</p>
+    <p>A rig that has no keys still gets a clip, which holds its resting pose at frame 0, so a character that only stands in the shot is saved with the rest.</p>
+    <h4>See Also</h4>
+    <p><a href="#f-sceneexport">Put in the Game</a> writes a saved scene into the game. <a href="file.html#f-scenefromgame">Scene from the game</a> brings back a scene that was put in the game.</p>
+  </article>
+
+  <h2 class="part" id="scene-add">Add</h2>
+  <p>Add puts another item on the scene's timeline. The same list opens from the + button at the right end of the track list's Filter strip.</p>
+
+  <article class="tool" id="f-sceneadd">
+    <h3>Add to the Scene</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Add</dd><dd>Track list ‣ + button at the right of the Filter strip</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>Each row of Add creates one kind of item, and each item gets a row of its own on the timeline. The first thing you add turns the open animation into a scene. Add needs an open animation, and Framez says so when there is none.</p>
+    <p>The sections below describe the rows in the order they appear in the menu.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Rig</dt>
+      <dd>Another character with a clip of its own. See <a href="#f-scenerig">Rig</a>.</dd>
+      <dt>Selected prop</dt>
+      <dd>The part or model selected in the Explorer, moved through the scene by keys. See <a href="#f-sceneprop">Selected Prop</a>.</dd>
+      <dt>Camera from view</dt>
+      <dd>A camera placed where the viewport is now. See <a href="#f-scenecam">Camera from View</a>.</dd>
+      <dt>Light</dt>
+      <dd>A light that is already in the place, with its brightness, colour and range keyed. See <a href="#f-scenelight">Light</a>.</dd>
+      <dt>Sound...</dt>
+      <dd>A sound from an asset id or from the place. See <a href="#f-scenesound">Sound</a>.</dd>
+      <dt>Screen effects</dt>
+      <dd>Letterbox bars, a vignette, a fade, camera shake and a subtitle line over the shot. See <a href="#f-screenfx">Screen Effects</a>.</dd>
+      <dt>Scene look</dt>
+      <dd>The time of day, fog, colour grade, bloom and depth of field. See <a href="#f-worldlook">Scene Look</a>.</dd>
+      <dt>Selected effect</dt>
+      <dd>The particle effect selected in the Explorer, fired on the frames you choose. See <a href="#f-fxtimeline">Selected Effect</a>.</dd>
+      <dt>New effect on a limb</dt>
+      <dd>A new effect made on the selected limb, from Roblox's defaults, from the built-in effects or from your own saved ones. See <a href="#f-fxnew">New Effect on a Limb</a>.</dd>
+      <dt>Selected object</dt>
+      <dd>Any other object, so that its properties can be keyed. See <a href="#f-keyprop">Selected Object</a>.</dd>
+      <dt>Path</dt>
+      <dd>A path drawn by clicking points in the viewport. See <a href="#f-path">Path</a>.</dd>
+      <dt>Clip block for the rig</dt>
+      <dd>A saved clip played as a block over your keys. See <a href="#f-blocks">Clip Block</a>.</dd>
+      <dt>Follow path</dt>
+      <dd>The open rig walks or runs along a path. See <a href="#f-walkpath">Follow Path</a>.</dd>
+      <dt>Subtitles</dt>
+      <dd>A row of timed dialogue lines. See <a href="#f-subtitles">Subtitles</a>.</dd>
+    </dl>
+<figure class="shot"><img src="img/menu-scene.png" width="692" height="452" alt="The Scene menu with the Add submenu open" loading="lazy">
+      <figcaption>The Scene menu with the Add submenu open.</figcaption></figure>
+  </article>
+
+  <article class="tool" id="f-scenerig">
+    <h3>Rig</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Add ‣ Rig ‣ the rig's name</dd><dd>Track list ‣ + ‣ Rig</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p><b>Rig</b> adds another character to the scene. The list shows every rig in the Workspace that is not in the scene yet, meaning a model whose parts are joined by Motor6D joints. Choosing one gives it an empty clip of its own, and from then on it plays its own keys beside the rig you opened. A model with no joints is refused with a message that suggests adding it as a prop.</p>
+    <p>Rigs kept in ServerStorage or ReplicatedStorage are listed under <b>From storage (a copy)</b>. Choosing one puts a copy in the Workspace in front of the camera, removes any scripts from the copy, anchors its root part and adds the copy to the scene. The stored original stays where it is.</p>
+    <p>Each rig's clip is saved under the rig's name, so two rigs cannot share one. A rig that joins with the name of a rig already in the scene is renamed with a number, and a second Noob becomes Noob2.</p>
+    <h4>Example</h4>
+    <p>For example, to animate a grab between two characters, open the attacker's rig, add the victim from the list, and pose each of them in turn with Pose This Rig.</p>
+    <h4>See Also</h4>
+    <p><a href="#f-scenepose">Pose This Rig</a> chooses which rig you are posing.</p>
+  </article>
+
+  <article class="tool" id="f-sceneprop">
+    <h3>Selected Prop</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Add ‣ Selected prop</dd><dd>Track list ‣ + ‣ Selected prop</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>A prop is any part or model without joints that moves through the scene, such as a crate, a door, a weapon on a table or a vehicle. Select it in the Explorer and choose <b>Selected prop</b>. Once a valid part or model is selected, the row reads Prop followed by its name. Before that the row is greyed and gives the reason, for example that nothing is selected, that the selection is the terrain, that it is in the scene already, or that it has joints and should be added as a rig.</p>
+    <p>The prop gets a row that shows its keys. Select the prop, by its row or by clicking it in the viewport, and move it with Studio's own Move and Rotate tools (<kbd>Ctrl</kbd>+<kbd>2</kbd> and <kbd>Ctrl</kbd>+<kbd>4</kbd>). When it comes to rest, the new place is keyed at the playhead if Auto key is on. With Auto key off, press <kbd>K</kbd> to key it. The Inspector shows the prop's place as numbers, and typing a position or rotation there keys it as well.</p>
+    <p>New props move on a smooth path between their keys, which Moves can change to straight lines.</p>
+    <h4>Notes</h4>
+    <p>While a prop is in the scene, Framez places it from its keys. When the item leaves the scene, or the animation is closed, the prop goes back to the place and look it had when it joined.</p>
+    <h4>See Also</h4>
+    <p><a href="#f-scenelook">A Prop's Look</a> keys its transparency, scale and colour. <a href="#f-sceneparent">Follow a Part</a> makes a prop ride a rig's hand or head.</p>
+  </article>
+
+  <article class="tool" id="f-scenelook">
+    <h3>A Prop's Look</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Inspector ‣ a selected prop ‣ Look and Colour</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>A prop's Look and Colour sections key three values besides its place. Typing a value keys it at the playhead, the same way a light's numbers are keyed. Each keyed value shows as a row under the prop and plays in the game.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Transparency</dt>
+      <dd>From 0, fully visible, to 1, invisible. On a model, each part fades from its own transparency, so 0 means as placed.</dd>
+      <dt>Scale</dt>
+      <dd>The size of the prop as a multiple of its placed size, from 0.05 to 20. 1 is as placed.</dd>
+      <dt>Colour</dt>
+      <dd>Red, green and blue fields from 0 to 255, with a swatch that shows the result.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a prop that should vanish when a character grabs it can have its Transparency keyed to 0 on one frame and 1 on the next.</p>
+  </article>
+
+  <article class="tool" id="f-scenecam">
+    <h3>Camera from View</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Add ‣ Camera from view</dd><dd>Track list ‣ + ‣ Camera from view</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p><b>Camera from view</b> adds a camera at the position and angle Studio's viewport has now, with the viewport's field of view, and keys both at the playhead. In the viewport the camera is drawn as a small camera body with lines to the corners of its shot. The lines are white while it is the camera the game sees and grey while it is another. Cameras are named Camera, Camera2 and so on, and a scene can hold as many as you like. A second camera added after frame 0 also starts a cut at the playhead, which makes it the camera the game sees from there.</p>
+    <p>New cameras move on a smooth path between their keys. Select a camera to see three sections in the Inspector.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Place</dt>
+      <dd>The camera's position and rotation as numbers, with a key diamond that keys it at the playhead. When the camera follows a part, a line says which one.</dd>
+      <dt>Lens</dt>
+      <dd>Field of view, the vertical angle of the lens, from 1 to 120 degrees. Typing a value keys it.</dd>
+      <dt>Shot</dt>
+      <dd>Two switches, Look through camera and Show the frame, and the buttons Key camera and Add camera cut.</dd>
+    </dl>
+    <h4>See Also</h4>
+    <p><a href="#f-look-through">Look Through Camera</a>, <a href="#f-camkey">Key Camera</a>, <a href="#f-cutto">Add Camera Cut</a> and <a href="camera.html#f-shotview">Camera Preview</a>.</p>
+  </article>
+
+  <article class="tool" id="f-scenelight">
+    <h3>Light</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Add ‣ Light ‣ the light's name</dd><dd>Track list ‣ + ‣ Light</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p><b>Light</b> adds a PointLight, SpotLight or SurfaceLight that already exists in your place, so that its brightness, colour and range can be keyed. The list shows the lights in the Workspace by the name of the part that holds each one, up to 30, and a light selected in the Explorer is listed first. Type a value on the light's Inspector page and it is keyed at the playhead. Values ease between keys like any others.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Brightness</dt>
+      <dd>The light's Brightness, from 0 to 100.</dd>
+      <dt>Range</dt>
+      <dd>How far the light reaches, from 0 to 60 studs.</dd>
+      <dt>Colour</dt>
+      <dd>Red, green and blue fields from 0 to 255, with a key diamond on the Colour section.</dd>
+    </dl>
+    <h4>Notes</h4>
+    <p>The light stays in its part. To move the light, add the part that holds it as a prop.</p>
+    <h4>Example</h4>
+    <p>For example, a lantern can be keyed from a dim orange to a bright white across a few frames to flash when a spell lands.</p>
+  </article>
+
+  <article class="tool" id="f-scenesound">
+    <h3>Sound</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Add ‣ Sound...</dd><dd>Track list ‣ + ‣ Sound...</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p><b>Sound...</b> puts a sound on the timeline. A box asks for an asset id or link, and also lists the Sounds that are already in the place. The sound starts at the playhead and appears as a block that shows its loudness. It plays with the animation, and a short slice of it plays while you scrub. The sound needs permission to play in the place, as it would in the game. Sounds are named Sound, Sound2 and so on.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Asset id</dt>
+      <dd>A sound's id or link, written as rbxassetid:// followed by the number, or pasted as a link.</dd>
+      <dt>Add it at the playhead</dt>
+      <dd>Adds the sound named in the field, starting at the current frame. Pressing <kbd>Enter</kbd> in the field does the same.</dd>
+      <dt>In this place</dt>
+      <dd>The Sounds already in the place, up to 20, each shown with its name and id. Choosing one adds it with its volume.</dd>
+    </dl>
+    <p>On the timeline, drag the middle of the block to move it. It snaps to keys, events and the playhead within two frames. Drag either end to trim the sound, drag the white handle at a top corner inwards to fade it in or out, and hold <kbd>Alt</kbd> while dragging the right end to change its speed. The sound's Inspector page holds Asset, Starts at, Volume (0 to 3) and Trim, with the Start and End of the part that plays, in seconds.</p>
+    <h4>See Also</h4>
+    <p><a href="#f-soundfade">Sound Fades and Speed</a> and <a href="#f-scrubsound">Audio Scrubbing</a>.</p>
+  </article>
+
+  <article class="tool" id="f-soundfade">
+    <h3>Sound Fades and Speed</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Inspector ‣ a selected sound ‣ Fades and Speed</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>Fades and speed change how a sound plays. Fades are measured in seconds of the timeline from each end of the block, and the two cannot overlap. Speed plays the sound faster or slower, and the block on the timeline becomes shorter or longer to match. When the scene is put in the game, it plays the same fades and speed.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Fade in, Fade out</dt>
+      <dd>The seconds over which the sound rises from silence at its start, and falls to silence at its end.</dd>
+      <dt>Shape</dt>
+      <dd>Linear changes the level at a steady rate, and Smooth eases into and out of each fade.</dd>
+      <dt>Speed</dt>
+      <dd>The playback speed from 25 to 400 percent. At 100 percent the sound plays as recorded.</dd>
+      <dt>Keep pitch</dt>
+      <dd>Holds the original pitch while the speed changes. It corrects fully for speeds from 50 to 200 percent.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a long ambient loop under a cutscene can be given a Fade in of one second and a Fade out of two so it never starts or stops abruptly.</p>
+  </article>
+
+  <article class="tool" id="f-screenfx">
+    <h3>Screen Effects</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Add ‣ Screen effects</dd><dd>Track list ‣ + ‣ Screen effects</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p><b>Screen effects</b> adds one row that covers the shot with letterbox bars, a vignette, a fade to any colour, camera shake and a subtitle line. A scene has one Screen effects item, so the row is greyed once it exists. Each effect is keyed like a light's values. Type it on the row's Inspector page and it is keyed at the playhead, and values ease between keys.</p>
+    <p>The effects show while you look through the camera, inside the shot's frame, and in the game when the scene is put there.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Letterbox</dt>
+      <dd>Black bars along the top and bottom of the shot, from 0 to 100 percent. At 100 percent each bar covers an eighth of the shot.</dd>
+      <dt>Vignette</dt>
+      <dd>Darkens the edges of the shot, from 0 to 100 percent.</dd>
+      <dt>Camera shake</dt>
+      <dd>Shakes the shot by an amount in studs, from 0 to 5. The shake is the same every time the scene plays.</dd>
+      <dt>Fade</dt>
+      <dd>How much of the shot is covered by the fade colour, from 0 to 100 percent.</dd>
+      <dt>Fade colour</dt>
+      <dd>Red, green and blue fields from 0 to 255. Black gives a fade to black, and white gives a flash.</dd>
+      <dt>Subtitle</dt>
+      <dd>A line of text that shows from its key until the next one. An empty key ends the line.</dd>
+      <dt>Subtitle style</dt>
+      <dd>How that line looks. Font chooses the typeface, Size sets the text height from 1 to 30 percent of the screen height, and Colour sets the red, green and blue values. Outline switches a dark outline on. Position puts the line at the Bottom, at the Top or at a Custom height, which Custom height sets from 0 to 100 percent down from the top. Width is a percentage of the screen width from 10 to 100, and Align is Left, Center or Right. Reset style returns every value to the original look.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a cutscene can open with the Letterbox at 12 percent for a cinematic frame, fade to black between two shots, flash white on a hit and shake the camera on an impact.</p>
+    <h4>See Also</h4>
+    <p><a href="#f-subtitles">Subtitles</a> adds timed dialogue with looks and motion of its own.</p>
+  </article>
+
+  <article class="tool" id="f-worldlook">
+    <h3>Scene Look</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Add ‣ Scene look</dd><dd>Track list ‣ + ‣ Scene look</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p><b>Scene look</b> sets the time of day, fog, colour grade, bloom and depth of field for the shot. A scene has one, so the row is greyed once it exists. Its Inspector page has five sections. Typing a value keys it at the playhead, and the place's lighting goes back as it was when the scene closes or the item is deleted.</p>
+    <p>Bloom, depth of field and the atmosphere are the place's own when it has them. When it has none, Framez adds its own for the scene. The colour grade is always Framez's own.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Time and sky</dt>
+      <dd>Time of day from 0 to 24 hours, Brightness from 0 to 10, and Exposure from -5 to 5 EV.</dd>
+      <dt>Fog</dt>
+      <dd>When the place has an Atmosphere, Density from 0 to 1, Haze from 0 to 10 and Fog colour. When it has none, Fog start and Fog end in studs, and Fog colour.</dd>
+      <dt>Colour grade</dt>
+      <dd>Grade brightness and Saturation from -1 to 1, Contrast from -1 to 3, and a Tint colour.</dd>
+      <dt>Bloom</dt>
+      <dd>Bloom sets the intensity from 0 to 5, Bloom size runs from 0 to 56, and Bloom threshold from 0 to 4.</dd>
+      <dt>Depth of field</dt>
+      <dd>Focus distance from 0 to 200 studs, In-focus radius from 0 to 50 studs, and Near blur and Far blur from 0 to 1.</dd>
+      <dt>Focus on</dt>
+      <dd>Select a part in the Explorer and press the Selected part button beside Focus on, and the focus follows that part from the camera. Pressing the button with nothing selected stops the following. To pull focus from one part to another, select the new part at a later frame and press the button again.</dd>
+    </dl>
+    <h4>Notes</h4>
+    <p>In the game, the look goes with the scene. The scene player sets it when the scene starts and puts the place's own look back when the scene ends.</p>
+    <h4>Example</h4>
+    <p>For example, a scene can move from midday to dusk by keying Time of day across a few seconds while the Fog colour warms and the Bloom rises.</p>
+  </article>
+
+  <article class="tool" id="f-fxtimeline">
+    <h3>Selected Effect</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Add ‣ Selected effect</dd><dd>Track list ‣ + ‣ Selected effect</dd>
+      <dt>Right-click</dt><dd>An effect's row in the track list</dd>
+    </dl>
+    <p><b>Selected effect</b> puts particles, trails and beams on the timeline, so they fire on the frames you choose. Select a ParticleEmitter, Trail, Beam, Fire, Smoke or Sparkles in the Explorer, or a part or model that holds some, and choose the row. Each effect gets a row of its own, named after the effect and the part that holds it, in every workspace. The row shows On blocks, where the effect is switched on, and bursts, drawn as a star with the number of particles. Drag either end of an On block to move it.</p>
+    <p>While you scrub, particles follow the playhead. They move while it moves and hold still where it stops, each frame showing that frame's moment, and going back past a burst clears it. A paused trail is drawn where it is at that frame, and the real trail draws while the animation plays.</p>
+    <p>An effect's right-click menu holds the rest of its tools.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Emit here...</dt>
+      <dd>Fires a burst of particles at the playhead. The box asks for the number of Particles, from 1 to 1000, and the Add burst button keys it. It appears for ParticleEmitters.</dd>
+      <dt>Turn on or off</dt>
+      <dd>Turn on here and Turn off here key the effect's Enabled switch at the playhead. They appear for effects that have one.</dd>
+      <dt>Place it</dt>
+      <dd>Moves the point the effect fires from. See <a href="#f-fxplace">Place an Effect</a>.</dd>
+      <dt>Loop around it</dt>
+      <dd>Plays the frames around the effect over and over. See <a href="#f-fxloop">Loop Around It</a>.</dd>
+      <dt>Key a property...</dt>
+      <dd>Keys any property of the effect. See <a href="#f-keyprop">Selected Object</a>.</dd>
+      <dt>Save as my effect...</dt>
+      <dd>Keeps the effect for use on other limbs. See <a href="#f-myfx">My Effects</a>.</dd>
+      <dt>Select in the Explorer</dt>
+      <dd>Selects the effect's object in Studio so that its properties show in the Properties window.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, to light a torch only for part of a scene, select the torch's Fire object, add it with Selected effect, and turn it on at frame 10 and off at frame 120.</p>
+    <h4>See Also</h4>
+    <p><a href="game.html#f-fxgame">Effects in the game</a> adds the script that plays effects in a game. <a href="#f-vfxpacks">VFX Packs</a> describes effects made with emit attributes.</p>
+  </article>
+
+  <article class="tool" id="f-vfxpacks">
+    <h3>VFX Packs</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Add ‣ Selected effect, with a pack's part, attachment or model selected</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>Effect packs from other makers are played the way their maker built them. A pack effect is made with emit attributes on its objects: EmitCount, EmitDelay and EmitDuration. Select the pack's part, attachment or model in the Explorer and choose Selected effect. Framez adds it as one effect, and each burst fires every emitter inside it with its own count, delay and length. An emitter with no count of its own takes the burst's count, and beams, trails and lights inside the pack come on for their own time.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Scrubbing</dt>
+      <dd>Scrubbing follows the pack effect, crossing bursts, going back past them and jumping, and the game follows it the same way.</dd>
+      <dt>Part-Icles</dt>
+      <dd>An effect made with Part-Icles plays through its own Part_Icles module, which must be in ReplicatedStorage. Framez plays it as the playhead moves forward.</dd>
+    </dl>
+    <h4>Notes</h4>
+    <p>To bring the game's FramezEffects script up to date with pack support, run Effects in the game again on a game that already has it.</p>
+    <h4>See Also</h4>
+    <p><a href="#f-fxtimeline">Selected Effect</a> and <a href="game.html#f-fxgame">Effects in the game</a>.</p>
+  </article>
+
+  <article class="tool" id="f-fxnew">
+    <h3>New Effect on a Limb</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Add ‣ New effect on the selected limb ‣ Particles, Trail or Beam</dd><dd>Track list ‣ + ‣ New effect on the selected limb</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>This row makes a new particle effect on the limb that is selected, using Roblox's own defaults so that you can shape it afterwards. The row names the limb, for example New effect on RightUpperArm, and it is greyed until a limb is selected. The effect is made in an attachment on the limb, appears as a row of its own, and one undo step takes it out again.</p>
+    <p>Below Particles, Trail and Beam, the submenu holds the Built-in effects and My effects lists.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Particles</dt>
+      <dd>A burst of warm sparks out of the limb's end at the playhead.</dd>
+      <dt>Trail</dt>
+      <dd>A trail that follows the limb, switched on for 10 frames from the playhead.</dd>
+      <dt>Beam</dt>
+      <dd>A beam from the limb's end, switched on for 20 frames from the playhead.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, select a sword hand, add a Trail at the frame where the swing starts, and move its Off key to the frame where the blade stops.</p>
+    <h4>See Also</h4>
+    <p><a href="#f-fxstart">Built-in Effects</a>, <a href="#f-myfx">My Effects</a> and <a href="#f-fxtimeline">Selected Effect</a>.</p>
+  </article>
+
+  <article class="tool" id="f-fxstart">
+    <h3>Built-in Effects</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Add ‣ New effect on the selected limb ‣ Built-in effects</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>Built-in effects are ready-made starting points for hits, landings, blasts and casts: Hit sparks, Impact glow, Shock ring, Dust burst, Smoke puff, Fire burst, Energy burst, Explosion, Slash arc and Debris. Choosing one makes the effect in a point at the selected limb's end, emitting outwards, with a burst at the playhead. When another character's body is within 3 studs of that point, the effect is placed where it hits.</p>
+    <p>Each built-in effect is made of ordinary particle emitters, and every value is yours to change in Studio's Properties window, including colour, size, speed, lifetime, count and texture. Most have several layers, and each layer is a row of its own. Hit sparks has a flash and sparks. Dust burst has dust and rocks. Fire burst has a fireball, flame tongues and embers. Explosion has a flash, a fireball, flame tongues, a ring, smoke, rocks and sparks.</p>
+    <p>The textures come with Framez. Smoke, dust, explosions and fire are flipbooks, and the white sparks, glows, rings, stars, slashes and crackles take any colour you give the emitter.</p>
+    <h4>Example</h4>
+    <p>For example, a first version of a sword impact can be made with Hit sparks on the hand at the frame of the hit, then tuned with Loop around it until the sparks read well.</p>
+    <h4>See Also</h4>
+    <p><a href="#f-fxtexture">Effect Textures</a>, <a href="#f-fxplace">Place an Effect</a>, <a href="#f-fxloop">Loop Around It</a> and <a href="game.html#f-fxgame">Effects in the game</a>.</p>
+<figure class="shot"><img src="img/menu-scene-effect.png" width="798" height="656" alt="The Built-in effects list" loading="lazy">
+      <figcaption>The Built-in effects list.</figcaption></figure>
+  </article>
+
+  <article class="tool" id="f-myfx">
+    <h3>My Effects</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Add ‣ New effect on the selected limb ‣ My effects</dd>
+      <dt>Right-click</dt><dd>An effect's row ‣ Save as my effect...</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>My effects keeps an effect you built and lists it ready to add again. Save as my effect... keeps every layer at the effect's point, meaning each ParticleEmitter, Fire, Smoke, Sparkles and light in its attachment, with every value the Properties window lists and its timing. Timing covers the bursts, on and off, and keyed values, counted from the effect's first key. Where the effect was placed is not kept. The box that opens asks for a Name and says what will be kept, and saving under a name that is taken asks before it replaces the old effect.</p>
+    <p>Later, select a limb and open My effects. The eight newest are listed, and an effect is made the way the built-in effects are: in one point at the limb's end, with its timing from the playhead, placed where it hits. The last row, All my effects... when there are more than eight and Rename or delete... otherwise, opens the whole list. There you rename an effect in place, press Make to put it on the selected limb, or delete it. Your effects belong to Studio and show in every place.</p>
+    <h4>Notes</h4>
+    <p>The My effects row is greyed until you have saved one. Save as my effect... works on effects that sit in an attachment, since it keeps the particles at one point.</p>
+  </article>
+
+  <article class="tool" id="f-fxtexture">
+    <h3>Effect Textures</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Inspector ‣ an effect's page ‣ Texture...</dd>
+      <dt>Needs</dt><dd>The Framez Helper, for Flipbook from frames...</dd>
+    </dl>
+    <p><b>Texture...</b> puts an image on a ParticleEmitter, Beam or Trail. It opens a panel of thumbnails with two tabs. Framez holds the textures that come with the plugin, and Mine holds your own. Choosing a thumbnail applies it to the effect at once. The texture is part of the effect's look and is not keyed over time.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Framez</dt>
+      <dd>Drawn textures are Spark, Glow, Shock ring, Impact star, Slash, Crackle and Streak. Textures rendered in Blender are Smoke, Dust, Explosion, Ground blast, Fire and Debris. White textures take the emitter's Color.</dd>
+      <dt>Flipbooks</dt>
+      <dd>A flipbook shows its grid, for example 8x8, and plays while the mouse is over it. Smoke, Dust, Explosion, Ground blast, Impact star and Slash play once over each particle's life, Fire plays as a loop, Crackle plays frames at random, and Debris shows one rock for each particle. Flipbooks play on particles only and are greyed for beams and trails.</dd>
+      <dt>Mine</dt>
+      <dd>Add... takes an image from anything in the Explorer that shows one, or from a pasted id or link, and asks for its grid, play mode, frame rate, random start and blending. Right-click one of your textures for Use, Change..., Rename... and Delete. Flipbook from frames... packs a folder of PNG frames into one sheet. Your textures are kept in Studio for every place.</dd>
+      <dt>As it was</dt>
+      <dd>Puts back the image the effect had when it was added.</dd>
+    </dl>
+    <h4>Notes</h4>
+    <p>A streak such as Spark lies along the particle's flight when the emitter's Orientation is VelocityParallel, and a negative Squash makes it longer.</p>
+  </article>
+
+  <article class="tool" id="f-fxplace">
+    <h3>Place an Effect</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Inspector ‣ an effect's page ‣ Place</dd>
+      <dt>Right-click</dt><dd>An effect's row ‣ Place it</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>Place moves the point an effect fires from and keys that place. An effect inside a point, an Attachment, has a Place row on the timeline, and its keys move, ease and delete like other scene keys. Selecting the effect's row selects its point in Studio, so Studio's Move and Rotate tools move or turn it, and the new place is keyed at the playhead. Each choice below places the point at the playhead and keys it.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Where it hits</dt>
+      <dd>Puts the point on the nearest point of another character's body at that frame.</dd>
+      <dt>Where I click</dt>
+      <dd>Puts the point where you click next in the viewport.</dd>
+      <dt>At the limb's end</dt>
+      <dd>Puts the point back at the end of the limb that holds it.</dd>
+      <dt>Aim at the camera</dt>
+      <dd>Turns the point so that particles leave towards the camera. In the Inspector this button is called Aim at camera.</dd>
+      <dt>Aim along the swing</dt>
+      <dd>Turns the point the way it travels at that frame. In the Inspector this button is called Along the swing.</dd>
+      <dt>Particles move with the limb</dt>
+      <dd>A switch on the Inspector's Place section. When it is on, particles travel with the limb as it moves, and when it is off they stay where they were emitted.</dd>
+    </dl>
+    <h4>Notes</h4>
+    <p>An effect with several layers in one point moves as one, and its Place keys are on its first row. Closing the animation puts the point back where it was, and the Place keys are saved with the clip.</p>
+    <h4>Example</h4>
+    <p>For example, an impact that must land on the other character's body is placed with Where it hits at the frame of the blow, and a spray that must face the lens is turned with Aim at the camera.</p>
+    <h4>See Also</h4>
+    <p><a href="game.html#f-fxgame">Effects in the game</a> plays placed effects in a game.</p>
+  </article>
+
+  <article class="tool" id="f-fxloop">
+    <h3>Loop Around It</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Inspector ‣ an effect's page ‣ Loop around it</dd>
+      <dt>Right-click</dt><dd>An effect's row ‣ Loop around it</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>Loop around it plays the frames around an effect over and over while you change the emitter and watch the result. The loop covers the effect's bursts and On blocks, the time its particles live, and a few frames on each side. It sets the play range, the same way <a href="view.html#f-range">Play only the selected keys</a> does. Change the emitter in Studio's Properties window while it loops. Changes made while it plays are not keyed.</p>
+    <p>While the loop runs, the same row and button read Stop looping, and choosing it ends the loop.</p>
+    <h4>Example</h4>
+    <p>For example, a spark's colour, size, speed and lifetime can be tuned until it reads right, with the burst repeating the whole time.</p>
+  </article>
+
+  <article class="tool" id="f-keyprop">
+    <h3>Selected Object</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Add ‣ Selected object</dd><dd>Track list ‣ + ‣ Selected object</dd>
+      <dt>Right-click</dt><dd>A prop's, light's, effect's or object's row ‣ Key a property...</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p><b>Selected object</b> adds any object selected in the Explorer so that its properties can be keyed. A particle effect is added as an effect and a part or model as a prop. Anything else, such as a GUI object, a light or a sound, becomes an object of its own, with a row named after it.</p>
+    <p>Every scene item that has an object keys properties in the same way. Change a value in Studio's Properties window and it is keyed at the playhead after about a third of a second. To key a property without changing it, right-click the row and choose <b>Key a property...</b>, which lists the object's properties in Studio's own groups, with a search box.</p>
+    <p>Numbers, colours, vectors, UDim2 values, CFrames and ranges blend between keys using Framez's curves. Switches, choices, text and sequences hold their value until the next key. Everything goes back as it was when the item leaves the scene or the animation closes.</p>
+    <h4>Example</h4>
+    <p>For example, a door's Transparency, a ScreenGui's Position or a part's Color can be keyed this way, so a whole room can change over a cutscene.</p>
+    <h4>See Also</h4>
+    <p><a href="game.html#f-fxgame">Effects in the game</a> plays keyed properties in a game.</p>
+  </article>
+
+  <article class="tool" id="f-path">
+    <h3>Path</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Add ‣ Path</dd><dd>Track list ‣ + ‣ Path</dd>
+      <dt>Right-click</dt><dd>A path's row</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p><b>Path</b> draws a path that a prop, a camera or a walking rig can follow. Choosing it hands Studio's mouse to Framez. Each click puts a point where the mouse meets the place, the curve so far is drawn as you go, and the point under the mouse shows before you click. Press <kbd>Enter</kbd> or double-click to end the path, <kbd>Backspace</kbd> to take the last point back, and <kbd>Esc</kbd> to cancel. A path needs two points. Paths are named Path, Path2 and so on, and the finished path is selected.</p>
+    <p>A selected path draws in the viewport with a red dot at each point. Drag a point to move it. It stays on the ground, and <kbd>Shift</kbd> drags it up and down. <kbd>Alt</kbd>+click on the curve adds a point there, and <kbd>Alt</kbd>+click on a point removes it. A path keeps two points at least.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Closed loop</dt>
+      <dd>Joins the last point to the first.</dd>
+      <dt>Points stay on the ground</dt>
+      <dd>On by default. Dragged points land on whatever the mouse meets in the place.</dd>
+      <dt>Tension</dt>
+      <dd>From 0 to 1. At 0 the curve is smooth through the points, and at 1 it becomes straight lines between them.</dd>
+      <dt>Add points...</dt>
+      <dd>Starts drawing again so you can click more points onto the end of the path.</dd>
+      <dt>Reverse</dt>
+      <dd>Reverses the order of the points, so the path runs the other way.</dd>
+      <dt>Add a point, Delete the last point</dt>
+      <dd>Two more rows on the path's right-click menu. Add a point puts one in the middle of the longest stretch, and Delete the last point removes the final point.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, click a route across an arena, then use it with Follow a Path for a camera that flies over the battlefield, or with Follow Path to make a character walk the same route.</p>
+    <h4>See Also</h4>
+    <p><a href="#f-ride">Follow a Path</a> and <a href="#f-walkpath">Follow Path</a>.</p>
+  </article>
+
+  <article class="tool" id="f-blocks">
+    <h3>Clip Block</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Add ‣ Clip block for the rig</dd><dd>Key ‣ Layers ‣ Clip block for the rig</dd>
+      <dt>Right-click</dt><dd>The Clips row</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p><b>Clip block</b> plays a saved clip as a block over your keys, starting at the playhead, on a Clips row under the rig. The first seven other saves on the rig are listed, with up to ten more under More. <b>From another rig</b> lists the saves of other rigs, which play by part name on this rig, and a <b>By id</b> field takes an animation id or link that is yours or Roblox's. Each block starts where the one before ends, so walks and steps carry on from each other.</p>
+    <p>Posing a part inside a block keys it on a Tweaks layer over the block, so the clip keeps its motion and takes your change. Outside every block your keys go to the clip itself. Saving bakes the blocks into the clip, so games and other editors play what you see. The blocks stay editable in Framez.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Move and trim</dt>
+      <dd>Drag the middle of a block to move it, and an end to trim it. The block snaps to the playhead within two frames.</dd>
+      <dt>Loop and speed</dt>
+      <dd>Hold <kbd>Alt</kbd> while dragging the right end to loop the clip, and <kbd>Ctrl</kbd> while dragging it to change its speed.</dd>
+      <dt>Crossfade</dt>
+      <dd>Overlap two blocks and they crossfade across the overlap.</dd>
+      <dt>Right-click a block</dt>
+      <dd>Loop (1, 2, 3, 4, 6 or 8 times, or Fill to the next block), Speed in percent, Blend in and Blend out in frames, Line up with the block before, Holds its last pose, Body mask, Open the clip, Bake to keys and Delete.</dd>
+      <dt>Line up with the block before</dt>
+      <dd>On by default. The block starts where the previous one ended, in place and in turn.</dd>
+      <dt>Holds its last pose</dt>
+      <dd>Keeps the block's final pose until the next block starts, instead of returning to your keys.</dd>
+      <dt>Body mask</dt>
+      <dd>Limits the block to the parts you choose.</dd>
+      <dt>Bake to keys</dt>
+      <dd>Turns the block's frames into ordinary keys and removes the block.</dd>
+      <dt>The block's page</dt>
+      <dd>A selected block shows its values on the Inspector: Starts at, Trim in, Trim out, Loops from 0.25 to 50, Speed from 5 to 1000 percent, Blend in, Blend out and the switches above.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a long cutscene can be built from saved walk, idle and gesture clips laid end to end, and a combo can be chained from saved skills.</p>
+  </article>
+
+  <article class="tool" id="f-walkpath">
+    <h3>Follow Path</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Add ‣ Follow path: the open rig's name</dd>
+      <dt>Right-click</dt><dd>The Clips row ‣ Follow path</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p><b>Follow path</b> makes the open rig walk or run along a path, starting at the playhead. The list shows the scene's paths by name, up to eight. It is greyed, with a note to draw a path first, until the scene has a path with two points or more. The rig eases up to its pace, faces along the path, keeps to the ground, and eases to a stop at the end. On R6 rigs the feet are planted on footprints along the path, so they do not slide. The walk is a block on the Clips row.</p>
+    <p>The rig holds where it arrives. Add a clip block after the walk, for example an idle, and that block starts there.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Walk, Run</dt>
+      <dd>The gait. Walk starts at a pace of 4.5 studs per second and Run at 11. Changing the gait sets the pace to that gait's pace.</dd>
+      <dt>Pace</dt>
+      <dd>Studs per second, from 0.5 to 60. The block's length follows the pace.</dd>
+      <dt>Ease</dt>
+      <dd>The frames the walk takes to get up to pace at the start and to slow down at the end, from 0 to 120. The default is 12.</dd>
+      <dt>From, To</dt>
+      <dd>The share of the path that is walked, from 0 to 100 percent. The defaults walk the whole path.</dd>
+      <dt>Other values</dt>
+      <dd>Starts at, Blend in (6 frames by default), Blend out and Holds its last pose, which is on, work as they do for any clip block.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a guard can run along a drawn route to a door at pace 11, then a clip block of an idle can start at the door.</p>
+    <h4>See Also</h4>
+    <p><a href="#f-path">Path</a>, <a href="#f-blocks">Clip Block</a> and <a href="#f-ride">Follow a Path</a>, which makes a prop or camera ride a path.</p>
+  </article>
+
+  <article class="tool" id="f-subtitles">
+    <h3>Subtitles</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Add ‣ Subtitles</dd><dd>Track list ‣ + ‣ Subtitles</dd>
+      <dt>Right-click</dt><dd>A subtitle block, or the Subtitles row</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p><b>Subtitles</b> puts timed dialogue lines over the shot. Each line is a block on a Subtitles row, marked with a CC symbol, and each block is coloured by who says it. Each speaker gets a colour in the order they first speak. The lines show while you look through the camera and in the game.</p>
+    <p>Choosing the row adds a Subtitles row with a first line at the playhead. If the scene has no camera, Framez adds one from the viewport and looks through it. Choosing it from another workspace goes to the Scene workspace. Double-click the row to add a line at that frame. Drag the middle of a block to move it, and drag an end to trim it. Near the playhead, an end snaps to it. A new line copies the look and moves of its speaker's last line, or of the last line in the scene when the speaker is new.</p>
+    <p>The Inspector's subtitle page holds the text and look of the selected line.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Right-click a block</dt>
+      <dd>Look opens the starting looks and your own saved looks. Split at the playhead cuts the line in two where the playhead is, dividing its words between the halves. Subtitle lines opens the window that lists every line. Delete removes the line, as does <kbd>Del</kbd>.</dd>
+      <dt>Right-click the row</dt>
+      <dd>Add a line here puts a line at the frame you clicked, and Subtitle lines opens the window.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a conversation between two speakers can show a portrait beside each line, a short-video caption can light each word as it is said, and a chapter title can fade in letter by letter.</p>
+    <h4>See Also</h4>
+    <p><a href="sublines.html#f-sublines">Subtitle Lines Window</a> adds many lines from a script, and <a href="sublines.html#f-subpage">The Subtitle Page</a> sets the look, motion and words of one line. <a href="#f-screenfx">Screen Effects</a> has a simpler subtitle line.</p>
+  </article>
+
+  <h2 class="part" id="scene-camera">Camera</h2>
+  <p>These two rows work on the cameras in the scene.</p>
+
+  <article class="tool" id="f-look-through">
+    <h3>Look Through Camera</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Look through camera</dd>
+      <dt>Right-click</dt><dd>A camera's row ‣ Look through camera</dd>
+      <dt>Shortcut</dt><dd><kbd>C</kbd></dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p><b>Look through camera</b> shows the shot in the viewport. Studio's view is replaced by the camera the game sees at the playhead, the shot's frame is drawn, the outside of it is dimmed, and a label at the top names the camera, the frame and the field of view. Screen effects and guides are drawn over the shot. Press <kbd>C</kbd> again, or use the camera button on the toolbar or on a camera's row, to give Studio its own view back exactly as it was.</p>
+    <p>Fly Studio's camera while looking through and the scene camera moves with it. With Auto key on, it is keyed when you stop moving. With Auto key off, the label says it has moved, and <kbd>K</kbd> keys it. Moving the playhead without keying puts the camera back on its keys.</p>
+    <p>The camera shown is the one that is live at the playhead, which follows the cuts. When you start it from a camera that is not live at that frame, Framez says so, and Add Camera Cut makes a camera live. The row is greyed until the scene has a camera.</p>
+    <h4>Example</h4>
+    <p>For example, look through the camera to frame every shot, or watch the whole cutscene the way a player will see it.</p>
+    <h4>See Also</h4>
+    <p><a href="#f-framing">Framing</a> for the frame and guides, <a href="camera.html#f-shotview">Camera Preview</a> for a second view of the shot, and <a href="#f-scenesettings">Auto Key</a>.</p>
+  </article>
+
+  <article class="tool" id="f-camkey">
+    <h3>Key Camera</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Key camera</dd>
+      <dt>Right-click</dt><dd>A camera's row ‣ Key camera</dd>
+      <dt>Shortcut</dt><dd><kbd>K</kbd></dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p><b>Key camera</b> saves the scene camera's place and field of view as a key at the playhead. It keys the selected camera, or the live camera when no camera is selected. Between two keys the camera travels along a path, as set by <a href="#f-campath">Moves</a>. The row is greyed until the scene has a camera. The Camera preview window has a Key button that does the same, and the Camera section of the Inspector has one too.</p>
+    <p>With a prop or light selected, <kbd>K</kbd> keys that item instead.</p>
+    <h4>Example</h4>
+    <p>For example, to make a push-in, key the camera, move the playhead on a few frames, fly the view closer and key again.</p>
+  </article>
+
+  <h2 class="part" id="scene-cuts">Cuts</h2>
+  <p>With two or more cameras, the Shots row says which camera the game sees. The Cuts submenu starts a new shot and holds the commands of the shot at the playhead.</p>
+
+  <article class="tool" id="f-cutto">
+    <h3>Add Camera Cut</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Cuts ‣ Add camera cut</dd>
+      <dt>Right-click</dt><dd>A camera's row ‣ Add camera cut</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p><b>Add camera cut</b> starts a shot with the selected camera at the playhead, so the view cuts to that camera on this frame. The cut shows as a block on the Shots row. Cutting at a frame that already has a cut changes the camera there, and two neighbouring shots that use the same camera become one. The first camera takes the scene from frame 0 until your first cut. A second camera added after frame 0 makes this cut for you.</p>
+    <p>The row is greyed until a camera is selected in the track list. A camera's page in the Inspector has an Add camera cut button as well.</p>
+    <h4>Example</h4>
+    <p>For example, a conversation can cut between two cameras on each reply, each cut made at the frame where the other character starts to speak.</p>
+  </article>
+
+  <article class="tool" id="f-shots">
+    <h3>Shots Row</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Cuts</dd>
+      <dt>Right-click</dt><dd>A block on the Shots row</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>The Shots row appears above the cameras once the scene has two. It shows one block for each shot, with the shot's name and its camera. Drag the left edge of a block to move the cut, and Framez keeps it between the neighbouring cuts. The name of the shot that is live at the playhead is drawn brighter. The Cuts submenu lists the same commands as the right-click menu, for the shot that holds the playhead.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Play this shot</dt>
+      <dd>Loops the shot's frames. While a play range is set, the row reads Play the whole scene instead.</dd>
+      <dt>Playblast this shot...</dt>
+      <dd>Films the shot through the scene camera. The playblast box opens with the shot's frames set, and its own options come back afterwards.</dd>
+      <dt>Rename shot...</dt>
+      <dd>Gives the shot a name of up to 40 characters, shown on its block before the camera's name.</dd>
+      <dt>Colour</dt>
+      <dd>Colours the block: Red, Orange, Yellow, Green, Teal, Blue, Purple, Grey or None.</dd>
+      <dt>Take thumbnails</dt>
+      <dd>Puts the first frame of each shot on its block. The thumbnails are kept while Studio is open.</dd>
+      <dt>Camera</dt>
+      <dd>Chooses which camera the shot uses.</dd>
+      <dt>Delete this cut</dt>
+      <dd>Takes the cut out. It is greyed for the first shot, because the first shot starts the scene.</dd>
+    </dl>
+  </article>
+
+  <h2 class="part" id="scene-pose">Pose This Rig</h2>
+
+  <article class="tool" id="f-scenepose">
+    <h3>Pose This Rig</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Pose this rig ‣ the rig's name</dd>
+      <dt>Right-click</dt><dd>A rig's row</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p><b>Pose this rig</b> chooses which rig of the scene you are posing. The posed rig's row is open with a "posing" tag, and the handles, IK, the Inspector, the Curve editor and every pose tool work on it. The other rigs fold to one lane of diamonds and play their own keys. You can also click a rig's row, or click one of its limbs in the viewport, which poses that rig with the clicked limb selected.</p>
+    <p>The row is greyed until the scene has a second rig. Undo goes back through every rig in order, and switches to the rig each step was made on.</p>
+    <h4>Example</h4>
+    <p>For example, in a two-character fight, pose the attacker's swing, click the defender to pose them, and key the reaction on the same frames.</p>
+    <h4>See Also</h4>
+    <p><a href="#f-scenerig">Rig</a> adds a rig to the scene.</p>
+  </article>
+
+  <h2 class="part" id="scene-motion">Motion</h2>
+  <p>Motion holds the tools that move props and cameras: riding a rig's part, looking at a target, following a path, shaping the path through their keys, and easing keys on scene rows. All but the last need a prop or camera selected in the track list, and are greyed until one is.</p>
+
+  <article class="tool" id="f-sceneparent">
+    <h3>Follow a Part</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Motion ‣ Follow a part</dd>
+      <dt>Right-click</dt><dd>A prop's or camera's row ‣ Parent to...</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p><b>Follow a part</b> makes a prop or a camera ride a part of a rig from the playhead on. The submenu lists the Right hand, Left hand, Head and Torso of each rig. With two rigs or fewer, each rig's name is a heading above its parts, and with more, each name opens its own list. Stop following here ends the ride. For a limb, a whole rig or a held object, see <a href="pose.html#f-scenefollow">Parent to...</a>.</p>
+    <p>For any other part, right-click the prop's or camera's row and choose <b>Parent to...</b>. It lists Click a part in the viewport, then each rig's parts with a More parts list, then Props and cameras, and World, which lets go.</p>
+    <p>While it follows, the prop or camera rides the part rigidly, and its own place keys in those frames are ignored. Moving it there, or pressing <kbd>K</kbd>, changes how it is held. Where the follow starts and stops, nothing jumps. The frames before the start still lead to the place where it began riding, and stopping keys it where the part left it. In the game the ride is baked into keys.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Click a part in the viewport</dt>
+      <dd>Click any part of a rig, a prop, a camera's body or the place.</dd>
+      <dt>Keep where it is</dt>
+      <dd>The prop or camera stays where it is and rides from there, with no jump.</dd>
+      <dt>Snap to it</dt>
+      <dd>Puts it on the part with no offset.</dd>
+      <dt>World</dt>
+      <dd>Lets it go, and it stays where it is.</dd>
+      <dt>Inspector Parent section</dt>
+      <dd>Shows the parent at the playhead, the Offset switch for Keep or Snap, and a list of switches, each with its frame, parent and Keep or Snap. Click a switch to go to it. Right-click a switch for Keep where it is, Snap to it, Move to the playhead and Delete. The buttons are Parent to... and World here.</dd>
+    </dl>
+    <p>On the timeline, the item's own lane marks each switch with a tick and the part's name, or "stop", with a thin bar along the frames it follows.</p>
+    <h4>Notes</h4>
+    <p>A part cannot follow what follows it, and Framez refuses with "That part follows the child". When the part that is followed has gone, the prop or camera stays where it was and the switch shows in red. Choose a new parent.</p>
+    <h4>Example</h4>
+    <p>For example, a cup can be carried across a cutscene by a hand, a camera can be locked on a character's head, or a camera can be bolted to a moving car.</p>
+  </article>
+
+  <article class="tool" id="f-lookat">
+    <h3>Look At</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Motion ‣ Look at</dd>
+      <dt>Right-click</dt><dd>A camera's or prop's row ‣ Look at</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p><b>Look at</b> turns a camera or a prop to keep a target in view from the playhead on. The submenu lists each rig, up to six, with its Head, Torso, Root, Right hand and Left hand. It lists Another item for props and cameras, and a part selected in the Explorer. Its own place keys still move it, and the look only turns it. While it looks, its keyed turn is ignored and its roll is kept.</p>
+    <p>The timeline marks where each look starts, with a tick and the target's name, and where it stops. A look begins with a blend of 12 frames, or of none when it starts at frame 0 or at a cut.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Frame at</dt>
+      <dd>For a camera, where the target sits in the shot. Choose Left third, Centre or Right third, or type X and Y as percentages across and down the shot.</dd>
+      <dt>Lag</dt>
+      <dd>From 0 to 5 seconds. A lag lets the item trail a fast target and settle, like a camera operator.</dd>
+      <dt>Blend</dt>
+      <dd>The frames the item takes to turn from what it did before, from 0 to 600.</dd>
+      <dt>Offset</dt>
+      <dd>X, Y and Z in studs, measured in the target's own space, so the item aims beside the part instead of at it.</dd>
+      <dt>Stop looking here</dt>
+      <dd>Hands the item back to its keys over the same blend.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a camera can keep a running character framed on the right third, or a turret can follow its target.</p>
+  </article>
+
+  <article class="tool" id="f-ride">
+    <h3>Follow a Path</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Motion ‣ Follow a path</dd>
+      <dt>Right-click</dt><dd>A camera's or prop's row ‣ Follow a path</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p><b>Follow a path</b> makes a camera or a prop ride a path from start to end, starting at the playhead. It keeps its height over the ground and the way it faced against the path, so a camera on a sideways dolly stays sideways. The submenu lists the scene's paths, up to seven, followed by <b>New path from here...</b>, which draws a path that starts on the ground under the item and makes it ride that path when you end it, then <b>Bake to keys</b> and <b>Stop riding</b>.</p>
+    <p>The ride starts at a speed of 6 studs per second for a camera and 12 for a prop, and the item's place is keyed at both ends of the ride so the frames around it lead in and out. A bar on the item's lane shows the ride. Drag its left end to move where it starts, and its right end to change how long it takes.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Speed</dt>
+      <dd>The speed in studs per second. Changing it changes Frames to match.</dd>
+      <dt>Frames</dt>
+      <dd>How many frames the ride lasts, at least 2.</dd>
+      <dt>From, To</dt>
+      <dd>The part of the path that is ridden, from 0 to 100 percent.</dd>
+      <dt>None, In, Out, Both</dt>
+      <dd>The easing of the ride. Both, the default, eases in at the start and out at the end.</dd>
+      <dt>Turns with the path</dt>
+      <dd>On by default. The item faces along the path. When it is off, the item keeps its own turn.</dd>
+      <dt>Bank</dt>
+      <dd>Rolls the item into the bends, from -90 to 90 degrees.</dd>
+      <dt>Up, Side</dt>
+      <dd>Offsets from the path in studs, upwards and sideways.</dd>
+      <dt>Bake to keys</dt>
+      <dd>Replaces the ride with keys on the item's own place, thinned to those that keep the same motion.</dd>
+      <dt>Stop riding</dt>
+      <dd>Ends the ride and leaves the item where it is.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a car can drive along a road, a dolly track can carry a camera past a character, and a flying camera can sweep over a battlefield.</p>
+    <h4>See Also</h4>
+    <p><a href="#f-path">Path</a> draws the path, and <a href="#f-walkpath">Follow Path</a> makes a rig walk it.</p>
+  </article>
+
+  <article class="tool" id="f-campath">
+    <h3>Moves</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Motion ‣ Moves ‣ Smooth path, Straight moves or Even speed</dd>
+      <dt>Right-click</dt><dd>A camera's or prop's row ‣ Moves</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>Moves sets how a camera or prop travels between its place keys. On a smooth path it moves along a curve through its keyed places and turns smoothly as it goes. It moves at an even speed between two keys, and each key's easing shapes that speed. New cameras and props start on a smooth path.</p>
+    <p>A selected item draws its path in the viewport, with a dot for each frame and a red marker for each key. Drag a marker to move that key, and press <kbd>X</kbd>, <kbd>Y</kbd> or <kbd>Z</kbd> to keep the move to one axis, or <kbd>Esc</kbd> to cancel it. Drag a dot to key the item there, and <kbd>Alt</kbd>+click a dot to key it without moving.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Smooth path</dt>
+      <dd>The curve passes through the keys.</dd>
+      <dt>Straight moves</dt>
+      <dd>The item goes from key to key in straight lines.</dd>
+      <dt>Even speed</dt>
+      <dd>Retimes the keys so the item moves at one speed from its first key to its last, which stay where they are. It needs three place keys or more, and it sets the easing between them to linear.</dd>
+      <dt>Tension</dt>
+      <dd>On the Inspector's Path section, from 0 to 1. It straightens the curve, and 1 gives straight lines. Changing it switches the item to a smooth path.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a dolly move, a crane move, a camera circling a character or a prop thrown along an arc are all keyed places joined by a smooth path.</p>
+  </article>
+
+  <article class="tool" id="f-scenekeys">
+    <h3>Ease the Selected Keys</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Motion ‣ Ease the selected keys</dd>
+      <dt>Right-click</dt><dd>A key on a scene row ‣ Ease to the next key</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>This sets how an item travels from a scene key to the next one. On a scene row, click a key to select it, add keys with <kbd>Shift</kbd>, drag to move the selected keys together, and press <kbd>Del</kbd> to delete them. Keys cannot be moved before frame 0. The menu applies one of seven styles to every selected key, and it is greyed until keys are selected in the scene's rows. The right-click menu on a key offers the same styles under Ease to the next key, and Delete.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Linear</dt>
+      <dd>A steady speed from key to key.</dd>
+      <dt>Smooth</dt>
+      <dd>Eases in at the start and out at the end.</dd>
+      <dt>Ease out</dt>
+      <dd>Starts quickly and slows on arrival.</dd>
+      <dt>Ease in</dt>
+      <dd>Starts slowly and speeds up.</dd>
+      <dt>Hold</dt>
+      <dd>Keeps the key's value until the next key, then jumps to it.</dd>
+      <dt>Overshoot</dt>
+      <dd>Goes past the next value and comes back to it.</dd>
+      <dt>Bounce</dt>
+      <dd>Bounces into the next value.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a light that should snap on at frame 40 is keyed off at frame 39 and given Hold, and a prop that lands on a table can use Bounce.</p>
+    <h4>See Also</h4>
+    <p><a href="key.html#f-easing">Easing</a> sets the same choice for limb keys.</p>
+  </article>
+
+  <h2 class="part" id="scene-framing">Framing</h2>
+  <p>Framing sets the shape of the shot and the guides drawn over it. The same list opens from the Guides entry of the Camera preview's more menu.</p>
+
+  <article class="tool" id="f-framing">
+    <h3>Framing</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Framing</dd><dd>Camera preview ‣ more menu ‣ Guides</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>Framing sets the shape of the shot and draws composition guides over it while you look through the camera. The aspect ratio belongs to the scene and is saved with it. The guides belong to you, and they are kept with Studio. The frame, the cameras' lines, the screen effects, the playblast of the scene camera and the Camera preview all take the shape.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Aspect ratio</dt>
+      <dd>16:9 (the game, video), 9:16 (vertical: shorts), 2.39:1 (cinema wide), 1.85:1 (cinema), 4:3, 1:1 (square) or The screen's own. A new scene is 16:9, and changing it is one undo step.</dd>
+      <dt>Show the frame</dt>
+      <dd>Draws the shot's frame and dims what is outside it while you look through the camera. It is on by default.</dd>
+      <dt>Thirds</dt>
+      <dd>Draws the rule-of-thirds lines. They are on by default.</dd>
+      <dt>Safe areas</dt>
+      <dd>Draws two inner frames, for action safe and title safe, so text and important action stay inside what every screen shows.</dd>
+      <dt>More guides, Guide sets, Guide settings...</dt>
+      <dd>Described in the next three sections.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, choose 9:16 for a vertical short, 2.39:1 for a cinema-wide cutscene, or turn on Thirds to keep a face on a third and Safe areas to keep text inside the frame.</p>
+<figure class="shot"><img src="img/menu-scene-framing.png" width="682" height="451" alt="The Framing submenu with the Aspect ratio list" loading="lazy">
+      <figcaption>The Framing submenu with the Aspect ratio list.</figcaption></figure>
+  </article>
+
+  <article class="tool" id="f-moreguides">
+    <h3>More Guides</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Framing ‣ More guides</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>More guides holds the extra composition guides. Each one is a switch that draws over the shot while you look through the camera and in the Camera preview, and you can have any number on at once.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Grid</dt>
+      <dd>Draws a grid of columns and rows, 4 by 4 until Guide settings changes it.</dd>
+      <dt>Centre</dt>
+      <dd>Draws a small cross at the middle of the shot.</dd>
+      <dt>Diagonals</dt>
+      <dd>Draws the two diagonals from corner to corner.</dd>
+      <dt>Golden ratio</dt>
+      <dd>Draws lines at 38.2 and 61.8 percent across and down the shot.</dd>
+      <dt>Golden spiral</dt>
+      <dd>Draws a golden spiral stretched to the shot. Its eye sits in the bottom right corner at first.</dd>
+      <dt>Turn the spiral</dt>
+      <dd>Moves the spiral's eye to the next corner, going bottom right, bottom left, top left and top right, and turns the spiral on.</dd>
+      <dt>Triangles</dt>
+      <dd>Draws harmonious triangles, a diagonal with a line from each other corner meeting it at a right angle. Guide settings chooses whether the diagonal rises or falls.</dd>
+      <dt>Your image</dt>
+      <dd>Draws an image of yours over the shot. It needs an asset id in Guide settings, and the row opens that box when none is set.</dd>
+      <dt>Roblox's top bar</dt>
+      <dd>Shades the strip at the top that the game's menu buttons cover.</dd>
+    </dl>
+  </article>
+
+  <article class="tool" id="f-guidesets">
+    <h3>Guide Sets</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Framing ‣ Guide sets</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>A guide set saves the guides that are on, with their settings, under a name, so that you can bring the same combination back in one click. Sets are kept with Studio and are not part of any scene.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Save these guides...</dt>
+      <dd>Asks for a name and saves the guides that are on now, with their settings.</dd>
+      <dt>Your sets</dt>
+      <dd>Saved sets are listed under Mine. Choosing one turns the same guides on again. The arrow beside a set offers Use and Delete.</dd>
+    </dl>
+  </article>
+
+  <article class="tool" id="f-guidesettings">
+    <h3>Guide Settings</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Framing ‣ Guide settings...</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>Guide settings opens a box with the numbers behind the guides. Press Apply to keep the values. Cancel, or <kbd>Esc</kbd>, puts back the values the box opened with.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Grid columns, Grid rows</dt>
+      <dd>The size of the Grid guide, from 2 to 24 each. Both are 4 at first.</dd>
+      <dt>Action safe, Title safe</dt>
+      <dd>The size of the two Safe areas frames as a percentage of the shot, from 50 to 100. They are 93 and 90 at first.</dd>
+      <dt>Opacity</dt>
+      <dd>How strongly the guides draw, from 5 to 100 percent. The default is 55.</dd>
+      <dt>Line width</dt>
+      <dd>The thickness of the lines, from 1 to 6 pixels.</dd>
+      <dt>Spiral's eye</dt>
+      <dd>The corner the Golden spiral winds into: Top left, Top right, Bottom left or Bottom right.</dd>
+      <dt>Triangles</dt>
+      <dd>Rising or Falling, the direction of the main diagonal.</dd>
+      <dt>Your image</dt>
+      <dd>The asset id of the image drawn by the Your image guide.</dd>
+      <dt>Image</dt>
+      <dd>How that image fills the shot. Fit shows all of it, Fill crops it to cover the shot, and Stretch fits it to the shot's shape. It draws at the guides' opacity.</dd>
+      <dt>Colour</dt>
+      <dd>The colour of every guide, as six hex digits such as FFFFFF.</dd>
+    </dl>
+<figure class="shot"><img src="img/guidesettings.png" width="460" height="473" alt="The Guide settings dialog" loading="lazy">
+      <figcaption>The Guide settings dialog.</figcaption></figure>
+  </article>
+
+  <h2 class="part" id="scene-game">Put in the Game</h2>
+
+  <article class="tool" id="f-sceneexport">
+    <h3>Put in the Game</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Put in the game...</dd><dd>Game ‣ In the game ‣ Put the scene in the game...</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+      <dt>Needs</dt><dd>A scene with a second item, saved with a name</dd>
+    </dl>
+    <p><b>Put in the game...</b> writes the scene into your game as something players can play. The scene can start from a button, when a part is touched, when a player joins, on a signal or from your own code. The row is greyed until the scene has a second item. A new scene starts on a button with its motion in the scene, so a first try needs no code and no upload.</p>
+    <p>One box opens, titled with the scene's name. Set how the scene starts, who sees it, how its motion and look are carried and how players skip it, then press <b>Put in the game</b>. If the scene has changes that are not saved, they are saved first, because what goes in the game is what is on screen. A scene that has no name yet asks to be saved first.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Starts</dt>
+      <dd>Five tiles. Button puts a button for the scene at the bottom right of each player's screen, hidden while a scene plays. Touch plays it when a player touches a part. Join plays it when a player joins. Signal plays it when a server script fires the scene's Start signal. Code leaves it to your own code.</dd>
+      <dt>Part touched</dt>
+      <dd>Shown for Touch. Select the part players touch in the Explorer, then press the button.</dd>
+      <dt>Button</dt>
+      <dd>Shown for Button. The button's label, "Play cutscene" at first.</dd>
+      <dt>Motion</dt>
+      <dd>In the scene bakes every rig's motion beside the scene. Nothing is uploaded, and it plays in group games and in other people's games. Uploaded animations plays each character's published clip. When a clip is not published, the result box offers Carry the motion in the scene instead.</dd>
+      <dt>Look</dt>
+      <dd>The place's look now sets the place's Lighting, Atmosphere, Sky, bloom, depth of field, sun rays and blur as the scene starts, under its keyed look, and puts them back afterwards. The game's own look leaves them alone.</dd>
+      <dt>Who sees it</dt>
+      <dd>The player who started it, or Everyone.</dd>
+      <dt>How often</dt>
+      <dd>Every time, or Once per player.</dd>
+      <dt>Skip</dt>
+      <dd>Off, Press, or Hold. Hold asks players to hold a key for a number of seconds. A Skip button shows on phones, and B skips on a gamepad.</dd>
+      <dt>Hold for</dt>
+      <dd>Shown for Hold. The seconds to hold, from 0.2 to 5. The default is 1.</dd>
+      <dt>Key</dt>
+      <dd>Shown unless Skip is Off. The key players use, Space at first. Type a key name such as Space, E or Q.</dd>
+      <dt>Goes in</dt>
+      <dd>A list of what is read from the scene: its rigs, cameras, props, lights and sounds, its effects, subtitles, held objects, the look's parts, and the README and Framez copy.</dd>
+      <dt>Delete from the game</dt>
+      <dd>Takes the scene out of the game again, after asking first. Undo cannot bring it back.</dd>
+    </dl>
+    <p>Changing Starts or Skip reopens the box with the rows that fit the new choice, since each row shows only when it applies.</p>
+    <p>The scene goes into ReplicatedStorage under FramezScenes as a ModuleScript, with FramezScenePlayer beside it. Every start except Code also adds a FramezSceneStart script in ServerScriptService and a FramezScenesClient script for players. A scene with effects adds FramezEffects when the game has none, and one with held objects adds FramezHeld, and the box names both. A README in FramezScenes lists the scenes there, how they start, how to play one from code, how to listen for markers and signals, and how to change or remove a scene.</p>
+    <p>Every rig's clip markers go out with the scene. Impact frames, effects and held objects still play with the motion in the scene. When the game uses StreamingEnabled, the player streams in the scene's place and rigs first. When the box closes, a message says how to try it, such as pressing Play and then the button, or touching the part.</p>
+    <h4>Notes</h4>
+    <p>A clip that is not published plays in Studio only. Publish it, then put the scene in the game again. To start a scene from another server script, use <code>FramezSceneStart_NAME.Start:Fire(player)</code>.</p>
+    <h4>See Also</h4>
+    <p><a href="#f-sceneplay">Playing a Scene in the Game</a> shows the code to play one, <a href="file.html#f-scenefromgame">Scene from the game</a> brings a put scene back into Framez, and <a href="file.html#f-publish">Publish to Roblox</a> publishes a clip.</p>
+<figure class="shot"><img src="img/putscene.png" width="440" height="589" alt="The Put in the game box, with the Starts tiles at the top" loading="lazy">
+      <figcaption>The Put in the game box, with the Starts tiles at the top.</figcaption></figure>
+  </article>
+
+  <article class="tool" id="f-sceneplay">
+    <h3>Playing a Scene in the Game</h3>
+    <dl class="ref">
+      <dt>Needs</dt><dd>A scene put in the game</dd>
+    </dl>
+    <p>A scene that starts from Code is played from your own script. Only a client can take the camera, so a cutscene is played from a LocalScript. The scene's rigs are matched by the names they had in Framez, and <code>origin</code> says where in the world the scene plays. The camera is given back when the scene ends.</p>
 <pre class="code">local Scenes = game.ReplicatedStorage.FramezScenes
 local ScenePlayer = require(Scenes.FramezScenePlayer)
 local run = ScenePlayer.play(require(Scenes.DUEL), {
@@ -295,28 +976,63 @@ local run = ScenePlayer.play(require(Scenes.DUEL), {
 	origin = character1.HumanoidRootPart.CFrame,   <span class="c">-- where it plays</span>
 })
 run.Finished:Wait()   <span class="c">-- the camera is given back</span></pre>
-          <p class="what">Players skip with the key chosen in Put in the game (a Skip button on phones, B on a gamepad); <code>run.Skipped</code> fires and the camera is given back.</p>
-          <p class="what">Markers: <code>run.MarkerReached(name, value, rig)</code> gives your code each marker of every rig's clip, whether the scene was put in the game with its motion In the scene or with Uploaded animations. The README beside the scene shows how to listen for it.</p>
-          <p class="what">A grab between players: the server places them and plays both clips; each client plays the camera:</p>
+    <p>Players skip with the key chosen in the Put in the game box, a Skip button on phones, or B on a gamepad. Skipping fires <code>run.Skipped</code> and gives the camera back. <code>run.MarkerReached(name, value, rig)</code> gives your code each marker of every rig's clip, whether the scene was put in the game with its motion in the scene or with uploaded animations. The README beside the scene shows how to listen for it.</p>
+    <p>A grab between two players works differently. The server places them and plays both clips, and each client plays only the camera.</p>
 <pre class="code"><span class="c">-- server</span>
 ScenePlayer.place(scene, { Noob = attacker, Noob2 = victim }, origin)
 ScenePlayer.play(scene, { rigs = { Noob = attacker, Noob2 = victim }, origin = origin, camera = false })
 <span class="c">-- each client</span>
 ScenePlayer.play(scene, { rigs = {}, origin = origin })</pre>
-          <p class="tip">Rigs are matched by the names they had in Framez. The other character's own movement must stop for the scene (anchor its root part).</p></div>
-        <div class="entry" data-use="acting skill" id="scene-a-scene-from-the-game"><div class="head"><span class="name">A scene from the game</span><span class="where">File &gt; Import &gt; A scene from the game...</span></div>
-          <p class="what">Brings back a scene that was put in the game, with every rig's clip this place lost. Choose it in File &gt; Import, then open the scene with File &gt; Open. The command is described in <a class="f" href="file.html#f-scenefromgame">A scene from the game...</a>.</p></div>
-        <div class="entry" id="f-scenesettings" data-use="acting"><div class="head"><span class="name">Scene settings</span><span class="where">Scene &gt; Scene settings</span></div>
-          <p class="what">Two settings for working in a scene.</p>
-          <ul class="opts">
-            <li><b>Auto key on Studio move</b>: on, a prop, a camera or an effect's point moved with Studio's tools, or the camera flown while looking through, is keyed once it rests. Off, it waits for <kbd>K</kbd>. <kbd>Ctrl+Z</kbd> takes the key back and the move with it.</li>
-            <li><b>Sound while scrubbing</b>: Off, One frame, 80 ms or 150 ms. See <a class="f" href="#f-scrubsound">Sound while scrubbing</a>.</li>
-          </ul></div>
-        <div class="entry" id="f-scrubsound" data-use="acting skill dance"><div class="head"><span class="name">Sound while scrubbing</span><span class="where">Scene &gt; Scene settings &gt; Sound while scrubbing</span></div>
-          <p class="what">Plays a slice of each sound under the playhead while you scrub. The choices are Off, One frame, 80 ms and 150 ms. Each time the frame changes while Framez is not playing (dragging the playhead, a frame key, a click on a key), every sound under the playhead plays that long from there. Holding still is silent.</p>
-          <p class="when">putting a hit on the beat, or a mouth on the word.</p></div>
-        <div class="entry" data-use="acting" id="scene-delete-remove-from-the-scene"><div class="head"><span class="name">Delete / Remove from the scene</span><span class="where">Scene &gt; Delete, or right-click a row</span></div>
-          <p class="what">Takes the picked item out of the scene. The item goes back to how it was before it joined. Closing the animation does that for everything.</p>
-          <p class="tip">Delete is greyed until an item is picked in the list.</p></div>
-      </div>
-    <nav class="pager" aria-label="More pages"><a class="prev" href="face.html"><small>Previous</small><span>Face</span></a><a class="next" href="game.html"><small>Next</small><span>Game</span></a></nav><footer class="foot">Framez by soldier. These docs cover Framez 17.97.</footer></article><aside class="toc" aria-label="On this page"><a href="#f-sceneadd">Add to the scene</a><a href="#f-scenepose">Posing another rig</a><a href="#f-sceneprop">Props</a><a href="#f-sceneparent">Parent to... / Follow a part</a><a href="#f-scenelook">A prop&#x27;s look</a><a href="#f-scenecam">Camera</a><a href="#f-look-through">Look through the camera</a><a href="#f-camkey">Key the camera here</a><a href="#f-cutto">Cut to the camera here</a><a href="#f-campath">Camera paths</a><a href="#f-lookat">Look at</a><a href="#f-path">Paths</a><a href="#f-ride">Follow a path</a><a href="#f-shotview">Camera preview</a><a href="#f-cleanview">Clean view</a><a href="#f-blocks">Clip blocks</a><a href="#f-walkpath">Walk a path</a><a href="#f-framing">Framing</a><a href="#f-shots">Shots row (cuts)</a><a href="#f-scenelight">Lights</a><a href="#f-scenesound">Sound</a><a href="#f-soundfade">Fades and speed</a><a href="#f-screenfx">Screen effects</a><a href="#f-subtitles">Subtitles</a><a href="#f-subpage">The subtitle page</a><a href="#f-sublines">Subtitle lines</a><a href="#f-worldlook">Scene look</a><a href="#f-fxtimeline">Effects on the timeline</a><a href="#f-fxstart">Framez starting effects</a><a href="#f-myfx">My effects</a><a href="#f-fxtexture">Framez textures</a><a href="#f-fxplace">Place an effect</a><a href="#f-fxloop">Loop around it</a><a href="#f-vfxpacks">VFX packs</a><a href="#f-keyprop">Key any property</a><a href="#f-scenekeys">Scene keys</a><a href="#f-scenesave">Saving a scene</a><a href="#f-sceneexport">Put in the game...</a><a href="#f-sceneplay">Playing a scene in the game</a><a href="#scene-a-scene-from-the-game">A scene from the game</a><a href="#f-scenesettings">Scene settings</a><a href="#f-scrubsound">Sound while scrubbing</a><a href="#scene-delete-remove-from-the-scene">Delete / Remove from the scene</a></aside></div></div></div><div class="scrim" data-scrim hidden></div><div class="search" id="search" hidden role="dialog" aria-modal="true" aria-label="Search the docs"><div class="search-box"><div class="search-field"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg><input id="search-q" type="search" placeholder="Search the docs" autocomplete="off"><kbd>Esc</kbd></div><div class="search-results" id="search-results"></div></div></div><script src="assets/search-index.js"></script><script src="assets/site.js"></script></body></html>
+    <h4>Notes</h4>
+    <p>Each character's own movement must stop for the scene, for example by anchoring its root part.</p>
+  </article>
+
+  <h2 class="part" id="scene-settings">Scene Settings</h2>
+  <p>Two settings for working in a scene. Both are remembered by Studio.</p>
+
+  <article class="tool" id="f-scenesettings">
+    <h3>Auto Key</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Scene settings ‣ Auto key</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p><b>Auto key</b> decides whether a prop, a camera or an effect's point moved with Studio's tools, or a camera flown while you look through it, is keyed once it comes to rest. It is on by default. With it on, the key is made when the item has been still for about a third of a second, and <kbd>Ctrl</kbd>+<kbd>Z</kbd> takes the key back together with the move. With it off, the item waits for <kbd>K</kbd> and a message reminds you that it moved.</p>
+    <h4>Example</h4>
+    <p>For example, turn Auto key off while you rough out a camera angle by flying around freely, and press <kbd>K</kbd> only when the shot looks right.</p>
+  </article>
+
+  <article class="tool" id="f-scrubsound">
+    <h3>Audio Scrubbing</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Scene settings ‣ Audio scrubbing ‣ Off, One frame, 80 ms or 150 ms</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>Audio scrubbing plays a slice of each sound under the playhead while you scrub. Each time the frame changes while Framez is not playing, by dragging the playhead, with a frame key or by clicking a key, every sound under the playhead plays for the chosen time from that point. Holding still is silent.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Off</dt>
+      <dd>No sound while scrubbing.</dd>
+      <dt>One frame</dt>
+      <dd>Each sound plays for the length of one frame.</dd>
+      <dt>80 ms, 150 ms</dt>
+      <dd>Each sound plays for that long. 80 ms is the default.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, step through a clip with a slice of music playing to put a hit on the beat, or scrub through a spoken line to find the frame where a word begins.</p>
+  </article>
+
+  <h2 class="part" id="scene-delete">Delete</h2>
+
+  <article class="tool" id="f-scenedelete">
+    <h3>Delete</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Scene ‣ Delete</dd>
+      <dt>Right-click</dt><dd>An item's row ‣ Delete</dd>
+      <dt>Shortcut</dt><dd><kbd>Del</kbd></dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p><b>Delete</b> takes the selected item out of the scene. The label names the item, for example Delete Camera. With nothing selected it removes the rig you are posing, as long as that is not the first rig. The item goes back to how it was before it joined the scene, and one undo brings it back. The row is greyed until an item is selected in the track list.</p>
+    <p>The rig that the animation was opened on cannot be deleted from the scene, because it holds the open animation. Close the animation instead, which lets go of everything. Deleting the object itself in Studio also removes its item from the scene.</p>
+    <p>Pressing <kbd>Del</kbd> deletes selected scene keys first. With no keys selected, it deletes the selected item.</p>
+  </article>
+<nav class="pager" aria-label="More pages"><a class="prev" href="face.html"><small>Previous</small><span>Face</span></a><a class="next" href="game.html"><small>Next</small><span>Game</span></a></nav><footer class="foot">Framez by soldier. This manual covers Framez 17.99.</footer></article><aside class="toc" aria-label="On this page"><a class="lv1" href="#scene-about">About Scenes</a><a class="lv2" href="#f-scenesave">Saving a Scene</a><a class="lv1" href="#scene-add">Add</a><a class="lv2" href="#f-sceneadd">Add to the Scene</a><a class="lv2" href="#f-scenerig">Rig</a><a class="lv2" href="#f-sceneprop">Selected Prop</a><a class="lv2" href="#f-scenelook">A Prop&#x27;s Look</a><a class="lv2" href="#f-scenecam">Camera from View</a><a class="lv2" href="#f-scenelight">Light</a><a class="lv2" href="#f-scenesound">Sound</a><a class="lv2" href="#f-soundfade">Sound Fades and Speed</a><a class="lv2" href="#f-screenfx">Screen Effects</a><a class="lv2" href="#f-worldlook">Scene Look</a><a class="lv2" href="#f-fxtimeline">Selected Effect</a><a class="lv2" href="#f-vfxpacks">VFX Packs</a><a class="lv2" href="#f-fxnew">New Effect on a Limb</a><a class="lv2" href="#f-fxstart">Built-in Effects</a><a class="lv2" href="#f-myfx">My Effects</a><a class="lv2" href="#f-fxtexture">Effect Textures</a><a class="lv2" href="#f-fxplace">Place an Effect</a><a class="lv2" href="#f-fxloop">Loop Around It</a><a class="lv2" href="#f-keyprop">Selected Object</a><a class="lv2" href="#f-path">Path</a><a class="lv2" href="#f-blocks">Clip Block</a><a class="lv2" href="#f-walkpath">Follow Path</a><a class="lv2" href="#f-subtitles">Subtitles</a><a class="lv1" href="#scene-camera">Camera</a><a class="lv2" href="#f-look-through">Look Through Camera</a><a class="lv2" href="#f-camkey">Key Camera</a><a class="lv1" href="#scene-cuts">Cuts</a><a class="lv2" href="#f-cutto">Add Camera Cut</a><a class="lv2" href="#f-shots">Shots Row</a><a class="lv1" href="#scene-pose">Pose This Rig</a><a class="lv2" href="#f-scenepose">Pose This Rig</a><a class="lv1" href="#scene-motion">Motion</a><a class="lv2" href="#f-sceneparent">Follow a Part</a><a class="lv2" href="#f-lookat">Look At</a><a class="lv2" href="#f-ride">Follow a Path</a><a class="lv2" href="#f-campath">Moves</a><a class="lv2" href="#f-scenekeys">Ease the Selected Keys</a><a class="lv1" href="#scene-framing">Framing</a><a class="lv2" href="#f-framing">Framing</a><a class="lv2" href="#f-moreguides">More Guides</a><a class="lv2" href="#f-guidesets">Guide Sets</a><a class="lv2" href="#f-guidesettings">Guide Settings</a><a class="lv1" href="#scene-game">Put in the Game</a><a class="lv2" href="#f-sceneexport">Put in the Game</a><a class="lv2" href="#f-sceneplay">Playing a Scene in the Game</a><a class="lv1" href="#scene-settings">Scene Settings</a><a class="lv2" href="#f-scenesettings">Auto Key</a><a class="lv2" href="#f-scrubsound">Audio Scrubbing</a><a class="lv1" href="#scene-delete">Delete</a><a class="lv2" href="#f-scenedelete">Delete</a></aside></div></div></div><div class="scrim" data-scrim hidden></div><div class="search" id="search" hidden role="dialog" aria-modal="true" aria-label="Search the manual"><div class="search-box"><div class="search-field"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg><input id="search-q" type="search" placeholder="Search the manual" autocomplete="off"><kbd>Esc</kbd></div><div class="search-results" id="search-results"></div></div></div><script src="assets/search-index.js"></script><script src="assets/site.js"></script></body></html>

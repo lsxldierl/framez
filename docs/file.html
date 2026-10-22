@@ -1,197 +1,575 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>File - Framez Docs</title><meta name="description" content="Start, open and save animations, bring clips in from other tools, send them out, and set up the rigs to animate."><link rel="icon" href="assets/favicon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"><link rel="stylesheet" href="assets/site.css"><script>try{var t=localStorage.getItem("framez-theme");if(t)document.documentElement.dataset.look=t}catch(e){}</script></head><body><div class="shell"><nav class="side" id="side" aria-label="Docs"><div class="side-head"><a class="brand" href="index.html"><svg class="mark" viewBox="-34.0 -34.0 68.0 68.0" aria-hidden="true"><polygon points="-28.00,0.00 0.00,-28.00 28.00,0.00 0.00,28.00" fill="#3c4045"/><polygon points="-18.50,0.00 0.00,-18.50 0.00,0.00" fill="#e8443c"/><polygon points="0.00,-18.50 9.25,-9.25 0.00,0.00" fill="#9e2b2b"/><polygon points="9.25,-9.25 9.25,0.00 0.00,0.00" fill="#ffffff"/><polygon points="9.25,-9.25 18.50,0.00 9.25,0.00" fill="#e8443c"/><polygon points="-18.50,0.00 0.00,0.00 -9.25,9.25" fill="#9e2b2b"/><polygon points="-9.25,9.25 0.00,0.00 0.00,18.50" fill="#ffffff"/><polygon points="0.00,0.00 18.50,0.00 0.00,18.50" fill="#ffffff"/><polygon points="26.30,-22.51 23.03,-18.03 17.70,-16.49 20.97,-20.97" fill="#e8443c"/><polygon points="-16.73,16.57 -17.63,18.42 -19.67,18.63 -18.77,16.78" fill="#e8443c"/></svg><i class="sep"></i><span>Docs</span></a><button class="iconbtn" type="button" data-search aria-label="Search the docs (Ctrl+K)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg></button></div><div class="side-scroll"><details class="grp"><summary><span>Getting started</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="start.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="5.14,9.23 5.40,8.66 5.70,8.11 6.06,7.59 6.45,7.10 6.89,6.65 7.36,6.24 7.86,5.87 8.40,5.54 8.96,5.25 9.54,5.02 10.14,4.84 10.75,4.71 11.37,4.63 12.00,4.60 12.63,4.63 13.25,4.71 13.86,4.84 14.46,5.02 15.04,5.25 15.60,5.54 16.14,5.87 16.64,6.24 17.11,6.65 17.55,7.10 17.94,7.59 18.30,8.11 18.60,8.66 18.86,9.23"/><polyline points="18.86,14.77 18.60,15.34 18.30,15.89 17.94,16.41 17.55,16.90 17.11,17.35 16.64,17.76 16.14,18.13 15.60,18.46 15.04,18.75 14.46,18.98 13.86,19.16 13.25,19.29 12.63,19.37 12.00,19.40 11.37,19.37 10.75,19.29 10.14,19.16 9.54,18.98 8.96,18.75 8.40,18.46 7.86,18.13 7.36,17.76 6.89,17.35 6.45,16.90 6.06,16.41 5.70,15.89 5.40,15.34 5.14,14.77"/><polyline points="18.86,9.23 16.11,7.23"/><polyline points="18.86,9.23 19.45,5.88"/><polyline points="5.14,14.77 7.89,16.77"/><polyline points="5.14,14.77 4.55,18.12"/></svg><span>Getting started</span></a><a href="anytool.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.40,13.60 4.60,8.80 9.40,4.00"/><polyline points="4.60,8.80 14.40,8.80 15.47,8.92 16.48,9.28 17.39,9.85 18.15,10.61 18.72,11.52 19.08,12.53 19.20,13.60 19.08,14.67 18.72,15.68 18.15,16.59 17.39,17.35 16.48,17.92 15.47,18.28 14.40,18.40 11.00,18.40"/></svg><span>How tools work</span></a><a href="recipes.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Tutorials</span></a><a href="workspaces.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.40,6.60 19.60,6.60"/><polyline points="4.40,12.00 19.60,12.00"/><polyline points="4.40,17.40 19.60,17.40"/></svg><span>Workspaces</span></a><a href="windows.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>The windows</span></a><a href="setup.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="9.60,8.60 10.13,8.64 10.65,8.77 11.14,8.97 11.60,9.25 12.00,9.60 12.35,10.00 12.63,10.46 12.83,10.95 12.96,11.47 13.00,12.00 13.00,12.00 12.96,12.53 12.83,13.05 12.63,13.54 12.35,14.00 12.00,14.40 11.60,14.75 11.14,15.03 10.65,15.23 10.13,15.36 9.60,15.40 6.00,15.40 5.47,15.36 4.95,15.23 4.46,15.03 4.00,14.75 3.60,14.40 3.25,14.00 2.97,13.54 2.77,13.05 2.64,12.53 2.60,12.00 2.60,12.00 2.64,11.47 2.77,10.95 2.97,10.46 3.25,10.00 3.60,9.60 4.00,9.25 4.46,8.97 4.95,8.77 5.47,8.64 6.00,8.60"/><polygon points="18.00,8.60 18.53,8.64 19.05,8.77 19.54,8.97 20.00,9.25 20.40,9.60 20.75,10.00 21.03,10.46 21.23,10.95 21.36,11.47 21.40,12.00 21.40,12.00 21.36,12.53 21.23,13.05 21.03,13.54 20.75,14.00 20.40,14.40 20.00,14.75 19.54,15.03 19.05,15.23 18.53,15.36 18.00,15.40 14.40,15.40 13.87,15.36 13.35,15.23 12.86,15.03 12.40,14.75 12.00,14.40 11.65,14.00 11.37,13.54 11.17,13.05 11.04,12.53 11.00,12.00 11.00,12.00 11.04,11.47 11.17,10.95 11.37,10.46 11.65,10.00 12.00,9.60 12.40,9.25 12.86,8.97 13.35,8.77 13.87,8.64 14.40,8.60"/></svg><span>Install the helper</span></a></div></details><details class="grp" open><summary><span>Menus</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="file.html" aria-current="page"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="12.00,3.60 12.00,15.20"/><polyline points="7.20,10.60 12.00,15.40 16.80,10.60"/><polyline points="4.60,20.40 19.40,20.40"/></svg><span>File</span></a><a href="edit.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.40,13.60 4.60,8.80 9.40,4.00"/><polyline points="4.60,8.80 14.40,8.80 15.47,8.92 16.48,9.28 17.39,9.85 18.15,10.61 18.72,11.52 19.08,12.53 19.20,13.60 19.08,14.67 18.72,15.68 18.15,16.59 17.39,17.35 16.48,17.92 15.47,18.28 14.40,18.40 11.00,18.40"/></svg><span>Edit</span></a><a href="key.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon class="f" points="12.00,3.00 21.00,12.00 12.00,21.00 3.00,12.00"/></svg><span>Key</span></a><a href="pose.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="14.60,6.20 14.53,6.78 14.34,7.33 14.03,7.82 13.62,8.23 13.13,8.54 12.58,8.73 12.00,8.80 11.42,8.73 10.87,8.54 10.38,8.23 9.97,7.82 9.66,7.33 9.47,6.78 9.40,6.20 9.47,5.62 9.66,5.07 9.97,4.58 10.38,4.17 10.87,3.86 11.42,3.67 12.00,3.60 12.58,3.67 13.13,3.86 13.62,4.17 14.03,4.58 14.34,5.07 14.53,5.62 14.60,6.20"/><polyline points="12.00,9.40 12.00,15.20"/><polyline points="12.00,15.20 8.60,20.40"/><polyline points="12.00,15.20 15.40,20.40"/><polyline points="7.00,12.00 17.00,12.00"/></svg><span>Pose</span></a><a href="face.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.20,8.00 16.09,8.93 15.78,9.82 15.28,10.62 14.62,11.28 13.82,11.78 12.93,12.09 12.00,12.20 11.07,12.09 10.18,11.78 9.38,11.28 8.72,10.62 8.22,9.82 7.91,8.93 7.80,8.00 7.91,7.07 8.22,6.18 8.72,5.38 9.38,4.72 10.18,4.22 11.07,3.91 12.00,3.80 12.93,3.91 13.82,4.22 14.62,4.72 15.28,5.38 15.78,6.18 16.09,7.07 16.20,8.00"/><polyline points="5.14,18.83 5.40,18.26 5.70,17.71 6.06,17.19 6.45,16.70 6.89,16.25 7.36,15.84 7.86,15.47 8.40,15.14 8.96,14.85 9.54,14.62 10.14,14.44 10.75,14.31 11.37,14.23 12.00,14.20 12.63,14.23 13.25,14.31 13.86,14.44 14.46,14.62 15.04,14.85 15.60,15.14 16.14,15.47 16.64,15.84 17.11,16.25 17.55,16.70 17.94,17.19 18.30,17.71 18.60,18.26 18.86,18.83"/></svg><span>Face</span></a><a href="scene.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13.40,7.00 13.74,7.03 14.08,7.11 14.40,7.24 14.69,7.42 14.96,7.64 15.18,7.91 15.36,8.20 15.49,8.52 15.57,8.86 15.60,9.20 15.60,14.80 15.57,15.14 15.49,15.48 15.36,15.80 15.18,16.09 14.96,16.36 14.69,16.58 14.40,16.76 14.08,16.89 13.74,16.97 13.40,17.00 5.00,17.00 4.66,16.97 4.32,16.89 4.00,16.76 3.71,16.58 3.44,16.36 3.22,16.09 3.04,15.80 2.91,15.48 2.83,15.14 2.80,14.80 2.80,9.20 2.83,8.86 2.91,8.52 3.04,8.20 3.22,7.91 3.44,7.64 3.71,7.42 4.00,7.24 4.32,7.11 4.66,7.03 5.00,7.00"/><polygon points="15.60,10.60 21.20,7.60 21.20,16.40 15.60,13.40"/></svg><span>Scene</span></a><a href="game.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6.00,21.00 6.00,3.80"/><polyline points="6.00,4.60 18.40,4.60 15.60,8.60 18.40,12.60 6.00,12.60"/></svg><span>Game</span></a><a href="view.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="2.60,12.00 3.09,11.26 3.62,10.57 4.19,9.93 4.80,9.36 5.43,8.83 6.09,8.36 6.77,7.95 7.48,7.59 8.21,7.29 8.95,7.04 9.70,6.85 10.46,6.71 11.23,6.63 12.00,6.60 12.77,6.63 13.54,6.71 14.30,6.85 15.05,7.04 15.79,7.29 16.52,7.59 17.23,7.95 17.91,8.36 18.57,8.83 19.20,9.36 19.81,9.93 20.38,10.57 20.91,11.26 21.40,12.00 20.91,12.74 20.38,13.43 19.81,14.07 19.20,14.64 18.57,15.17 17.91,15.64 17.22,16.05 16.52,16.41 15.79,16.71 15.05,16.96 14.30,17.15 13.54,17.29 12.77,17.37 12.00,17.40 11.23,17.37 10.46,17.29 9.70,17.15 8.95,16.96 8.21,16.71 7.48,16.41 6.77,16.05 6.09,15.64 5.43,15.17 4.80,14.64 4.19,14.07 3.62,13.43 3.09,12.74 2.60,12.00"/><polygon points="15.00,12.00 14.92,12.67 14.70,13.30 14.35,13.87 13.87,14.35 13.30,14.70 12.67,14.92 12.00,15.00 11.33,14.92 10.70,14.70 10.13,14.35 9.65,13.87 9.30,13.30 9.08,12.67 9.00,12.00 9.08,11.33 9.30,10.70 9.65,10.13 10.13,9.65 10.70,9.30 11.33,9.08 12.00,9.00 12.67,9.08 13.30,9.30 13.87,9.65 14.35,10.13 14.70,10.70 14.92,11.33 15.00,12.00"/></svg><span>View</span></a><a href="help.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="5.60,12.00 9.80,16.20 18.40,6.80"/></svg><span>Help</span></a></div></details><details class="grp"><summary><span>Windows</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="inspector.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="19.00,12.00 18.82,13.56 18.31,15.04 17.47,16.36 16.36,17.47 15.04,18.31 13.56,18.82 12.00,19.00 10.44,18.82 8.96,18.31 7.64,17.47 6.53,16.36 5.69,15.04 5.18,13.56 5.00,12.00 5.18,10.44 5.69,8.96 6.53,7.64 7.64,6.53 8.96,5.69 10.44,5.18 12.00,5.00 13.56,5.18 15.04,5.69 16.36,6.53 17.47,7.64 18.31,8.96 18.82,10.44 19.00,12.00"/><ellipse class="f" cx="12.00" cy="12.00" rx="2.40" ry="2.40"/></svg><span>Inspector</span></a><a href="reference.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="18.20,5.20 18.58,5.23 18.94,5.32 19.29,5.46 19.61,5.66 19.90,5.90 20.14,6.19 20.34,6.51 20.48,6.86 20.57,7.22 20.60,7.60 20.60,16.40 20.57,16.78 20.48,17.14 20.34,17.49 20.14,17.81 19.90,18.10 19.61,18.34 19.29,18.54 18.94,18.68 18.58,18.77 18.20,18.80 5.80,18.80 5.42,18.77 5.06,18.68 4.71,18.54 4.39,18.34 4.10,18.10 3.86,17.81 3.66,17.49 3.52,17.14 3.43,16.78 3.40,16.40 3.40,7.60 3.43,7.22 3.52,6.86 3.66,6.51 3.86,6.19 4.10,5.90 4.39,5.66 4.71,5.46 5.06,5.32 5.42,5.23 5.80,5.20"/><polygon points="10.00,9.40 15.00,12.00 10.00,14.60"/></svg><span>Reference video</span></a><a href="curves.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="3.60,19.00 4.27,18.95 4.91,18.80 5.52,18.55 6.10,18.22 6.67,17.82 7.21,17.35 7.74,16.81 8.26,16.22 8.77,15.59 9.27,14.92 9.76,14.22 10.25,13.49 10.75,12.75 11.25,12.00 11.76,11.25 12.28,10.51 12.81,9.78 13.36,9.08 13.93,8.41 14.52,7.78 15.13,7.19 15.78,6.65 16.45,6.18 17.16,5.78 17.91,5.45 18.69,5.20 19.52,5.05 20.40,5.00"/><ellipse class="f" cx="12.00" cy="12.00" rx="1.60" ry="1.60"/></svg><span>Curves</span></a><a href="timeline.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="7.40,5.00 18.60,12.00 7.40,19.00"/></svg><span>Timeline and toolbar</span></a></div></details><details class="grp"><summary><span>Reference</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="shortcuts.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="5.40" cy="12.00" rx="1.70" ry="1.70"/><ellipse class="f" cx="12.00" cy="12.00" rx="1.70" ry="1.70"/><ellipse class="f" cx="18.60" cy="12.00" rx="1.70" ry="1.70"/></svg><span>Shortcuts</span></a><a href="trouble.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6.00,21.00 6.00,3.80"/><polyline points="6.00,4.60 18.40,4.60 15.60,8.60 18.40,12.60 6.00,12.60"/></svg><span>Troubleshooting</span></a></div></details></div><div class="side-foot"><a href="index.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Docs</span></a><a href="https://github.com/lsxldierl/framez/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="9.60,8.60 10.13,8.64 10.65,8.77 11.14,8.97 11.60,9.25 12.00,9.60 12.35,10.00 12.63,10.46 12.83,10.95 12.96,11.47 13.00,12.00 13.00,12.00 12.96,12.53 12.83,13.05 12.63,13.54 12.35,14.00 12.00,14.40 11.60,14.75 11.14,15.03 10.65,15.23 10.13,15.36 9.60,15.40 6.00,15.40 5.47,15.36 4.95,15.23 4.46,15.03 4.00,14.75 3.60,14.40 3.25,14.00 2.97,13.54 2.77,13.05 2.64,12.53 2.60,12.00 2.60,12.00 2.64,11.47 2.77,10.95 2.97,10.46 3.25,10.00 3.60,9.60 4.00,9.25 4.46,8.97 4.95,8.77 5.47,8.64 6.00,8.60"/><polygon points="18.00,8.60 18.53,8.64 19.05,8.77 19.54,8.97 20.00,9.25 20.40,9.60 20.75,10.00 21.03,10.46 21.23,10.95 21.36,11.47 21.40,12.00 21.40,12.00 21.36,12.53 21.23,13.05 21.03,13.54 20.75,14.00 20.40,14.40 20.00,14.75 19.54,15.03 19.05,15.23 18.53,15.36 18.00,15.40 14.40,15.40 13.87,15.36 13.35,15.23 12.86,15.03 12.40,14.75 12.00,14.40 11.65,14.00 11.37,13.54 11.17,13.05 11.04,12.53 11.00,12.00 11.00,12.00 11.04,11.47 11.17,10.95 11.37,10.46 11.65,10.00 12.00,9.60 12.40,9.25 12.86,8.97 13.35,8.77 13.87,8.64 14.40,8.60"/></svg><span>Download the helper</span></a></div></nav><div class="main"><header class="topbar"><button class="iconbtn only-narrow" type="button" data-menu aria-label="Menu"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.40,6.60 19.60,6.60"/><polyline points="4.40,12.00 19.60,12.00"/><polyline points="4.40,17.40 19.60,17.40"/></svg></button><div class="crumb"><span>Menus</span><i>/</i><b>File</b></div><div class="top-actions"><button class="iconbtn" type="button" data-search aria-label="Search the docs (Ctrl+K)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg></button><button class="iconbtn" type="button" data-theme-toggle aria-label="Light or dark"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg></button><a class="pill" href="https://github.com/lsxldierl/framez/releases/latest">Get the helper</a></div></header><div class="layout"><article class="doc"><h1>File</h1><p class="lead">Start, open and save animations, bring clips in from other tools, send them out, and set up the rigs to animate.</p>
-      <div class="shots"><figure class="shot"><img src="img/menu-file-export.png" width="582" height="416" alt="File &gt; Export" loading="lazy"><figcaption>File &gt; Export</figcaption></figure></div>
-      <div class="group">
-        <div class="entry" id="f-new" data-use="all"><div class="head"><span class="name">New animation</span><span class="where">File</span></div>
-          <p class="what">Starts a new, empty animation on the picked rig. The rig goes back to its rest pose, the name goes back to Untitled, and loop, events and layers start clear. The rig shows its own face again. The frame rate and length come from <a class="f" href="edit.html#f-settings">Edit &gt; Preferences &gt; Settings...</a> (New clips and keys).</p>
-          <ol class="how"><li>Click the rig in the 3D view or in the list Framez shows.</li><li>Choose File &gt; New animation.</li></ol>
-          <p class="tip">With unsaved changes it asks "Save changes to NAME first?" with Save (Save as... for an untitled animation), Do not save and Cancel. In a scene it asks before closing the scene. One <kbd>Ctrl+Z</kbd> takes it back.</p></div>
-        <div class="entry" id="f-open" data-use="all"><div class="head"><span class="name">Open...</span><span class="where">File</span></div>
-          <p class="what">Lists this rig's saves. Pick one to open it. The list sorts by name, length, keys, loops, priority and when each was saved.</p>
-          <ul class="opts">
-            <li><b>Double-click</b>: opens the save.</li>
-            <li><b>F2</b>: renames the picked save.</li>
-            <li><b>Right-click</b>: duplicates the save, deletes it, or shows its <a class="f" href="#f-history">History</a>.</li>
-          </ul>
-          <p class="when">carrying on with an earlier animation, duplicating a save before a risky change.</p>
-          <p class="tip">Opening one of a scene's clips opens the whole scene. With unsaved work, Open... asks first, as New animation does.</p></div>
-        <div class="entry" id="f-save" data-use="all"><div class="head"><span class="name">Save</span><span class="where">File</span><kbd>Ctrl+S</kbd></div>
-          <p class="what">Saves the animation into the place, under the rig's name in ServerStorage, with the name in the header. An animation still called Untitled opens Save as... first. In a scene it saves every rig's clip and the scene itself (see <a class="f" href="scene.html#f-scenesave">Saving a scene</a>).</p>
-          <p class="when">keeping a take before trying something else, saving a scene's clips together.</p>
-          <p class="tip">Then save the place itself. An unsaved place loses the save when Studio closes. An animation with no keys is not saved. A span with an easing Roblox cannot store is saved as a pose on every frame, and opening the save in Framez brings back the keys and curves you made. In Team Create, saving over a clip someone else saved since you opened it asks first (see <a class="f" href="help.html#f-team">Team</a>).</p></div>
-        <div class="entry" id="f-saveas" data-use="all"><div class="head"><span class="name">Save as...</span><span class="where">File</span></div>
-          <p class="what">Saves the animation under a name you type, next to this rig's other saves. The animation then carries the new name.</p>
-          <ol class="how"><li>Choose File &gt; Save as....</li><li>Type the Name.</li><li>Press <kbd>Enter</kbd>.</li></ol>
-          <p class="when">keeping a version beside the original, giving a first draft its real name.</p>
-          <p class="tip">A name that is already saved asks "NAME is already saved. Replace it?" with Replace and Cancel.</p></div>
-        <div class="entry" id="f-publish" data-use="all"><div class="head"><span class="name">Publish to Roblox...</span><span class="where">File</span></div>
-          <p class="what">Saves the animation and opens Roblox's upload window for it. After you submit, Framez lists your animations on Roblox. The one you pick becomes this animation's asset id, kept with the animation for game scripts.</p>
-          <ol class="how"><li>Choose File &gt; Publish to Roblox....</li><li>In Roblox's upload window, set Creator to whoever owns the game, then submit.</li><li>Back in Framez, click Get the ID and pick the animation in the list.</li></ol>
-          <ul class="opts">
-            <li><b>Get the ID</b>: lists your animations on Roblox. The one you pick is this animation's id.</li>
-            <li><b>Later</b>: closes the box. The id can be picked on the Inspector's Clip page (<a class="f" href="edit.html#f-clipprops">Edit &gt; Preferences &gt; Clip settings</a>).</li>
-          </ul>
-          <p class="when">getting the asset id a game script plays, publishing a skill's animation.</p>
-          <p class="tip">An untitled animation opens Save as... first, and an animation with no keys is not published. Framez opens Roblox's upload window and does not upload on its own.</p></div>
-        <div class="entry" id="f-history" data-use="all"><div class="head"><span class="name">History...</span><span class="where">File, or right-click a save in Open</span></div>
-          <p class="what">Every Save keeps a version of the animation: the last 10, or as many as Preferences says (5, 10, 25 or 50). The list shows each version's number (v1, v2...), when it was saved and how many keys it had; the one saved last is ticked. Pick another to restore it. The save it replaces stays in the list and can be restored the same way.</p>
-          <p class="when">going back to how it was an hour ago, or to before a bad change.</p>
-          <p class="tip">The versions are kept in the place (ServerStorage.FramezHistory). An unsaved place loses them. While the Framez Helper runs, each save is also written to disk as a .json and an .rbxm. Drag the .rbxm into ServerStorage.RBX_ANIMSAVES and the rig's folder to get it back. The folder is set in <a class="f" href="edit.html#f-settings">Preferences</a> (Saving).</p></div>
-        <div class="entry" id="f-importroblox" data-use="all"><div class="head"><span class="name">Roblox animation...</span><span class="where">File &gt; Import</span></div>
-          <p class="what">Puts a Roblox animation on this rig as keys. R6 clips go onto R15 rigs and R15 clips onto R6, limb by limb.</p>
-          <ol class="how"><li>Choose File &gt; Import &gt; Roblox animation....</li><li>Paste an asset id or its link, or pick an Animation, KeyframeSequence or CurveAnimation already in the place.</li><li>Replace the clip, or add it at the playhead.</li></ol>
-          <p class="when">starting from a catalog animation, an emote, or a clip made for another rig.</p>
-          <p class="tip">Replacing the open clip asks first. One <kbd>Ctrl+Z</kbd> takes the import back.</p></div>
-        <div class="entry" id="f-moon2" data-use="all"><div class="head"><span class="name">Moon Animator 2 file...</span><span class="where">File &gt; Import</span></div>
-          <p class="what">Opens a Moon Animator 2 save from this place: the rig's keys with their easing styles, plus the other rigs, cameras and parts in the save as scene items with their keys.</p>
-          <ol class="how"><li>Choose File &gt; Import &gt; Moon Animator 2 file....</li><li>Pick a save in the list. It holds every save in ServerStorage and ReplicatedStorage under MoonAnimator2Saves or MoonAnimatorSaves, newest first, nine at a time with More.</li></ol>
-          <ul class="opts">
-            <li><b>The rig</b>: its keys go on the open rig. The rig's own CFrame track goes into the root joint.</li>
-            <li><b>Other rigs</b>: join the scene with their keys.</li>
-            <li><b>Cameras</b>: become scene cameras. <b>Parts and models</b> become props, with any keyed property. <b>Emitters</b> become effects.</li>
-            <li><b>Markers</b>: become events. A marker with a width also gets an event named &lt;name&gt;End.</li>
-            <li><b>Not opened</b>: camera attach and look-at keys, sound and humanoid actions, terrain colours and bones. The message lists what was left out.</li>
-          </ul>
-          <p class="when">moving a project from Moon Animator 2 to Framez without exporting each clip.</p>
-          <p class="tip">With no save in the place, the message reads "No Moon Animator 2 files in this place."</p></div>
-        <div class="entry" id="f-importfbx" data-use="all blender"><div class="head"><span class="name">FBX or Mixamo clip...</span><span class="where">File &gt; Import</span><span class="needs">helper</span></div>
-          <p class="what">Brings an FBX or BVH clip (Mixamo, Unreal, a Roblox R15 or R6 export, mocap) onto this rig through Blender. Framez sends the rig to Blender, Blender puts the clip on it, and Get from Blender brings it back.</p>
-          <ol class="how"><li>Choose File &gt; Import &gt; FBX or Mixamo clip....</li><li>In Blender's Framez tab, click Import a clip... and pick the FBX or BVH file.</li><li>In Framez, choose <a class="f" href="#f-getblender">File &gt; Import &gt; Get from Blender</a>.</li></ol>
-          <p class="when">Mixamo clips, mocap, anything made in another 3D app.</p>
-          <p class="tip">In place is on by default: the hips keep their up and down but not their travel. Needs the Framez Helper and the Framez tab in Blender (see <a class="f" href="setup.html">Helper and Blender setup</a>).</p></div>
-        <div class="entry" id="f-getblender" data-use="blender"><div class="head"><span class="name">Get from Blender</span><span class="where">File &gt; Import</span><span class="needs">helper</span></div>
-          <p class="what">Brings back what Blender's Send to Framez sent, as keys on the open animation. Where Blender marks its keys, those frames become keys with Blender's easing, and Framez adds a key wherever its own curve would differ from Blender's pose. A pose on every frame with no key list is thinned to the keys it needs.</p>
-          <ul class="opts">
-            <li><b>Events, weapon switches and face keys</b>: go to their markers' frames. One whose marker was deleted stays where it was.</li>
-            <li><b>Joints Blender does not know</b>: are listed and left alone.</li>
-            <li><b>Face shape keys</b>: shape keys in Blender named like the head's face controls (any case, spaces, dots or underscores, with or without a FACS prefix) become keys on the head's face controls, in one undo step. A channel Blender does not key is left alone. A head with no face controls says so.</li>
-            <li><b>Rig setups</b>: bone constraints and drivers sent with Send the rig setup come in too (see <a class="f" href="#f-blendersetup">Rig setups from Blender</a>).</li>
-          </ul>
-          <p class="when">polishing a clip in Blender and bringing the result back, importing a clip made in Blender.</p></div>
-        <div class="entry" id="f-blendersetup" data-use="blender"><div class="head"><span class="name">Rig setups from Blender</span><span class="where">Blender: Framez tab &gt; Send the rig setup, then File &gt; Import &gt; Get from Blender</span><span class="needs">helper</span></div>
-          <p class="what">Brings a Blender armature's constraints, limits and drivers onto the joints of the same names. Each constraint or driver becomes an item in the Made window on its joint, changeable and undoable like any other.</p>
-          <ol class="how"><li>In Blender, select the armature.</li><li>In the 3D View, open the N panel, go to Framez and click Send the rig setup.</li><li>In Framez, choose File &gt; Import &gt; Get from Blender.</li></ol>
-          <ul class="opts">
-            <li><b>Copy Rotation</b>: becomes a Constraint of kind Copy.</li>
-            <li><b>Copy Location</b>: becomes Point.</li>
-            <li><b>Damped Track, Track To, Locked Track</b>: become Aim.</li>
-            <li><b>Child Of</b>: becomes Follow.</li>
-            <li><b>Limit Distance</b>: becomes Keep a distance.</li>
-            <li><b>Floor</b>: becomes Stay above its object.</li>
-            <li><b>Limit Rotation</b>: becomes the joint's limit (a hinge, or a cone and a twist).</li>
-            <li><b>IK</b>: becomes an IK chain.</li>
-            <li><b>A bone driver on rotation or location</b>: becomes a Driver. The expression becomes its formula, set to Replace and live.</li>
-          </ul>
-          <p class="when">keeping a Blender rig's behaviour when its animation moves to Roblox.</p>
-          <p class="tip">Influence carries over. Muted constraints are left out. Anything with no match is named in the status line. Needs the Framez Helper and Blender's Framez tab (see <a class="f" href="setup.html">Helper and Blender setup</a>).</p></div>
-        <div class="entry" id="f-scenefromgame" data-use="acting"><div class="head"><span class="name">A scene from the game...</span><span class="where">File &gt; Import</span></div>
-          <p class="what">Puts a scene that was put in the game back into this place's saves. The scene's record comes back, with every rig's clip that this place lost.</p>
-          <ol class="how"><li>Choose File &gt; Import &gt; A scene from the game....</li><li>Pick the scene's name. The list holds the scenes in ReplicatedStorage.FramezScenes.</li><li>Choose File &gt; Open and pick the scene.</li></ol>
-          <p class="when">getting a scene back after this place lost its saves.</p>
-          <p class="tip">With no scene in the game, the row reads "No Framez scene in the game". Scenes get there with <a class="f" href="scene.html#f-sceneexport">Put in the game...</a>.</p></div>
-        <div class="entry" id="f-recover" data-use="all"><div class="head"><span class="name">Unsaved work and recovery</span><span class="where">Edit &gt; Preferences &gt; Saving, the start screen, File &gt; Import &gt; Recover unsaved work...</span></div>
-          <p class="what">While an animation is unsaved, Framez keeps a recovery copy a few seconds after the last change. Edit &gt; Preferences &gt; Saving sets how often it is made (Every 30 s, Every minute, Every 2 minutes or Off) and how many copies are kept (3, 5 or 10). In a scene, the posed rig's clip is copied.</p>
-          <p class="what">The next time Framez opens, the start screen shows a card: Unsaved work, with the animation and rig, and the buttons Recover and Discard (Discard asks first). File &gt; Import &gt; Recover unsaved work... is shown while copies exist and lists them. Recover opens the copy on its rig, unsaved, with the asset id back. A Save, or closing the animation, removes its copy.</p>
-          <p class="when">getting work back after Studio closes or crashes before a Save.</p>
-          <p class="tip">A recovery copy is not a save. Save the animation, then the place.</p></div>
-        <div class="entry" id="f-emote" data-use="dance"><div class="head"><span class="name">Emote...</span><span class="where">File &gt; Export</span></div>
-          <p class="what">Checks this clip against Roblox's rules for UGC emotes and saves it as an emote. Each rule is a row: red where Roblox would refuse the upload, grey for what Save leaves out, green where it passes (Show passed lists those).</p>
-          <ul class="opts">
-            <li><b>The rules</b>: a standard R15, at most 10 s, every body part at most 5 studs from the root part and no more than 3.1 under it, nothing faster than 30 studs a second, and one event.</li>
-            <li><b>Length</b>: the fix is Stretch or Trim.</li>
-            <li><b>Too far, Too low, Too fast</b>: the fix is Pull back. It scales the root's travel back towards the start, then lifts the root where the body sinks too low.</li>
-            <li><b>No one-click fix</b>: the row has Go to, which jumps to the frame.</li>
-            <li><b>Fix all</b>: runs every fix in one undo step.</li>
-            <li><b>Save as emote</b> (bottom right): writes NAME_EMOTE, the CurveAnimation an emote upload needs, then shows Roblox's two upload steps as cards. Framez spots the Animation Roblox's upload window makes in Workspace and opens the Avatar Item upload on it.</li>
-          </ul>
-          <p class="when">anything sold as an emote, before paying the upload fee.</p>
-          <p class="tip">Joints a standard R15 hasn't got (a weapon), and events after the first, are left out of the emote and listed as notes. Framez opens Roblox's upload window and does not upload. Pick Emote and submit there. In the emote, a hold eases over one 30 fps frame.</p></div>
-        <div class="entry" id="f-pack" data-use="cycle"><div class="head"><span class="name">Animation pack...</span><span class="where">File &gt; Export</span></div>
-          <p class="what">Builds a set of clips for the Marketplace or for this game. The window has a slot for each clip of a pack: Idle, Idle 2, Walk, Run, Jump, Fall, Climb, Swim and Swim idle, each a save of the open rig, with a weight for each idle. Packs are kept in the place (ServerStorage.FramezPacks). Packs switches between them, and a new name starts a new one.</p>
-          <ul class="opts">
-            <li><b>Check</b>: opens each clip in turn and lists what the Marketplace refuses: not an R15; a clip that does not loop (Jump must not); longer than 10 s; any part but LowerTorso moving; LowerTorso more than 1.5 studs from its start; and Roblox's reach, height and speed limits (as <a class="f" href="#f-emote">Emote...</a> checks them). Each row has its fix, which saves the clip: Set its loop, Keep only turns, Pull LowerTorso in, Fit and pull back. The clip that was open opens again.</li>
-            <li><b>For the Marketplace</b>: makes each clip a CurveAnimation named after the pack and its slot, in the pack's folder, and picks them in the Explorer. The window then lists what Save to Roblox asks for each clip: Animation type, Sub animation, Weight and Parent model name.</li>
-            <li><b>Use in this game</b>: adds a LocalScript, StarterCharacterScripts.FramezMovement, which gives every character the pack's clips through its Animate script (R15 and R6 games). Each clip must be published first.</li>
-          </ul>
-          <p class="tip">Save the open clip first: Check and the fixes open each clip.</p></div>
-        <div class="entry" id="f-additive" data-use="skill idle cycle"><div class="head"><span class="name">Save as additive...</span><span class="where">File &gt; Export</span></div>
-          <p class="what">Saves this clip as NAME_ADD: every pose minus a reference pose (frame 0, the frame at the playhead, or rest). In a Roblox Animation Graph, the Add node plays it over another animation and moves each joint by the same amount.</p>
-          <p class="when">breathing, a recoil, a flinch or a lean that should play over any animation.</p>
-          <p class="tip">Make the layer over the pose it belongs to (the stance), and pick that frame as the reference. Events and weapon switches are not copied into it.</p></div>
-        <div class="entry" id="f-sendblender" data-use="blender"><div class="head"><span class="name">Send to Blender</span><span class="where">File &gt; Export</span><span class="needs">helper</span></div>
-          <p class="what">Sends the rig and the open clip to Blender: an armature with a bone per joint, boxes for the parts, the pose on every frame, and which frames are keys with how each eases. Events, weapon switches, face keys, hit windows and foot contacts arrive as timeline markers. In Blender, the Framez tab's Get from Framez builds it.</p>
-          <p class="when">polishing with Blender's tools, or keeping a Blender copy.</p>
-          <p class="tip">Layers, clip blocks and curve modifiers stay in Framez. Send says so when they change what Framez shows. Needs the Framez Helper and the Framez tab in Blender.</p></div>
-        <div class="entry" data-use="skill acting" id="file-aim-offset-poses"><div class="head"><span class="name">Aim offset poses...</span><span class="where">File &gt; Export</span></div>
-          <p class="what">Saves nine aim poses from the pose at the playhead (left, right, up, down and the corners) and aims them live: drag Yaw and Pitch. Every value is under <a class="f" href="game.html#f-aim">Aim offset poses...</a> in Game.</p>
-          <p class="when">a character whose upper body follows the camera or a target while the legs play their own animation.</p>
-          <p class="tip">The row is in the Animate workspace.</p></div>
-        <div class="entry" id="f-live-blender" data-use="blender"><div class="head"><span class="name">Live link with Blender</span><span class="where">File &gt; Export</span><span class="needs">helper</span></div>
-          <p class="what">Keeps the open animation and Blender in step while you work: an edit in Framez shows in Blender, and an edit in Blender shows in Framez. Keys stay keys both ways, with their easing and key type. Where one program cannot draw the other's curve exactly, a Generated key is added.</p>
-          <ol class="how"><li>Open the animation.</li><li>Choose File &gt; Export &gt; Live link with Blender. A tick shows while it is on.</li><li>In Blender, open the Framez tab and click Live.</li><li>Edit in either program.</li></ol>
-          <ul class="opts">
-            <li><b>Framez to Blender</b>: Framez sends a moment after an edit stops, and keeps sending while a drag goes on.</li>
-            <li><b>Blender to Framez</b>: only the joints that changed are written. The message reads "Blender: N joints changed." It is one undo step, and the playhead and view stay where they were.</li>
-            <li><b>Markers</b>: events, weapon switches, face keys, hit windows and foot contacts travel as timeline markers and follow retimes.</li>
-            <li><b>Stays in Framez</b>: layers, clip blocks and curve modifiers.</li>
-            <li><b>Off</b>: choose the row again.</li>
-          </ul>
-          <p class="when">polishing curves in Blender's Graph Editor while watching the result in your game's scene.</p>
-          <p class="tip">Needs the Framez Helper and the Framez tab in Blender (see <a class="f" href="setup.html">Helper and Blender setup</a>).</p></div>
-        <div class="entry" id="f-playblast" data-use="all skill video"><div class="head"><span class="name">Playblast...</span><span class="where">File &gt; Export</span><span class="needs">helper</span></div>
-          <p class="what">Records the animation from Studio's 3D view to a video. The dialog opens with the last settings. Record starts it. <kbd>Esc</kbd> stops it and deletes what was written. When it finishes, the video opens, and a small menu offers Show in folder.</p>
-          <ul class="opts">
-            <li><b>Camera</b>: Studio's view, or the scene's camera.</li>
-            <li><b>Frames</b>: the whole clip, the play range, or From and To.</li>
-            <li><b>Size</b>: as the view, 1280 x 720 or 1920 x 1080.</li>
-            <li><b>Frame rate</b>: the clip's, or 30.</li>
-            <li><b>Frame number, No number</b>: draws the frame number in a corner, or not.</li>
-            <li><b>Onion skin, No onion skin</b>: includes the onion skin, or not.</li>
-            <li><b>Reference beside it, Animation only</b>: places the linked video next to the recording, or records the animation alone.</li>
-            <li><b>Format</b>: MP4 video or PNG frames.</li>
-            <li><b>Folder</b>: where the video or frames are written.</li>
-            <li><b>Open when done, Do not open</b>: whether the video opens when it finishes.</li>
-          </ul>
-          <p class="when">showing a clip to someone, or keeping a take beside the video it copies.</p>
-          <p class="tip">Needs the Framez Helper running. The first time, Studio asks to allow screenshots. Keep Studio's 3D view on screen while it records. The row is in the Animate and Scene workspaces.</p></div>
-        <div class="entry" id="f-insertrig" data-use="all"><div class="head"><span class="name">New R6 rig / New R15 rig / My avatar as R6 / My avatar as R15</span><span class="where">File &gt; Rig</span></div>
-          <p class="what">Puts a rig on the ground in front of the camera, facing it, and picks it: Roblox's own R6 or R15, or the Studio account's avatar as R6 or R15. R15s get Motor6Ds and open at once. Each gets a name no other rig uses. In an open scene, the new rig joins the scene.</p>
-          <p class="when">starting on a fresh character, or animating the Studio account's avatar.</p></div>
-        <div class="entry" id="f-rigmodel" data-use="all"><div class="head"><span class="name">Rig a whole model</span><span class="where">File &gt; Rig</span></div>
-          <p class="what">Gives the model picked in the Explorer (a door, a chest, a creature) a joint on every piece. Pieces welded together stay together. The model also gets an AnimationController, which plays it in the game.</p>
-          <p class="when">animating a door, a chest, a creature or a machine that is not a character.</p></div>
-        <div class="entry" id="f-joinparts" data-use="all skill"><div class="head"><span class="name">Join selected parts... / Unjoin selected joint</span><span class="where">File &gt; Rig</span></div>
-          <p class="what">Join adds a Motor6D between two parts, ready to animate. Unjoin turns a picked Motor6D into a weld: the part stays on and stops animating.</p>
-          <ol class="how"><li>With no animation open, pick two parts in the Explorer with <kbd>Ctrl</kbd>+click: first the one that holds, then the one that moves. An accessory counts as its Handle, a model as its main part.</li><li>Choose File &gt; Rig &gt; Join selected parts....</li><li>Pick where it turns: its own centre, the holder's, or halfway.</li></ol>
-          <p class="when">a sword into a hand, a cape on the torso, a tail or wing on a creature, a prop the character carries.</p>
-          <p class="tip">Do it with no animation open. Studio's <kbd>Ctrl+Z</kbd> undoes it, and does not work while an animation is open. Move the turning point later with <a class="f" href="pose.html#f-pivot-edit">Edit pivot</a>.</p></div>
-        <div class="entry" id="f-rigmap" data-use="all"><div class="head"><span class="name">Map parts...</span><span class="where">File &gt; Rig</span></div>
-          <p class="what">Opens the Rig map window: the body with a dot for each part. White dots are mapped, grey ones optional, red ones needed. Done saves the map on the rig's joints. Every clip and every place keep it.</p>
-          <ol class="how"><li>Choose File &gt; Rig &gt; Map parts....</li><li>Click Auto map to fill the dots from the parts' names and the rig's shape.</li><li>To fill a dot by hand, click it, then click the part in the 3D view, or choose the part from the list under the figure.</li><li>Click Done.</li></ol>
-          <ul class="opts">
-            <li><b>Clear a dot</b>: right-click it.</li>
-            <li><b>Legs bend</b>: sets Forward or Back for the knees.</li>
-            <li><b>Extra chains</b>: click Add chain, then click the chain's first part and its last.</li>
-          </ul>
-          <p class="when">creatures, mechs and characters whose parts are not named like Roblox's, so IK, mirror, generators and Import work on them. R6 and R15 rigs are mapped by their names.</p></div>
-        <div class="entry" id="f-putbackrig" data-use="all"><div class="head"><span class="name">Put back deleted rig</span><span class="where">File &gt; Rig</span></div>
-          <p class="what">Puts back the rig that was deleted while its animation was open, where it stood, and opens it again. Studio's own <kbd>Ctrl+Z</kbd> cannot bring it back while an animation is open.</p>
-          <p class="when">recovering a rig that was deleted by mistake while it was open.</p>
-          <p class="tip">The row is greyed (No rig has been deleted) until a rig is deleted. After a delete it reads Put back and the rig's name, and the status line says so. If Studio destroyed the rig, the status line says it cannot be put back.</p></div>
-        <div class="entry" id="f-meshbones" data-use="all"><div class="head"><span class="name">Mesh bones</span><span class="where">a rig with bones, File &gt; Rig</span></div>
-          <p class="what">Animates creatures, custom avatars, capes, tails, hair and wings made as one skinned mesh, through their bones. Click the model and open an animation: its bones show through the body.</p>
-          <ul class="opts">
-            <li><b>Pick a bone</b>: click a drawn bone, or the skin over it. The bone under the cursor turns white and the picked bone is orange.</li>
-            <li><b>Every tool works on bones</b>: keys, curves, layers, the slider, paths, onion skin, mirror, IK chains through the rig map, Import, effects and held objects on a bone.</li>
-            <li><b>Mirror</b>: finds a bone's twin by the sides in its name: .L and .R, _L and _R, Left and Right, L_ and R_.</li>
-            <li><b>Welded meshes</b>: a skinned mesh welded to a part, such as a tail on a torso, rides that part and opens with the rig.</li>
-            <li><b>Bones overlay</b>: a rig with bones opens with <a class="f" href="view.html#f-bones">Bones</a> on (Octahedral, with X-ray).</li>
-            <li><b>Track groups</b>: a rig with many joints lists its tracks in groups, one for each branch (View &gt; Windows &gt; Track groups).</li>
-            <li><b>In the game</b>: saves play with no script.</li>
-            <li><b>Left out</b>: bones named like a body part, face bones of a dynamic head, tip bones ending in _end or .end, and bones in accessories.</li>
-            <li><b>Parts only</b>: Edit pivot and squash and stretch work on parts only. For a bone, use Pivot &gt; Turn about.</li>
-          </ul>
-          <p class="when">a dragon with a bone tail, a cape or hair on a skinned avatar, a creature with wings.</p></div>
-        <div class="entry" id="f-close" data-use="all"><div class="head"><span class="name">Close animation</span><span class="where">File</span></div>
-          <p class="what">Lets go of the rig. With unsaved work it asks "Save changes to NAME first?" with Save, Do not save and Cancel. In a scene it asks before closing the scene.</p></div>
-      </div>
-    <nav class="pager" aria-label="More pages"><a class="prev" href="setup.html"><small>Previous</small><span>Install the helper</span></a><a class="next" href="edit.html"><small>Next</small><span>Edit</span></a></nav><footer class="foot">Framez by soldier. These docs cover Framez 17.97.</footer></article><aside class="toc" aria-label="On this page"><a href="#f-new">New animation</a><a href="#f-open">Open...</a><a href="#f-save">Save</a><a href="#f-saveas">Save as...</a><a href="#f-publish">Publish to Roblox...</a><a href="#f-history">History...</a><a href="#f-importroblox">Roblox animation...</a><a href="#f-moon2">Moon Animator 2 file...</a><a href="#f-importfbx">FBX or Mixamo clip...</a><a href="#f-getblender">Get from Blender</a><a href="#f-blendersetup">Rig setups from Blender</a><a href="#f-scenefromgame">A scene from the game...</a><a href="#f-recover">Unsaved work and recovery</a><a href="#f-emote">Emote...</a><a href="#f-pack">Animation pack...</a><a href="#f-additive">Save as additive...</a><a href="#f-sendblender">Send to Blender</a><a href="#file-aim-offset-poses">Aim offset poses...</a><a href="#f-live-blender">Live link with Blender</a><a href="#f-playblast">Playblast...</a><a href="#f-insertrig">New R6 rig / New R15 rig / My avatar as R6 / My avatar as R15</a><a href="#f-rigmodel">Rig a whole model</a><a href="#f-joinparts">Join selected parts... / Unjoin selected joint</a><a href="#f-rigmap">Map parts...</a><a href="#f-putbackrig">Put back deleted rig</a><a href="#f-meshbones">Mesh bones</a><a href="#f-close">Close animation</a></aside></div></div></div><div class="scrim" data-scrim hidden></div><div class="search" id="search" hidden role="dialog" aria-modal="true" aria-label="Search the docs"><div class="search-box"><div class="search-field"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg><input id="search-q" type="search" placeholder="Search the docs" autocomplete="off"><kbd>Esc</kbd></div><div class="search-results" id="search-results"></div></div></div><script src="assets/search-index.js"></script><script src="assets/site.js"></script></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>File Menu - Framez Manual</title><meta name="description" content="The File menu starts, opens, saves and publishes animations, brings animations in from Roblox, Moon Animator 2, Blender and the game, sends them out again,"><link rel="icon" href="assets/favicon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"><link rel="stylesheet" href="assets/site.css"><script>try{var t=localStorage.getItem("framez-theme");if(t)document.documentElement.dataset.look=t}catch(e){}</script></head><body><div class="shell"><nav class="side" id="side" aria-label="Docs"><div class="side-head"><a class="brand" href="index.html"><svg class="mark" viewBox="-34.0 -34.0 68.0 68.0" aria-hidden="true"><polygon points="-28.00,0.00 0.00,-28.00 28.00,0.00 0.00,28.00" fill="#3c4045"/><polygon points="-18.50,0.00 0.00,-18.50 0.00,0.00" fill="#e8443c"/><polygon points="0.00,-18.50 9.25,-9.25 0.00,0.00" fill="#9e2b2b"/><polygon points="9.25,-9.25 9.25,0.00 0.00,0.00" fill="#ffffff"/><polygon points="9.25,-9.25 18.50,0.00 9.25,0.00" fill="#e8443c"/><polygon points="-18.50,0.00 0.00,0.00 -9.25,9.25" fill="#9e2b2b"/><polygon points="-9.25,9.25 0.00,0.00 0.00,18.50" fill="#ffffff"/><polygon points="0.00,0.00 18.50,0.00 0.00,18.50" fill="#ffffff"/><polygon points="26.30,-22.51 23.03,-18.03 17.70,-16.49 20.97,-20.97" fill="#e8443c"/><polygon points="-16.73,16.57 -17.63,18.42 -19.67,18.63 -18.77,16.78" fill="#e8443c"/></svg><i class="sep"></i><span>Manual</span></a><button class="iconbtn" type="button" data-search aria-label="Search the manual (Ctrl+K)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg></button></div><div class="side-scroll"><details class="grp"><summary><span>Getting Started</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="start.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="5.14,9.23 5.40,8.66 5.70,8.11 6.06,7.59 6.45,7.10 6.89,6.65 7.36,6.24 7.86,5.87 8.40,5.54 8.96,5.25 9.54,5.02 10.14,4.84 10.75,4.71 11.37,4.63 12.00,4.60 12.63,4.63 13.25,4.71 13.86,4.84 14.46,5.02 15.04,5.25 15.60,5.54 16.14,5.87 16.64,6.24 17.11,6.65 17.55,7.10 17.94,7.59 18.30,8.11 18.60,8.66 18.86,9.23"/><polyline points="18.86,14.77 18.60,15.34 18.30,15.89 17.94,16.41 17.55,16.90 17.11,17.35 16.64,17.76 16.14,18.13 15.60,18.46 15.04,18.75 14.46,18.98 13.86,19.16 13.25,19.29 12.63,19.37 12.00,19.40 11.37,19.37 10.75,19.29 10.14,19.16 9.54,18.98 8.96,18.75 8.40,18.46 7.86,18.13 7.36,17.76 6.89,17.35 6.45,16.90 6.06,16.41 5.70,15.89 5.40,15.34 5.14,14.77"/><polyline points="18.86,9.23 16.11,7.23"/><polyline points="18.86,9.23 19.45,5.88"/><polyline points="5.14,14.77 7.89,16.77"/><polyline points="5.14,14.77 4.55,18.12"/></svg><span>Getting Started</span></a><a href="setup.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="9.60,8.60 10.13,8.64 10.65,8.77 11.14,8.97 11.60,9.25 12.00,9.60 12.35,10.00 12.63,10.46 12.83,10.95 12.96,11.47 13.00,12.00 13.00,12.00 12.96,12.53 12.83,13.05 12.63,13.54 12.35,14.00 12.00,14.40 11.60,14.75 11.14,15.03 10.65,15.23 10.13,15.36 9.60,15.40 6.00,15.40 5.47,15.36 4.95,15.23 4.46,15.03 4.00,14.75 3.60,14.40 3.25,14.00 2.97,13.54 2.77,13.05 2.64,12.53 2.60,12.00 2.60,12.00 2.64,11.47 2.77,10.95 2.97,10.46 3.25,10.00 3.60,9.60 4.00,9.25 4.46,8.97 4.95,8.77 5.47,8.64 6.00,8.60"/><polygon points="18.00,8.60 18.53,8.64 19.05,8.77 19.54,8.97 20.00,9.25 20.40,9.60 20.75,10.00 21.03,10.46 21.23,10.95 21.36,11.47 21.40,12.00 21.40,12.00 21.36,12.53 21.23,13.05 21.03,13.54 20.75,14.00 20.40,14.40 20.00,14.75 19.54,15.03 19.05,15.23 18.53,15.36 18.00,15.40 14.40,15.40 13.87,15.36 13.35,15.23 12.86,15.03 12.40,14.75 12.00,14.40 11.65,14.00 11.37,13.54 11.17,13.05 11.04,12.53 11.00,12.00 11.00,12.00 11.04,11.47 11.17,10.95 11.37,10.46 11.65,10.00 12.00,9.60 12.40,9.25 12.86,8.97 13.35,8.77 13.87,8.64 14.40,8.60"/></svg><span>Installing the Framez Helper</span></a></div></details><details class="grp"><summary><span>Interface</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="window.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>The Framez Window</span></a><a href="workspaces.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.40,6.60 19.60,6.60"/><polyline points="4.40,12.00 19.60,12.00"/><polyline points="4.40,17.40 19.60,17.40"/></svg><span>Workspaces</span></a><a href="timeline.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="7.40,5.00 18.60,12.00 7.40,19.00"/></svg><span>Timeline and Toolbar</span></a><a href="anytool.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.40,13.60 4.60,8.80 9.40,4.00"/><polyline points="4.60,8.80 14.40,8.80 15.47,8.92 16.48,9.28 17.39,9.85 18.15,10.61 18.72,11.52 19.08,12.53 19.20,13.60 19.08,14.67 18.72,15.68 18.15,16.59 17.39,17.35 16.48,17.92 15.47,18.28 14.40,18.40 11.00,18.40"/></svg><span>Working with Tools</span></a></div></details><details class="grp" open><summary><span>Menus</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="file.html" aria-current="page"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="12.00,3.60 12.00,15.20"/><polyline points="7.20,10.60 12.00,15.40 16.80,10.60"/><polyline points="4.60,20.40 19.40,20.40"/></svg><span>File</span></a><a href="edit.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.40,13.60 4.60,8.80 9.40,4.00"/><polyline points="4.60,8.80 14.40,8.80 15.47,8.92 16.48,9.28 17.39,9.85 18.15,10.61 18.72,11.52 19.08,12.53 19.20,13.60 19.08,14.67 18.72,15.68 18.15,16.59 17.39,17.35 16.48,17.92 15.47,18.28 14.40,18.40 11.00,18.40"/></svg><span>Edit</span></a><a href="key.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon class="f" points="12.00,3.00 21.00,12.00 12.00,21.00 3.00,12.00"/></svg><span>Key</span></a><a href="pose.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="14.60,6.20 14.53,6.78 14.34,7.33 14.03,7.82 13.62,8.23 13.13,8.54 12.58,8.73 12.00,8.80 11.42,8.73 10.87,8.54 10.38,8.23 9.97,7.82 9.66,7.33 9.47,6.78 9.40,6.20 9.47,5.62 9.66,5.07 9.97,4.58 10.38,4.17 10.87,3.86 11.42,3.67 12.00,3.60 12.58,3.67 13.13,3.86 13.62,4.17 14.03,4.58 14.34,5.07 14.53,5.62 14.60,6.20"/><polyline points="12.00,9.40 12.00,15.20"/><polyline points="12.00,15.20 8.60,20.40"/><polyline points="12.00,15.20 15.40,20.40"/><polyline points="7.00,12.00 17.00,12.00"/></svg><span>Pose</span></a><a href="face.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.20,8.00 16.09,8.93 15.78,9.82 15.28,10.62 14.62,11.28 13.82,11.78 12.93,12.09 12.00,12.20 11.07,12.09 10.18,11.78 9.38,11.28 8.72,10.62 8.22,9.82 7.91,8.93 7.80,8.00 7.91,7.07 8.22,6.18 8.72,5.38 9.38,4.72 10.18,4.22 11.07,3.91 12.00,3.80 12.93,3.91 13.82,4.22 14.62,4.72 15.28,5.38 15.78,6.18 16.09,7.07 16.20,8.00"/><polyline points="5.14,18.83 5.40,18.26 5.70,17.71 6.06,17.19 6.45,16.70 6.89,16.25 7.36,15.84 7.86,15.47 8.40,15.14 8.96,14.85 9.54,14.62 10.14,14.44 10.75,14.31 11.37,14.23 12.00,14.20 12.63,14.23 13.25,14.31 13.86,14.44 14.46,14.62 15.04,14.85 15.60,15.14 16.14,15.47 16.64,15.84 17.11,16.25 17.55,16.70 17.94,17.19 18.30,17.71 18.60,18.26 18.86,18.83"/></svg><span>Face</span></a><a href="scene.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13.40,7.00 13.74,7.03 14.08,7.11 14.40,7.24 14.69,7.42 14.96,7.64 15.18,7.91 15.36,8.20 15.49,8.52 15.57,8.86 15.60,9.20 15.60,14.80 15.57,15.14 15.49,15.48 15.36,15.80 15.18,16.09 14.96,16.36 14.69,16.58 14.40,16.76 14.08,16.89 13.74,16.97 13.40,17.00 5.00,17.00 4.66,16.97 4.32,16.89 4.00,16.76 3.71,16.58 3.44,16.36 3.22,16.09 3.04,15.80 2.91,15.48 2.83,15.14 2.80,14.80 2.80,9.20 2.83,8.86 2.91,8.52 3.04,8.20 3.22,7.91 3.44,7.64 3.71,7.42 4.00,7.24 4.32,7.11 4.66,7.03 5.00,7.00"/><polygon points="15.60,10.60 21.20,7.60 21.20,16.40 15.60,13.40"/></svg><span>Scene</span></a><a href="game.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6.00,21.00 6.00,3.80"/><polyline points="6.00,4.60 18.40,4.60 15.60,8.60 18.40,12.60 6.00,12.60"/></svg><span>Game</span></a><a href="view.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="2.60,12.00 3.09,11.26 3.62,10.57 4.19,9.93 4.80,9.36 5.43,8.83 6.09,8.36 6.77,7.95 7.48,7.59 8.21,7.29 8.95,7.04 9.70,6.85 10.46,6.71 11.23,6.63 12.00,6.60 12.77,6.63 13.54,6.71 14.30,6.85 15.05,7.04 15.79,7.29 16.52,7.59 17.23,7.95 17.91,8.36 18.57,8.83 19.20,9.36 19.81,9.93 20.38,10.57 20.91,11.26 21.40,12.00 20.91,12.74 20.38,13.43 19.81,14.07 19.20,14.64 18.57,15.17 17.91,15.64 17.22,16.05 16.52,16.41 15.79,16.71 15.05,16.96 14.30,17.15 13.54,17.29 12.77,17.37 12.00,17.40 11.23,17.37 10.46,17.29 9.70,17.15 8.95,16.96 8.21,16.71 7.48,16.41 6.77,16.05 6.09,15.64 5.43,15.17 4.80,14.64 4.19,14.07 3.62,13.43 3.09,12.74 2.60,12.00"/><polygon points="15.00,12.00 14.92,12.67 14.70,13.30 14.35,13.87 13.87,14.35 13.30,14.70 12.67,14.92 12.00,15.00 11.33,14.92 10.70,14.70 10.13,14.35 9.65,13.87 9.30,13.30 9.08,12.67 9.00,12.00 9.08,11.33 9.30,10.70 9.65,10.13 10.13,9.65 10.70,9.30 11.33,9.08 12.00,9.00 12.67,9.08 13.30,9.30 13.87,9.65 14.35,10.13 14.70,10.70 14.92,11.33 15.00,12.00"/></svg><span>View</span></a><a href="help.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="5.60,12.00 9.80,16.20 18.40,6.80"/></svg><span>Help</span></a></div></details><details class="grp"><summary><span>Windows</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="inspector.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="19.00,12.00 18.82,13.56 18.31,15.04 17.47,16.36 16.36,17.47 15.04,18.31 13.56,18.82 12.00,19.00 10.44,18.82 8.96,18.31 7.64,17.47 6.53,16.36 5.69,15.04 5.18,13.56 5.00,12.00 5.18,10.44 5.69,8.96 6.53,7.64 7.64,6.53 8.96,5.69 10.44,5.18 12.00,5.00 13.56,5.18 15.04,5.69 16.36,6.53 17.47,7.64 18.31,8.96 18.82,10.44 19.00,12.00"/><ellipse class="f" cx="12.00" cy="12.00" rx="2.40" ry="2.40"/></svg><span>Inspector</span></a><a href="curves.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="3.60,19.00 4.27,18.95 4.91,18.80 5.52,18.55 6.10,18.22 6.67,17.82 7.21,17.35 7.74,16.81 8.26,16.22 8.77,15.59 9.27,14.92 9.76,14.22 10.25,13.49 10.75,12.75 11.25,12.00 11.76,11.25 12.28,10.51 12.81,9.78 13.36,9.08 13.93,8.41 14.52,7.78 15.13,7.19 15.78,6.65 16.45,6.18 17.16,5.78 17.91,5.45 18.69,5.20 19.52,5.05 20.40,5.00"/><ellipse class="f" cx="12.00" cy="12.00" rx="1.60" ry="1.60"/></svg><span>Curve Editor</span></a><a href="modifiers.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Modifiers</span></a><a href="physics.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Physics</span></a><a href="reference.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="18.20,5.20 18.58,5.23 18.94,5.32 19.29,5.46 19.61,5.66 19.90,5.90 20.14,6.19 20.34,6.51 20.48,6.86 20.57,7.22 20.60,7.60 20.60,16.40 20.57,16.78 20.48,17.14 20.34,17.49 20.14,17.81 19.90,18.10 19.61,18.34 19.29,18.54 18.94,18.68 18.58,18.77 18.20,18.80 5.80,18.80 5.42,18.77 5.06,18.68 4.71,18.54 4.39,18.34 4.10,18.10 3.86,17.81 3.66,17.49 3.52,17.14 3.43,16.78 3.40,16.40 3.40,7.60 3.43,7.22 3.52,6.86 3.66,6.51 3.86,6.19 4.10,5.90 4.39,5.66 4.71,5.46 5.06,5.32 5.42,5.23 5.80,5.20"/><polygon points="10.00,9.40 15.00,12.00 10.00,14.60"/></svg><span>Reference Video</span></a><a href="poses.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Poses</span></a><a href="camera.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13.40,7.00 13.74,7.03 14.08,7.11 14.40,7.24 14.69,7.42 14.96,7.64 15.18,7.91 15.36,8.20 15.49,8.52 15.57,8.86 15.60,9.20 15.60,14.80 15.57,15.14 15.49,15.48 15.36,15.80 15.18,16.09 14.96,16.36 14.69,16.58 14.40,16.76 14.08,16.89 13.74,16.97 13.40,17.00 5.00,17.00 4.66,16.97 4.32,16.89 4.00,16.76 3.71,16.58 3.44,16.36 3.22,16.09 3.04,15.80 2.91,15.48 2.83,15.14 2.80,14.80 2.80,9.20 2.83,8.86 2.91,8.52 3.04,8.20 3.22,7.91 3.44,7.64 3.71,7.42 4.00,7.24 4.32,7.11 4.66,7.03 5.00,7.00"/><polygon points="15.60,10.60 21.20,7.60 21.20,16.40 15.60,13.40"/></svg><span>Camera Preview</span></a><a href="sublines.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Subtitle Lines</span></a><a href="bench.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Test Bench</span></a><a href="check.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Check Animation</span></a><a href="prefs.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Preferences</span></a><a href="keyboard.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Keyboard Shortcuts</span></a><a href="scripting.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Scripting</span></a></div></details><details class="grp"><summary><span>Tutorials</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="recipes.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Tutorials</span></a><a href="r-skill.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Combat Skill</span></a><a href="r-animehit.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Hit with Effects</span></a><a href="r-idle.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making an Idle or Fidget</span></a><a href="r-cycle.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Walk, Run, Strafe or Backpedal</span></a><a href="r-video.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Copying a Move from a Video</span></a><a href="r-dance.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating a Dance to Music</span></a><a href="r-ugc.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making an Emote to Sell</span></a><a href="r-pack.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making an Animation Pack</span></a><a href="r-acro.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating Jumps, Flips and Spins</span></a><a href="r-ragdoll.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Ragdoll Fall or Hit Reaction</span></a><a href="r-acting.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating Talking, Reacting and Pointing</span></a><a href="r-cutscene.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Cutscene</span></a><a href="r-grab.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating a Grab, Throw or Finisher</span></a><a href="r-hold.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Picking Up, Passing and Throwing an Object</span></a><a href="r-faces.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating Faces on a Classic Head</span></a><a href="r-dynface.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating Faces on a Dynamic Head</span></a><a href="r-lipsync.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Setting up Lip Sync</span></a><a href="r-capture.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Capturing a Face from a Webcam</span></a><a href="r-bench.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Testing an Animation in the Game</span></a><a href="r-blender.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Editing an Animation in Blender</span></a><a href="r-import.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Starting from an Existing Animation</span></a><a href="r-graph.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Previewing Blends, Layers and Aim Offsets</span></a><a href="r-rig.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Setting up R15, Creature and Custom Rigs</span></a><a href="r-keys.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Setting Your Own Keyboard Shortcuts</span></a></div></details><details class="grp"><summary><span>Reference</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="shortcuts.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="5.40" cy="12.00" rx="1.70" ry="1.70"/><ellipse class="f" cx="12.00" cy="12.00" rx="1.70" ry="1.70"/><ellipse class="f" cx="18.60" cy="12.00" rx="1.70" ry="1.70"/></svg><span>Shortcut List</span></a><a href="trouble.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6.00,21.00 6.00,3.80"/><polyline points="6.00,4.60 18.40,4.60 15.60,8.60 18.40,12.60 6.00,12.60"/></svg><span>Troubleshooting</span></a></div></details></div><div class="side-foot"><a href="index.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Manual</span></a><a href="https://github.com/lsxldierl/framez/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="9.60,8.60 10.13,8.64 10.65,8.77 11.14,8.97 11.60,9.25 12.00,9.60 12.35,10.00 12.63,10.46 12.83,10.95 12.96,11.47 13.00,12.00 13.00,12.00 12.96,12.53 12.83,13.05 12.63,13.54 12.35,14.00 12.00,14.40 11.60,14.75 11.14,15.03 10.65,15.23 10.13,15.36 9.60,15.40 6.00,15.40 5.47,15.36 4.95,15.23 4.46,15.03 4.00,14.75 3.60,14.40 3.25,14.00 2.97,13.54 2.77,13.05 2.64,12.53 2.60,12.00 2.60,12.00 2.64,11.47 2.77,10.95 2.97,10.46 3.25,10.00 3.60,9.60 4.00,9.25 4.46,8.97 4.95,8.77 5.47,8.64 6.00,8.60"/><polygon points="18.00,8.60 18.53,8.64 19.05,8.77 19.54,8.97 20.00,9.25 20.40,9.60 20.75,10.00 21.03,10.46 21.23,10.95 21.36,11.47 21.40,12.00 21.40,12.00 21.36,12.53 21.23,13.05 21.03,13.54 20.75,14.00 20.40,14.40 20.00,14.75 19.54,15.03 19.05,15.23 18.53,15.36 18.00,15.40 14.40,15.40 13.87,15.36 13.35,15.23 12.86,15.03 12.40,14.75 12.00,14.40 11.65,14.00 11.37,13.54 11.17,13.05 11.04,12.53 11.00,12.00 11.00,12.00 11.04,11.47 11.17,10.95 11.37,10.46 11.65,10.00 12.00,9.60 12.40,9.25 12.86,8.97 13.35,8.77 13.87,8.64 14.40,8.60"/></svg><span>Download the helper</span></a></div></nav><div class="main"><header class="topbar"><button class="iconbtn only-narrow" type="button" data-menu aria-label="Menu"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.40,6.60 19.60,6.60"/><polyline points="4.40,12.00 19.60,12.00"/><polyline points="4.40,17.40 19.60,17.40"/></svg></button><div class="crumb"><span>Menus</span><i>/</i><b>File</b></div><div class="top-actions"><button class="iconbtn" type="button" data-search aria-label="Search the manual (Ctrl+K)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg></button><button class="iconbtn" type="button" data-theme-toggle aria-label="Light or dark"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg></button><a class="pill" href="https://github.com/lsxldierl/framez/releases/latest">Get the helper</a></div></header><div class="layout"><article class="doc"><h1>File Menu</h1><p class="lead">The File menu starts, opens, saves and publishes animations, brings animations in from Roblox, Moon Animator 2, Blender and the game, sends them out again, and sets up the rigs you animate. Its rows are the same in every workspace, apart from a few that belong to the Animate or Scene workspace.</p>
+<figure class="shot"><img src="img/menu-file-top.png" width="356" height="367" alt="The File menu in the Animate workspace, with the Import, Export and Rig rows leading to submenus" loading="lazy">
+      <figcaption>The File menu in the Animate workspace, with the Import, Export and Rig rows leading to submenus.</figcaption></figure>
+
+  <article class="tool" id="f-new">
+    <h3>New Animation</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ New animation</dd>
+    </dl>
+    <p><b>New animation</b> starts an empty animation on a rig. When no animation is open it uses the rig you clicked in the viewport or selected on the start screen. When an animation is open it clears that animation and starts again on the same rig.</p>
+    <p>The rig goes back to its rest pose, the name goes back to Untitled, and the loop setting, events and layers start clear. The rig shows its own face again. The frame rate and length of the new animation come from the New animations settings in <a href="prefs.html#f-settings">Preferences</a>.</p>
+    <p>If the open animation has unsaved changes, Framez first asks whether to save them. The buttons are Save (Save as for an animation that is still called Untitled), Do not save and Cancel. When a scene is open, Framez also asks before closing the scene. One undo takes a New animation back.</p>
+    <h4>Example</h4>
+    <p>For example, after saving an idle for a character, choose New animation to start the walk on the same rig. The timeline is empty and the rig stands at rest.</p>
+  </article>
+
+  <article class="tool" id="f-open">
+    <h3>Open</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Open...</dd>
+    </dl>
+    <p><b>Open</b> lists the saved animations of the rig so you can carry on with one. It asks about unsaved changes first, as New animation does, then lets go of the open animation and shows the rig's animation browser in place of the timeline.</p>
+    <p>A search box sits above the list. Each row shows the animation's Name, its Length, the number of Keys, whether it Plays as a loop or once, its Priority, and when it was Saved. Clicking a column heading sorts the list by that column, and clicking it again reverses the order. An animation that was not made in Framez is tagged "from outside Framez".</p>
+    <p>Clicking a row selects it. Double-clicking it, or pressing <kbd>Enter</kbd>, opens it. <kbd>F2</kbd> renames the selected animation and <kbd>Del</kbd> deletes it after asking. The New animation button at the top right starts a new one on the same rig.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Open</dt>
+      <dd>Opens the animation on the rig with its keys, curves, events and layers.</dd>
+      <dt>Rename...</dt>
+      <dd>Asks for a new name. A name that another save of the rig already uses is refused.</dd>
+      <dt>Duplicate</dt>
+      <dd>Saves a copy named after the original with "copy" added, and selects it. The copy does not keep the original's Roblox asset id.</dd>
+      <dt>Version history...</dt>
+      <dd>Opens the list of earlier versions of the animation, as <a href="#f-history">Version History</a> does.</dd>
+      <dt>Show in Explorer</dt>
+      <dd>Selects the animation in Studio's Explorer.</dd>
+      <dt>Delete...</dt>
+      <dd>Asks "Delete NAME?" and removes the save when you confirm.</dd>
+    </dl>
+    <p>These are the rows of the menu that opens when you right-click an animation in the list.</p>
+    <h4>Notes</h4>
+    <p>Opening one of a scene's animations opens the whole scene with it.</p>
+  </article>
+
+  <article class="tool" id="f-save">
+    <h3>Save</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Save</dd>
+      <dt>Shortcut</dt><dd><kbd>Ctrl</kbd>+<kbd>S</kbd></dd>
+    </dl>
+    <p><b>Save</b> stores the animation in the place, under the rig's name in the RBX_ANIMSAVES folder of ServerStorage, using the name shown in the header. An animation that is still called Untitled opens Save as first. In a scene it saves the animation of every rig in the scene together with the scene itself (see <a href="scene.html#f-scenesave">Saving a scene</a>).</p>
+    <p>Roblox can store only a few easing styles, so wherever a span uses a curve it cannot hold, Framez writes a pose on every frame of that span. The game then plays exactly what you see in Framez. Opening the saved animation in Framez brings back the keys and curves you made, not the baked frames. When animation layers have keys, the animation is saved flattened and the layers are kept beside it.</p>
+    <p>An animation with no keys is not saved, and the status line says so.</p>
+    <h4>Notes</h4>
+    <p>Saving writes into the place, so save the place itself afterwards. A place that is not saved loses the animation when Studio closes. In Team Create, saving over an animation that someone else saved since you opened it asks first (see <a href="help.html#f-team">Team</a>).</p>
+    <h4>Example</h4>
+    <p>For example, save a take before trying a different timing on it. If the new timing is worse, open the saved take again from <a href="#f-open">Open</a>.</p>
+  </article>
+
+  <article class="tool" id="f-saveas">
+    <h3>Save As</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Save as...</dd>
+    </dl>
+    <p><b>Save as</b> saves the animation under a name you type, next to the rig's other saves. The animation then carries the new name. A small box asks for the <b>Name</b>, and <kbd>Enter</kbd> confirms it.</p>
+    <p>If a save with that name already exists, Framez asks "NAME is already saved. Replace it?" with Replace and Cancel.</p>
+    <h4>Example</h4>
+    <p>For example, save a second version of a sword swing under a new name before experimenting, so the first version stays as it was. Giving a first draft its real name works the same way.</p>
+  </article>
+
+  <article class="tool" id="f-publish">
+    <h3>Publish to Roblox</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Publish to Roblox...</dd>
+    </dl>
+    <p><b>Publish to Roblox</b> saves the animation, selects the saved copy and opens Roblox's own upload window for it. A small box beside that window lists the two steps. In the upload window you set Creator to whoever owns the game and submit. Back in Framez you click Get the ID, select the animation in the list Roblox shows, and Framez stores that asset id with the animation so game scripts can use it.</p>
+    <p>An animation that is still called Untitled opens Save as first. An animation with no keys is not published. Framez opens Roblox's upload window but never uploads anything by itself.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Get the ID</dt>
+      <dd>Lists your animations on Roblox. The one you select becomes this animation's asset id, and the status line shows it.</dd>
+      <dt>Later</dt>
+      <dd>Closes the box. The id can be set afterwards on the Clip page of the <a href="inspector.html">Inspector</a>, in the In the game section, with the Get the ID button or by typing it into the Asset ID field.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, publish a finished attack animation, set Creator to the group that owns the game, then copy the asset id into the script that plays the skill.</p>
+<figure class="shot"><img src="img/publish.png" width="320" height="168" alt="The box beside Roblox&#x27;s upload window, with its two steps and the Get the ID button" loading="lazy">
+      <figcaption>The box beside Roblox's upload window, with its two steps and the Get the ID button.</figcaption></figure>
+    <h4>See Also</h4>
+    <p><a href="edit.html#f-clipprops">Animation Settings</a> holds the Asset ID field.</p>
+  </article>
+
+  <article class="tool" id="f-history">
+    <h3>Version History</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Version history...</dd>
+      <dt>Right-click</dt><dd>A save in the Open browser, then Version history...</dd>
+    </dl>
+    <p>Every Save keeps a copy of the animation as a version. <b>Version history</b> lists the versions of the open animation, newest first. Each row shows the version number (v1, v2 and so on), when it was saved, its length in frames and its number of keys. The newest version is the current save and is ticked.</p>
+    <p>Selecting an older version restores it as the current save and, after asking about any unsaved changes, opens it. The save it replaces stays in the list as a version of its own, so a restore can itself be undone by restoring the later version. The list also has Show in Explorer, which selects the folder that holds the versions, and a line saying whether the latest copy was also written to disk.</p>
+    <p>Framez keeps the last 10 versions of each animation, or the number chosen in <a href="prefs.html#f-pref-versions">Preferences</a> (5, 10, 25 or 50).</p>
+    <h4>Notes</h4>
+    <p>The versions live in the place, in the FramezHistory folder of ServerStorage, so a place that is not saved loses them. While the Framez Helper runs, each Save is also written to the backup folder on disk as a .json file and an .rbxm file. Dragging the .rbxm into the rig's folder under RBX_ANIMSAVES in ServerStorage brings that version back.</p>
+    <h4>Example</h4>
+    <p>For example, after a retime has ruined a combo and undo no longer reaches back far enough, open the history and select the version saved before it.</p>
+  </article>
+
+  <h2 class="part" id="file-import">Import</h2>
+  <p>The Import rows bring motion in from Roblox, from Moon Animator 2 saves, from Blender and from scenes that were put in the game. They all work on the open animation, so most are greyed until one is open.</p>
+<figure class="shot"><img src="img/menu-file-import.png" width="652" height="386" alt="The Import submenu" loading="lazy">
+      <figcaption>The Import submenu.</figcaption></figure>
+
+  <article class="tool" id="f-importroblox">
+    <h3>Roblox Animation</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Import ‣ Roblox animation...</dd>
+    </dl>
+    <p><b>Roblox animation</b> puts an existing Roblox animation on the open rig as keys. The animation can be a published one, given by its asset id or link, or an Animation, KeyframeSequence or CurveAnimation that already exists in the place. R6 animations go onto R15 rigs and R15 animations onto R6 rigs, limb by limb.</p>
+    <p>Framez reads the animation the way Roblox plays it, so every easing style and curve comes out as the game shows it, and then thins the result to the keys it needs. The import is one undo step.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Asset id or link</dt>
+      <dd>The id of a published animation, or a link that contains it.</dd>
+      <dt>Replace the clip, Add at the playhead</dt>
+      <dd>Replace the clip makes the imported keys the whole animation, with its length, loop setting and priority taken from the imported animation, and asks first when the open animation already has keys. Add at the playhead writes the imported keys starting at the playhead, replaces any keys that the imported stretch covers, and makes the animation longer when the imported keys run past its end.</dd>
+      <dt>Import</dt>
+      <dd>Imports the animation named in the Asset id or link field. <kbd>Enter</kbd> does the same.</dd>
+      <dt>In this place</dt>
+      <dd>Lists the animations found in the place, with where each one is. Selecting one imports it.</dd>
+    </dl>
+    <h4>Notes</h4>
+    <p>Roblox only hands over animations that your account can use. These are your own, those of groups you belong to, and Roblox's own. Anything else fails, and the status line gives Roblox's reason.</p>
+    <h4>Example</h4>
+    <p>For example, import a catalog emote as the starting point for a dance and edit it from there, or bring in an animation that was made for an R6 character onto an R15 rig.</p>
+<figure class="shot"><img src="img/importroblox.png" width="440" height="187" alt="The Roblox animation dialog, with the asset field and the choice between replacing the clip and adding it at the playhead" loading="lazy">
+      <figcaption>The Roblox animation dialog, with the asset field and the choice between replacing the clip and adding it at the playhead.</figcaption></figure>
+  </article>
+
+  <article class="tool" id="f-moon2">
+    <h3>Moon Animator 2 File</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Import ‣ Moon Animator 2 file...</dd>
+    </dl>
+    <p><b>Moon Animator 2 file</b> opens a Moon Animator 2 save that exists in the place. The rig's keys come in with their easing styles, and the other rigs, cameras and parts in the save join the scene with their keys.</p>
+    <p>A list shows the saves found in ServerStorage and ReplicatedStorage, newest first, nine at a time with a More row for the rest. Each row also says how many frames and items the save has. Selecting one opens it. If the open animation has keys, Framez asks "Replace the open clip?" first. With no save in the place the status line reads "No Moon Animator 2 files in this place."</p>
+    <h4>What comes across</h4>
+    <dl class="opts">
+      <dt>The rig</dt>
+      <dd>Its keys go onto the open rig. The rig's own CFrame track goes into the root joint.</dd>
+      <dt>Other rigs</dt>
+      <dd>Join the scene with their keys.</dd>
+      <dt>Cameras, parts and models, emitters</dt>
+      <dd>Cameras become scene cameras. Parts and models become props with any keyed property. Particle emitters become effects.</dd>
+      <dt>Markers</dt>
+      <dd>Become events. A marker with a width also gets an event named after it with End added.</dd>
+      <dt>Not opened</dt>
+      <dd>Camera attach and look-at keys, sound and humanoid actions, terrain colours and bones. The message after the import lists what was left out.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, move a cutscene from Moon Animator 2 into Framez without exporting each rig and camera separately. The scene opens with every rig, camera and prop that was animated.</p>
+  </article>
+
+  <article class="tool" id="f-importfbx">
+    <h3>FBX Animation</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Import ‣ FBX animation...</dd>
+      <dt>Needs</dt><dd>The Framez Helper, and Blender with the Framez tab</dd>
+    </dl>
+    <p><b>FBX animation</b> brings a clip from another 3D program or a motion capture file onto the open rig through Blender. Framez sends the rig to Blender. In the Framez tab of Blender's side panel, the Import a clip... button reads the FBX or BVH file and retargets it onto the rig, and <a href="#f-getblender">Get from Blender</a> brings the result back into Framez.</p>
+    <p>The clip can come from a Mixamo character, a Roblox R15 or R6 export, or a capture session. The In place option is on by default, so the hips keep their up and down motion but not their travel across the floor.</p>
+    <h4>Example</h4>
+    <p>For example, take a downloaded run cycle for an R15 character. Choose FBX animation, import the file in Blender, and then choose Get from Blender to receive it as keys you can edit.</p>
+    <h4>See Also</h4>
+    <p><a href="setup.html">Helper and Blender setup</a> explains how to install the Framez tab.</p>
+  </article>
+
+  <article class="tool" id="f-getblender">
+    <h3>Get from Blender</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Import ‣ Get from Blender</dd>
+      <dt>Needs</dt><dd>The Framez Helper, and Blender with the Framez tab</dd>
+    </dl>
+    <p><b>Get from Blender</b> brings back what the Framez tab in Blender sent with Send to Framez and writes it into the open animation as keys. Where Blender marks which frames are its keys, those frames become keys with Blender's easing. Framez adds an extra key wherever its own curve would differ from Blender's pose by more than half a degree or 0.01 studs. A pose on every frame with no list of keys is thinned to the keys it needs.</p>
+    <p>Events, weapon switches and face keys move to the frames of their markers in Blender. One whose marker was deleted stays where it was. Joints that Blender does not know are listed and left alone.</p>
+    <p>Shape keys in Blender whose names match the head's face controls become keys on those controls, in one undo step. The match ignores case, spaces, dots and underscores, and a FACS prefix is optional. A channel that Blender does not key is left alone, and a head with no face controls says so. Constraints and drivers sent with Send the rig setup come in too, as described under <a href="#f-blendersetup">Rig Setups from Blender</a>.</p>
+    <h4>Example</h4>
+    <p>For example, send a combat animation to Blender, tidy its curves in the Graph Editor, then choose Get from Blender to bring the polished result back.</p>
+    <h4>See Also</h4>
+    <p><a href="#f-sendblender">Send to Blender</a> and <a href="#f-live-blender">Live Link with Blender</a> cover the other directions.</p>
+  </article>
+
+  <article class="tool" id="f-blendersetup">
+    <h3>Rig Setups from Blender</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Import ‣ Get from Blender</dd>
+      <dt>Needs</dt><dd>The Framez Helper, and Blender with the Framez tab</dd>
+    </dl>
+    <p>A Blender armature can carry constraints, limits and drivers. Select the armature in Blender, open the Framez tab in the 3D viewport's side panel (<kbd>N</kbd>), and click <b>Send the rig setup</b>. Then choose Get from Blender in Framez. Each constraint or driver is added to the joint with the same name as an item in the <a href="anytool.html">Modifiers</a> window, so it can be changed and undone like any other tool result.</p>
+    <p>Influence carries over, and muted constraints are left out. Anything with no match is named in the status line.</p>
+    <h4>What each one becomes</h4>
+    <dl class="opts">
+      <dt>Copy Rotation</dt>
+      <dd>A constraint of kind Copy.</dd>
+      <dt>Copy Location</dt>
+      <dd>A constraint of kind Point.</dd>
+      <dt>Damped Track, Track To, Locked Track</dt>
+      <dd>A constraint of kind Aim.</dd>
+      <dt>Child Of</dt>
+      <dd>A constraint of kind Follow.</dd>
+      <dt>Limit Distance</dt>
+      <dd>A constraint of kind Keep a distance.</dd>
+      <dt>Floor</dt>
+      <dd>A constraint of kind Stay above, with its object.</dd>
+      <dt>Limit Rotation</dt>
+      <dd>The joint's limit, as a hinge when only X can move and otherwise as a cone and a twist.</dd>
+      <dt>IK</dt>
+      <dd>An IK chain of the same number of joints.</dd>
+      <dt>A bone driver on rotation or location</dt>
+      <dd>A driver whose formula is the Blender expression, set to Replace and live.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a creature rig built in Blender with a look-at constraint on the head keeps that behaviour in Framez, where the head keeps tracking its target while you animate.</p>
+  </article>
+
+  <article class="tool" id="f-scenefromgame">
+    <h3>Scene from the Game</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Import ‣ Scene from the game...</dd>
+    </dl>
+    <p><b>Scene from the game</b> puts a scene that was exported to the game back into this place's saves. The scene's record returns, together with the animation of every rig that this place no longer has. The row opens a list of the scenes found in the game's FramezScenes folder in ReplicatedStorage. Selecting a scene restores it, and Open then opens it like any other scene. With no scene in the game, the row reads "No Framez scene in the game".</p>
+    <p>A scene reaches the game through <a href="scene.html#f-sceneexport">Put in the game</a>. A scene that was exported by an older version of Framez has no copy to restore.</p>
+    <h4>Example</h4>
+    <p>For example, if a place lost its saves but the cutscene still plays in the published game, import it from the game and carry on editing.</p>
+  </article>
+
+  <article class="tool" id="f-recover">
+    <h3>Unsaved Work and Recovery</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Import ‣ Recover unsaved work...</dd>
+    </dl>
+    <p>While an animation has unsaved changes, Framez keeps a recovery copy a few seconds after the last edit. It is a copy of the animation exactly as Save would write it, including keys, curves, events, layers and pins, and it is stored with Framez's own settings, not in the place. In a scene, only the posed rig's animation is copied. A Save, or closing the animation without saving, removes its copy.</p>
+    <p>The next time Framez opens in the place, the start screen shows a card named Unsaved work, with the animation and rig, the time of the copy, and the buttons Recover and Discard. Discard asks first, because it cannot be undone. The row <b>Recover unsaved work...</b> appears in the Import submenu only while copies exist. It lists every copy for the place, and each has Recover and Discard. Recover opens the copy on its rig, unsaved and with its asset id back.</p>
+    <p>How often copies are made, and how many are kept, are set in <a href="prefs.html#f-pref-recovery">Preferences</a>.</p>
+    <h4>Notes</h4>
+    <p>A recovery copy is not a save. After recovering, save the animation and then the place.</p>
+    <h4>Example</h4>
+    <p>For example, if Studio closes before you saved an hour of work, open the place again, start Framez and click Recover on the start screen.</p>
+  </article>
+
+  <h2 class="part" id="file-export">Export</h2>
+  <p>The Export rows turn the open animation into something else, such as an emote for the Marketplace, a set of movement animations, an additive layer, a Blender file, a set of aim poses or a video.</p>
+<figure class="shot"><img src="img/menu-file-export.png" width="582" height="470" alt="The Export submenu in the Animate workspace" loading="lazy">
+      <figcaption>The Export submenu in the Animate workspace.</figcaption></figure>
+
+  <article class="tool" id="f-emote">
+    <h3>Emote</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Export ‣ Emote...</dd>
+    </dl>
+    <p><b>Emote</b> checks the open animation against the rules Roblox applies to UGC emotes and saves it as an emote. The window lists one row for each rule. A red row is a rule that makes Roblox refuse the upload, a grey row is something Save as emote leaves out, and a green row passes. <b>Show passed</b> lists the green rows too. Most rows have a button that fixes the problem, and <b>Check again</b> reads the animation once more.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Standard R15</dt>
+      <dd>The rig must be Roblox's standard R15, with its joints named and joined as Roblox's are.</dd>
+      <dt>Length</dt>
+      <dd>The animation can be 10 seconds at most. The fix is Stretch, which squeezes every key into the limit, or Trim, which cuts at the limit.</dd>
+      <dt>Near the root part, Above the floor, Speed</dt>
+      <dd>When they fail, these rows read Too far from the root part, Too low and Too fast. Every body part must stay within 5 studs of the root part, no more than 3.1 studs below it, and never move faster than 30 studs per second. The fix is Pull back, which scales the root's travel back towards where it starts and then lifts the root where the body is still too low.</dd>
+      <dt>Joints stay joined</dt>
+      <dd>Only LowerTorso may move. Every other part may only turn.</dd>
+      <dt>Every joint on Roblox's R15, Events</dt>
+      <dd>These two rows are notes. Joints that a standard R15 does not have, such as a weapon, and events after the first are left out of the emote, and the rows list them.</dd>
+      <dt>Go to</dt>
+      <dd>Rows with no one-click fix have Go to, which jumps to the frame and selects the limb.</dd>
+      <dt>Fix all</dt>
+      <dd>Runs every available fix in one undo step.</dd>
+      <dt>Save as emote</dt>
+      <dd>At the bottom right. It writes the animation as a CurveAnimation named after the animation with _EMOTE added, next to the saves, and then shows Roblox's two upload steps as cards.</dd>
+    </dl>
+    <p>The two cards cover Roblox's upload. In the first, Framez opens Roblox's upload window, where you set Animation Type to Emote, tick Create Animation Object in Workspace and save. Framez notices the Animation that Roblox's window makes in the Workspace, or you can select it and click Use the selected one. In the second, Framez opens the Avatar Item upload on that Animation, where Content Type is Avatar Item, Asset Category is Emote and Submit sells it, with Roblox's fee. The step cards need Studio 0.737 or later.</p>
+    <h4>Notes</h4>
+    <p>Framez opens Roblox's upload windows and does not upload anything itself. The emote marker that Roblox requires is added by Roblox's upload window when Animation Type is Emote. If Roblox reports "missing a valid UGC emote marker", the animation was uploaded as a plain animation, so repeat the first step with Animation Type set to Emote.</p>
+    <h4>Example</h4>
+    <p>For example, a dance that travels across the floor is refused for being too far from the root. Pull back scales the travel down until it passes, and the dance keeps its poses.</p>
+<figure class="shot"><img src="img/emote.png" width="538" height="536" alt="The Emote window with one failed rule, its Pull back button, and Save as emote at the bottom right" loading="lazy">
+      <figcaption>The Emote window with one failed rule, its Pull back button, and Save as emote at the bottom right.</figcaption></figure>
+  </article>
+
+  <article class="tool" id="f-pack">
+    <h3>Animation Pack</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Export ‣ Animation pack...</dd>
+    </dl>
+    <p><b>Animation pack</b> builds a set of movement animations for the Marketplace or for your own game. The window has a slot for each animation of a pack. The slots are Idle, Idle 2, Walk, Run, Jump, Fall, Climb, Swim and Swim idle. Each slot holds a saved animation of the open rig. Idle and Idle 2 each have a weight, which sets how often that idle plays, and Idle 2 may stay empty.</p>
+    <p>The <b>Pack</b> field names the pack, and packs are kept in the place in the FramezPacks folder of ServerStorage. Typing a new name asks whether to start a new pack. The <b>Packs</b> button switches between packs and holds Rename pack..., Delete pack and Delete from this game.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Check</dt>
+      <dd>Opens each animation in turn and checks it against the Marketplace's rules. The rig must be R15, every animation must loop except Jump, no animation may be longer than 10 seconds, only LowerTorso may move, and LowerTorso may not move more than 1.5 studs from its start. Roblox's reach, height and speed limits apply as well, and <a href="#f-emote">Emote</a> checks them the same way. Each failed row has a fix that saves the animation again, named Set its loop, Keep only turns, Pull LowerTorso in or Fit and pull back. The animation that was open opens again afterwards.</dd>
+      <dt>For the Marketplace</dt>
+      <dd>Makes each animation a CurveAnimation named after the pack and its slot, in the pack's folder, and selects them in the Explorer. The window then lists the values that Save to Roblox asks for each one, which are Animation type, Sub animation, Weight and Parent model name.</dd>
+      <dt>Use in this game</dt>
+      <dd>Adds a LocalScript named FramezMovement to StarterCharacterScripts. It gives every character the pack's animations through its Animate script, in R15 and R6 games. Every animation must be published first.</dd>
+      <dt>Close</dt>
+      <dd>Closes the window.</dd>
+    </dl>
+    <h4>Notes</h4>
+    <p>Save the open animation first, because Check and its fixes open each animation in turn.</p>
+    <h4>Example</h4>
+    <p>For example, a game with its own locomotion can fill Idle, Walk, Run and Jump with four saved animations, publish them, and click Use in this game so every character plays them.</p>
+<figure class="shot"><img src="img/pack.png" width="520" height="447" alt="The Animation pack window with its nine slots and the Check, For the Marketplace, Use in this game and Close buttons" loading="lazy">
+      <figcaption>The Animation pack window with its nine slots and the Check, For the Marketplace, Use in this game and Close buttons.</figcaption></figure>
+  </article>
+
+  <article class="tool" id="f-additive">
+    <h3>Additive Animation</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Export ‣ Additive animation...</dd>
+    </dl>
+    <p><b>Additive animation</b> saves the open animation as an additive layer, named after the animation with _ADD added. Every pose is stored as the difference from a reference pose. In a Roblox animation graph, an Add node then plays it over another animation and moves each joint by the same amount.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Frame 0, This frame, Rest pose</dt>
+      <dd>The reference pose that is subtracted. Frame 0 uses the first frame, This frame uses the frame at the playhead, and Rest pose uses the rig's rest pose.</dd>
+      <dt>Save</dt>
+      <dd>Writes the animation. If it already exists, Framez asks "NAME_ADD is already saved. Replace it?"</dd>
+    </dl>
+    <h4>Notes</h4>
+    <p>Make the animation on top of the pose it will play over, such as the stance, and select that frame as the reference. Events and weapon switches are not copied into the additive animation. If nothing moves away from the reference pose, nothing is saved and the status line says so.</p>
+    <h4>Example</h4>
+    <p>For example, a breathing loop, a recoil or a flinch that should play over any other animation can be saved as an additive layer and added in the game's graph with a weight you control.</p>
+  </article>
+
+  <article class="tool" id="f-sendblender">
+    <h3>Send to Blender</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Export ‣ Send to Blender</dd>
+      <dt>Needs</dt><dd>The Framez Helper, and Blender with the Framez tab</dd>
+    </dl>
+    <p><b>Send to Blender</b> sends the rig and the open animation to Blender. In the Framez tab of Blender's side panel, Get from Framez builds an armature with a bone for each joint, a box for each part, the pose on every frame, and the information about which frames are keys and how each one eases. Events, weapon switches, face keys, hit windows and foot contacts arrive as timeline markers.</p>
+    <h4>Notes</h4>
+    <p>Animation layers, clip blocks and curve modifiers stay in Framez. Send says so when they change what Framez shows.</p>
+    <h4>Example</h4>
+    <p>For example, send a clip to polish its curves with Blender's tools, or keep a Blender copy of an animation beside the Roblox one.</p>
+    <h4>See Also</h4>
+    <p><a href="#f-getblender">Get from Blender</a> brings the changes back.</p>
+  </article>
+
+  <article class="tool" id="f-aimoffset">
+    <h3>Aim Offset</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Export ‣ Aim offset...</dd>
+      <dt>Workspace</dt><dd>Animate</dd>
+    </dl>
+    <p><b>Aim offset</b> saves nine aiming poses made from the pose at the playhead, for a character whose upper body follows the camera or a target while the legs play their own animation. The poses look left, right, up, down and into the four corners, plus the centre. They are saved as the animation's name with _AIM_ and C, L, R, U, D, UL, UR, DL or DR added, ready to be placed in a Roblox Blend2D with X as yaw and Y as pitch from -1 to 1.</p>
+    <p>In each pose the chest takes 60 percent of the turn and the head takes the rest. The arms either take the whole turn, so the hands point where the eyes look, or ride along with the chest. On an R6 rig the hips turn back so the legs stay where they stand. Afterwards a preview copy of the rig plays the poses live, with Yaw and Pitch fields from -1 to 1 to aim it.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Left and right</dt>
+      <dd>How far the sideways poses turn, from 5° to 120°. The default is 60°.</dd>
+      <dt>Up, Down</dt>
+      <dd>How far the poses look up and down, each from 5° to 90°. The default is 45°.</dd>
+      <dt>Additive, Full poses</dt>
+      <dd>Additive stores each pose as the difference from the pose it was made from, to be added over another animation. Full poses stores whole poses.</dd>
+      <dt>Arms aim too, Arms ride the chest</dt>
+      <dd>Whether the arms take the whole turn or follow the chest.</dd>
+      <dt>Make them</dt>
+      <dd>Writes the nine saves. If they already exist, Framez asks whether to replace them.</dd>
+    </dl>
+    <h4>Notes</h4>
+    <p>The rig needs a head on a Neck joint. The row is available in the Animate workspace, and Menu search lists it from the other workspaces.</p>
+    <h4>Example</h4>
+    <p>For example, pose a gunslinger at rest, make the nine aim poses, and blend them in the game by the camera's yaw and pitch so the torso and gun follow where the player looks.</p>
+<figure class="shot"><img src="img/aimoffset.png" width="400" height="327" alt="The Aim offset dialog with its default values" loading="lazy">
+      <figcaption>The Aim offset dialog with its default values.</figcaption></figure>
+  </article>
+
+  <article class="tool" id="f-live-blender">
+    <h3>Live Link with Blender</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Export ‣ Live link with Blender</dd>
+      <dt>Needs</dt><dd>The Framez Helper, and Blender with the Framez tab</dd>
+    </dl>
+    <p><b>Live link with Blender</b> keeps the open animation and Blender in step while you work. An edit in Framez shows in Blender, and an edit in Blender shows in Framez. Keys stay keys in both directions, with their easing and key type. Where one program cannot draw the other's curve exactly, a Generated key is added.</p>
+    <p>Open the animation, choose the row so that it shows a tick, click Live in Blender's Framez tab, and edit in either program. To turn the link off, choose the row again.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Framez to Blender</dt>
+      <dd>Framez sends a moment after an edit stops, and keeps sending twice a second while a drag goes on.</dd>
+      <dt>Blender to Framez</dt>
+      <dd>Only the joints that changed are written, and the message reads "Blender: N joints changed." It is one undo step, and the playhead and view stay where they were.</dd>
+      <dt>Markers</dt>
+      <dd>Events, weapon switches, face keys, hit windows and foot contacts travel as timeline markers and follow retimes.</dd>
+      <dt>Stays in Framez</dt>
+      <dd>Animation layers, clip blocks and curve modifiers.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, polish curves in Blender's Graph Editor while watching the result play on the rig in your scene in Studio.</p>
+    <h4>See Also</h4>
+    <p><a href="setup.html">Helper and Blender setup</a> explains how to install the Framez tab.</p>
+  </article>
+
+  <article class="tool" id="f-playblast">
+    <h3>Playblast</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Export ‣ Playblast...</dd>
+      <dt>Workspace</dt><dd>Animate and Scene</dd>
+      <dt>Needs</dt><dd>The Framez Helper</dd>
+    </dl>
+    <p><b>Playblast</b> records the animation from Studio's viewport to a video. The dialog opens with the settings you used last. <b>Record</b> starts the recording, which steps through the animation one frame at a time. <kbd>Esc</kbd> stops it and discards what was written. When it finishes, the video opens if Open when done is chosen, and a small menu offers Show in folder.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Studio's view, Scene camera</dt>
+      <dd>Which camera to record from. The choice appears only when the open scene has a camera, and the scene camera follows its cuts.</dd>
+      <dt>Whole clip, Play range, From / to</dt>
+      <dd>Which frames to record. Play range appears when a play range is set. With From / to, the From and To fields set the first and last frame.</dd>
+      <dt>As the view, 1280 x 720, 1920 x 1080</dt>
+      <dd>The video size. The two fixed sizes are cut to 16:9 from the middle of the viewport.</dd>
+      <dt>Frame rate</dt>
+      <dd>The animation's own frame rate, or 30 fps.</dd>
+      <dt>Frame number, No number</dt>
+      <dd>Whether the frame number is drawn in the bottom left corner.</dd>
+      <dt>Onion skin, No onion skin</dt>
+      <dd>Whether the onion skin is included in the video.</dd>
+      <dt>Animation only, Reference beside it</dt>
+      <dd>Whether the linked reference video is placed next to the recording. The choice appears when a reference video is linked.</dd>
+      <dt>MP4 video, PNG frames</dt>
+      <dd>The file format. PNG frames writes one image for every frame.</dd>
+      <dt>Folder</dt>
+      <dd>Where the video or frames are written. The default is Framez playblasts inside the Videos folder.</dd>
+      <dt>Open when done, Do not open</dt>
+      <dd>Whether the finished video opens.</dd>
+    </dl>
+    <h4>Notes</h4>
+    <p>The first time, Studio asks to allow screenshots. Keep Studio's viewport on screen and unchanged in size while it records. Framez hides its own handles, paths and limb boxes during the recording.</p>
+    <h4>Example</h4>
+    <p>For example, record a clip at 1920 x 1080 with the reference video beside it to show a director how closely the animation follows the footage.</p>
+<figure class="shot"><img src="img/playblast.png" width="420" height="513" alt="The Playblast dialog, with the Record button at the bottom" loading="lazy">
+      <figcaption>The Playblast dialog, with the Record button at the bottom.</figcaption></figure>
+  </article>
+
+  <h2 class="part" id="file-rig">Rig</h2>
+  <p>The Rig rows put rigs into the place, turn ordinary models into rigs, add or remove joints, and tell Framez which part is which on a custom character.</p>
+<figure class="shot"><img src="img/menu-file-rig.png" width="592" height="572" alt="The Rig submenu" loading="lazy">
+      <figcaption>The Rig submenu.</figcaption></figure>
+
+  <article class="tool" id="f-insertrig">
+    <h3>New Rig and My Avatar</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Rig ‣ New R6 rig</dd><dd>File ‣ Rig ‣ New R15 rig</dd><dd>File ‣ Rig ‣ My avatar as R6</dd><dd>File ‣ Rig ‣ My avatar as R15</dd>
+    </dl>
+    <p>These four rows put a rig into the place and select it. <b>New R6 rig</b> and <b>New R15 rig</b> add Roblox's own default character. <b>My avatar as R6</b> and <b>My avatar as R15</b> add the avatar of the account signed in to Studio, with its clothes and accessories, built as R6 or R15.</p>
+    <p>The rig stands on the ground 12 studs in front of the camera and faces it, beside any rig that is already there. Its root part is anchored and any scripts it came with are removed. An R15 gets Motor6D joints, so it opens at once. The rig gets a name that no other rig or save folder uses, such as R15 Rig, or the account name followed by R6 or R15, with a number added when the name is taken. When an animation or scene is open, the new rig joins the scene. Otherwise the status line suggests New animation to start on it. One undo removes it.</p>
+    <h4>Example</h4>
+    <p>For example, start a fresh character animation with New R15 rig, or animate your own avatar by adding it with My avatar as R15.</p>
+  </article>
+
+  <article class="tool" id="f-rigmodel">
+    <h3>Rig Selected Model</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Rig ‣ Rig selected model</dd>
+    </dl>
+    <p><b>Rig selected model</b> gives the model selected in the Explorer, such as a door, a chest or a creature, a joint on every piece so that it can be animated. The row is greyed until a model is selected. The main part is the model's PrimaryPart, or its largest part when there is none, and every other piece gets a Motor6D joint to it. Pieces that are welded together stay together and move as one, and parts that already have a joint keep it.</p>
+    <p>The main part is anchored. If the model has no Humanoid or AnimationController, an AnimationController with an Animator is added so the model plays animations in the game. The status line reports how many joints were made.</p>
+    <h4>Example</h4>
+    <p>For example, rig a treasure chest made of a base and a lid. The lid gets its own joint, and a short animation can open and close it.</p>
+  </article>
+
+  <article class="tool" id="f-joinparts">
+    <h3>Create Joint</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Rig ‣ Create joint...</dd>
+    </dl>
+    <p><b>Create joint</b> adds a Motor6D between two selected parts, so that one of them can be animated. Select two parts in the Explorer, the part that holds first and the part that moves second, by holding <kbd>Ctrl</kbd> while clicking. A part can be an accessory, which counts as its Handle, or a model, which counts as its main part. The dialog says which part holds which. Welds between the two parts are removed.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Swap</dt>
+      <dd>Exchanges the holding and moving part.</dd>
+      <dt>Moving part's centre, Holding part's centre, Halfway</dt>
+      <dd>Where the joint turns. The default is the centre of the moving part. <a href="pose.html#f-pivot-edit">Edit Pivot</a> can move the turning point later.</dd>
+      <dt>Join</dt>
+      <dd>Creates the joint.</dd>
+    </dl>
+    <h4>Notes</h4>
+    <p>The parts must not belong to the rig that is open. If they do, Framez asks you to close the animation first. The join is one undo step.</p>
+    <h4>Example</h4>
+    <p>For example, join a sword to a hand, a cape to the torso, or a tail to a creature, so the sword, cape or tail can be keyed.</p>
+  </article>
+
+  <article class="tool" id="f-unjoin">
+    <h3>Unjoin Selected Joint</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Rig ‣ Unjoin selected joint</dd>
+    </dl>
+    <p><b>Unjoin selected joint</b> turns the Motor6D selected in the Explorer into a weld. The part stays where it is and is no longer animated. The status line says which part stopped animating. As with Create joint, the joint must not be part of the rig that is open, and the change is one undo step.</p>
+    <h4>Example</h4>
+    <p>For example, if a prop that was joined to a hand should become a fixed part of the character, convert its joint to a weld.</p>
+  </article>
+
+  <article class="tool" id="f-rigmap">
+    <h3>Rig Mapping</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Rig ‣ Rig mapping...</dd>
+    </dl>
+    <p><b>Rig mapping</b> tells Framez which part of a custom rig is which part of the body, so that IK, mirroring, generators, full-body IK and Import work on creatures, mechs and characters whose parts are not named as Roblox names them. R6 and R15 rigs are mapped by their names already. The map is saved on the rig's joints, so every animation and every place keeps it.</p>
+    <p>The window draws a body with a dot for each part. A white dot is mapped, a grey one is optional and a red one is needed. Click <b>Auto map</b> to fill the dots from the parts' names and the rig's shape. To fill a dot by hand, click it and then click the part in the viewport, or choose the part from the list that appears under the figure. The line under the figure says which parts are still missing.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>A dot</dt>
+      <dd>Click it to select it and then choose its part. Right-click it to clear it.</dd>
+      <dt>Legs bend</dt>
+      <dd>Forward or Back, the direction the knees bend for every mapped leg.</dd>
+      <dt>Extra chains</dt>
+      <dd>For a tail, wings or an extra arm. Click <b>Add chain</b>, then click the chain's first part and its last part in the viewport. A chain gets IK along its whole length, so dragging its last part turns every joint of the chain to reach it. Each chain has a Remove button.</dd>
+      <dt>Auto map</dt>
+      <dd>Maps the dots from the parts' names and then from the rig's shape. Check any red dots afterwards.</dd>
+      <dt>Cancel, Apply</dt>
+      <dd>Cancel closes the window without saving. Apply saves the map on the rig. <kbd>Esc</kbd> and <kbd>Enter</kbd> do the same.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a dragon built from parts named Body, Neck1 and WingL can be mapped once, after which mirroring and IK treat its legs and arms like a character's, and its tail can be given its own IK chain.</p>
+<figure class="shot"><img src="img/rigmap.png" width="358" height="616" alt="The Rig mapping window after Auto map, with the body figure, the Legs bend switch, the Extra chains list and the four buttons" loading="lazy">
+      <figcaption>The Rig mapping window after Auto map, with the body figure, the Legs bend switch, the Extra chains list and the four buttons.</figcaption></figure>
+  </article>
+
+  <article class="tool" id="f-putbackrig">
+    <h3>Restore Deleted Rig</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Rig ‣ Restore deleted rig</dd>
+    </dl>
+    <p><b>Restore deleted rig</b> puts back a rig that was deleted while its animation was open, where it stood, and opens it again. Studio's own undo cannot bring the rig back while an animation is open, because Framez switches it off for that time.</p>
+    <p>The row is greyed, with the message "No rig has been deleted", until a rig is deleted. After a deletion it names the rig. If Studio destroyed the rig completely, the status line says that it cannot be put back.</p>
+    <h4>Example</h4>
+    <p>For example, if you delete the wrong rig from the Explorer while animating, choose this row at once to get it back.</p>
+  </article>
+
+  <article class="tool" id="f-meshbones">
+    <h3>Mesh Bones</h3>
+    <dl class="ref">
+      <dt>Needs</dt><dd>A rig with bones</dd>
+    </dl>
+    <p>Creatures, custom avatars, capes, tails, hair and wings that are made as one skinned mesh are animated through their bones. There is no menu row for it. Click the model and open an animation, and its bones show through the body. Every tool then works on bones as it does on joints, including keys, curves, layers, sliders, motion paths, onion skin, mirroring, IK chains through the rig map, Import, effects and held objects.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Selecting a bone</dt>
+      <dd>Click a drawn bone, or the skin over it. The bone under the pointer turns white and the selected bone is orange.</dd>
+      <dt>Mirroring</dt>
+      <dd>Finds a bone's twin from the side marked in its name, such as .L and .R, _L and _R, Left and Right, or L_ and R_.</dd>
+      <dt>Welded meshes</dt>
+      <dd>A skinned mesh welded to a part, such as a tail on a torso, rides that part and opens with the rig.</dd>
+      <dt>Bones overlay</dt>
+      <dd>A rig with bones opens with the Bones overlay on, drawn as octahedral bones with X-ray. See <a href="view.html#f-bones">Bones</a>.</dd>
+      <dt>Track groups</dt>
+      <dd>A rig with many joints lists its tracks in groups, one for each branch.</dd>
+      <dt>Left out</dt>
+      <dd>Bones named like a body part, the face bones of a dynamic head, tip bones whose names end in _end or .end, and bones inside accessories.</dd>
+    </dl>
+    <h4>Notes</h4>
+    <p>Animations made this way play in the game with no extra script. Edit Pivot and the squash and stretch tools work on parts only. For a bone, use the pivot choices of the right-click limb menu instead.</p>
+    <h4>Example</h4>
+    <p>For example, a dragon with a bone tail, a cape or hair on a skinned avatar, or a creature with wings can be animated like a character, with every tool in Framez.</p>
+  </article>
+
+  <h2 class="part" id="file-close">Close</h2>
+
+  <article class="tool" id="f-close">
+    <h3>Close Animation</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>File ‣ Close animation</dd>
+    </dl>
+    <p><b>Close animation</b> lets go of the rig and returns to the start screen. With unsaved work it asks "Save changes to NAME first?" with Save, Do not save and Cancel. In a scene it asks before closing the scene. Once the animation is closed, Studio's own undo works again.</p>
+    <h4>Example</h4>
+    <p>For example, close the animation before using Studio's own tools to move or edit the rig in the place.</p>
+  </article>
+<nav class="pager" aria-label="More pages"><a class="prev" href="anytool.html"><small>Previous</small><span>Working with Tools</span></a><a class="next" href="edit.html"><small>Next</small><span>Edit</span></a></nav><footer class="foot">Framez by soldier. This manual covers Framez 17.99.</footer></article><aside class="toc" aria-label="On this page"><a class="lv0" href="#f-new">New Animation</a><a class="lv0" href="#f-open">Open</a><a class="lv0" href="#f-save">Save</a><a class="lv0" href="#f-saveas">Save As</a><a class="lv0" href="#f-publish">Publish to Roblox</a><a class="lv0" href="#f-history">Version History</a><a class="lv1" href="#file-import">Import</a><a class="lv2" href="#f-importroblox">Roblox Animation</a><a class="lv2" href="#f-moon2">Moon Animator 2 File</a><a class="lv2" href="#f-importfbx">FBX Animation</a><a class="lv2" href="#f-getblender">Get from Blender</a><a class="lv2" href="#f-blendersetup">Rig Setups from Blender</a><a class="lv2" href="#f-scenefromgame">Scene from the Game</a><a class="lv2" href="#f-recover">Unsaved Work and Recovery</a><a class="lv1" href="#file-export">Export</a><a class="lv2" href="#f-emote">Emote</a><a class="lv2" href="#f-pack">Animation Pack</a><a class="lv2" href="#f-additive">Additive Animation</a><a class="lv2" href="#f-sendblender">Send to Blender</a><a class="lv2" href="#f-aimoffset">Aim Offset</a><a class="lv2" href="#f-live-blender">Live Link with Blender</a><a class="lv2" href="#f-playblast">Playblast</a><a class="lv1" href="#file-rig">Rig</a><a class="lv2" href="#f-insertrig">New Rig and My Avatar</a><a class="lv2" href="#f-rigmodel">Rig Selected Model</a><a class="lv2" href="#f-joinparts">Create Joint</a><a class="lv2" href="#f-unjoin">Unjoin Selected Joint</a><a class="lv2" href="#f-rigmap">Rig Mapping</a><a class="lv2" href="#f-putbackrig">Restore Deleted Rig</a><a class="lv2" href="#f-meshbones">Mesh Bones</a><a class="lv1" href="#file-close">Close</a><a class="lv2" href="#f-close">Close Animation</a></aside></div></div></div><div class="scrim" data-scrim hidden></div><div class="search" id="search" hidden role="dialog" aria-modal="true" aria-label="Search the manual"><div class="search-box"><div class="search-field"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg><input id="search-q" type="search" placeholder="Search the manual" autocomplete="off"><kbd>Esc</kbd></div><div class="search-results" id="search-results"></div></div></div><script src="assets/search-index.js"></script><script src="assets/site.js"></script></body></html>

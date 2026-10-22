@@ -1,0 +1,355 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Subtitle Lines - Framez Manual</title><meta name="description" content="Subtitle lines are the timed dialogue of a scene. The Subtitle lines window lists them and adds many at once from a pasted script or an .srt file, and the "><link rel="icon" href="assets/favicon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"><link rel="stylesheet" href="assets/site.css"><script>try{var t=localStorage.getItem("framez-theme");if(t)document.documentElement.dataset.look=t}catch(e){}</script></head><body><div class="shell"><nav class="side" id="side" aria-label="Docs"><div class="side-head"><a class="brand" href="index.html"><svg class="mark" viewBox="-34.0 -34.0 68.0 68.0" aria-hidden="true"><polygon points="-28.00,0.00 0.00,-28.00 28.00,0.00 0.00,28.00" fill="#3c4045"/><polygon points="-18.50,0.00 0.00,-18.50 0.00,0.00" fill="#e8443c"/><polygon points="0.00,-18.50 9.25,-9.25 0.00,0.00" fill="#9e2b2b"/><polygon points="9.25,-9.25 9.25,0.00 0.00,0.00" fill="#ffffff"/><polygon points="9.25,-9.25 18.50,0.00 9.25,0.00" fill="#e8443c"/><polygon points="-18.50,0.00 0.00,0.00 -9.25,9.25" fill="#9e2b2b"/><polygon points="-9.25,9.25 0.00,0.00 0.00,18.50" fill="#ffffff"/><polygon points="0.00,0.00 18.50,0.00 0.00,18.50" fill="#ffffff"/><polygon points="26.30,-22.51 23.03,-18.03 17.70,-16.49 20.97,-20.97" fill="#e8443c"/><polygon points="-16.73,16.57 -17.63,18.42 -19.67,18.63 -18.77,16.78" fill="#e8443c"/></svg><i class="sep"></i><span>Manual</span></a><button class="iconbtn" type="button" data-search aria-label="Search the manual (Ctrl+K)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg></button></div><div class="side-scroll"><details class="grp"><summary><span>Getting Started</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="start.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="5.14,9.23 5.40,8.66 5.70,8.11 6.06,7.59 6.45,7.10 6.89,6.65 7.36,6.24 7.86,5.87 8.40,5.54 8.96,5.25 9.54,5.02 10.14,4.84 10.75,4.71 11.37,4.63 12.00,4.60 12.63,4.63 13.25,4.71 13.86,4.84 14.46,5.02 15.04,5.25 15.60,5.54 16.14,5.87 16.64,6.24 17.11,6.65 17.55,7.10 17.94,7.59 18.30,8.11 18.60,8.66 18.86,9.23"/><polyline points="18.86,14.77 18.60,15.34 18.30,15.89 17.94,16.41 17.55,16.90 17.11,17.35 16.64,17.76 16.14,18.13 15.60,18.46 15.04,18.75 14.46,18.98 13.86,19.16 13.25,19.29 12.63,19.37 12.00,19.40 11.37,19.37 10.75,19.29 10.14,19.16 9.54,18.98 8.96,18.75 8.40,18.46 7.86,18.13 7.36,17.76 6.89,17.35 6.45,16.90 6.06,16.41 5.70,15.89 5.40,15.34 5.14,14.77"/><polyline points="18.86,9.23 16.11,7.23"/><polyline points="18.86,9.23 19.45,5.88"/><polyline points="5.14,14.77 7.89,16.77"/><polyline points="5.14,14.77 4.55,18.12"/></svg><span>Getting Started</span></a><a href="setup.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="9.60,8.60 10.13,8.64 10.65,8.77 11.14,8.97 11.60,9.25 12.00,9.60 12.35,10.00 12.63,10.46 12.83,10.95 12.96,11.47 13.00,12.00 13.00,12.00 12.96,12.53 12.83,13.05 12.63,13.54 12.35,14.00 12.00,14.40 11.60,14.75 11.14,15.03 10.65,15.23 10.13,15.36 9.60,15.40 6.00,15.40 5.47,15.36 4.95,15.23 4.46,15.03 4.00,14.75 3.60,14.40 3.25,14.00 2.97,13.54 2.77,13.05 2.64,12.53 2.60,12.00 2.60,12.00 2.64,11.47 2.77,10.95 2.97,10.46 3.25,10.00 3.60,9.60 4.00,9.25 4.46,8.97 4.95,8.77 5.47,8.64 6.00,8.60"/><polygon points="18.00,8.60 18.53,8.64 19.05,8.77 19.54,8.97 20.00,9.25 20.40,9.60 20.75,10.00 21.03,10.46 21.23,10.95 21.36,11.47 21.40,12.00 21.40,12.00 21.36,12.53 21.23,13.05 21.03,13.54 20.75,14.00 20.40,14.40 20.00,14.75 19.54,15.03 19.05,15.23 18.53,15.36 18.00,15.40 14.40,15.40 13.87,15.36 13.35,15.23 12.86,15.03 12.40,14.75 12.00,14.40 11.65,14.00 11.37,13.54 11.17,13.05 11.04,12.53 11.00,12.00 11.00,12.00 11.04,11.47 11.17,10.95 11.37,10.46 11.65,10.00 12.00,9.60 12.40,9.25 12.86,8.97 13.35,8.77 13.87,8.64 14.40,8.60"/></svg><span>Installing the Framez Helper</span></a></div></details><details class="grp"><summary><span>Interface</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="window.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>The Framez Window</span></a><a href="workspaces.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.40,6.60 19.60,6.60"/><polyline points="4.40,12.00 19.60,12.00"/><polyline points="4.40,17.40 19.60,17.40"/></svg><span>Workspaces</span></a><a href="timeline.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="7.40,5.00 18.60,12.00 7.40,19.00"/></svg><span>Timeline and Toolbar</span></a><a href="anytool.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.40,13.60 4.60,8.80 9.40,4.00"/><polyline points="4.60,8.80 14.40,8.80 15.47,8.92 16.48,9.28 17.39,9.85 18.15,10.61 18.72,11.52 19.08,12.53 19.20,13.60 19.08,14.67 18.72,15.68 18.15,16.59 17.39,17.35 16.48,17.92 15.47,18.28 14.40,18.40 11.00,18.40"/></svg><span>Working with Tools</span></a></div></details><details class="grp"><summary><span>Menus</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="file.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="12.00,3.60 12.00,15.20"/><polyline points="7.20,10.60 12.00,15.40 16.80,10.60"/><polyline points="4.60,20.40 19.40,20.40"/></svg><span>File</span></a><a href="edit.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.40,13.60 4.60,8.80 9.40,4.00"/><polyline points="4.60,8.80 14.40,8.80 15.47,8.92 16.48,9.28 17.39,9.85 18.15,10.61 18.72,11.52 19.08,12.53 19.20,13.60 19.08,14.67 18.72,15.68 18.15,16.59 17.39,17.35 16.48,17.92 15.47,18.28 14.40,18.40 11.00,18.40"/></svg><span>Edit</span></a><a href="key.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon class="f" points="12.00,3.00 21.00,12.00 12.00,21.00 3.00,12.00"/></svg><span>Key</span></a><a href="pose.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="14.60,6.20 14.53,6.78 14.34,7.33 14.03,7.82 13.62,8.23 13.13,8.54 12.58,8.73 12.00,8.80 11.42,8.73 10.87,8.54 10.38,8.23 9.97,7.82 9.66,7.33 9.47,6.78 9.40,6.20 9.47,5.62 9.66,5.07 9.97,4.58 10.38,4.17 10.87,3.86 11.42,3.67 12.00,3.60 12.58,3.67 13.13,3.86 13.62,4.17 14.03,4.58 14.34,5.07 14.53,5.62 14.60,6.20"/><polyline points="12.00,9.40 12.00,15.20"/><polyline points="12.00,15.20 8.60,20.40"/><polyline points="12.00,15.20 15.40,20.40"/><polyline points="7.00,12.00 17.00,12.00"/></svg><span>Pose</span></a><a href="face.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.20,8.00 16.09,8.93 15.78,9.82 15.28,10.62 14.62,11.28 13.82,11.78 12.93,12.09 12.00,12.20 11.07,12.09 10.18,11.78 9.38,11.28 8.72,10.62 8.22,9.82 7.91,8.93 7.80,8.00 7.91,7.07 8.22,6.18 8.72,5.38 9.38,4.72 10.18,4.22 11.07,3.91 12.00,3.80 12.93,3.91 13.82,4.22 14.62,4.72 15.28,5.38 15.78,6.18 16.09,7.07 16.20,8.00"/><polyline points="5.14,18.83 5.40,18.26 5.70,17.71 6.06,17.19 6.45,16.70 6.89,16.25 7.36,15.84 7.86,15.47 8.40,15.14 8.96,14.85 9.54,14.62 10.14,14.44 10.75,14.31 11.37,14.23 12.00,14.20 12.63,14.23 13.25,14.31 13.86,14.44 14.46,14.62 15.04,14.85 15.60,15.14 16.14,15.47 16.64,15.84 17.11,16.25 17.55,16.70 17.94,17.19 18.30,17.71 18.60,18.26 18.86,18.83"/></svg><span>Face</span></a><a href="scene.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13.40,7.00 13.74,7.03 14.08,7.11 14.40,7.24 14.69,7.42 14.96,7.64 15.18,7.91 15.36,8.20 15.49,8.52 15.57,8.86 15.60,9.20 15.60,14.80 15.57,15.14 15.49,15.48 15.36,15.80 15.18,16.09 14.96,16.36 14.69,16.58 14.40,16.76 14.08,16.89 13.74,16.97 13.40,17.00 5.00,17.00 4.66,16.97 4.32,16.89 4.00,16.76 3.71,16.58 3.44,16.36 3.22,16.09 3.04,15.80 2.91,15.48 2.83,15.14 2.80,14.80 2.80,9.20 2.83,8.86 2.91,8.52 3.04,8.20 3.22,7.91 3.44,7.64 3.71,7.42 4.00,7.24 4.32,7.11 4.66,7.03 5.00,7.00"/><polygon points="15.60,10.60 21.20,7.60 21.20,16.40 15.60,13.40"/></svg><span>Scene</span></a><a href="game.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6.00,21.00 6.00,3.80"/><polyline points="6.00,4.60 18.40,4.60 15.60,8.60 18.40,12.60 6.00,12.60"/></svg><span>Game</span></a><a href="view.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="2.60,12.00 3.09,11.26 3.62,10.57 4.19,9.93 4.80,9.36 5.43,8.83 6.09,8.36 6.77,7.95 7.48,7.59 8.21,7.29 8.95,7.04 9.70,6.85 10.46,6.71 11.23,6.63 12.00,6.60 12.77,6.63 13.54,6.71 14.30,6.85 15.05,7.04 15.79,7.29 16.52,7.59 17.23,7.95 17.91,8.36 18.57,8.83 19.20,9.36 19.81,9.93 20.38,10.57 20.91,11.26 21.40,12.00 20.91,12.74 20.38,13.43 19.81,14.07 19.20,14.64 18.57,15.17 17.91,15.64 17.22,16.05 16.52,16.41 15.79,16.71 15.05,16.96 14.30,17.15 13.54,17.29 12.77,17.37 12.00,17.40 11.23,17.37 10.46,17.29 9.70,17.15 8.95,16.96 8.21,16.71 7.48,16.41 6.77,16.05 6.09,15.64 5.43,15.17 4.80,14.64 4.19,14.07 3.62,13.43 3.09,12.74 2.60,12.00"/><polygon points="15.00,12.00 14.92,12.67 14.70,13.30 14.35,13.87 13.87,14.35 13.30,14.70 12.67,14.92 12.00,15.00 11.33,14.92 10.70,14.70 10.13,14.35 9.65,13.87 9.30,13.30 9.08,12.67 9.00,12.00 9.08,11.33 9.30,10.70 9.65,10.13 10.13,9.65 10.70,9.30 11.33,9.08 12.00,9.00 12.67,9.08 13.30,9.30 13.87,9.65 14.35,10.13 14.70,10.70 14.92,11.33 15.00,12.00"/></svg><span>View</span></a><a href="help.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="5.60,12.00 9.80,16.20 18.40,6.80"/></svg><span>Help</span></a></div></details><details class="grp" open><summary><span>Windows</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="inspector.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="19.00,12.00 18.82,13.56 18.31,15.04 17.47,16.36 16.36,17.47 15.04,18.31 13.56,18.82 12.00,19.00 10.44,18.82 8.96,18.31 7.64,17.47 6.53,16.36 5.69,15.04 5.18,13.56 5.00,12.00 5.18,10.44 5.69,8.96 6.53,7.64 7.64,6.53 8.96,5.69 10.44,5.18 12.00,5.00 13.56,5.18 15.04,5.69 16.36,6.53 17.47,7.64 18.31,8.96 18.82,10.44 19.00,12.00"/><ellipse class="f" cx="12.00" cy="12.00" rx="2.40" ry="2.40"/></svg><span>Inspector</span></a><a href="curves.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="3.60,19.00 4.27,18.95 4.91,18.80 5.52,18.55 6.10,18.22 6.67,17.82 7.21,17.35 7.74,16.81 8.26,16.22 8.77,15.59 9.27,14.92 9.76,14.22 10.25,13.49 10.75,12.75 11.25,12.00 11.76,11.25 12.28,10.51 12.81,9.78 13.36,9.08 13.93,8.41 14.52,7.78 15.13,7.19 15.78,6.65 16.45,6.18 17.16,5.78 17.91,5.45 18.69,5.20 19.52,5.05 20.40,5.00"/><ellipse class="f" cx="12.00" cy="12.00" rx="1.60" ry="1.60"/></svg><span>Curve Editor</span></a><a href="modifiers.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Modifiers</span></a><a href="physics.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Physics</span></a><a href="reference.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="18.20,5.20 18.58,5.23 18.94,5.32 19.29,5.46 19.61,5.66 19.90,5.90 20.14,6.19 20.34,6.51 20.48,6.86 20.57,7.22 20.60,7.60 20.60,16.40 20.57,16.78 20.48,17.14 20.34,17.49 20.14,17.81 19.90,18.10 19.61,18.34 19.29,18.54 18.94,18.68 18.58,18.77 18.20,18.80 5.80,18.80 5.42,18.77 5.06,18.68 4.71,18.54 4.39,18.34 4.10,18.10 3.86,17.81 3.66,17.49 3.52,17.14 3.43,16.78 3.40,16.40 3.40,7.60 3.43,7.22 3.52,6.86 3.66,6.51 3.86,6.19 4.10,5.90 4.39,5.66 4.71,5.46 5.06,5.32 5.42,5.23 5.80,5.20"/><polygon points="10.00,9.40 15.00,12.00 10.00,14.60"/></svg><span>Reference Video</span></a><a href="poses.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Poses</span></a><a href="camera.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13.40,7.00 13.74,7.03 14.08,7.11 14.40,7.24 14.69,7.42 14.96,7.64 15.18,7.91 15.36,8.20 15.49,8.52 15.57,8.86 15.60,9.20 15.60,14.80 15.57,15.14 15.49,15.48 15.36,15.80 15.18,16.09 14.96,16.36 14.69,16.58 14.40,16.76 14.08,16.89 13.74,16.97 13.40,17.00 5.00,17.00 4.66,16.97 4.32,16.89 4.00,16.76 3.71,16.58 3.44,16.36 3.22,16.09 3.04,15.80 2.91,15.48 2.83,15.14 2.80,14.80 2.80,9.20 2.83,8.86 2.91,8.52 3.04,8.20 3.22,7.91 3.44,7.64 3.71,7.42 4.00,7.24 4.32,7.11 4.66,7.03 5.00,7.00"/><polygon points="15.60,10.60 21.20,7.60 21.20,16.40 15.60,13.40"/></svg><span>Camera Preview</span></a><a href="sublines.html" aria-current="page"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Subtitle Lines</span></a><a href="bench.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Test Bench</span></a><a href="check.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Check Animation</span></a><a href="prefs.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Preferences</span></a><a href="keyboard.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Keyboard Shortcuts</span></a><a href="scripting.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Scripting</span></a></div></details><details class="grp"><summary><span>Tutorials</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="recipes.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Tutorials</span></a><a href="r-skill.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Combat Skill</span></a><a href="r-animehit.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Hit with Effects</span></a><a href="r-idle.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making an Idle or Fidget</span></a><a href="r-cycle.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Walk, Run, Strafe or Backpedal</span></a><a href="r-video.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Copying a Move from a Video</span></a><a href="r-dance.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating a Dance to Music</span></a><a href="r-ugc.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making an Emote to Sell</span></a><a href="r-pack.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making an Animation Pack</span></a><a href="r-acro.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating Jumps, Flips and Spins</span></a><a href="r-ragdoll.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Ragdoll Fall or Hit Reaction</span></a><a href="r-acting.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating Talking, Reacting and Pointing</span></a><a href="r-cutscene.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Cutscene</span></a><a href="r-grab.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating a Grab, Throw or Finisher</span></a><a href="r-hold.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Picking Up, Passing and Throwing an Object</span></a><a href="r-faces.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating Faces on a Classic Head</span></a><a href="r-dynface.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating Faces on a Dynamic Head</span></a><a href="r-lipsync.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Setting up Lip Sync</span></a><a href="r-capture.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Capturing a Face from a Webcam</span></a><a href="r-bench.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Testing an Animation in the Game</span></a><a href="r-blender.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Editing an Animation in Blender</span></a><a href="r-import.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Starting from an Existing Animation</span></a><a href="r-graph.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Previewing Blends, Layers and Aim Offsets</span></a><a href="r-rig.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Setting up R15, Creature and Custom Rigs</span></a><a href="r-keys.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Setting Your Own Keyboard Shortcuts</span></a></div></details><details class="grp"><summary><span>Reference</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="shortcuts.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="5.40" cy="12.00" rx="1.70" ry="1.70"/><ellipse class="f" cx="12.00" cy="12.00" rx="1.70" ry="1.70"/><ellipse class="f" cx="18.60" cy="12.00" rx="1.70" ry="1.70"/></svg><span>Shortcut List</span></a><a href="trouble.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6.00,21.00 6.00,3.80"/><polyline points="6.00,4.60 18.40,4.60 15.60,8.60 18.40,12.60 6.00,12.60"/></svg><span>Troubleshooting</span></a></div></details></div><div class="side-foot"><a href="index.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Manual</span></a><a href="https://github.com/lsxldierl/framez/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="9.60,8.60 10.13,8.64 10.65,8.77 11.14,8.97 11.60,9.25 12.00,9.60 12.35,10.00 12.63,10.46 12.83,10.95 12.96,11.47 13.00,12.00 13.00,12.00 12.96,12.53 12.83,13.05 12.63,13.54 12.35,14.00 12.00,14.40 11.60,14.75 11.14,15.03 10.65,15.23 10.13,15.36 9.60,15.40 6.00,15.40 5.47,15.36 4.95,15.23 4.46,15.03 4.00,14.75 3.60,14.40 3.25,14.00 2.97,13.54 2.77,13.05 2.64,12.53 2.60,12.00 2.60,12.00 2.64,11.47 2.77,10.95 2.97,10.46 3.25,10.00 3.60,9.60 4.00,9.25 4.46,8.97 4.95,8.77 5.47,8.64 6.00,8.60"/><polygon points="18.00,8.60 18.53,8.64 19.05,8.77 19.54,8.97 20.00,9.25 20.40,9.60 20.75,10.00 21.03,10.46 21.23,10.95 21.36,11.47 21.40,12.00 21.40,12.00 21.36,12.53 21.23,13.05 21.03,13.54 20.75,14.00 20.40,14.40 20.00,14.75 19.54,15.03 19.05,15.23 18.53,15.36 18.00,15.40 14.40,15.40 13.87,15.36 13.35,15.23 12.86,15.03 12.40,14.75 12.00,14.40 11.65,14.00 11.37,13.54 11.17,13.05 11.04,12.53 11.00,12.00 11.00,12.00 11.04,11.47 11.17,10.95 11.37,10.46 11.65,10.00 12.00,9.60 12.40,9.25 12.86,8.97 13.35,8.77 13.87,8.64 14.40,8.60"/></svg><span>Download the helper</span></a></div></nav><div class="main"><header class="topbar"><button class="iconbtn only-narrow" type="button" data-menu aria-label="Menu"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.40,6.60 19.60,6.60"/><polyline points="4.40,12.00 19.60,12.00"/><polyline points="4.40,17.40 19.60,17.40"/></svg></button><div class="crumb"><span>Windows</span><i>/</i><b>Subtitle Lines</b></div><div class="top-actions"><button class="iconbtn" type="button" data-search aria-label="Search the manual (Ctrl+K)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg></button><button class="iconbtn" type="button" data-theme-toggle aria-label="Light or dark"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg></button><a class="pill" href="https://github.com/lsxldierl/framez/releases/latest">Get the helper</a></div></header><div class="layout"><article class="doc"><h1>Subtitle Lines</h1><p class="lead">Subtitle lines are the timed dialogue of a scene. The Subtitle lines window lists them and adds many at once from a pasted script or an .srt file, and the subtitle page of the Inspector writes each line and sets how it looks, moves and reads word by word. Both belong to the Scene workspace.</p>
+
+  <article class="tool" id="f-sublines">
+    <h3>Subtitle Lines Window</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>View ‣ Windows ‣ Subtitle lines</dd>
+      <dt>Right-click</dt><dd>A subtitle block ‣ Subtitle lines</dd><dd>The Subtitles row ‣ Subtitle lines</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>The Subtitle lines window lists every subtitle line of the scene and adds many lines at once. It opens as a floating window, and the Inspector's subtitle page has a button for it as well. Each row shows the line's start time in minutes and seconds, the speaker in the speaker's colour, and the text. The selected line is tinted. Click a row to move the playhead into that line and select it, which also shows its page in the Inspector.</p>
+    <p>With no lines, the list invites you to paste a script below or double-click the Subtitles row. Outside a scene, it asks you to open one.</p>
+    <p>To add lines, paste into the box at the foot of the window and press <b>Add the lines</b>. The lines are added to the scene, the box empties, and a message says how many were added. Adding lines needs a scene, and Framez says so when there is none. Each new line takes the look and moves of its speaker's last line, or of the last line in the scene when the speaker is new.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Paste box</dt>
+      <dd>Holds the script or the .srt file. A script has one line of dialogue on each line of the box, written as Name: line. A name is up to 24 characters and does not end in a digit, so a time such as 10:30 is not taken for a speaker. A line without a name has no speaker. The box also accepts the contents of an .srt file.</dd>
+      <dt>Reading speed</dt>
+      <dd>Words a second, from 0.5 to 8, and 2.6 at first. Script lines are timed from it, starting at the playhead. Each line lasts its number of words divided by the reading speed, plus 0.4 seconds, and at least one second. The next line starts 0.2 seconds after it ends.</dd>
+      <dt>.srt</dt>
+      <dd>Lines from an .srt file keep their own start and end times. The tags in them are removed, a caption that runs over several lines becomes one line, and a name at the start of a caption is read as the speaker.</dd>
+      <dt>Add the lines</dt>
+      <dd>Adds every line in the box.</dd>
+      <dt>Clear the box</dt>
+      <dd>Empties the box without adding anything.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a whole conversation can be pasted as Mara: The gate falls tonight, then Kael: Then we ride at dawn, and appears as a row of coloured blocks, one speaker in each colour. Captions exported from a video editor can be brought in the same way as an .srt file.</p>
+    <h4>See Also</h4>
+    <p><a href="scene.html#f-subtitles">Subtitles</a> adds the Subtitles row, and <a href="#f-subpage">The Subtitle Page</a> edits one line.</p>
+<figure class="shot"><img src="img/sublines.png" width="418" height="496" alt="The Subtitle lines window with three lines listed above the paste box and its reading speed" loading="lazy">
+      <figcaption>The Subtitle lines window with three lines listed above the paste box and its reading speed.</figcaption></figure>
+  </article>
+
+  <h2 class="part" id="sublines-page">The Subtitle Page</h2>
+
+  <article class="tool" id="f-subpage">
+    <h3>The Subtitle Page</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Inspector ‣ a selected subtitle line</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>The subtitle page writes a line and sets how it looks, moves and reads word by word. It shows in the Inspector when a subtitle block is selected and nothing else takes the Inspector first, because a selected limb, key, block or scene item shows its own page before this one. Every change on the page is one undo step.</p>
+    <p>A strip of four parts runs across the top of the page, and one part is open at a time. A green dot before a part's name means the part holds something of the line's own, such as text, a look, a move or a word's look. A grey dot means the part is empty. At the foot of the page, the Subtitle lines button opens the window that lists every line, and the Delete the line button removes the line.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Text</dt>
+      <dd>The words of the line, who says it, its starting look, when it shows and how many words show at a time. See <a href="#f-subtext">Text</a>.</dd>
+      <dt>Look</dt>
+      <dd>The typeface, colours, outline, shadow, box, position, speaker's name and portrait. See <a href="#f-subtype">Text Style</a> and the sections after it.</dd>
+      <dt>Motion</dt>
+      <dd>The moves that bring the line in, run while it shows and take it out. See <a href="#f-submotion">Motion</a>.</dd>
+      <dt>Words</dt>
+      <dd>A look for single words. See <a href="#f-subwords">Words</a>.</dd>
+    </dl>
+  </article>
+
+  <h2 class="part" id="sublines-text">Text</h2>
+
+  <article class="tool" id="f-subtext">
+    <h3>Text</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Inspector ‣ a selected subtitle line ‣ Text</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>The Text part holds what the line says and when it shows. The first section, Line, has the text and its speaker, and the second, Timing, has the times. The speaker and the starting look are explained in more detail below.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Line</dt>
+      <dd>A box for the words of the line, which can run to several lines. The text is applied when you click out of the box. Changing the text clears any looks you gave to single words on the Words part.</dd>
+      <dt>Speaker</dt>
+      <dd>The name of who says the line. Each speaker gets one colour on the timeline, in the order they first speak, and the name is shown in capitals above the line. Leave it empty for a line with no speaker.</dd>
+      <dt>Look</dt>
+      <dd>A menu of starting looks and your own saved looks. Its button shows the name of the look in use, Custom after you change any value, or Film for a new line. See <a href="#f-sublooks">Starting Looks and My Looks</a>.</dd>
+      <dt>Starts</dt>
+      <dd>The time the line begins, in seconds from the start of the animation.</dd>
+      <dt>Length</dt>
+      <dd>How long the line shows, in seconds, and at least 0.1.</dd>
+      <dt>At a time</dt>
+      <dd>Shows a long line as pages of a few words. The choices are The whole line, 1 word, 2 words, 3 words, 4 words and 6 words. Each page lasts for the time its words take to say, which is shared out by the length of the words in the line, and a page also ends at a full stop, an exclamation mark or a question mark.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a long sentence set to 3 words at a time reads like a caption in a short video, with each page replacing the one before it as the words are spoken.</p>
+<figure class="shot"><img src="img/inspector-subtext.png" width="298" height="636" alt="The Text part of a subtitle line&#x27;s page, with the Line box, Speaker, Look, Starts, Length and At a time" loading="lazy">
+      <figcaption>The Text part of a subtitle line's page, with the Line box, Speaker, Look, Starts, Length and At a time.</figcaption></figure>
+  </article>
+
+  <article class="tool" id="f-sublooks">
+    <h3>Starting Looks and My Looks</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Inspector ‣ a selected subtitle line ‣ Text ‣ Look</dd>
+      <dt>Right-click</dt><dd>A subtitle block ‣ Look</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>A starting look fills in every value of the line's Look and Motion at once, so one choice gives a finished style. Each value stays yours to change afterwards, and once you change any, the Look button reads Custom. A new line starts with the Film look, which is white SemiBold text with a soft shadow, 7 percent up from the bottom of the shot. Choosing a look replaces the line's look and moves, and it is one undo step.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Film</dt>
+      <dd>The default. White SemiBold with a soft shadow at the bottom of the shot.</dd>
+      <dt>Captions</dt>
+      <dd>Heavy capitals a little below the middle of the shot, three words at a time, each word popping in, with a pill that follows the word being said.</dd>
+      <dt>Karaoke</dt>
+      <dd>ExtraBold text with a thick outline, in which each word turns yellow as it is said and stays lit.</dd>
+      <dt>Title</dt>
+      <dd>Wide-spaced capitals in the middle of the shot with a warm glow. The letters fade in one after another, and the line fades out as a whole.</dd>
+      <dt>Shout</dt>
+      <dd>Large Bangers capitals with a red-to-yellow gradient and a thick outline. The letters pop in one by one, and the line shakes.</dd>
+      <dt>Whisper</dt>
+      <dd>Smaller, pale, italic text with a soft shadow, whose words fade in one by one.</dd>
+      <dt>Lower third</dt>
+      <dd>A dark box at the lower left of the shot, 40 percent wide, with left-aligned text and a speaker's name at 70 percent of the text size. The line slides in from the left.</dd>
+      <dt>Typewriter</dt>
+      <dd>A typewriter typeface that types on one letter at a time.</dd>
+      <dt>My looks</dt>
+      <dd>Lists the looks you have saved, and is greyed until you save one. Choosing one applies it to the line.</dd>
+      <dt>Save this look as mine...</dt>
+      <dd>Asks for a Name, which starts as the speaker's name or My look, and saves the line's look and moves under it. My looks belong to Studio and are there in every place.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, give a hero's lines the Shout look, adjust the size and colour until it suits the game, save it as a look, and apply it to every other shout in the scene with one click.</p>
+  </article>
+
+  <h2 class="part" id="sublines-look">Look</h2>
+  <p>The Look part is split into six sections. Wherever a value is a colour, it is a swatch and a hex code. Click the swatch for a palette of sixteen colours, or type a hex code such as FFD640, which may also be written with three digits. Where a colour may be empty, type None or choose None from the palette.</p>
+
+  <article class="tool" id="f-subtype">
+    <h3>Text Style</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Inspector ‣ a selected subtitle line ‣ Look ‣ Text</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>Text Style sets the typeface and the basic look of the letters. A line starts with Builder Sans in SemiBold, 4.6 percent of the shot's height, in white.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Font</dt>
+      <dd>The typeface. The fonts are grouped in five kinds, Clean, Narrow and wide, Bold and fun, Handwritten, and Serif and typed. Each kind opens a list in which every name is shown in its own typeface.</dd>
+      <dt>Weight</dt>
+      <dd>Light, Regular, Medium, SemiBold, Bold, ExtraBold or Heavy.</dd>
+      <dt>Size</dt>
+      <dd>The height of the text as a percentage of the shot's height, from 1 to 30.</dd>
+      <dt>Fill</dt>
+      <dd>The colour of the letters.</dd>
+      <dt>Gradient to</dt>
+      <dd>A second colour. The fill blends from Fill at the top of the letters to this colour at the bottom. None gives a solid fill.</dd>
+      <dt>Letter gap</dt>
+      <dd>Space added between the letters, as a percentage of the text size. Negative values bring them closer.</dd>
+      <dt>Italic</dt>
+      <dd>Slants the letters.</dd>
+      <dt>Capitals</dt>
+      <dd>Shows the text in capital letters.</dd>
+    </dl>
+  </article>
+
+  <article class="tool" id="f-suboutline">
+    <h3>Outline and Shadow</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Inspector ‣ a selected subtitle line ‣ Look ‣ Outline and shadow</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>This section keeps the text readable against any background. The outline is a solid edge around each letter, the shadow is a soft shape behind the text, and the glow is a coloured halo around it.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Outline</dt>
+      <dd>The thickness of the edge in pixels, from 0 to 40, measured on a 1080 pixel tall shot. It is 0 at first.</dd>
+      <dt>Outline colour</dt>
+      <dd>The colour of the edge, black at first.</dd>
+      <dt>Shadow</dt>
+      <dd>How strong the shadow is, from 0 to 100 percent. It is 70 at first.</dd>
+      <dt>Shadow blur</dt>
+      <dd>How soft the shadow's edge is, in pixels from 0 to 60. It is 6 at first.</dd>
+      <dt>Glow</dt>
+      <dd>The colour of a glow around the text, or None for no glow.</dd>
+      <dt>Glow size</dt>
+      <dd>How far the glow spreads, in pixels from 1 to 80. It shows only while Glow has a colour, and is 10 at first.</dd>
+    </dl>
+  </article>
+
+  <article class="tool" id="f-subbox">
+    <h3>Box</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Inspector ‣ a selected subtitle line ‣ Look ‣ Box</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>The box is a coloured panel behind the whole line, including the speaker's name and the portrait. A new line has no box, because its opacity is 0.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Colour</dt>
+      <dd>The colour of the panel, black at first.</dd>
+      <dt>Opacity</dt>
+      <dd>How solid the panel is, from 0 to 100 percent. At 0 there is no box.</dd>
+    </dl>
+  </article>
+
+  <article class="tool" id="f-subplace">
+    <h3>Place</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Inspector ‣ a selected subtitle line ‣ Look ‣ Place</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>Place decides where the line sits in the shot and how wide it may grow. Lines wrap inside their width.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>On screen</dt>
+      <dd>Top, Middle or Bottom. Bottom is the default.</dd>
+      <dt>Margin</dt>
+      <dd>The distance from the top or bottom edge, as a percentage of the shot's height. It is 7 at first. With Middle chosen, the row is called Offset and moves the line up for positive values.</dd>
+      <dt>Across</dt>
+      <dd>Moves the line sideways as a percentage of the shot's width, from -50 to 50. 0 is centred, and negative values move it to the left.</dd>
+      <dt>Width</dt>
+      <dd>The widest the line may be, as a percentage of the shot's width, from 10 to 100. It is 80 at first.</dd>
+      <dt>Align</dt>
+      <dd>Left, Centre or Right, how the lines of a wrapped line sit against each other.</dd>
+    </dl>
+  </article>
+
+  <article class="tool" id="f-subspeaker">
+    <h3>Speaker's Name</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Inspector ‣ a selected subtitle line ‣ Look ‣ Speaker's name</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>This section shows only for a line that has a speaker. The name is drawn in capitals above the line, in its own colour and size.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Colour</dt>
+      <dd>The colour of the name, a pale gold at first.</dd>
+      <dt>Size</dt>
+      <dd>The size of the name as a percentage of the line's text size, from 20 to 200. It is 62 at first.</dd>
+    </dl>
+  </article>
+
+  <article class="tool" id="f-subportrait">
+    <h3>Portrait</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Inspector ‣ a selected subtitle line ‣ Look ‣ Portrait</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>A portrait is a small image shown with the line, such as a character's face. Type an image's asset id to add one. Once an image is set, three more rows appear.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Image</dt>
+      <dd>The asset id of the image. Clearing the field removes the portrait.</dd>
+      <dt>Side</dt>
+      <dd>Left, Right or Above the text.</dd>
+      <dt>Shape</dt>
+      <dd>Circle or Square.</dd>
+      <dt>Size</dt>
+      <dd>The size of the portrait as a percentage of the shot's height, from 4 to 40. It is 12 at first.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a conversation between two characters can give each speaker a portrait on opposite sides, so players see who is speaking.</p>
+<figure class="shot"><img src="img/inspector-sublook.png" width="298" height="636" alt="The Look part of a subtitle line&#x27;s page" loading="lazy">
+      <figcaption>The Look part of a subtitle line's page.</figcaption></figure>
+  </article>
+
+  <h2 class="part" id="sublines-motion">Motion</h2>
+
+  <article class="tool" id="f-submotion">
+    <h3>Motion</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Inspector ‣ a selected subtitle line ‣ Motion</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>The Motion part gives a line movement. It has three phases, chosen by a switch at the top. <b>In</b> moves play as the line appears. <b>During</b> motions keep running for as long as the line shows. <b>Out</b> moves play at the end of the line and take it away. Each phase holds a list of moves, and a phase can hold several that play together. A move changes the line as a whole, word by word or letter by letter.</p>
+    <p>Each move in the list is described in a few words, for example a move that fades the line in, or one that makes words grow. Click a move to change it in the move box, or click the trash icon on its row to remove it. An empty phase says there are no moves.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Add a move</dt>
+      <dd>Opens the move box to make a new move in the In or Out phase. In the During phase the button reads Add a motion.</dd>
+      <dt>Start from</dt>
+      <dd>Fills the line's moves from a ready-made set, replacing the moves it has. The sets are Fade in and out, Pop by word, Rise by letter, Typewriter, Slide in, Pill on the said word, Karaoke, Wave, Shake and No motion, which clears every move.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, Rise by letter makes each letter drift up and fade in one after another, and Wave keeps the line gently rippling for as long as it shows.</p>
+<figure class="shot"><img src="img/inspector-submotion.png" width="298" height="636" alt="The Motion part of a subtitle line&#x27;s page" loading="lazy">
+      <figcaption>The Motion part of a subtitle line's page.</figcaption></figure>
+  </article>
+
+  <article class="tool" id="f-submove">
+    <h3>The Move Box</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Inspector ‣ a selected subtitle line ‣ Motion ‣ Add a move</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>The move box edits one move. Its title reads Add a move or Change the move for the In and Out phases, and Add a motion or Change the motion for During. Its rows follow what the move changes, so some appear only for some choices. The button at the foot is Add for a new move and Apply for a change.</p>
+    <p>For In and Out, a move changes the line as a whole, word by word or letter by letter, from an off state to its normal look. An In move runs towards the normal look as the line appears, and an Out move runs away from it at the end of the line, so the same values describe where the line comes from or goes to.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>By</dt>
+      <dd>Line, Words or Letters, the unit the move works on. By words and by letters, each unit moves a little after the one before.</dd>
+      <dt>Change</dt>
+      <dd>Fade, Move, Size, Turn, Colour or Type on. Fade changes how solid the text is, Move slides it, Size grows or shrinks it, Turn rotates it, Colour blends the text from another colour, and Type on shows the letters one at a time.</dd>
+      <dt>From X, From Y</dt>
+      <dd>For Move. How far the text starts from its place, as multiples of the text size, from -20 to 20. The values are 0 and 0.6 at first.</dd>
+      <dt>From size</dt>
+      <dd>For Size. The size the text starts from, as a percentage of its normal size, from 0 to 1000. It is 60 at first.</dd>
+      <dt>From angle</dt>
+      <dd>For Turn. The angle the text starts at, in degrees from -720 to 720. It is 30 at first.</dd>
+      <dt>From colour</dt>
+      <dd>For Colour. The colour the text starts from, shown as a hex code.</dd>
+      <dt>Each takes</dt>
+      <dd>The time one unit takes to complete the change, in seconds from 0.01 to 10. It is 0.25 for a new move.</dd>
+      <dt>Overlap</dt>
+      <dd>Shown for words and letters. How much the changes of neighbouring units overlap, from 0 to 99 percent. At 0 each unit waits for the one before, and higher values run them together. It is 50 for a new move.</dd>
+      <dt>Order</dt>
+      <dd>Shown for words and letters. Which unit goes first, with the choices First, Last, Centre and Random.</dd>
+      <dt>Easing</dt>
+      <dd>Smooth, Snappy, Overshoot, Bounce or Linear, how the change speeds up and slows down. Type on has no easing.</dd>
+    </dl>
+    <p>For a motion in the During phase, the first row is Kind, with five choices.</p>
+    <dl class="opts">
+      <dt>Wave</dt>
+      <dd>Each word or letter bobs up and down in turn. It has Amount, from 0 to 300 percent of the text size, which is 12 at first, and Speed, from 0.05 to 20 times, which is 1 at first.</dd>
+      <dt>Shake</dt>
+      <dd>The text jitters at random. It has the same Amount and Speed.</dd>
+      <dt>Pulse</dt>
+      <dd>The text swells and shrinks together. It has the same Amount and Speed.</dd>
+      <dt>Colour</dt>
+      <dd>The text cycles through the colours of the rainbow. It has Speed only.</dd>
+      <dt>Said word</dt>
+      <dd>Marks the word being said, timed by the length of the words. Style chooses Pill, which slides a coloured pill behind the word, Lit, which colours the said word, or So far, which colours every word said so far. Colour chooses the colour. Pop is how much the said word swells as it is said, as a percentage of its size, from 0 to 100, and 6 at first.</dd>
+    </dl>
+<figure class="shot"><img src="img/submove.png" width="460" height="365" alt="The move box, set for a move that slides the words in one after another" loading="lazy">
+      <figcaption>The move box, set for a move that slides the words in one after another.</figcaption></figure>
+  </article>
+
+  <h2 class="part" id="sublines-words">Words</h2>
+
+  <article class="tool" id="f-subwords">
+    <h3>Words</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Inspector ‣ a selected subtitle line ‣ Words</dd>
+      <dt>Workspace</dt><dd>Scene</dd>
+    </dl>
+    <p>The Words part gives single words a look of their own. It shows a chip for each word of the line. Click a chip to select that word, with a red ring round it, and its values appear below. A small green dot on a chip's corner marks a word that already has a look of its own, and a word with its own fill shows that colour on its chip. With no text, the part asks you to type the line first. Changing the line's text clears the word looks.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Fill</dt>
+      <dd>The word's colour, or None to use the line's.</dd>
+      <dt>Weight</dt>
+      <dd>As the line, or Light, Regular, Medium, SemiBold, Bold, ExtraBold or Heavy.</dd>
+      <dt>Size</dt>
+      <dd>The word's size as a percentage of the line's text size, from 20 to 400. It is 100 at first, which is as the line.</dd>
+      <dt>Shake</dt>
+      <dd>Makes the word tremble, from 0 to 10. 0 is still.</dd>
+      <dt>Pill behind</dt>
+      <dd>A coloured pill behind the word, or None for no pill.</dd>
+      <dt>Italic</dt>
+      <dd>Slants the word.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, one word of a sentence can be made larger, red and shaking to stress it, or given a pill to read like a highlighted word in a caption.</p>
+<figure class="shot"><img src="img/inspector-subwords.png" width="298" height="636" alt="The Words part of a subtitle line&#x27;s page with one word selected" loading="lazy">
+      <figcaption>The Words part of a subtitle line's page with one word selected.</figcaption></figure>
+  </article>
+<nav class="pager" aria-label="More pages"><a class="prev" href="camera.html"><small>Previous</small><span>Camera Preview</span></a><a class="next" href="bench.html"><small>Next</small><span>Test Bench</span></a></nav><footer class="foot">Framez by soldier. This manual covers Framez 17.99.</footer></article><aside class="toc" aria-label="On this page"><a class="lv0" href="#f-sublines">Subtitle Lines Window</a><a class="lv1" href="#sublines-page">The Subtitle Page</a><a class="lv2" href="#f-subpage">The Subtitle Page</a><a class="lv1" href="#sublines-text">Text</a><a class="lv2" href="#f-subtext">Text</a><a class="lv2" href="#f-sublooks">Starting Looks and My Looks</a><a class="lv1" href="#sublines-look">Look</a><a class="lv2" href="#f-subtype">Text Style</a><a class="lv2" href="#f-suboutline">Outline and Shadow</a><a class="lv2" href="#f-subbox">Box</a><a class="lv2" href="#f-subplace">Place</a><a class="lv2" href="#f-subspeaker">Speaker&#x27;s Name</a><a class="lv2" href="#f-subportrait">Portrait</a><a class="lv1" href="#sublines-motion">Motion</a><a class="lv2" href="#f-submotion">Motion</a><a class="lv2" href="#f-submove">The Move Box</a><a class="lv1" href="#sublines-words">Words</a><a class="lv2" href="#f-subwords">Words</a></aside></div></div></div><div class="scrim" data-scrim hidden></div><div class="search" id="search" hidden role="dialog" aria-modal="true" aria-label="Search the manual"><div class="search-box"><div class="search-field"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg><input id="search-q" type="search" placeholder="Search the manual" autocomplete="off"><kbd>Esc</kbd></div><div class="search-results" id="search-results"></div></div></div><script src="assets/search-index.js"></script><script src="assets/site.js"></script></body></html>

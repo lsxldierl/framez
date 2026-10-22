@@ -1,277 +1,1135 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Key - Framez Docs</title><meta name="description" content="Save poses as keys, change how the moves between them play, change when they happen, and clean up the result. Every row here is in the Key menu of the Anim"><link rel="icon" href="assets/favicon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"><link rel="stylesheet" href="assets/site.css"><script>try{var t=localStorage.getItem("framez-theme");if(t)document.documentElement.dataset.look=t}catch(e){}</script></head><body><div class="shell"><nav class="side" id="side" aria-label="Docs"><div class="side-head"><a class="brand" href="index.html"><svg class="mark" viewBox="-34.0 -34.0 68.0 68.0" aria-hidden="true"><polygon points="-28.00,0.00 0.00,-28.00 28.00,0.00 0.00,28.00" fill="#3c4045"/><polygon points="-18.50,0.00 0.00,-18.50 0.00,0.00" fill="#e8443c"/><polygon points="0.00,-18.50 9.25,-9.25 0.00,0.00" fill="#9e2b2b"/><polygon points="9.25,-9.25 9.25,0.00 0.00,0.00" fill="#ffffff"/><polygon points="9.25,-9.25 18.50,0.00 9.25,0.00" fill="#e8443c"/><polygon points="-18.50,0.00 0.00,0.00 -9.25,9.25" fill="#9e2b2b"/><polygon points="-9.25,9.25 0.00,0.00 0.00,18.50" fill="#ffffff"/><polygon points="0.00,0.00 18.50,0.00 0.00,18.50" fill="#ffffff"/><polygon points="26.30,-22.51 23.03,-18.03 17.70,-16.49 20.97,-20.97" fill="#e8443c"/><polygon points="-16.73,16.57 -17.63,18.42 -19.67,18.63 -18.77,16.78" fill="#e8443c"/></svg><i class="sep"></i><span>Docs</span></a><button class="iconbtn" type="button" data-search aria-label="Search the docs (Ctrl+K)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg></button></div><div class="side-scroll"><details class="grp"><summary><span>Getting started</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="start.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="5.14,9.23 5.40,8.66 5.70,8.11 6.06,7.59 6.45,7.10 6.89,6.65 7.36,6.24 7.86,5.87 8.40,5.54 8.96,5.25 9.54,5.02 10.14,4.84 10.75,4.71 11.37,4.63 12.00,4.60 12.63,4.63 13.25,4.71 13.86,4.84 14.46,5.02 15.04,5.25 15.60,5.54 16.14,5.87 16.64,6.24 17.11,6.65 17.55,7.10 17.94,7.59 18.30,8.11 18.60,8.66 18.86,9.23"/><polyline points="18.86,14.77 18.60,15.34 18.30,15.89 17.94,16.41 17.55,16.90 17.11,17.35 16.64,17.76 16.14,18.13 15.60,18.46 15.04,18.75 14.46,18.98 13.86,19.16 13.25,19.29 12.63,19.37 12.00,19.40 11.37,19.37 10.75,19.29 10.14,19.16 9.54,18.98 8.96,18.75 8.40,18.46 7.86,18.13 7.36,17.76 6.89,17.35 6.45,16.90 6.06,16.41 5.70,15.89 5.40,15.34 5.14,14.77"/><polyline points="18.86,9.23 16.11,7.23"/><polyline points="18.86,9.23 19.45,5.88"/><polyline points="5.14,14.77 7.89,16.77"/><polyline points="5.14,14.77 4.55,18.12"/></svg><span>Getting started</span></a><a href="anytool.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.40,13.60 4.60,8.80 9.40,4.00"/><polyline points="4.60,8.80 14.40,8.80 15.47,8.92 16.48,9.28 17.39,9.85 18.15,10.61 18.72,11.52 19.08,12.53 19.20,13.60 19.08,14.67 18.72,15.68 18.15,16.59 17.39,17.35 16.48,17.92 15.47,18.28 14.40,18.40 11.00,18.40"/></svg><span>How tools work</span></a><a href="recipes.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Tutorials</span></a><a href="workspaces.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.40,6.60 19.60,6.60"/><polyline points="4.40,12.00 19.60,12.00"/><polyline points="4.40,17.40 19.60,17.40"/></svg><span>Workspaces</span></a><a href="windows.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>The windows</span></a><a href="setup.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="9.60,8.60 10.13,8.64 10.65,8.77 11.14,8.97 11.60,9.25 12.00,9.60 12.35,10.00 12.63,10.46 12.83,10.95 12.96,11.47 13.00,12.00 13.00,12.00 12.96,12.53 12.83,13.05 12.63,13.54 12.35,14.00 12.00,14.40 11.60,14.75 11.14,15.03 10.65,15.23 10.13,15.36 9.60,15.40 6.00,15.40 5.47,15.36 4.95,15.23 4.46,15.03 4.00,14.75 3.60,14.40 3.25,14.00 2.97,13.54 2.77,13.05 2.64,12.53 2.60,12.00 2.60,12.00 2.64,11.47 2.77,10.95 2.97,10.46 3.25,10.00 3.60,9.60 4.00,9.25 4.46,8.97 4.95,8.77 5.47,8.64 6.00,8.60"/><polygon points="18.00,8.60 18.53,8.64 19.05,8.77 19.54,8.97 20.00,9.25 20.40,9.60 20.75,10.00 21.03,10.46 21.23,10.95 21.36,11.47 21.40,12.00 21.40,12.00 21.36,12.53 21.23,13.05 21.03,13.54 20.75,14.00 20.40,14.40 20.00,14.75 19.54,15.03 19.05,15.23 18.53,15.36 18.00,15.40 14.40,15.40 13.87,15.36 13.35,15.23 12.86,15.03 12.40,14.75 12.00,14.40 11.65,14.00 11.37,13.54 11.17,13.05 11.04,12.53 11.00,12.00 11.00,12.00 11.04,11.47 11.17,10.95 11.37,10.46 11.65,10.00 12.00,9.60 12.40,9.25 12.86,8.97 13.35,8.77 13.87,8.64 14.40,8.60"/></svg><span>Install the helper</span></a></div></details><details class="grp" open><summary><span>Menus</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="file.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="12.00,3.60 12.00,15.20"/><polyline points="7.20,10.60 12.00,15.40 16.80,10.60"/><polyline points="4.60,20.40 19.40,20.40"/></svg><span>File</span></a><a href="edit.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.40,13.60 4.60,8.80 9.40,4.00"/><polyline points="4.60,8.80 14.40,8.80 15.47,8.92 16.48,9.28 17.39,9.85 18.15,10.61 18.72,11.52 19.08,12.53 19.20,13.60 19.08,14.67 18.72,15.68 18.15,16.59 17.39,17.35 16.48,17.92 15.47,18.28 14.40,18.40 11.00,18.40"/></svg><span>Edit</span></a><a href="key.html" aria-current="page"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon class="f" points="12.00,3.00 21.00,12.00 12.00,21.00 3.00,12.00"/></svg><span>Key</span></a><a href="pose.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="14.60,6.20 14.53,6.78 14.34,7.33 14.03,7.82 13.62,8.23 13.13,8.54 12.58,8.73 12.00,8.80 11.42,8.73 10.87,8.54 10.38,8.23 9.97,7.82 9.66,7.33 9.47,6.78 9.40,6.20 9.47,5.62 9.66,5.07 9.97,4.58 10.38,4.17 10.87,3.86 11.42,3.67 12.00,3.60 12.58,3.67 13.13,3.86 13.62,4.17 14.03,4.58 14.34,5.07 14.53,5.62 14.60,6.20"/><polyline points="12.00,9.40 12.00,15.20"/><polyline points="12.00,15.20 8.60,20.40"/><polyline points="12.00,15.20 15.40,20.40"/><polyline points="7.00,12.00 17.00,12.00"/></svg><span>Pose</span></a><a href="face.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.20,8.00 16.09,8.93 15.78,9.82 15.28,10.62 14.62,11.28 13.82,11.78 12.93,12.09 12.00,12.20 11.07,12.09 10.18,11.78 9.38,11.28 8.72,10.62 8.22,9.82 7.91,8.93 7.80,8.00 7.91,7.07 8.22,6.18 8.72,5.38 9.38,4.72 10.18,4.22 11.07,3.91 12.00,3.80 12.93,3.91 13.82,4.22 14.62,4.72 15.28,5.38 15.78,6.18 16.09,7.07 16.20,8.00"/><polyline points="5.14,18.83 5.40,18.26 5.70,17.71 6.06,17.19 6.45,16.70 6.89,16.25 7.36,15.84 7.86,15.47 8.40,15.14 8.96,14.85 9.54,14.62 10.14,14.44 10.75,14.31 11.37,14.23 12.00,14.20 12.63,14.23 13.25,14.31 13.86,14.44 14.46,14.62 15.04,14.85 15.60,15.14 16.14,15.47 16.64,15.84 17.11,16.25 17.55,16.70 17.94,17.19 18.30,17.71 18.60,18.26 18.86,18.83"/></svg><span>Face</span></a><a href="scene.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13.40,7.00 13.74,7.03 14.08,7.11 14.40,7.24 14.69,7.42 14.96,7.64 15.18,7.91 15.36,8.20 15.49,8.52 15.57,8.86 15.60,9.20 15.60,14.80 15.57,15.14 15.49,15.48 15.36,15.80 15.18,16.09 14.96,16.36 14.69,16.58 14.40,16.76 14.08,16.89 13.74,16.97 13.40,17.00 5.00,17.00 4.66,16.97 4.32,16.89 4.00,16.76 3.71,16.58 3.44,16.36 3.22,16.09 3.04,15.80 2.91,15.48 2.83,15.14 2.80,14.80 2.80,9.20 2.83,8.86 2.91,8.52 3.04,8.20 3.22,7.91 3.44,7.64 3.71,7.42 4.00,7.24 4.32,7.11 4.66,7.03 5.00,7.00"/><polygon points="15.60,10.60 21.20,7.60 21.20,16.40 15.60,13.40"/></svg><span>Scene</span></a><a href="game.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6.00,21.00 6.00,3.80"/><polyline points="6.00,4.60 18.40,4.60 15.60,8.60 18.40,12.60 6.00,12.60"/></svg><span>Game</span></a><a href="view.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="2.60,12.00 3.09,11.26 3.62,10.57 4.19,9.93 4.80,9.36 5.43,8.83 6.09,8.36 6.77,7.95 7.48,7.59 8.21,7.29 8.95,7.04 9.70,6.85 10.46,6.71 11.23,6.63 12.00,6.60 12.77,6.63 13.54,6.71 14.30,6.85 15.05,7.04 15.79,7.29 16.52,7.59 17.23,7.95 17.91,8.36 18.57,8.83 19.20,9.36 19.81,9.93 20.38,10.57 20.91,11.26 21.40,12.00 20.91,12.74 20.38,13.43 19.81,14.07 19.20,14.64 18.57,15.17 17.91,15.64 17.22,16.05 16.52,16.41 15.79,16.71 15.05,16.96 14.30,17.15 13.54,17.29 12.77,17.37 12.00,17.40 11.23,17.37 10.46,17.29 9.70,17.15 8.95,16.96 8.21,16.71 7.48,16.41 6.77,16.05 6.09,15.64 5.43,15.17 4.80,14.64 4.19,14.07 3.62,13.43 3.09,12.74 2.60,12.00"/><polygon points="15.00,12.00 14.92,12.67 14.70,13.30 14.35,13.87 13.87,14.35 13.30,14.70 12.67,14.92 12.00,15.00 11.33,14.92 10.70,14.70 10.13,14.35 9.65,13.87 9.30,13.30 9.08,12.67 9.00,12.00 9.08,11.33 9.30,10.70 9.65,10.13 10.13,9.65 10.70,9.30 11.33,9.08 12.00,9.00 12.67,9.08 13.30,9.30 13.87,9.65 14.35,10.13 14.70,10.70 14.92,11.33 15.00,12.00"/></svg><span>View</span></a><a href="help.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="5.60,12.00 9.80,16.20 18.40,6.80"/></svg><span>Help</span></a></div></details><details class="grp"><summary><span>Windows</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="inspector.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="19.00,12.00 18.82,13.56 18.31,15.04 17.47,16.36 16.36,17.47 15.04,18.31 13.56,18.82 12.00,19.00 10.44,18.82 8.96,18.31 7.64,17.47 6.53,16.36 5.69,15.04 5.18,13.56 5.00,12.00 5.18,10.44 5.69,8.96 6.53,7.64 7.64,6.53 8.96,5.69 10.44,5.18 12.00,5.00 13.56,5.18 15.04,5.69 16.36,6.53 17.47,7.64 18.31,8.96 18.82,10.44 19.00,12.00"/><ellipse class="f" cx="12.00" cy="12.00" rx="2.40" ry="2.40"/></svg><span>Inspector</span></a><a href="reference.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="18.20,5.20 18.58,5.23 18.94,5.32 19.29,5.46 19.61,5.66 19.90,5.90 20.14,6.19 20.34,6.51 20.48,6.86 20.57,7.22 20.60,7.60 20.60,16.40 20.57,16.78 20.48,17.14 20.34,17.49 20.14,17.81 19.90,18.10 19.61,18.34 19.29,18.54 18.94,18.68 18.58,18.77 18.20,18.80 5.80,18.80 5.42,18.77 5.06,18.68 4.71,18.54 4.39,18.34 4.10,18.10 3.86,17.81 3.66,17.49 3.52,17.14 3.43,16.78 3.40,16.40 3.40,7.60 3.43,7.22 3.52,6.86 3.66,6.51 3.86,6.19 4.10,5.90 4.39,5.66 4.71,5.46 5.06,5.32 5.42,5.23 5.80,5.20"/><polygon points="10.00,9.40 15.00,12.00 10.00,14.60"/></svg><span>Reference video</span></a><a href="curves.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="3.60,19.00 4.27,18.95 4.91,18.80 5.52,18.55 6.10,18.22 6.67,17.82 7.21,17.35 7.74,16.81 8.26,16.22 8.77,15.59 9.27,14.92 9.76,14.22 10.25,13.49 10.75,12.75 11.25,12.00 11.76,11.25 12.28,10.51 12.81,9.78 13.36,9.08 13.93,8.41 14.52,7.78 15.13,7.19 15.78,6.65 16.45,6.18 17.16,5.78 17.91,5.45 18.69,5.20 19.52,5.05 20.40,5.00"/><ellipse class="f" cx="12.00" cy="12.00" rx="1.60" ry="1.60"/></svg><span>Curves</span></a><a href="timeline.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="7.40,5.00 18.60,12.00 7.40,19.00"/></svg><span>Timeline and toolbar</span></a></div></details><details class="grp"><summary><span>Reference</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="shortcuts.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="5.40" cy="12.00" rx="1.70" ry="1.70"/><ellipse class="f" cx="12.00" cy="12.00" rx="1.70" ry="1.70"/><ellipse class="f" cx="18.60" cy="12.00" rx="1.70" ry="1.70"/></svg><span>Shortcuts</span></a><a href="trouble.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6.00,21.00 6.00,3.80"/><polyline points="6.00,4.60 18.40,4.60 15.60,8.60 18.40,12.60 6.00,12.60"/></svg><span>Troubleshooting</span></a></div></details></div><div class="side-foot"><a href="index.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Docs</span></a><a href="https://github.com/lsxldierl/framez/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="9.60,8.60 10.13,8.64 10.65,8.77 11.14,8.97 11.60,9.25 12.00,9.60 12.35,10.00 12.63,10.46 12.83,10.95 12.96,11.47 13.00,12.00 13.00,12.00 12.96,12.53 12.83,13.05 12.63,13.54 12.35,14.00 12.00,14.40 11.60,14.75 11.14,15.03 10.65,15.23 10.13,15.36 9.60,15.40 6.00,15.40 5.47,15.36 4.95,15.23 4.46,15.03 4.00,14.75 3.60,14.40 3.25,14.00 2.97,13.54 2.77,13.05 2.64,12.53 2.60,12.00 2.60,12.00 2.64,11.47 2.77,10.95 2.97,10.46 3.25,10.00 3.60,9.60 4.00,9.25 4.46,8.97 4.95,8.77 5.47,8.64 6.00,8.60"/><polygon points="18.00,8.60 18.53,8.64 19.05,8.77 19.54,8.97 20.00,9.25 20.40,9.60 20.75,10.00 21.03,10.46 21.23,10.95 21.36,11.47 21.40,12.00 21.40,12.00 21.36,12.53 21.23,13.05 21.03,13.54 20.75,14.00 20.40,14.40 20.00,14.75 19.54,15.03 19.05,15.23 18.53,15.36 18.00,15.40 14.40,15.40 13.87,15.36 13.35,15.23 12.86,15.03 12.40,14.75 12.00,14.40 11.65,14.00 11.37,13.54 11.17,13.05 11.04,12.53 11.00,12.00 11.00,12.00 11.04,11.47 11.17,10.95 11.37,10.46 11.65,10.00 12.00,9.60 12.40,9.25 12.86,8.97 13.35,8.77 13.87,8.64 14.40,8.60"/></svg><span>Download the helper</span></a></div></nav><div class="main"><header class="topbar"><button class="iconbtn only-narrow" type="button" data-menu aria-label="Menu"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.40,6.60 19.60,6.60"/><polyline points="4.40,12.00 19.60,12.00"/><polyline points="4.40,17.40 19.60,17.40"/></svg></button><div class="crumb"><span>Menus</span><i>/</i><b>Key</b></div><div class="top-actions"><button class="iconbtn" type="button" data-search aria-label="Search the docs (Ctrl+K)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg></button><button class="iconbtn" type="button" data-theme-toggle aria-label="Light or dark"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg></button><a class="pill" href="https://github.com/lsxldierl/framez/releases/latest">Get the helper</a></div></header><div class="layout"><article class="doc"><h1>Key</h1><p class="lead">Save poses as keys, change how the moves between them play, change when they happen, and clean up the result. Every row here is in the Key menu of the Animate workspace.</p>
-      <div class="shots"><figure class="shot"><img src="img/menu-key.png" width="356" height="358" alt="The Key menu" loading="lazy"><figcaption>The Key menu</figcaption></figure><figure class="shot"><img src="img/menu-key-range.png" width="592" height="414" alt="Key &gt; Range" loading="lazy"><figcaption>Key &gt; Range</figcaption></figure><figure class="shot"><img src="img/menu-key-cleanup.png" width="602" height="416" alt="Key &gt; Clean up" loading="lazy"><figcaption>Key &gt; Clean up</figcaption></figure></div>
-      <div class="group">
-        <div class="entry" id="f-key" data-use="all"><div class="head"><span class="name">Key this limb / Key all limbs</span><span class="where">Key</span><kbd>K</kbd></div>
-          <p class="what">Saves a key on the playhead frame. Key this limb saves the picked limb exactly as it stands; Key all limbs saves every limb of the rig.</p>
-          <ol class="how"><li>Move the playhead to the frame.</li><li>Click a limb in the view, or its name in the track list.</li><li>Choose Key &gt; Key this limb, or press <kbd>K</kbd>. Choose Key all limbs to key the whole rig.</li></ol>
-          <p class="when">holding a pose (key it again a few frames later), setting a first pose on every limb.</p>
-          <p class="tip">Key this limb is also the first row of a limb's right-click menu. Right-click empty space on the timeline for Key all limbs here. In a scene <kbd>K</kbd> keys the picked camera, prop or light.</p></div>
-        <div class="entry" id="f-easing" data-use="all"><div class="head"><span class="name">Easing</span><span class="where">Key, or right-click a key</span><kbd>7</kbd></div>
-          <p class="what">Changes how the picked keys move into the next ones: where the limb speeds up and slows down on the way. An easing belongs to the key that starts the move. One pick can change one move or many at once.</p>
-          <ol class="how"><li>Pick one key or several: click, <kbd>Shift</kbd>+click, or drag a box on the timeline.</li><li>Press <kbd>7</kbd>, or choose Key &gt; Easing. A menu opens at the cursor.</li><li>Click one of the four buttons on top to say where the move slows.</li><li>Click a style in one of the three columns. It applies at once as one undo step.</li></ol>
-          <ul class="opts">
-            <li><b>Slow start, Slow end, Slow start and end, Slow middle</b>: where the move slows. Slow start begins slowly, Slow end arrives slowly, Slow start and end does both, Slow middle is fast at both ends and slow between. The last choice is kept.</li>
-            <li><b>Plain</b>: Hold keeps the pose until the next key and then jumps to the next pose; Linear moves at a steady speed.</li>
-            <li><b>Gentle to strong</b>: Sine, Quad, Cubic, Quart, Quint, Sextic, Expo and Circ, from the gentlest curve to the strongest.</li>
-            <li><b>Bouncy</b>: Back goes past the next key and comes back (an overshoot), Bounce, and Elastic. Elastic then opens Adjust with its two amounts.</li>
-            <li><b>Extra turns</b>: a whole number from -4 to 4. It adds that many full spins to every picked move; a minus number spins the other way. Use it for spins past half a turn.</li>
-            <li><b>My easings</b>: the easings you saved sit under the styles as buttons. Click one to give it to the picked moves. Right-click one for Use for new keys (new keys get it) or Delete.</li>
-            <li><b>Save as mine</b>: asks for a name and keeps the first picked move's easing: its style, where it slows and Elastic's amounts.</li>
-          </ul>
-          <p class="when">a hit that snaps in and settles slowly, a limb that comes to rest after a swing, a spin of several turns.</p>
-          <p class="tip">Point at a style to see it on the rig and the timeline before you click; moving away puts the keys back. The Inspector's key page has the same choice for one key: <a class="f" href="inspector.html#f-spin">Easing and Extra turns</a>.</p></div>
-        <div class="entry" id="f-stretch" data-use="skill dance"><div class="head"><span class="name">Stretch timing...</span><span class="where">Key &gt; Timing, or right-click a key</span></div>
-          <p class="what">Makes the picked keys, or the whole clip, faster or slower: the keys move closer together or further apart. Stretching the whole clip moves the events, weapon switches and face keys with it.</p>
-          <ol class="how"><li>Pick two keys or more. With none picked, or one, the whole clip stretches.</li><li>Choose Key &gt; Timing &gt; Stretch timing... The box says which keys it will move and their frames.</li><li>Type a Scale: a factor (<code>x2</code>, <code>50%</code>) or a length (<code>0.55s</code>, <code>33f</code>).</li><li>Click one of First key, Last key, Middle or Playhead. That frame stays where it is.</li><li>Click Scale, or press <kbd>Enter</kbd>.</li></ol>
-          <p class="when">a skill that must last exactly as long as its cast time, a dodge that must last 0.4 s.</p>
-          <p class="tip">A stretch that would put a key before frame 0 changes nothing and says so: pick another pivot or scale less. A clip that grows gets a longer timeline.</p></div>
-        <div class="entry" id="f-movekeys" data-use="all"><div class="head"><span class="name">Move picked keys...</span><span class="where">Key &gt; Timing</span><kbd>Shift+←</kbd> <kbd>Shift+→</kbd></div>
-          <p class="what">Moves the picked keys earlier or later by a number of frames you type.</p>
-          <ol class="how"><li>Pick the keys.</li><li>Choose Key &gt; Timing &gt; Move picked keys...</li><li>Type the number of frames in By: a minus number moves them earlier.</li><li>Click Move.</li></ol>
-          <p class="when">sliding a whole pose 6 frames later, pushing a hit one frame earlier.</p>
-          <p class="tip"><kbd>Shift+←</kbd> and <kbd>Shift+→</kbd> move the picked keys one frame. Nothing moves when the first picked key is on frame 0, the last one is on the clip's last frame, or another key is in the way, and the message says which. Keys on a locked limb never move.</p></div>
-        <div class="entry" id="f-ripple" data-use="skill dance"><div class="head"><span class="name">Ripple edits</span><span class="where">Key &gt; Timing</span><kbd>Shift</kbd></div>
-          <p class="what">When on, retiming moves what comes after it. Stretching the box's right handle, or dragging keys, moves every key after them (on every limb), and the events, switches and face keys after them, by as much; the clip's length follows. <kbd>Shift</kbd> while dragging turns it on or off for that drag.</p>
-          <p class="when">retiming one hit in a combo and keeping the rest in step.</p></div>
-        <div class="entry" id="f-retime" data-use="skill dance video"><div class="head"><span class="name">Retime markers</span><span class="where">Key &gt; Timing</span></div>
-          <p class="what">Speeds up or slows down stretches of the clip by dragging markers, without typing a factor. A strip over the events lane holds the markers; the keys between two markers spread or squeeze, and events and switches go with them.</p>
-          <ol class="how"><li>Choose Key &gt; Timing &gt; Retime markers. The strip appears over the events lane.</li><li>Click the strip to drop a marker.</li><li>Drag a marker. The keys between it and its neighbours spread or squeeze on each side. Each stretch shows its speed (77 %, 250 %).</li><li>Right-click a stretch for Ease in, Ease out or Ease in and out, which space its keys on a curve. Right-click a marker to delete it.</li></ol>
-          <ul class="opts"><li><b>Ease retime stretch</b> (Key &gt; Timing &gt; Ease retime stretch &gt; Ease in, Ease out, Ease in and out): eases the stretch between markers that holds the playhead.</li></ul>
-          <p class="when">matching the reference's speed changes without moving keys one by one.</p>
-          <p class="tip">With keys picked, markers move only the picked limbs' keys. The markers are kept with the Framez data.</p></div>
-        <div class="entry" data-use="skill dance" id="key-add-a-frame-here-remove-a-frame-here"><div class="head"><span class="name">Add a frame here / Remove a frame here</span><span class="where">Key &gt; Timing</span></div>
-          <p class="what">Every key after the playhead moves one frame later or earlier.</p>
-          <p class="when">a hold that is a frame too short or too long.</p></div>
-        <div class="entry" id="f-offset" data-use="skill dance idle"><div class="head"><span class="name">Offset limbs</span><span class="where">Key &gt; Timing</span></div>
-          <p class="what">Staggers the picked keys: each limb's keys land a few frames after the limb above it. That is overlap: parts that start moving a few frames after what carries them.</p>
-          <ol class="how"><li>Pick keys on two limbs or more.</li><li>Choose Key &gt; Timing &gt; Offset limbs. It runs at once and its values open in Adjust.</li><li>Change Frames between, or pick another Order.</li></ol>
-          <ul class="opts">
-            <li><b>Frames between</b>: how many frames later each limb's keys start than the one before it. A minus number goes the other way.</li>
-            <li><b>Order</b>: The rig's order (root first), Reversed or As listed.</li>
-            <li><b>Setups</b>: the Setups row in Adjust lists Overlap down the arm, Drag behind.</li>
-          </ul>
-          <p class="when">arms that follow the hips, a wave down the arm.</p></div>
-        <div class="entry" id="f-snap" data-use="dance video skill"><div class="head"><span class="name">Snap keys to video beats</span><span class="where">Key &gt; Timing</span><span class="needs">helper</span></div>
-          <p class="what">Moves each picked key onto the nearest still moment or sound hit in the linked video, up to 8 frames away. It never overwrites another key.</p></div>
-        <div class="entry" id="f-stretchbox" data-use="skill dance cycle"><div class="head"><span class="name">Stretch by dragging</span><span class="where">the box round the picked keys</span></div>
-          <p class="what">Picked keys on two frames or more get a box with a handle at each end; the label over it shows the length. Drag the right handle to stretch or squeeze them toward the left end, the left handle toward the right end. Hold <kbd>Alt</kbd> while dragging to stretch about the middle. Keys land on whole frames and never on each other: the drag stops at the shortest length that keeps every key. Right-click while dragging cancels. One undo step.</p>
-          <p class="when">a swing that is too slow or too fast, without typing a factor.</p></div>
-        <div class="entry" id="f-reverse" data-use="skill idle dance"><div class="head"><span class="name">Reverse</span><span class="where">Key &gt; Range, or right-click a key &gt; Range</span></div>
-          <p class="what">The picked keys play backwards inside their stretch, every frame exact: an Ease In becomes an Ease Out, a hold holds the other pose. With nothing picked, the whole clip. Events, weapon switches and face keys inside reverse too.</p>
-          <p class="when">a sheathe from a draw, a recovery from a wind-up.</p></div>
-        <div class="entry" id="f-repeat" data-use="skill idle dance"><div class="head"><span class="name">Repeat / Fill to the playhead / Ping-pong</span><span class="where">Key &gt; Range</span></div>
-          <p class="what">Adds copies of the picked keys after them. Each copy starts on the last frame of the one before: a stretch that loops repeats without a seam. Events and switches inside are copied into every copy.</p>
-          <ol class="how"><li>Pick keys on two frames or more.</li><li>Choose Key &gt; Range &gt; Repeat. It runs at once and its values open in Adjust.</li><li>Set Times (1 to 50 more copies) and pick Insert or Over keys after.</li></ol>
-          <ul class="opts">
-            <li><b>Insert</b>: the keys after the stretch move later to make room.</li>
-            <li><b>Over keys after</b>: the copies replace whatever is there.</li>
-            <li><b>Fill to the playhead</b>: copies up to the playhead, cut there with a key.</li>
-            <li><b>Ping-pong</b>: the stretch, then the same stretch backwards.</li>
-          </ul>
-          <p class="when">channelled skills, idles, a shake or a loop inside a longer clip.</p></div>
-        <div class="entry" id="f-croprange" data-use="all"><div class="head"><span class="name">Delete range / Crop to range</span><span class="where">Key &gt; Range</span></div>
-          <p class="what">Delete range removes the keys inside a range and keeps the motion either side. Crop to range keeps only the frames from From frame to To frame and cuts the rest; the clip's length becomes the range's. Both add a key at each edge.</p>
-          <ol class="how"><li>Choose Key &gt; Range &gt; Delete range or Crop to range. It runs at once and its values open in Adjust.</li><li>Set From frame and To frame. They start at the picked keys, the play range or the playhead.</li></ol>
-          <ul class="opts">
-            <li><b>Every limb</b> or the picked limb's name (Delete range): which limbs lose their keys.</li>
-            <li><b>Start at frame 0</b> or <b>Keep the frames</b> (Crop to range): move the kept part to the start of the clip, or leave it on its frames.</li>
-          </ul>
-          <p class="when">cutting a clip down, or a take out of a longer recording.</p></div>
-        <div class="entry" id="f-bake2" data-use="skill dance acting"><div class="head"><span class="name">Bake every N frames</span><span class="where">Key &gt; Range</span></div>
-          <p class="what">Replaces the keys with a key every N frames (1 to 8), read from the motion as it plays, over the picked keys' stretch or the whole clip. The new keys are Generated keys: small grey keys Framez made from the motion.</p>
-          <ol class="how"><li>Pick the keys whose stretch to bake, or none for the whole clip.</li><li>Choose Key &gt; Range &gt; Bake every N frames. It runs at once and its values open in Adjust.</li><li>Set Every (the number of frames) and pick Hold each pose or Smooth between.</li></ol>
-          <ul class="opts">
-            <li><b>Hold each pose</b>: each pose holds until the next key. The clip steps in the game too.</li>
-            <li><b>Smooth between</b>: the motion between the keys is kept.</li>
-          </ul>
-          <p class="when">a stylised, stop-motion look.</p></div>
-        <div class="entry" id="f-reshape" data-use="skill acting dance"><div class="head"><span class="name">Reshape keys</span><span class="where">Key &gt; Range</span></div>
-          <p class="what">Exaggerates, calms, shifts or retimes the motion of many keys at once, with curves that change over time. Framez keys every frame of the range and then thins the result to the keys the motion needs.</p>
-          <ol class="how"><li>Choose Key &gt; Range &gt; Reshape keys. It runs at once and its values open in Adjust.</li><li>Pick the Limbs and the Frames (at least 3 frames), and tick the Channels to change.</li><li>Draw the curves under Over time.</li></ol>
-          <ul class="opts">
-            <li><b>Channels</b>: Rotation X, Y, Z and Position X, Y, Z.</li>
-            <li><b>Amount over time</b>: the middle line keeps the motion as it is, the top doubles it, the bottom flattens it to its average.</li>
-            <li><b>Shift over time</b>: above the middle line adds to the channels, below takes away, up to Most turn (degrees) and Most move (studs; shown when a position channel is ticked).</li>
-            <li><b>Time warp</b>: how far through the frames each frame plays. A steeper line plays faster, a flatter line slower.</li>
-            <li><b>Setups</b>: the Setups row in Adjust lists Exaggerate, Calm down, Double, Flatten.</li>
-          </ul>
-          <p class="when">a swing that needs more punch, a held pose that needs to move less, speeding up the middle of a move.</p></div>
-        <div class="entry" id="f-track" data-use="all"><div class="head"><span class="name">Select whole track / Move 1 frame earlier / Move 1 frame later / Lock track</span><span class="where">Key &gt; Track, or right-click the limb &gt; Track</span><kbd>Shift+←</kbd> <kbd>Shift+→</kbd></div>
-          <p class="what">Works on the picked limb's whole track, the row of all its keys.</p>
-          <ul class="opts">
-            <li><b>Select whole track</b>: picks every key of the limb.</li>
-            <li><b>Move 1 frame earlier / Move 1 frame later</b>: slides the limb's whole track by a frame. In a looping clip the track wraps round the end, and frame 0 and the last frame get the same pose again. In a clip that does not loop, picked keys move on their own and the slide stops at frame 0 and at the clip's end.</li>
-            <li><b>Lock track</b> (Unlock track when it is locked): a locked limb can't be picked or changed, and always plays its keys. Delete and moving leave its keys alone, and Select all skips them.</li>
-          </ul>
-          <p class="when">a head or an arm a few frames behind the body inside a walk or idle loop, protecting finished legs while working on the arms.</p></div>
-        <div class="entry" id="f-sharetimes" data-use="all"><div class="head"><span class="name">Share key times / Copy key times / Paste key times / Paste key times only</span><span class="where">Key &gt; Key times and types</span></div>
-          <p class="what">Makes limbs key on the same frames without changing their poses. Share key times: every picked limb gets a key on every frame any of them has one; nothing moves on those frames. Copy key times takes the picked limb's (or picked keys') frames; Paste key times keys the picked limb on them, posed as it already was. Paste key times only also removes its keys on other frames inside that stretch.</p>
-          <p class="when">blocking with every limb keyed on the same frames, and one limb on another's beats.</p></div>
-        <div class="entry" id="f-keytypes" data-use="all"><div class="head"><span class="name">Key / Breakdown / Generated, and Pick every key pose, breakdown or generated key</span><span class="where">Key &gt; Key times and types, or right-click a key &gt; Key type</span></div>
-          <p class="what">Sets what kind a picked key is, and picks all the keys of one kind. A Key (white diamond) is a pose you set. A Breakdown (blue) is a pose between two keys that shapes the move. Generated (small, grey) is a key Framez made from the motion.</p>
-          <ul class="opts">
-            <li><b>Key, Breakdown, Generated</b>: set the type of the picked keys.</li>
-            <li><b>Pick every key pose, Pick every breakdown, Pick every generated key</b>: pick all keys of that type, on the picked limb or every limb.</li>
-          </ul>
-          <p class="tip">The slider's Breakdown makes Breakdowns; bakes, Share key times, Paste key times and Get from Blender make Generated keys. With View &gt; Playback steps &gt; Keys only, playback holds on Key-type keys only. Types are kept with the Framez data, never in the game clip.</p></div>
-        <div class="entry" id="f-loops" data-use="idle cycle dance"><div class="head"><span class="name">Loops</span><span class="where">Key &gt; Loop</span><kbd>Tab</kbd></div>
-          <p class="what">Switches looping on or off for the clip: a looping clip plays round and round, in Framez's playback and in the game. Save to keep the setting.</p></div>
-        <div class="entry" id="f-makeloop" data-use="idle cycle dance"><div class="head"><span class="name">Make it loop</span><span class="where">Key &gt; Loop</span></div>
-          <p class="what">Changes the clip so its end meets its start, and turns Loops on. It runs at once and its values open in Adjust.</p>
-          <ul class="opts">
-            <li><b>Same pose at start and end</b>: closes the loop by keying the last frame as frame 0.</li>
-            <li><b>Mirrored halves</b>: builds the second half from the first, mirrored, for a walk.</li>
-            <li><b>Loop length</b>: the length of the loop in frames.</li>
-            <li><b>Smooth the torso twist</b> (mirrored halves only): eases the torso's twist through the middle.</li>
-            <li><b>Keep the head facing forward</b>: keys the neck on every frame with the head facing straight ahead. It keeps frame 0's nod up or down and drops any turn or tilt to one side.</li>
-          </ul>
-          <p class="when">a walk, a run, an idle or a breath that must repeat without a jump.</p></div>
-        <div class="entry" id="f-layersmenu" data-use="all"><div class="head"><span class="name">Add layer / Add override layer / Key into / Picked layer / Merge into base</span><span class="where">Key &gt; Layers</span></div>
-          <p class="what">Adds layers of keys over the clip. A change on a layer can be compared and removed without touching the clip's own keys. These are the <a class="f" href="inspector.html#f-animlayers">animation layers</a> as menu rows.</p>
-          <ul class="opts">
-            <li><b>Add layer</b>: a layer that is additive. Its poses are added on top of whatever plays under it.</li>
-            <li><b>Add override layer</b>: a layer that replaces what is under it on the limbs it keys.</li>
-            <li><b>Key into</b>: Base or one of the layers. New keys go there, and the timeline shows that layer's keys. It is greyed until a layer exists.</li>
-            <li><b>Picked layer</b> (the row shows the layer's name): Additive, Override, Weight... (one weight for the whole layer, or a key at this frame), Key weight here (keys the weight at the playhead and adds the <a class="f" href="timeline.html#f-weightrow">layer weight row</a>), Body mask (the parts it plays on, see <a class="f" href="inspector.html#f-maskedit">Edit mask</a>), Mute or Unmute, Rename... and Delete layer.</li>
-            <li><b>Merge into base</b>: bakes every layer into the clip's own keys.</li>
-          </ul>
-          <p class="when">changing a finished or imported clip, adding a lean or a breath over a run.</p></div>
-        <div class="entry" id="f-watchonly-menu" data-use="skill cycle"><div class="head"><span class="name">Watch only</span><span class="where">Key &gt; Layers &gt; Watch only</span></div>
-          <p class="what">Mutes or solos parts of the rig, or plays another saved animation under this one, to watch a skill over the motion it will play on. It changes what Framez shows; saving is not affected.</p>
-          <ol class="how"><li>Choose Key &gt; Layers &gt; Watch only.</li><li>Open Legs, Torso or Arms, head, weapon and pick Plays, Muted or Solo.</li><li>Open Under and pick another saved animation of this rig, or Nothing.</li><li>Open Under covers and pick the limbs that animation plays on.</li></ol>
-          <ul class="opts">
-            <li><b>Plays, Muted, Solo</b>: Muted stops that part from playing; Solo plays only that part and the others show Muted.</li>
-            <li><b>Under</b>: loops the animation you pick under this one, for example a run under a skill.</li>
-            <li><b>Under covers</b>: Legs, torso plays the Under animation on the legs and torso; Unkeyed plays it on the limbs this clip has no keys on.</li>
-          </ul>
-          <p class="when">seeing a skill's arms over the run it will play on.</p>
-          <p class="tip">The Inspector has the same choices: see <a class="f" href="inspector.html#f-layers">Watch only (mute, solo, Under)</a>.</p></div>
-        <div class="entry" data-use="acting skill" id="key-clip-block-for-the-rig"><div class="head"><span class="name">Clip block for the rig</span><span class="where">Key &gt; Layers &gt; Clip block for (the rig's name)</span></div>
-          <p class="what">Plays a saved clip as a block over your keys, starting on the playhead frame. The first block does not need the Scene workspace.</p>
-          <ol class="how"><li>Move the playhead to the frame where the block starts.</li><li>Choose Key &gt; Layers &gt; Clip block for, then the rig's name.</li><li>Pick one of the rig's other saves, one under From another rig (it plays by part name), or type an animation id or link in By id.</li></ol>
-          <p class="tip">The block appears on a Clips row under the rig. See <a class="f" href="scene.html#f-blocks">Clip blocks</a> for moving, trimming, looping and masking it. The list says No other saves on this rig when there are none.</p></div>
-        <div class="entry" id="f-check" data-use="all"><div class="head"><span class="name">Check animation</span><span class="where">Key &gt; Clean up, or View &gt; Windows &gt; Check animation</span></div>
-          <p class="what">Lists what will look wrong in the game, each problem at its frame. Click a row to go to that frame with the limb picked. A pop or dead stop that several limbs share is one row naming them all. The count stays in the status bar; click it to check again.</p>
-          <ul class="opts">
-            <li><b>Sliding feet</b>: a foot on the floor that moves between frames.</li>
-            <li><b>Through the torso</b>: an arm or leg going into the torso.</li>
-            <li><b>Pops</b> and <b>Dead stops</b>: a pop is a limb end that jumps in speed in one frame; a dead stop is a limb that stands still between two moves. The <a class="f" href="curves.html">Speed view</a> shows both.</li>
-            <li><b>Overshoot</b>: a curve shaped in the Curves window that goes past its keys. Back and Elastic easing overshoot on purpose and are not listed.</li>
-            <li><b>Rotation flips</b>: a limb that flips half a turn in one frame.</li>
-            <li><b>Loop seam</b>: a loop whose last frame does not match frame 0.</li>
-            <li><b>Frame 0</b>: limbs that have keys but none on frame 0.</li>
-            <li><b>Priority</b>: a clip saved at priority Core, the lowest, which the game's own walk and idle play over.</li>
-            <li><b>Faces</b>: face keys with no Decal to show them, or a face image that will not load.</li>
-          </ul>
-          <p class="what">Each row has a button that fixes it as one undo step, and then the list checks again. The arrow beside a button opens that fix's numbers. Each fix is an item in Made: change its values, fade it, turn it off or delete it later.</p>
-          <ul class="opts">
-            <li><b>Plant</b>: holds a sliding foot.</li>
-            <li><b>Push out</b>: turns the limb at its shoulder or hip until it leaves the torso.</li>
-            <li><b>Average</b>: replaces a pop's frames with keys averaged from their neighbours.</li>
-            <li><b>Ease</b>: slows the move into a dead stop and speeds the move out.</li>
-            <li><b>Clamp</b>: sets an overshooting move to Smooth, which never passes its keys.</li>
-            <li><b>Unflip</b>: turns a flipped limb back.</li>
-            <li><b>Close</b>: keys the last frame as frame 0 and spreads the difference over the frames before it.</li>
-            <li><b>Key frame 0</b> and <b>Set Action</b>: key the missing frame 0, and set the clip's priority to Action.</li>
-            <li><b>Pick...</b>: picks another face image when one will not load.</li>
-            <li><b>Fix all</b>: runs every fix that needs no choice, as one undo step.</li>
-          </ul>
-          <p class="when">the last pass before saving or publishing.</p>
-          <p class="tip">Fixes change the base keys: with Animation layers, pick Base first.</p></div>
-        <div class="entry" id="f-smooth" data-use="video blender"><div class="head"><span class="name">Butterworth smooth / Gaussian smooth</span><span class="where">Key &gt; Clean up, or the Curves window's Clean up</span></div>
-          <p class="what">Smooths jitter out of the keys that are there; no key is added or removed. Butterworth keeps the big moves and takes the shake out. Gaussian softens everything evenly.</p>
-          <ol class="how"><li>Pick the limb, or the keys whose frames to smooth.</li><li>Choose Key &gt; Clean up &gt; Butterworth smooth or Gaussian smooth. It runs at once and its values open in Adjust.</li><li>Lower the Cut-off, or widen the Width, for smoother motion.</li></ol>
-          <ul class="opts">
-            <li><b>Filter</b>: Butterworth or Gaussian.</li>
-            <li><b>Cut-off</b> (Hz, Butterworth): lower is smoother. <b>Order</b>: 2 (gentle) or 4 (sharp).</li>
-            <li><b>Width</b> (frames, Gaussian): wider is smoother.</li>
-            <li><b>Strength</b> (%): how much of the smoothing is used.</li>
-            <li><b>Limbs</b> (picked or all), the six channels (Rotation X, Y, Z, Position X, Y, Z) and the Frames From and To (the picked keys' by default).</li>
-            <li><b>Blend in</b> and <b>Blend out</b> (frames): ease the smoothing in and out at the ends of the range.</li>
-            <li><b>Setups</b>: the Setups row in Adjust lists Light, Heavy, Soft Gaussian, Capture clean-up.</li>
-          </ul>
-          <p class="when">after Pose from video, an import, or a clip from Blender or mocap.</p></div>
-        <div class="entry" id="f-peaks" data-use="video blender"><div class="head"><span class="name">Remove peaks</span><span class="where">Key &gt; Clean up</span></div>
-          <p class="what">A one-frame spike, far off the line between its neighbours, becomes their average. It works on the picked keys, or the picked limb, or every limb, and runs at once with its values in Adjust.</p>
-          <ul class="opts">
-            <li><b>Peaks over</b> (degrees) and <b>Moves over</b> (studs): a turn or a move further than this off the line between its neighbours is a peak.</li>
-            <li><b>Longest peak</b> (1 to 8 frames): a run of up to this many frames off the line counts as one peak.</li>
-            <li><b>Channels</b>, <b>Limbs</b> and <b>Frames</b>: what to check.</li>
-            <li><b>Setups</b>: the Setups row in Adjust lists Capture pops, Single frames, Turns only.</li>
-          </ul>
-          <p class="when">single-frame jumps in a clip captured from video.</p></div>
-        <div class="entry" id="f-euler" data-use="video blender"><div class="head"><span class="name">Euler filter</span><span class="where">Key &gt; Clean up</span></div>
-          <p class="what">Turns back a limb that flips half a turn in one frame, until it flips back; the limbs it carries keep their place. It runs at once and its values open in Adjust.</p>
-          <ul class="opts">
-            <li><b>Flip over</b> (degrees): a turn of more than this between two frames may be a flip.</li>
-            <li><b>Back under</b> (degrees): it is a flip when a half turn about one of the limb's own axes brings the limb back to under this.</li>
-            <li><b>Limbs</b> and <b>Frames</b>: only flips inside them are turned back.</li>
-            <li><b>Setups</b>: the Setups row in Adjust lists Sensitive, Strict, Big flips only.</li>
-          </ul>
-          <p class="when">an imported or video clip where a forearm or a hand spins round for a frame.</p></div>
-        <div class="entry" id="f-unbake" data-use="video blender"><div class="head"><span class="name">Unbake at contacts</span><span class="where">Key &gt; Clean up</span></div>
-          <p class="what">Turns a key on every frame into a few key poses: where the feet land and lift, where a hand, foot, the head or the weapon tip stops or turns, and the frames that need keys until every frame is within the Error allowed. Every key is Smooth; turning points and added frames are Breakdowns. It runs at once and its values open in Adjust.</p>
-          <ul class="opts">
-            <li><b>Error</b> (degrees): the most a frame may be off after the keys are thinned.</li>
-            <li><b>Foot contacts</b> (with Contact height and Slide under): keys where a foot lands and lifts.</li>
-            <li><b>Turning points</b> (with Slow under, Turn over, Moving over): keys where a limb slows to a stop or turns.</li>
-            <li><b>Same frames</b>: every limb keyed on the same frames. Off, each limb gets its own.</li>
-            <li><b>New keys</b>: Smooth (auto clamped) or Linear.</li>
-            <li><b>Setups</b>: the Setups row in Adjust lists Tight, Loose, Contacts only, Turns only.</li>
-          </ul>
-          <p class="when">changing a Blender or video clip by its poses instead of 60 keys a second.</p></div>
-        <div class="entry" id="f-capture-cleanup" data-use="video blender"><div class="head"><span class="name">Clean up captured motion</span><span class="where">Key &gt; Clean up</span></div>
-          <p class="what">Cleans up a clip captured from video or mocap: smooths the motion, puts the feet on the floor wherever one is planted (jumps keep their height), plants sliding feet and, if you choose In place, takes out the travel. One undo step. It runs at once and its values open in Adjust.</p>
-          <ul class="opts">
-            <li><b>Smooth</b> (0 to 100 %): 0 leaves the motion as it is, 100 smooths hardest. <b>Order</b>: 2 (gentle) or 4 (sharp).</li>
-            <li><b>Feet on floor</b>: raises or lowers the body until a planted foot stands on the floor. <b>Planted under</b> (studs): a foot that moves less than this in a frame counts as planted. <b>Sole within</b> (studs): a planted foot this close to the lowest sole of that frame stands on the floor.</li>
-            <li><b>Lock feet</b>: plants feet that slide.</li>
-            <li><b>Travel</b>: Keep the travel or In place.</li>
-            <li><b>Body turn error</b> (degrees) and <b>Body move error</b> (studs): the body's keys are thinned to play within these.</li>
-            <li><b>Setups</b>: the Setups row in Adjust lists Light, Heavy, In place, Smooth only.</li>
-          </ul>
-          <p class="when">after Pose from video, or on any captured clip that floats, jitters or skates.</p></div>
-        <div class="entry" id="f-cleanchain" data-use="video blender"><div class="head"><span class="name">Clean-up chain</span><span class="where">Key &gt; Clean up</span></div>
-          <p class="what">Runs several clean-up tools one after another in one step, each with its own values.</p>
-          <ol class="how"><li>Choose Key &gt; Clean up &gt; Clean-up chain. It runs at once and its values open in Adjust.</li><li>Click a step under Steps to open its values. Use the arrows on a step to run it sooner or later, the tick to switch it off and the close button to take it out.</li><li>Click Add a step and pick a clean-up tool to add one at the end.</li></ol>
-          <ul class="opts">
-            <li><b>Limbs</b> and <b>Frames</b>: go into every step that has them.</li>
-            <li><b>Setups</b>: the Setups row in Adjust lists Capture clean-up, Polish and Game-ready. Your own chains save there too.</li>
-          </ul>
-          <p class="when">the same clean-up on every captured clip: remove peaks, smooth, then reduce keys.</p></div>
-        <div class="entry" id="f-reduce" data-use="video blender"><div class="head"><span class="name">Reduce keys</span><span class="where">Key &gt; Clean up</span></div>
-          <p class="what">Removes the keys a clip does not need: a key goes when the keys either side of it play within the error you allow. It runs at once and its values open in Adjust.</p>
-          <ul class="opts">
-            <li><b>Reduce by</b>: Error, or Share of the keys.</li>
-            <li><b>Turn error</b> (degrees) and <b>Move error</b> (studs): how far the kept keys may play from the motion.</li>
-            <li><b>Keep</b> (%, with Share of the keys): the share of the keys to keep. The ones that matter most stay.</li>
-            <li><b>Limbs</b> and <b>Frames</b>: what to thin.</li>
-            <li><b>Setups</b>: the Setups row in Adjust lists Fine, Coarse, Rough, Keep a quarter.</li>
-          </ul>
-          <p class="when">after Pose from video, or a clip from Blender or mocap.</p></div>
-        <div class="entry" id="f-mods" data-use="idle acting cycle"><div class="head"><span class="name">Modifiers</span><span class="where">Key &gt; Clean up &gt; Modifiers, or the Curves window's Modifiers</span></div>
-          <p class="what">Adds motion to the picked limb without adding keys: noise, a wiggle, repeats and more play on top of the keys, which stay as they are.</p>
-          <ol class="how"><li>Pick the limb.</li><li>Choose Key &gt; Clean up &gt; Modifiers &gt; Add a modifier, then a kind.</li><li>Set its values in the box and confirm.</li><li>Choose Modifiers and click a modifier's row to change it later.</li></ol>
-          <p class="what">Kinds in Add a modifier:</p>
-          <ul class="opts">
-            <li><b>Noise</b>: smooth random motion. Strength, Scale (frames between bumps), Phase, Depth (finer detail, up to 8), Offset, Lacunarity, Roughness.</li>
-            <li><b>Wiggle</b>: a wave that can die out. Amplitude, Frequency, Decay, Start.</li>
-            <li><b>Function</b>: Sine, Cosine, Tangent, Square root, Natural log or Normalised sine, with Amplitude, Phase multiplier, Phase offset and Value offset.</li>
-            <li><b>Generator</b>: a polynomial of the frame, Expanded or Factorized, any order up to 10, with a row per coefficient.</li>
-            <li><b>Envelope</b>: stretches the motion between Min and Max (around Reference) to each point's own Min and Max. Add a point at the playhead.</li>
-            <li><b>Limits</b>: keeps the value between Lowest value and Highest value, and holds the time before or after a frame (Hold before, Hold after).</li>
-            <li><b>Cycles</b>: plays the keyed stretch again before and after the keys: Repeat, Repeat with offset or Mirrored. Linear carries on the end's last slope. Cycles before and Cycles after set how many times (0 is endless), and then it holds.</li>
-            <li><b>Loop</b>: Cycles that repeat both ways. Smooth seam eases the last frames into the start.</li>
-            <li><b>Stepped</b>: holds the limb for Step frames at a time.</li>
-          </ul>
-          <p class="what">Every modifier has its channels, From and To frames with Blend in and out (Fade in and out), an Influence (0 to 200 %) with Influence over its frames, and a switch to turn it off. Noise, Wiggle, Function and Generator also have Blend: Add on top, Replace, Subtract or Multiply. Modifiers work in the order of the list. Number boxes take sums such as <code>2*pi</code>, <code>90/4</code> or <code>max(1, 3) + 2^2</code>.</p>
-          <ul class="opts">
-            <li><b>Copy and paste</b>: Copy modifiers copies the picked limb's modifiers. Paste after theirs adds them to this limb and every limb with picked keys; Paste in place of theirs replaces what those limbs have. One undo step.</li>
-            <li><b>Turn on or off, Delete, Order</b> (Move up, Move down): change the picked limb's list. A later Replace wins.</li>
-            <li><b>Save as my look</b>: keeps a modifier's values under a name, for every place or In this place. Your looks sit beside each kind in Add a modifier.</li>
-            <li><b>Apply to keys</b>: bakes the modifiers into keys.</li>
-          </ul>
-          <p class="when">an idle's drift, a tail or antenna that wiggles after a hit, a breath that loops, a shot on twos.</p>
-          <p class="tip">Saving writes the result into the game clip and keeps the modifiers for Framez. They open again as modifiers.</p></div>
-      </div>
-    <nav class="pager" aria-label="More pages"><a class="prev" href="edit.html"><small>Previous</small><span>Edit</span></a><a class="next" href="pose.html"><small>Next</small><span>Pose</span></a></nav><footer class="foot">Framez by soldier. These docs cover Framez 17.97.</footer></article><aside class="toc" aria-label="On this page"><a href="#f-key">Key this limb / Key all limbs</a><a href="#f-easing">Easing</a><a href="#f-stretch">Stretch timing...</a><a href="#f-movekeys">Move picked keys...</a><a href="#f-ripple">Ripple edits</a><a href="#f-retime">Retime markers</a><a href="#key-add-a-frame-here-remove-a-frame-here">Add a frame here / Remove a frame here</a><a href="#f-offset">Offset limbs</a><a href="#f-snap">Snap keys to video beats</a><a href="#f-stretchbox">Stretch by dragging</a><a href="#f-reverse">Reverse</a><a href="#f-repeat">Repeat / Fill to the playhead / Ping-pong</a><a href="#f-croprange">Delete range / Crop to range</a><a href="#f-bake2">Bake every N frames</a><a href="#f-reshape">Reshape keys</a><a href="#f-track">Select whole track / Move 1 frame earlier / Move 1 frame later / Lock track</a><a href="#f-sharetimes">Share key times / Copy key times / Paste key times / Paste key times only</a><a href="#f-keytypes">Key / Breakdown / Generated, and Pick every key pose, breakdown or generated key</a><a href="#f-loops">Loops</a><a href="#f-makeloop">Make it loop</a><a href="#f-layersmenu">Add layer / Add override layer / Key into / Picked layer / Merge into base</a><a href="#f-watchonly-menu">Watch only</a><a href="#key-clip-block-for-the-rig">Clip block for the rig</a><a href="#f-check">Check animation</a><a href="#f-smooth">Butterworth smooth / Gaussian smooth</a><a href="#f-peaks">Remove peaks</a><a href="#f-euler">Euler filter</a><a href="#f-unbake">Unbake at contacts</a><a href="#f-capture-cleanup">Clean up captured motion</a><a href="#f-cleanchain">Clean-up chain</a><a href="#f-reduce">Reduce keys</a><a href="#f-mods">Modifiers</a></aside></div></div></div><div class="scrim" data-scrim hidden></div><div class="search" id="search" hidden role="dialog" aria-modal="true" aria-label="Search the docs"><div class="search-box"><div class="search-field"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg><input id="search-q" type="search" placeholder="Search the docs" autocomplete="off"><kbd>Esc</kbd></div><div class="search-results" id="search-results"></div></div></div><script src="assets/search-index.js"></script><script src="assets/site.js"></script></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Key Menu - Framez Manual</title><meta name="description" content="The Key menu holds everything that works on keys: setting them, changing how the motion travels between them, moving them in time, and cleaning up a finish"><link rel="icon" href="assets/favicon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"><link rel="stylesheet" href="assets/site.css"><script>try{var t=localStorage.getItem("framez-theme");if(t)document.documentElement.dataset.look=t}catch(e){}</script></head><body><div class="shell"><nav class="side" id="side" aria-label="Docs"><div class="side-head"><a class="brand" href="index.html"><svg class="mark" viewBox="-34.0 -34.0 68.0 68.0" aria-hidden="true"><polygon points="-28.00,0.00 0.00,-28.00 28.00,0.00 0.00,28.00" fill="#3c4045"/><polygon points="-18.50,0.00 0.00,-18.50 0.00,0.00" fill="#e8443c"/><polygon points="0.00,-18.50 9.25,-9.25 0.00,0.00" fill="#9e2b2b"/><polygon points="9.25,-9.25 9.25,0.00 0.00,0.00" fill="#ffffff"/><polygon points="9.25,-9.25 18.50,0.00 9.25,0.00" fill="#e8443c"/><polygon points="-18.50,0.00 0.00,0.00 -9.25,9.25" fill="#9e2b2b"/><polygon points="-9.25,9.25 0.00,0.00 0.00,18.50" fill="#ffffff"/><polygon points="0.00,0.00 18.50,0.00 0.00,18.50" fill="#ffffff"/><polygon points="26.30,-22.51 23.03,-18.03 17.70,-16.49 20.97,-20.97" fill="#e8443c"/><polygon points="-16.73,16.57 -17.63,18.42 -19.67,18.63 -18.77,16.78" fill="#e8443c"/></svg><i class="sep"></i><span>Manual</span></a><button class="iconbtn" type="button" data-search aria-label="Search the manual (Ctrl+K)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg></button></div><div class="side-scroll"><details class="grp"><summary><span>Getting Started</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="start.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="5.14,9.23 5.40,8.66 5.70,8.11 6.06,7.59 6.45,7.10 6.89,6.65 7.36,6.24 7.86,5.87 8.40,5.54 8.96,5.25 9.54,5.02 10.14,4.84 10.75,4.71 11.37,4.63 12.00,4.60 12.63,4.63 13.25,4.71 13.86,4.84 14.46,5.02 15.04,5.25 15.60,5.54 16.14,5.87 16.64,6.24 17.11,6.65 17.55,7.10 17.94,7.59 18.30,8.11 18.60,8.66 18.86,9.23"/><polyline points="18.86,14.77 18.60,15.34 18.30,15.89 17.94,16.41 17.55,16.90 17.11,17.35 16.64,17.76 16.14,18.13 15.60,18.46 15.04,18.75 14.46,18.98 13.86,19.16 13.25,19.29 12.63,19.37 12.00,19.40 11.37,19.37 10.75,19.29 10.14,19.16 9.54,18.98 8.96,18.75 8.40,18.46 7.86,18.13 7.36,17.76 6.89,17.35 6.45,16.90 6.06,16.41 5.70,15.89 5.40,15.34 5.14,14.77"/><polyline points="18.86,9.23 16.11,7.23"/><polyline points="18.86,9.23 19.45,5.88"/><polyline points="5.14,14.77 7.89,16.77"/><polyline points="5.14,14.77 4.55,18.12"/></svg><span>Getting Started</span></a><a href="setup.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="9.60,8.60 10.13,8.64 10.65,8.77 11.14,8.97 11.60,9.25 12.00,9.60 12.35,10.00 12.63,10.46 12.83,10.95 12.96,11.47 13.00,12.00 13.00,12.00 12.96,12.53 12.83,13.05 12.63,13.54 12.35,14.00 12.00,14.40 11.60,14.75 11.14,15.03 10.65,15.23 10.13,15.36 9.60,15.40 6.00,15.40 5.47,15.36 4.95,15.23 4.46,15.03 4.00,14.75 3.60,14.40 3.25,14.00 2.97,13.54 2.77,13.05 2.64,12.53 2.60,12.00 2.60,12.00 2.64,11.47 2.77,10.95 2.97,10.46 3.25,10.00 3.60,9.60 4.00,9.25 4.46,8.97 4.95,8.77 5.47,8.64 6.00,8.60"/><polygon points="18.00,8.60 18.53,8.64 19.05,8.77 19.54,8.97 20.00,9.25 20.40,9.60 20.75,10.00 21.03,10.46 21.23,10.95 21.36,11.47 21.40,12.00 21.40,12.00 21.36,12.53 21.23,13.05 21.03,13.54 20.75,14.00 20.40,14.40 20.00,14.75 19.54,15.03 19.05,15.23 18.53,15.36 18.00,15.40 14.40,15.40 13.87,15.36 13.35,15.23 12.86,15.03 12.40,14.75 12.00,14.40 11.65,14.00 11.37,13.54 11.17,13.05 11.04,12.53 11.00,12.00 11.00,12.00 11.04,11.47 11.17,10.95 11.37,10.46 11.65,10.00 12.00,9.60 12.40,9.25 12.86,8.97 13.35,8.77 13.87,8.64 14.40,8.60"/></svg><span>Installing the Framez Helper</span></a></div></details><details class="grp"><summary><span>Interface</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="window.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>The Framez Window</span></a><a href="workspaces.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.40,6.60 19.60,6.60"/><polyline points="4.40,12.00 19.60,12.00"/><polyline points="4.40,17.40 19.60,17.40"/></svg><span>Workspaces</span></a><a href="timeline.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="7.40,5.00 18.60,12.00 7.40,19.00"/></svg><span>Timeline and Toolbar</span></a><a href="anytool.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.40,13.60 4.60,8.80 9.40,4.00"/><polyline points="4.60,8.80 14.40,8.80 15.47,8.92 16.48,9.28 17.39,9.85 18.15,10.61 18.72,11.52 19.08,12.53 19.20,13.60 19.08,14.67 18.72,15.68 18.15,16.59 17.39,17.35 16.48,17.92 15.47,18.28 14.40,18.40 11.00,18.40"/></svg><span>Working with Tools</span></a></div></details><details class="grp" open><summary><span>Menus</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="file.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="12.00,3.60 12.00,15.20"/><polyline points="7.20,10.60 12.00,15.40 16.80,10.60"/><polyline points="4.60,20.40 19.40,20.40"/></svg><span>File</span></a><a href="edit.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.40,13.60 4.60,8.80 9.40,4.00"/><polyline points="4.60,8.80 14.40,8.80 15.47,8.92 16.48,9.28 17.39,9.85 18.15,10.61 18.72,11.52 19.08,12.53 19.20,13.60 19.08,14.67 18.72,15.68 18.15,16.59 17.39,17.35 16.48,17.92 15.47,18.28 14.40,18.40 11.00,18.40"/></svg><span>Edit</span></a><a href="key.html" aria-current="page"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon class="f" points="12.00,3.00 21.00,12.00 12.00,21.00 3.00,12.00"/></svg><span>Key</span></a><a href="pose.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="14.60,6.20 14.53,6.78 14.34,7.33 14.03,7.82 13.62,8.23 13.13,8.54 12.58,8.73 12.00,8.80 11.42,8.73 10.87,8.54 10.38,8.23 9.97,7.82 9.66,7.33 9.47,6.78 9.40,6.20 9.47,5.62 9.66,5.07 9.97,4.58 10.38,4.17 10.87,3.86 11.42,3.67 12.00,3.60 12.58,3.67 13.13,3.86 13.62,4.17 14.03,4.58 14.34,5.07 14.53,5.62 14.60,6.20"/><polyline points="12.00,9.40 12.00,15.20"/><polyline points="12.00,15.20 8.60,20.40"/><polyline points="12.00,15.20 15.40,20.40"/><polyline points="7.00,12.00 17.00,12.00"/></svg><span>Pose</span></a><a href="face.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.20,8.00 16.09,8.93 15.78,9.82 15.28,10.62 14.62,11.28 13.82,11.78 12.93,12.09 12.00,12.20 11.07,12.09 10.18,11.78 9.38,11.28 8.72,10.62 8.22,9.82 7.91,8.93 7.80,8.00 7.91,7.07 8.22,6.18 8.72,5.38 9.38,4.72 10.18,4.22 11.07,3.91 12.00,3.80 12.93,3.91 13.82,4.22 14.62,4.72 15.28,5.38 15.78,6.18 16.09,7.07 16.20,8.00"/><polyline points="5.14,18.83 5.40,18.26 5.70,17.71 6.06,17.19 6.45,16.70 6.89,16.25 7.36,15.84 7.86,15.47 8.40,15.14 8.96,14.85 9.54,14.62 10.14,14.44 10.75,14.31 11.37,14.23 12.00,14.20 12.63,14.23 13.25,14.31 13.86,14.44 14.46,14.62 15.04,14.85 15.60,15.14 16.14,15.47 16.64,15.84 17.11,16.25 17.55,16.70 17.94,17.19 18.30,17.71 18.60,18.26 18.86,18.83"/></svg><span>Face</span></a><a href="scene.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13.40,7.00 13.74,7.03 14.08,7.11 14.40,7.24 14.69,7.42 14.96,7.64 15.18,7.91 15.36,8.20 15.49,8.52 15.57,8.86 15.60,9.20 15.60,14.80 15.57,15.14 15.49,15.48 15.36,15.80 15.18,16.09 14.96,16.36 14.69,16.58 14.40,16.76 14.08,16.89 13.74,16.97 13.40,17.00 5.00,17.00 4.66,16.97 4.32,16.89 4.00,16.76 3.71,16.58 3.44,16.36 3.22,16.09 3.04,15.80 2.91,15.48 2.83,15.14 2.80,14.80 2.80,9.20 2.83,8.86 2.91,8.52 3.04,8.20 3.22,7.91 3.44,7.64 3.71,7.42 4.00,7.24 4.32,7.11 4.66,7.03 5.00,7.00"/><polygon points="15.60,10.60 21.20,7.60 21.20,16.40 15.60,13.40"/></svg><span>Scene</span></a><a href="game.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6.00,21.00 6.00,3.80"/><polyline points="6.00,4.60 18.40,4.60 15.60,8.60 18.40,12.60 6.00,12.60"/></svg><span>Game</span></a><a href="view.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="2.60,12.00 3.09,11.26 3.62,10.57 4.19,9.93 4.80,9.36 5.43,8.83 6.09,8.36 6.77,7.95 7.48,7.59 8.21,7.29 8.95,7.04 9.70,6.85 10.46,6.71 11.23,6.63 12.00,6.60 12.77,6.63 13.54,6.71 14.30,6.85 15.05,7.04 15.79,7.29 16.52,7.59 17.23,7.95 17.91,8.36 18.57,8.83 19.20,9.36 19.81,9.93 20.38,10.57 20.91,11.26 21.40,12.00 20.91,12.74 20.38,13.43 19.81,14.07 19.20,14.64 18.57,15.17 17.91,15.64 17.22,16.05 16.52,16.41 15.79,16.71 15.05,16.96 14.30,17.15 13.54,17.29 12.77,17.37 12.00,17.40 11.23,17.37 10.46,17.29 9.70,17.15 8.95,16.96 8.21,16.71 7.48,16.41 6.77,16.05 6.09,15.64 5.43,15.17 4.80,14.64 4.19,14.07 3.62,13.43 3.09,12.74 2.60,12.00"/><polygon points="15.00,12.00 14.92,12.67 14.70,13.30 14.35,13.87 13.87,14.35 13.30,14.70 12.67,14.92 12.00,15.00 11.33,14.92 10.70,14.70 10.13,14.35 9.65,13.87 9.30,13.30 9.08,12.67 9.00,12.00 9.08,11.33 9.30,10.70 9.65,10.13 10.13,9.65 10.70,9.30 11.33,9.08 12.00,9.00 12.67,9.08 13.30,9.30 13.87,9.65 14.35,10.13 14.70,10.70 14.92,11.33 15.00,12.00"/></svg><span>View</span></a><a href="help.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="5.60,12.00 9.80,16.20 18.40,6.80"/></svg><span>Help</span></a></div></details><details class="grp"><summary><span>Windows</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="inspector.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="19.00,12.00 18.82,13.56 18.31,15.04 17.47,16.36 16.36,17.47 15.04,18.31 13.56,18.82 12.00,19.00 10.44,18.82 8.96,18.31 7.64,17.47 6.53,16.36 5.69,15.04 5.18,13.56 5.00,12.00 5.18,10.44 5.69,8.96 6.53,7.64 7.64,6.53 8.96,5.69 10.44,5.18 12.00,5.00 13.56,5.18 15.04,5.69 16.36,6.53 17.47,7.64 18.31,8.96 18.82,10.44 19.00,12.00"/><ellipse class="f" cx="12.00" cy="12.00" rx="2.40" ry="2.40"/></svg><span>Inspector</span></a><a href="curves.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="3.60,19.00 4.27,18.95 4.91,18.80 5.52,18.55 6.10,18.22 6.67,17.82 7.21,17.35 7.74,16.81 8.26,16.22 8.77,15.59 9.27,14.92 9.76,14.22 10.25,13.49 10.75,12.75 11.25,12.00 11.76,11.25 12.28,10.51 12.81,9.78 13.36,9.08 13.93,8.41 14.52,7.78 15.13,7.19 15.78,6.65 16.45,6.18 17.16,5.78 17.91,5.45 18.69,5.20 19.52,5.05 20.40,5.00"/><ellipse class="f" cx="12.00" cy="12.00" rx="1.60" ry="1.60"/></svg><span>Curve Editor</span></a><a href="modifiers.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Modifiers</span></a><a href="physics.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Physics</span></a><a href="reference.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="18.20,5.20 18.58,5.23 18.94,5.32 19.29,5.46 19.61,5.66 19.90,5.90 20.14,6.19 20.34,6.51 20.48,6.86 20.57,7.22 20.60,7.60 20.60,16.40 20.57,16.78 20.48,17.14 20.34,17.49 20.14,17.81 19.90,18.10 19.61,18.34 19.29,18.54 18.94,18.68 18.58,18.77 18.20,18.80 5.80,18.80 5.42,18.77 5.06,18.68 4.71,18.54 4.39,18.34 4.10,18.10 3.86,17.81 3.66,17.49 3.52,17.14 3.43,16.78 3.40,16.40 3.40,7.60 3.43,7.22 3.52,6.86 3.66,6.51 3.86,6.19 4.10,5.90 4.39,5.66 4.71,5.46 5.06,5.32 5.42,5.23 5.80,5.20"/><polygon points="10.00,9.40 15.00,12.00 10.00,14.60"/></svg><span>Reference Video</span></a><a href="poses.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Poses</span></a><a href="camera.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13.40,7.00 13.74,7.03 14.08,7.11 14.40,7.24 14.69,7.42 14.96,7.64 15.18,7.91 15.36,8.20 15.49,8.52 15.57,8.86 15.60,9.20 15.60,14.80 15.57,15.14 15.49,15.48 15.36,15.80 15.18,16.09 14.96,16.36 14.69,16.58 14.40,16.76 14.08,16.89 13.74,16.97 13.40,17.00 5.00,17.00 4.66,16.97 4.32,16.89 4.00,16.76 3.71,16.58 3.44,16.36 3.22,16.09 3.04,15.80 2.91,15.48 2.83,15.14 2.80,14.80 2.80,9.20 2.83,8.86 2.91,8.52 3.04,8.20 3.22,7.91 3.44,7.64 3.71,7.42 4.00,7.24 4.32,7.11 4.66,7.03 5.00,7.00"/><polygon points="15.60,10.60 21.20,7.60 21.20,16.40 15.60,13.40"/></svg><span>Camera Preview</span></a><a href="sublines.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Subtitle Lines</span></a><a href="bench.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Test Bench</span></a><a href="check.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Check Animation</span></a><a href="prefs.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Preferences</span></a><a href="keyboard.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Keyboard Shortcuts</span></a><a href="scripting.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Scripting</span></a></div></details><details class="grp"><summary><span>Tutorials</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="recipes.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Tutorials</span></a><a href="r-skill.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Combat Skill</span></a><a href="r-animehit.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Hit with Effects</span></a><a href="r-idle.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making an Idle or Fidget</span></a><a href="r-cycle.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Walk, Run, Strafe or Backpedal</span></a><a href="r-video.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Copying a Move from a Video</span></a><a href="r-dance.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating a Dance to Music</span></a><a href="r-ugc.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making an Emote to Sell</span></a><a href="r-pack.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making an Animation Pack</span></a><a href="r-acro.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating Jumps, Flips and Spins</span></a><a href="r-ragdoll.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Ragdoll Fall or Hit Reaction</span></a><a href="r-acting.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating Talking, Reacting and Pointing</span></a><a href="r-cutscene.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Cutscene</span></a><a href="r-grab.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating a Grab, Throw or Finisher</span></a><a href="r-hold.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Picking Up, Passing and Throwing an Object</span></a><a href="r-faces.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating Faces on a Classic Head</span></a><a href="r-dynface.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating Faces on a Dynamic Head</span></a><a href="r-lipsync.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Setting up Lip Sync</span></a><a href="r-capture.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Capturing a Face from a Webcam</span></a><a href="r-bench.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Testing an Animation in the Game</span></a><a href="r-blender.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Editing an Animation in Blender</span></a><a href="r-import.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Starting from an Existing Animation</span></a><a href="r-graph.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Previewing Blends, Layers and Aim Offsets</span></a><a href="r-rig.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Setting up R15, Creature and Custom Rigs</span></a><a href="r-keys.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Setting Your Own Keyboard Shortcuts</span></a></div></details><details class="grp"><summary><span>Reference</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="shortcuts.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="5.40" cy="12.00" rx="1.70" ry="1.70"/><ellipse class="f" cx="12.00" cy="12.00" rx="1.70" ry="1.70"/><ellipse class="f" cx="18.60" cy="12.00" rx="1.70" ry="1.70"/></svg><span>Shortcut List</span></a><a href="trouble.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6.00,21.00 6.00,3.80"/><polyline points="6.00,4.60 18.40,4.60 15.60,8.60 18.40,12.60 6.00,12.60"/></svg><span>Troubleshooting</span></a></div></details></div><div class="side-foot"><a href="index.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Manual</span></a><a href="https://github.com/lsxldierl/framez/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="9.60,8.60 10.13,8.64 10.65,8.77 11.14,8.97 11.60,9.25 12.00,9.60 12.35,10.00 12.63,10.46 12.83,10.95 12.96,11.47 13.00,12.00 13.00,12.00 12.96,12.53 12.83,13.05 12.63,13.54 12.35,14.00 12.00,14.40 11.60,14.75 11.14,15.03 10.65,15.23 10.13,15.36 9.60,15.40 6.00,15.40 5.47,15.36 4.95,15.23 4.46,15.03 4.00,14.75 3.60,14.40 3.25,14.00 2.97,13.54 2.77,13.05 2.64,12.53 2.60,12.00 2.60,12.00 2.64,11.47 2.77,10.95 2.97,10.46 3.25,10.00 3.60,9.60 4.00,9.25 4.46,8.97 4.95,8.77 5.47,8.64 6.00,8.60"/><polygon points="18.00,8.60 18.53,8.64 19.05,8.77 19.54,8.97 20.00,9.25 20.40,9.60 20.75,10.00 21.03,10.46 21.23,10.95 21.36,11.47 21.40,12.00 21.40,12.00 21.36,12.53 21.23,13.05 21.03,13.54 20.75,14.00 20.40,14.40 20.00,14.75 19.54,15.03 19.05,15.23 18.53,15.36 18.00,15.40 14.40,15.40 13.87,15.36 13.35,15.23 12.86,15.03 12.40,14.75 12.00,14.40 11.65,14.00 11.37,13.54 11.17,13.05 11.04,12.53 11.00,12.00 11.00,12.00 11.04,11.47 11.17,10.95 11.37,10.46 11.65,10.00 12.00,9.60 12.40,9.25 12.86,8.97 13.35,8.77 13.87,8.64 14.40,8.60"/></svg><span>Download the helper</span></a></div></nav><div class="main"><header class="topbar"><button class="iconbtn only-narrow" type="button" data-menu aria-label="Menu"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.40,6.60 19.60,6.60"/><polyline points="4.40,12.00 19.60,12.00"/><polyline points="4.40,17.40 19.60,17.40"/></svg></button><div class="crumb"><span>Menus</span><i>/</i><b>Key</b></div><div class="top-actions"><button class="iconbtn" type="button" data-search aria-label="Search the manual (Ctrl+K)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg></button><button class="iconbtn" type="button" data-theme-toggle aria-label="Light or dark"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg></button><a class="pill" href="https://github.com/lsxldierl/framez/releases/latest">Get the helper</a></div></header><div class="layout"><article class="doc"><h1>Key Menu</h1><p class="lead">The Key menu holds everything that works on keys: setting them, changing how the motion travels between them, moving them in time, and cleaning up a finished clip. It shows in the Animate workspace.</p>
+<figure class="shot"><img src="img/menu-key.png" width="356" height="358" alt="The Key menu, with its eight submenus below Easing" loading="lazy">
+      <figcaption>The Key menu, with its eight submenus below Easing.</figcaption></figure>
+
+  <article class="tool" id="f-key">
+    <h3>Insert Key</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Insert key</dd><dd>Key ‣ Insert key on all limbs</dd>
+      <dt>Right-click</dt><dd>A limb in the viewport or the track list</dd>
+      <dt>Shortcut</dt><dd><kbd>K</kbd></dd>
+    </dl>
+    <p>A key stores the pose of a limb at one frame. <b>Insert key</b> keys the selected limb at the playhead exactly as it stands, and <b>Insert key on all limbs</b> keys every limb of the rig at once. Between two keys Framez moves the limb from one pose to the other, so an animation is a series of keyed poses with the motion filled in between.</p>
+    <p>You rarely need to key by hand while posing, because moving a limb with the handles keys it for you when Auto key is on. Insert key is for the times you want a key without changing the pose, such as holding a pose for a few frames.</p>
+    <p>In the Scene workspace the same shortcut keys the selected camera, prop or light.</p>
+    <h4>Examples</h4>
+    <p>To hold a pose before a jump, key the crouch, move the playhead six frames later and insert a key on all limbs. The rig now stays still for those six frames before it moves on. To start a new animation, pose the first frame and insert a key on all limbs so every limb has a starting point.</p>
+  </article>
+
+  <article class="tool" id="f-easing">
+    <h3>Easing</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Easing</dd>
+      <dt>Right-click</dt><dd>A key on the timeline</dd>
+      <dt>Shortcut</dt><dd><kbd>7</kbd></dd>
+    </dl>
+    <p>Easing sets how a limb speeds up and slows down on its way from one key to the next. It belongs to the key that starts the move, so to change how a swing lands you select the key where the swing begins. You can select one key or many and give them all the same easing in one step.</p>
+    <p>The Easing menu opens at the mouse. The four buttons along the top choose where the move slows down, and the three columns below choose how strongly. Pointing at a style previews it on the rig and on the timeline, and moving away puts the keys back the way they were. Clicking applies it as one undo step.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Slow start, Slow end, Slow start and end, Slow middle</dt>
+      <dd>Where the move slows. Slow start leaves the first pose gently, Slow end arrives gently, and Slow start and end does both. Slow middle is fast at both ends and slow in between. The menu remembers your last choice.</dd>
+      <dt>Plain</dt>
+      <dd>Hold keeps the pose until the next key and then jumps to it. Linear moves at one steady speed.</dd>
+      <dt>Gentle to strong</dt>
+      <dd>Sine, Quad, Cubic, Quart, Quint, Sextic, Expo and Circ, from the softest curve to the sharpest.</dd>
+      <dt>Bouncy</dt>
+      <dd>Back passes the next pose and comes back to it, Bounce bounces into it, and Elastic springs around it. Choosing Elastic opens its two amounts so you can tune the spring.</dd>
+      <dt>Extra turns</dt>
+      <dd>Adds whole spins to the selected moves, from -4 to 4. Use it when a limb or the body has to turn more than half a turn between two keys; a negative number spins the other way.</dd>
+      <dt>My easings</dt>
+      <dd>The easings you have saved appear as buttons under the styles. Right-click one to use it for every new key, or to delete it.</dd>
+      <dt>Save preset</dt>
+      <dd>Saves the first selected move's easing under a name you type, including where it slows and Elastic's amounts.</dd>
+    </dl>
+    <h4>Examples</h4>
+    <p>A sword hit that should land hard and then settle uses Slow end with Expo on the key before the impact. A spin of two full turns between two keys needs Extra turns set to 2, because without it the body takes the shortest way round.</p>
+<figure class="shot"><img src="img/easing.png" width="457" height="398" alt="The Easing menu, with where the move slows along the top and the styles in three columns below" loading="lazy">
+      <figcaption>The Easing menu, with where the move slows along the top and the styles in three columns below.</figcaption></figure>
+    <h4>See Also</h4>
+    <p><a href="inspector.html#f-spin">Easing in the Inspector</a> sets the same choice for one key.</p>
+  </article>
+
+  <h2 class="part" id="key-timing">Timing</h2>
+  <p>The Timing tools move keys earlier or later and change how long a stretch of the animation lasts.</p>
+
+  <article class="tool" id="f-stretch">
+    <h3>Scale Keys</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Timing ‣ Scale keys...</dd>
+      <dt>Right-click</dt><dd>A key on the timeline</dd>
+    </dl>
+    <p>Scale keys makes the selected keys faster or slower by spreading them apart or pulling them together. With fewer than two keys selected it scales the whole animation, and then events, weapon switches and face keys move along with the keys. If the animation gets longer, the timeline grows to fit.</p>
+    <p>The dialog first says which keys it will move and the frames they cover. You type how much to scale, choose the frame that stays where it is, and click <b>Scale</b> or press <kbd>Enter</kbd>.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Scale</dt>
+      <dd>Either a factor or a new length. <code>x2</code> or <code>200%</code> doubles the time and <code>50%</code> halves it, while <code>0.55s</code> or <code>33f</code> makes the selection exactly that long.</dd>
+      <dt>First key, Last key, Middle, Playhead</dt>
+      <dd>The frame that stays fixed while everything else moves around it. First key keeps the start in place and moves the end, Last key does the opposite, Middle grows or shrinks from the centre, and Playhead scales around the current frame.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, if a skill's cast time in your game is 0.8 seconds, select all of its keys, type <code>0.8s</code> and keep the First key fixed. The animation now starts on the same frame and ends exactly when the cast does.</p>
+    <h4>Notes</h4>
+    <p>A scale that would push a key before frame 0 changes nothing, and the message says so. Choose another fixed frame or scale by less.</p>
+<figure class="shot"><img src="img/stretch.png" width="320" height="224" alt="The Scale keys dialog. With fewer than two keys selected it scales every key of the animation" loading="lazy">
+      <figcaption>The Scale keys dialog. With fewer than two keys selected it scales every key of the animation.</figcaption></figure>
+  </article>
+
+  <article class="tool" id="f-movekeys">
+    <h3>Move Keys</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Timing ‣ Move keys...</dd>
+      <dt>Shortcut</dt><dd><kbd>Shift</kbd>+<kbd>Left</kbd> and <kbd>Shift</kbd>+<kbd>Right</kbd> move the selected keys by one frame</dd>
+    </dl>
+    <p>Move keys shifts the selected keys earlier or later by a number of frames that you type. Every selected key moves by the same amount, so the spacing between them stays as it is. The row is greyed until at least one key is selected.</p>
+    <p>Type the number of frames in the dialog and click <b>Move</b>. A negative number moves the keys earlier.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>By</dt>
+      <dd>The number of frames to move the selected keys. A positive number moves them later and a negative number earlier.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, to slide a whole wind-up six frames later, select its keys on every limb, choose Move keys and type <code>6</code>. To bring one hit a frame sooner, select the keys on the impact and type <code>-1</code>.</p>
+    <h4>Notes</h4>
+    <p>Nothing moves, and the message gives the reason, when the first selected key is on frame 0 and you move earlier, when the last selected key is on the last frame and you move later, or when a key of the same limb that is not selected already sits on a frame a key would land on. Keys on a locked limb never move.</p>
+    <h4>See Also</h4>
+    <p><a href="#f-trackearlier">Move 1 Frame Earlier</a> and <a href="#f-tracklater">Move 1 Frame Later</a> are the same move for one frame, on the keys or on a whole track.</p>
+  </article>
+
+  <article class="tool" id="f-ripple">
+    <h3>Ripple Edits</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Timing ‣ Ripple edits</dd>
+      <dt>Shortcut</dt><dd>Hold <kbd>Shift</kbd> while dragging to switch it for one drag</dd>
+    </dl>
+    <p>When Ripple edits is on, changing the timing of some keys also moves everything after them. Dragging keys later, or stretching the selection box's right edge, pushes every later key on every limb by the same amount, together with the events, weapon switches and face keys after them, and the animation's length follows. When it is off, only the keys you drag move.</p>
+    <h4>Example</h4>
+    <p>For example, in a three-hit combo you can slow down the second hit and the third hit moves later with it, so the gap between them stays the same.</p>
+  </article>
+
+  <article class="tool" id="f-retime">
+    <h3>Retime Tool</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Timing ‣ Retime tool</dd>
+      <dt>Right-click</dt><dd>A stretch on the retime strip, for Retime easing</dd>
+    </dl>
+    <p>The Retime tool speeds up or slows down stretches of an animation by dragging markers, so you do not have to type a factor. Choosing it switches the tool on and shows a strip under the timeline ruler. Choosing it again hides the strip.</p>
+    <p>Markers divide the animation into stretches. Click the strip to drop a marker on that frame, then drag the marker along the strip. The keys between the marker and its neighbours spread out on one side and squeeze together on the other, in proportion, and events, weapon switches and face keys move with them. A marker cannot be dragged past the markers on either side of it. Each stretch shows its speed as a percentage of its original speed, so 50 % plays at half speed and 200 % at double speed. A stretch that now plays faster is tinted red and one that plays slower is tinted blue.</p>
+    <p>Right-click a marker to delete it. Right-click while dragging cancels the drag. Right-click a stretch to ease it, which is the same as <a href="#f-retimeease">Retime Easing</a>.</p>
+    <h4>Notes</h4>
+    <p>With keys selected, only the limbs of the selected keys are retimed, and events, weapon switches and face keys stay where they are. With no keys selected, every unlocked limb is retimed. A drag is refused, and the message says why, when it would put two keys of one limb on the same frame. The markers are saved beside the animation, so they are there when you open it again, and they are not part of the clip your game plays.</p>
+    <h4>Example</h4>
+    <p>For example, to make the hit of a slash land five frames sooner, drop a marker on the hit and drag it five frames earlier. The wind-up before it speeds up and the recovery after it slows down to fill the gap, and the animation keeps its length.</p>
+  </article>
+
+  <article class="tool" id="f-retimeease">
+    <h3>Retime Easing</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Timing ‣ Retime easing ‣ Ease in</dd><dd>Key ‣ Timing ‣ Retime easing ‣ Ease out</dd><dd>Key ‣ Timing ‣ Retime easing ‣ Ease in and out</dd>
+      <dt>Right-click</dt><dd>A stretch on the retime strip</dd>
+    </dl>
+    <p>Retime easing changes how the keys inside one retimed stretch are spaced, so the stretch gathers speed or slows down gradually instead of playing at one rate. It works on the stretch between two retime markers that contains the playhead. Every limb is eased, and events, weapon switches and face keys follow the keys. The stretch must be at least two frames long, and at least one marker has to exist, otherwise the message asks you to add one first.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Ease in</dt>
+      <dd>The stretch starts slowly and speeds up toward its end.</dd>
+      <dt>Ease out</dt>
+      <dd>The stretch starts quickly and slows down toward its end.</dd>
+      <dt>Ease in and out</dt>
+      <dd>The stretch is slow at both ends and quicker in the middle.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, to make a lunge between two markers gather speed as it travels, put the playhead inside that stretch and choose Ease in.</p>
+    <h4>See Also</h4>
+    <p><a href="#f-retime">Retime Tool</a> places the markers.</p>
+  </article>
+
+  <article class="tool" id="f-insertframe">
+    <h3>Insert Frame</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Timing ‣ Insert frame</dd>
+    </dl>
+    <p>Insert frame adds one frame at the playhead. Every key after the playhead moves one frame later and the animation becomes one frame longer. Events, weapon switches, face keys and show or hide switches after the playhead move with the keys. Keys on the playhead's own frame stay where they are, and keys on a locked limb are left in place.</p>
+    <p>It makes a hold longer, or opens a gap for a pose, without dragging every track by hand.</p>
+    <h4>Example</h4>
+    <p>For example, if a pose is held one frame too short before the next move starts, put the playhead on the held pose and choose Insert frame. The hold gets one frame longer and the rest of the animation follows it.</p>
+  </article>
+
+  <article class="tool" id="f-removeframe">
+    <h3>Remove Frame</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Timing ‣ Remove frame</dd>
+    </dl>
+    <p>Remove frame takes one frame out after the playhead. Every key after the playhead moves one frame earlier and the animation becomes one frame shorter. Events, weapon switches, face keys and show or hide switches move with the keys, and keys on a locked limb are left in place.</p>
+    <p>It refuses, and names the limb, when a limb has keys on both the playhead's frame and the frame after it, because one of those keys would have to go. Delete one of them first. An animation that is one frame long cannot be shortened.</p>
+    <h4>Example</h4>
+    <p>For example, if a hold lasts a frame too long, put the playhead on the first frame of the hold and choose Remove frame.</p>
+  </article>
+
+  <article class="tool" id="f-offset">
+    <h3>Offset Limbs</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Timing ‣ Offset limbs</dd>
+    </dl>
+    <p>Offset limbs staggers the selected keys of several limbs so that each limb moves a few frames after the one before it. Parts that follow what carries them, such as an arm trailing the torso, look natural when they overlap like this instead of starting on the same frame. The row is greyed until keys on two limbs are selected.</p>
+    <p>The tool runs as soon as you choose it, using the values from its last run, and its values open in <a href="anytool.html">Adjust</a> at the foot of the Framez window. Changing a value takes the last run back and runs it again with the new value. The result is listed in the Modifiers window, where you can change it, turn it off or delete it later.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Frames between</dt>
+      <dd>How many frames later each limb's keys start than the limb before it, from -30 to 30. A negative number staggers the other way. The default is 2.</dd>
+      <dt>Order</dt>
+      <dd>Which limb goes first. The rig's order starts with the root and works outward, Reversed starts at the far end, and As listed follows the order of the Limbs list.</dd>
+      <dt>Limbs</dt>
+      <dd>The limbs to offset. They start as the limbs of the selected keys.</dd>
+      <dt>Frames</dt>
+      <dd>The first and last frame the offset applies to. They start as the range of the selected keys.</dd>
+      <dt>Presets</dt>
+      <dd>Overlap down the arm uses 2 frames in the rig's order, and Drag behind uses 3 frames in reverse order. Presets you save yourself appear in the same list.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a sword swing keyed with the torso, shoulder, elbow and hand all moving together looks stiff. Select the swing's keys on those limbs and choose Offset limbs with 2 frames between, so the arm follows the torso and the hand follows the arm.</p>
+  </article>
+
+  <article class="tool" id="f-snap">
+    <h3>Snap Keys to Video Hits</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Timing ‣ Snap keys to video hits</dd>
+      <dt>Needs</dt><dd>The Framez Helper, and a reference video linked to the timeline</dd>
+    </dl>
+    <p>Snap keys to video hits moves each selected key onto the nearest beat of the linked reference video. A beat is a moment where the picture stands still or a hit in the sound, the same moments the <a href="reference.html#f-beats">beats strip</a> marks. A key moves only when a beat is within 8 frames of it. When another key of the same limb already sits on that frame, the key goes to the nearest free frame, so keys never overwrite each other. The row is greyed until keys are selected.</p>
+    <p>If no video is linked, or Framez has not finished reading it, the message says so and nothing moves.</p>
+    <h4>Example</h4>
+    <p>For example, when you animate a dance against a video, select the keys of a pose and snap them to the nearest beat instead of dragging each key to the beat by eye.</p>
+  </article>
+
+  <article class="tool" id="f-stretchbox">
+    <h3>Stretch by Dragging</h3>
+    <dl class="ref">
+      <dt>Shortcut</dt><dd>Hold <kbd>Alt</kbd> while dragging to stretch around the middle of the selection</dd>
+    </dl>
+    <p>When the selected keys cover two frames or more, a box appears around them on the timeline with a handle at each end, and a label over the box shows its length in frames. Drag the right handle to stretch or squeeze the keys toward the left end of the box, or drag the left handle to do the same toward the right end. With <kbd>Alt</kbd> held, both ends move around the middle of the box.</p>
+    <p>Keys land on whole frames and never on top of each other, so the drag stops at the shortest length that keeps every key on its own frame. Only the selected keys move. Events, weapon switches and face keys inside the stretch move with them when every limb that has keys in that stretch is selected. Right-click while dragging cancels the drag, and a finished drag is one undo step.</p>
+    <p>When <a href="#f-ripple">Ripple Edits</a> is on, dragging the right handle also pushes everything after the box.</p>
+    <h4>Example</h4>
+    <p>For example, a swing that feels a little slow can be tightened by selecting its keys and dragging the right handle a few frames to the left, without typing a factor.</p>
+    <h4>See Also</h4>
+    <p><a href="#f-stretch">Scale Keys</a> does the same with a number you type.</p>
+  </article>
+
+  <h2 class="part" id="key-range">Range</h2>
+  <p>The Range tools work on a stretch of the animation. The stretch is the frames covered by the selected keys, or the whole animation when no keys are selected. Repeat, Delete range, Crop to range and Bake keys run as soon as you choose them, using the values from their last run, and their values open in <a href="anytool.html">Adjust</a> at the foot of the Framez window. Changing a value there takes the last run back and runs it again with the new value, so you can try values and watch the result.</p>
+
+  <article class="tool" id="f-reverse">
+    <h3>Reverse</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Range ‣ Reverse</dd>
+      <dt>Right-click</dt><dd>A key on the timeline ‣ Range ‣ Reverse</dd>
+    </dl>
+    <p>Reverse plays the selected keys backwards inside their own stretch. The stretch keeps its first and last frame, and every pose lands on the mirrored frame, so the motion now runs from the end to the start. Easing is reversed as well, so a move that eased in now eases out, and a held pose is still held for the same number of frames. With no keys selected, the whole animation is reversed.</p>
+    <p>Events, weapon switches and face keys inside the stretch reverse with it when every limb that has keys there takes part.</p>
+    <h4>Notes</h4>
+    <p>Select keys on at least two frames, or select none to reverse the whole animation. Keys whose curve was shaped in the Curve editor, and keys with extra turns, are replaced by a key on every frame of the stretch first, so that they reverse exactly.</p>
+    <h4>Example</h4>
+    <p>For example, a sheathe animation is often a draw animation played backwards. Select nothing, choose Reverse on a copy of the draw, and the weapon now goes away instead of coming out.</p>
+  </article>
+
+  <article class="tool" id="f-repeat">
+    <h3>Repeat</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Range ‣ Repeat</dd>
+      <dt>Right-click</dt><dd>A key on the timeline ‣ Range ‣ Repeat</dd>
+    </dl>
+    <p>Repeat adds copies of the selected keys after them. Each copy starts on the last frame of the one before it, so a stretch that was built to loop repeats without a seam. Events and weapon switches inside the stretch are copied into every copy. It needs selected keys on two frames or more; with none selected, the whole animation is repeated.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Times</dt>
+      <dd>How many more copies to add, from 1 to 50. The default is 2.</dd>
+      <dt>Insert, Over keys after</dt>
+      <dd>Insert moves the keys that come after the stretch later to make room for the copies, and the animation grows by the same amount. Over keys after leaves them in place and lets the copies replace whatever is in the way. Insert is the default.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a breathing idle that was keyed once can be repeated until the animation is as long as the idle plays in your game.</p>
+    <h4>See Also</h4>
+    <p><a href="#f-fill">Fill to Playhead</a> repeats up to a frame instead of a number of times, and <a href="#f-pingpong">Ping-Pong</a> plays the copy backwards.</p>
+  </article>
+
+  <article class="tool" id="f-fill">
+    <h3>Fill to Playhead</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Range ‣ Fill to playhead</dd>
+      <dt>Right-click</dt><dd>A key on the timeline ‣ Range ‣ Fill to playhead</dd>
+    </dl>
+    <p>Fill to playhead repeats the selected keys again and again after themselves until it reaches the playhead. The last copy is cut at the playhead with a key that holds the pose the motion has there, so the animation ends in the middle of a repeat when the frames do not divide evenly. The copies replace whatever is in the way, and keys after the playhead stay where they are. The playhead has to be after the selected keys.</p>
+    <h4>Example</h4>
+    <p>For example, key one step of a stomping loop, move the playhead to frame 120 and choose Fill to playhead. The step repeats until that frame.</p>
+  </article>
+
+  <article class="tool" id="f-pingpong">
+    <h3>Ping-Pong</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Range ‣ Ping-pong</dd>
+      <dt>Right-click</dt><dd>A key on the timeline ‣ Range ‣ Ping-pong</dd>
+    </dl>
+    <p>Ping-pong adds a copy of the selected keys played backwards right after them. The motion goes through the stretch and then comes back to where it began. Keys after the stretch move later to make room, and the animation grows by the length of the stretch. It has no values to set. With no keys selected it works on the whole animation.</p>
+    <h4>Example</h4>
+    <p>For example, a swinging lantern or a breathing chest can be keyed as one half of the motion and finished with Ping-pong.</p>
+  </article>
+
+  <article class="tool" id="f-croprange">
+    <h3>Delete Range</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Range ‣ Delete range</dd>
+      <dt>Right-click</dt><dd>A key on the timeline ‣ Range ‣ Delete range</dd>
+    </dl>
+    <p>Delete range removes every key between two frames and keeps the motion on either side. A key is added on each edge of the range, holding the pose the animation had there, so the limbs move from the first edge to the second where the deleted keys used to be. The animation keeps its length. When every limb is cleared, events inside the range are removed as well.</p>
+    <p>The range starts as the frames of the selected keys. With no keys selected it uses the play range if one is set, and otherwise it runs from the playhead to the end of the animation.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>From frame, To frame</dt>
+      <dd>The first and last frame of the range. Keys on the frames between them are deleted, and the two edge frames receive keys.</dd>
+      <dt>Every limb, the limb's name</dt>
+      <dd>Which limbs lose their keys. Choosing the selected limb's name leaves every other limb, and the events, as they are.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, if a limb wobbles between two good poses because of extra keys, delete the range between them and the limb moves from one pose to the other directly.</p>
+    <h4>See Also</h4>
+    <p><a href="#f-cropto">Crop to Range</a> keeps a range and removes everything outside it.</p>
+  </article>
+
+  <article class="tool" id="f-cropto">
+    <h3>Crop to Range</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Range ‣ Crop to range</dd>
+      <dt>Right-click</dt><dd>A key on the timeline ‣ Range ‣ Crop to range</dd>
+    </dl>
+    <p>Crop to range keeps only the frames between two frames and cuts the rest of the animation away. A key is added on each edge, so the first and last pose of the kept part are exactly what the animation showed there. Every unlocked limb is cropped, and events, weapon switches and face keys outside the range are removed. Any play range is cleared.</p>
+    <p>The range starts as the frames of the selected keys. With no keys selected it uses the play range if one is set, and otherwise it runs from the playhead to the end of the animation.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>From frame, To frame</dt>
+      <dd>The first and last frame to keep. The range has to be at least two frames long.</dd>
+      <dt>Start at frame 0, Keep the frames</dt>
+      <dd>Start at frame 0 moves the kept part to the start of the animation, so the animation is as long as the range. Keep the frames leaves the kept part on its own frames, and the animation then ends on the To frame.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a recorded take holds its action between frame 40 and frame 130. Set those frames and choose Start at frame 0, and the animation becomes those 90 frames of action.</p>
+  </article>
+
+  <article class="tool" id="f-bake2">
+    <h3>Bake Keys</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Range ‣ Bake keys</dd>
+      <dt>Right-click</dt><dd>A key on the timeline ‣ Range ‣ Bake keys</dd>
+    </dl>
+    <p>Bake keys replaces the keys in a stretch with a new key every few frames, read from the motion as it plays. It works on the stretch and the limbs of the selected keys, or on every limb over the whole animation when no keys are selected. The new keys are Generated keys, the small grey keys that Framez makes from motion instead of from poses you set.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Every</dt>
+      <dd>The number of frames between the new keys, from 1 to 8. The default is 2.</dd>
+      <dt>Hold each pose, Smooth between</dt>
+      <dd>Hold each pose holds every pose until the next key, so the animation steps, in your game as well. Smooth between joins the keys with moves, so the limb keeps moving between them.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, to give an animation a stop-motion look, bake every 3 frames with Hold each pose. Each pose is held for three frames.</p>
+  </article>
+
+  <article class="tool" id="f-reshape">
+    <h3>Reshape Keys</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Range ‣ Reshape keys</dd>
+    </dl>
+    <p>Reshape keys exaggerates, calms, shifts or retimes the motion of many keys at once, using curves that change over the frames. Framez reads the motion over the frames you choose, applies the curves, writes a key on every frame and then thins the result to the keys the motion needs. Limbs without keys are skipped, and the frames must cover at least three frames.</p>
+    <p>The tool runs as soon as you choose it, with the values from its last run, and its values open in Adjust. The result is listed in the Modifiers window. In each of the three curves, click to add a point, drag a point to move it and right-click a point to remove it.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Limbs, Frames</dt>
+      <dd>The limbs and the frames to reshape. They start as the limbs and the range of the selected keys.</dd>
+      <dt>Channels</dt>
+      <dd>Rotation X, Rotation Y, Rotation Z, Position X, Position Y and Position Z. Only the ticked channels change. The three rotation channels are ticked at first.</dd>
+      <dt>Amount over time</dt>
+      <dd>A curve over the frames that scales each channel's motion around its own average. The middle line keeps the motion as it is, the top line doubles it and the bottom line flattens it to its average.</dd>
+      <dt>Shift over time</dt>
+      <dd>A curve that adds to the channels or takes away from them. Above the middle line adds, below it takes away, and the top and bottom of the curve reach the Most turn and Most move values.</dd>
+      <dt>Most turn</dt>
+      <dd>The largest shift, in degrees, on rotation channels, from 0 to 180. The default is 20.</dd>
+      <dt>Most move</dt>
+      <dd>The largest shift, in studs, on position channels, from 0 to 10. It shows when a position channel is ticked. The default is 0.5.</dd>
+      <dt>Time warp</dt>
+      <dd>A curve for how far through the frames each frame plays. A steeper line plays faster and a flatter line plays slower. A straight line leaves the timing as it is.</dd>
+      <dt>Presets</dt>
+      <dd>Exaggerate raises the amount to 150 %, Calm down lowers it to 50 %, Double sets it to 200 % and Flatten sets it to 0 %.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, to give a sword swing more punch, select the frames of the swing, leave the three rotation channels ticked and choose the Exaggerate preset. Drawing the Amount curve so that it rises toward the end exaggerates only the last part of the swing.</p>
+  </article>
+
+  <h2 class="part" id="key-track">Track</h2>
+  <p>The Track tools work on one limb's track, the row that holds all of its keys. They need a limb to be selected.</p>
+
+  <article class="tool" id="f-track">
+    <h3>Select Track</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Track ‣ Select track</dd>
+      <dt>Right-click</dt><dd>A limb in the viewport or the track list ‣ Track ‣ Select track</dd><dd>A key on the timeline ‣ Select track</dd>
+    </dl>
+    <p>Select track selects every key of the selected limb. Tools that work on selected keys, such as Scale keys, Offset limbs or Easing, then work on the whole track.</p>
+    <h4>Example</h4>
+    <p>For example, select a hand's track and open Easing to give all of the hand's moves the same easing in one step.</p>
+  </article>
+
+  <article class="tool" id="f-trackearlier">
+    <h3>Move 1 Frame Earlier</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Track ‣ Move 1 frame earlier</dd>
+      <dt>Right-click</dt><dd>A limb in the viewport or the track list ‣ Track ‣ Move 1 frame earlier</dd>
+      <dt>Shortcut</dt><dd><kbd>Shift</kbd>+<kbd>Left</kbd></dd>
+    </dl>
+    <p>Move 1 frame earlier moves the selected keys one frame earlier. With no keys selected it moves the whole track of the selected limb, keeping the gap between every key.</p>
+    <p>When the animation is looping, the whole track of the selected limb moves round the loop instead. A key that leaves frame 0 comes back at the end, and frame 0 and the last frame get the same pose again, so the loop stays closed. When the animation does not loop, the move stops at frame 0. Nothing moves if a key is already there, and the message says so. A locked limb does not move.</p>
+    <h4>Example</h4>
+    <p>For example, in a looping idle, move the head's track one frame earlier so the head leads the body by a frame.</p>
+  </article>
+
+  <article class="tool" id="f-tracklater">
+    <h3>Move 1 Frame Later</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Track ‣ Move 1 frame later</dd>
+      <dt>Right-click</dt><dd>A limb in the viewport or the track list ‣ Track ‣ Move 1 frame later</dd>
+      <dt>Shortcut</dt><dd><kbd>Shift</kbd>+<kbd>Right</kbd></dd>
+    </dl>
+    <p>Move 1 frame later is the same move in the other direction. It moves the selected keys one frame later, or the whole track of the selected limb when no keys are selected, or round the loop when the animation is looping. In an animation that does not loop, the move stops at the last frame and nothing moves if a key is already there.</p>
+    <h4>Example</h4>
+    <p>For example, in a looping walk, move the arms' tracks one frame later so the arms trail the legs by a frame.</p>
+    <h4>See Also</h4>
+    <p><a href="#f-trackearlier">Move 1 Frame Earlier</a> describes the move in full, and <a href="#f-movekeys">Move Keys</a> moves keys by any number of frames.</p>
+  </article>
+
+  <article class="tool" id="f-tracklock">
+    <h3>Lock Track</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Track ‣ Lock track</dd>
+      <dt>Right-click</dt><dd>A limb in the viewport or the track list ‣ Track ‣ Lock track</dd>
+    </dl>
+    <p>Lock track protects a limb's animation while you work on other limbs. A locked limb cannot be selected or changed. Deleting, moving, stretching, easing and the tools that work on keys leave its keys alone, and Select all skips them. Its keys still play. A locked limb with no keys stays in the pose it had when it was locked.</p>
+    <p>While the limb is locked, the row reads Unlock track, and choosing it unlocks the limb. The padlock on the limb's row in the track list does the same. Locking and unlocking are one undo step each.</p>
+    <h4>Example</h4>
+    <p>For example, once the legs of a run are finished, lock both leg tracks and work on the arms without risk of moving a leg key by accident.</p>
+  </article>
+
+  <h2 class="part" id="key-times">Key Times and Types</h2>
+  <p>These tools copy the frames that keys sit on from one limb to another, and set what kind each key is.</p>
+
+  <article class="tool" id="f-sharetimes">
+    <h3>Share Key Times</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Key times and types ‣ Share key times</dd>
+    </dl>
+    <p>Share key times makes several limbs key on the same frames without changing any pose. Every limb with selected keys gets a key on every frame where any of them has a key, inside the stretch of the selected keys. A new key holds the pose the limb already has on that frame, so nothing moves on screen, and the new keys are Generated keys. With no keys selected it works on every limb over the whole animation. It needs at least two limbs with keys.</p>
+    <h4>Example</h4>
+    <p>For example, after blocking the torso on frames 0, 12 and 24 and the arms on frames 4, 15 and 26, share key times so every limb has a key on all six frames. You can then adjust any limb on any of them.</p>
+  </article>
+
+  <article class="tool" id="f-copytimes">
+    <h3>Copy Key Times</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Key times and types ‣ Copy key times</dd>
+    </dl>
+    <p>Copy key times remembers the frames that keys sit on, without their poses. It copies the frames of the selected keys, or every frame where the selected limb has a key when no keys are selected. The copy stays until you copy again. Use <a href="#f-pastetimes">Paste Key Times</a> to put the frames on another limb.</p>
+    <h4>Example</h4>
+    <p>For example, copy the key times of a torso that was keyed on every beat of a dance, so the head and arms can be keyed on the same beats.</p>
+  </article>
+
+  <article class="tool" id="f-pastetimes">
+    <h3>Paste Key Times</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Key times and types ‣ Paste key times</dd>
+    </dl>
+    <p>Paste key times keys the selected limb on the frames that Copy key times remembered. A frame where the limb already has a key is left as it is. Each new key holds the pose the limb already has there, so nothing moves, and the new keys are Generated keys. The row is greyed until key times have been copied, and a locked limb is not changed.</p>
+    <h4>Example</h4>
+    <p>For example, paste the key times of the torso onto the head, then pose the head on each of those frames.</p>
+  </article>
+
+  <article class="tool" id="f-pastetimesonly">
+    <h3>Paste Key Times Only</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Key times and types ‣ Paste key times only</dd>
+    </dl>
+    <p>Paste key times only does what Paste key times does and also removes the limb's other keys inside the copied stretch, from the first copied frame to the last. Afterwards the limb is keyed on exactly the copied frames within that stretch. The row is greyed until key times have been copied.</p>
+    <h4>Example</h4>
+    <p>For example, an arm that was keyed on every frame can be given the rhythm of the torso. Copy the torso's key times and use Paste key times only on the arm, and the arm keeps keys only where the torso has them.</p>
+  </article>
+
+  <article class="tool" id="f-keytypes">
+    <h3>Key Types</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Key times and types ‣ Key</dd><dd>Key ‣ Key times and types ‣ Breakdown</dd><dd>Key ‣ Key times and types ‣ Generated</dd>
+      <dt>Right-click</dt><dd>A key on the timeline ‣ Key type</dd>
+    </dl>
+    <p>Every key has a type, shown by how it looks on the timeline. A <b>Key</b>, drawn as a white diamond, is a pose you set. A <b>Breakdown</b>, drawn in blue, is a pose between two keys that shapes how the move travels. A <b>Generated</b> key, drawn small and grey, is a key that Framez made from the motion. The type does not change how a key plays. It helps you see which keys are poses you chose, and it decides which keys the stepped preview holds on when it is set to On keys.</p>
+    <p>Choose a type to set it on every selected key. The row of the current type is marked, and none is marked when the selected keys are of different types. The rows are greyed until keys are selected.</p>
+    <h4>Notes</h4>
+    <p>Keys you set by hand are Keys. The slider's Breakdown makes Breakdowns. Baking keys, sharing or pasting key times, and the Get from Blender import make Generated keys. Types are saved with the animation's Framez data and are not part of the clip your game plays.</p>
+    <h4>See Also</h4>
+    <p><a href="view.html#f-stepped">Stepped Preview</a> and <a href="#f-selectbytype">Select by Key Type</a>.</p>
+  </article>
+
+  <article class="tool" id="f-selectbytype">
+    <h3>Select by Key Type</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Key times and types ‣ Select every key pose</dd><dd>Key ‣ Key times and types ‣ Select every breakdown</dd><dd>Key ‣ Key times and types ‣ Select every generated key</dd>
+    </dl>
+    <p>These rows select every key of one type. They work on the selected limb, or on every limb when none is selected, and they skip locked limbs. The selection replaces the one you had.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Select every key pose</dt>
+      <dd>Selects the keys that are plain Keys, the poses you set yourself.</dd>
+      <dt>Select every breakdown</dt>
+      <dd>Selects the Breakdown keys.</dd>
+      <dt>Select every generated key</dt>
+      <dd>Selects the Generated keys.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, after baking an animation, select every generated key and delete them to get back to the poses you set.</p>
+  </article>
+
+  <h2 class="part" id="key-loop">Loop</h2>
+  <p>The Loop tools make an animation repeat, and make its end meet its start.</p>
+
+  <article class="tool" id="f-loops">
+    <h3>Looping</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Loop ‣ Looping</dd>
+      <dt>Shortcut</dt><dd><kbd>Tab</kbd></dd>
+    </dl>
+    <p>Looping switches repeat on or off for the animation. A looping animation plays round and round, in Framez and in your game. The row is ticked while looping is on. The setting belongs to the animation, so save it to keep it.</p>
+    <p>Switching looping on does not change any key. When the last frame does not match frame 0, the loop jumps at the seam. <a href="#f-makeloop">Make Cyclic</a> closes the loop, and Check animation lists a seam that does not match.</p>
+    <h4>Example</h4>
+    <p>For example, a run, an idle or a spell channel should loop, while a jump or a death should play once.</p>
+  </article>
+
+  <article class="tool" id="f-makeloop">
+    <h3>Make Cyclic</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Loop ‣ Make cyclic</dd>
+    </dl>
+    <p>Make cyclic changes the animation so that its end meets its start, and turns Looping on. It can copy the first pose onto the last frame, or build the second half of the animation from the first half with left and right swapped. All of it is one undo step.</p>
+    <p>The tool runs as soon as you choose it, using the values from its last run, and its values open in Adjust. The result is listed in the Modifiers window.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Loop</dt>
+      <dd>Same pose at start and end keys the last frame with the pose of frame 0. Mirrored halves builds the second half from the first, mirrored from left to right, as a walk or run needs. The second half starts at the middle of the loop length, and keys from that frame on are replaced.</dd>
+      <dt>Loop length</dt>
+      <dd>The length of the loop in frames, from 2 to 4000. It starts as the animation's length. With Mirrored halves, the first half is half of this length.</dd>
+      <dt>Smooth the torso twist</dt>
+      <dd>Available with Mirrored halves. Eases the torso's twist through the middle of the loop.</dd>
+      <dt>Keep the head facing forward</dt>
+      <dd>Keys the neck on every frame that the body above it is keyed, with the head facing straight ahead. It keeps the head's nod up or down from frame 0 and drops any turn or tilt to the side.</dd>
+      <dt>Presets</dt>
+      <dd>Same pose at start and end, and Mirrored halves (a walk).</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a breath keyed over 60 frames loops with Same pose at start and end. A walk keyed for one step becomes a complete cycle with Mirrored halves, because the second step is the first with the legs and arms swapped.</p>
+  </article>
+
+  <h2 class="part" id="key-layers">Layers</h2>
+  <p>A layer holds keys of its own on top of the animation and is saved with it. A change made on a layer can be compared, muted and removed without touching the animation's own keys, which are called the base. The Layers rows here are the same layers that the <a href="inspector.html#f-animlayers">Inspector's animation layers</a> manage, as menu rows.</p>
+
+  <article class="tool" id="f-layersmenu">
+    <h3>Add Layer</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Layers ‣ Add layer</dd>
+    </dl>
+    <p>Add layer creates an additive layer. Its poses are added on top of everything under it and follow it wherever it goes, which makes it the right kind of layer for a lean, a breath or a correction over an animation that may still change. The layer is named Layer 1, Layer 2 and so on, and it becomes the active layer, so the keys you set next go into it. The timeline then shows the layer's keys, and the rig shows every layer together. A line above the ruler names the layer you are keying.</p>
+    <h4>Notes</h4>
+    <p>Saving flattens the layers into the animation that your game plays, and keeps the layers beside it, so opening the save brings them back. On an additive layer, pose with the handles. The tools in the Pose menu that write whole poses are greyed while an additive layer is active.</p>
+    <h4>Example</h4>
+    <p>For example, to add a heavier breath to a finished run without touching its keys, add a layer, key the chest and shoulders on it, and mute the layer whenever you want to compare against the original.</p>
+    <h4>See Also</h4>
+    <p><a href="inspector.html#f-animlayers">Animation layers</a> in the Inspector.</p>
+  </article>
+
+  <article class="tool" id="f-addoverride">
+    <h3>Add Override Layer</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Layers ‣ Add override layer</dd>
+    </dl>
+    <p>Add override layer creates a layer that replaces what is under it on the limbs it keys. Limbs it does not key play as they did before. Like any layer, it becomes the active layer when it is created, and its weight decides how strongly it replaces the layers below.</p>
+    <h4>Example</h4>
+    <p>For example, to swap the arm motion of a run for a different carry pose while leaving the legs alone, add an override layer and key only the arms on it.</p>
+  </article>
+
+  <article class="tool" id="f-activelayer">
+    <h3>Active Layer</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Layers ‣ Active layer</dd>
+    </dl>
+    <p>Active layer chooses which set of keys you are editing. The list starts with Base, the animation's own keys, followed by every layer you added. The keys you set, and every tool that works on keys, then work on the active layer, and the timeline shows only that layer's keys. The result of a tool stays on the layer it was made on, whichever layer you key into later. The row is greyed until a layer exists.</p>
+    <h4>Example</h4>
+    <p>For example, choose Base to fix a pose in the animation itself, then choose the layer again to carry on with the change you were making on it.</p>
+  </article>
+
+  <article class="tool" id="f-selectedlayer">
+    <h3>Selected Layer</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Layers ‣ Selected layer</dd>
+    </dl>
+    <p>Selected layer holds the settings of the active layer. The row shows the layer's name, and it is greyed until a layer is the active layer. Its submenu changes how the layer plays and lets you rename or delete it.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Additive, Override</dt>
+      <dd>How the layer combines with the layers below it. Additive adds its poses on top, and Override replaces the layers below on the limbs it keys.</dd>
+      <dt>Weight...</dt>
+      <dd>Opens a dialog with the layer's Weight, from 0 to 100 %, and a choice between Whole layer and Key at this frame. Whole layer gives the layer one weight and removes any weight keys it had. Key at this frame keys the weight at the playhead, and between weight keys the weight eases from one to the next.</dd>
+      <dt>Key weight here</dt>
+      <dd>Keys the layer's weight at the playhead with the weight it has there. A layer with keyed weight gets a <a href="timeline.html#f-weightrow">weight row</a> under the rig on the timeline, where the weight keys can be dragged.</dd>
+      <dt>Body mask</dt>
+      <dd>Limits the layer to some parts of the rig, each at its own share. An upper-body layer with a mask leaves the legs alone. The list holds your masks and Edit mask..., described under <a href="inspector.html#f-maskedit">Edit mask</a>.</dd>
+      <dt>Mute, Unmute</dt>
+      <dd>A muted layer plays nothing. The row reads Unmute while the layer is muted.</dd>
+      <dt>Rename...</dt>
+      <dd>Opens a dialog to type a new name for the layer.</dd>
+      <dt>Delete layer</dt>
+      <dd>Removes the layer and its keys. It is one undo step.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, to make a correction fade in and out over a run, key the layer's weight at 0 % at the start, 100 % in the middle and 0 % at the end.</p>
+  </article>
+
+  <article class="tool" id="f-watchonly-menu">
+    <h3>Preview</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Layers ‣ Preview</dd>
+    </dl>
+    <p>Preview changes what you see in Framez while you work, without changing any key or anything that is saved. It can mute or solo parts of the rig, or play another saved animation underneath this one, so you can judge a skill's arms over the run it will be played on.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Legs, Torso, Arms, head, weapon</dt>
+      <dd>Each part has Plays, Muted and Solo. A muted part stays at rest, or plays the base clip when one is chosen. Solo plays only that part and shows the other parts as muted.</dd>
+      <dt>Base clip</dt>
+      <dd>Nothing, or another saved animation of this rig. The animation you choose loops under this one at its own length. For example, a run under a skill.</dd>
+      <dt>Base clip plays on</dt>
+      <dd>Legs, torso plays the base clip on the legs and torso in place of this animation's own keys there, while this animation plays on the rest of the rig. Unkeyed plays the base clip only on the limbs that this animation has no keys on.</dd>
+    </dl>
+    <h4>Notes</h4>
+    <p>Preview is for watching. Saving ignores it, and so does Check animation.</p>
+    <h4>Example</h4>
+    <p>For example, while you key a sword skill's arms, choose the run as the base clip with Legs, torso, and the skill plays over the run it will be cast during.</p>
+    <h4>See Also</h4>
+    <p>The <a href="inspector.html#f-layers">Inspector</a> has the same choices.</p>
+  </article>
+
+  <article class="tool" id="f-clipblockrow">
+    <h3>Clip Block</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Layers ‣ Clip block for (the rig's name)</dd>
+    </dl>
+    <p>A clip block plays a saved animation as a block over your keys, starting on the playhead frame. It lets you put a finished animation, such as a run or a draw, under or around the animation you are making without copying its keys. The row names the rig that is open.</p>
+    <p>The submenu lists the other saved animations of the rig. From another rig lists the saved animations of other rigs, which play on this rig by part name. By id is a box where you type an animation id or a link.</p>
+    <h4>Notes</h4>
+    <p>The block appears on a Clips row under the rig on the timeline. <a href="scene.html#f-blocks">Clip Blocks</a> describes moving, trimming, looping and masking it. The list reads No other saves on this rig when the rig has no other saved animation.</p>
+    <h4>Example</h4>
+    <p>For example, to build a cutscene walk-in, move the playhead to where the character enters, choose the saved walk as a clip block, and key a wave on top of it.</p>
+  </article>
+
+  <article class="tool" id="f-mergebase">
+    <h3>Merge into Base</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Layers ‣ Merge into base</dd>
+    </dl>
+    <p>Merge into base bakes every layer into the animation's own keys and removes the layers. What plays stays exactly as it was, because the layered result becomes the base. The row is greyed until a layer exists, and merging is one undo step.</p>
+    <h4>Example</h4>
+    <p>For example, once a correction layer looks right and you no longer need to compare it, merge it so the animation is a single set of keys again.</p>
+  </article>
+
+  <h2 class="part" id="key-cleanup">Clean Up</h2>
+  <p>The Clean up tools tidy an animation that came from a video, motion capture or an import, and polish one that you finished by hand. Apart from Check animation, they run as soon as you choose them, using the values from their last run, and their values open in <a href="anytool.html">Adjust</a> at the foot of the Framez window. Changing a value takes the last run back and runs it again with the new value. Each result is listed in the Modifiers window, where you can change its values, fade it, turn it off or delete it later, and each has a <a href="anytool.html#any-mix">Mix</a> section at the foot of its values.</p>
+
+  <article class="tool" id="f-check-menu">
+    <h3>Check Animation</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Clean up ‣ Check animation</dd><dd>View ‣ Windows ‣ Check animation</dd>
+    </dl>
+    <p>Check animation looks through the whole animation for what will look wrong in your game, such as sliding feet, a limb passing through the torso, a pop in speed or a loop that does not close. It opens the Check Animation window with each problem listed at its frame and a button to fix it. The <a href="check.html">Check Animation</a> page describes every kind of problem and every fix.</p>
+  </article>
+
+  <article class="tool" id="f-smooth">
+    <h3>Butterworth Smooth</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Clean up ‣ Butterworth smooth</dd><dd>The Curve editor's Clean up button</dd>
+    </dl>
+    <p>Butterworth smooth takes jitter out of the keys that are already there. It adds no keys and removes none. Each key's pose is smoothed using the keys around it, and the Butterworth filter keeps the large moves of the animation while it removes the shake, which suits motion that was captured from a video or recorded with motion capture.</p>
+    <p>It works on the limbs of the selected keys, or the selected limb, over the frames of the selected keys. With nothing selected it works on every keyed limb over the whole animation. A lower Cut-off gives smoother motion.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Filter</dt>
+      <dd>Butterworth or Gaussian. Both smooth rows run this one tool, and each opens it with its own filter chosen.</dd>
+      <dt>Cut-off</dt>
+      <dd>For the Butterworth filter, in hertz, from 0.5 to 30. Lower is smoother. The default is 8.</dd>
+      <dt>Order</dt>
+      <dd>For the Butterworth filter, 2 for a gentle cut or 4 for a sharp one. The default is 4.</dd>
+      <dt>Strength</dt>
+      <dd>How much of the smoothing is used, from 0 to 100 %. The default is 100 %.</dd>
+      <dt>Limbs</dt>
+      <dd>The limbs to smooth. Leave the list empty to use every keyed limb.</dd>
+      <dt>Rotation X, Rotation Y, Rotation Z, Position X, Position Y, Position Z</dt>
+      <dd>The channels to smooth. All six are on at first.</dd>
+      <dt>Frames</dt>
+      <dd>The first and last frame to smooth. They start as the range of the selected keys, or the whole animation.</dd>
+      <dt>Blend in, Blend out</dt>
+      <dd>The number of frames, from 0 to 120, over which the smoothing eases in at the start of the range and out at the end.</dd>
+      <dt>Presets</dt>
+      <dd>Light, Heavy, Soft Gaussian and Capture clean-up. Presets you save yourself appear in the same list.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, after posing a character from a video, smooth with the Heavy preset, then raise the Cut-off a little if the motion has lost too much snap.</p>
+    <h4>See Also</h4>
+    <p><a href="#f-gaussian">Gaussian Smooth</a> and <a href="#f-capture-cleanup">Mocap Cleanup</a>.</p>
+  </article>
+
+  <article class="tool" id="f-gaussian">
+    <h3>Gaussian Smooth</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Clean up ‣ Gaussian smooth</dd><dd>The Curve editor's Clean up button</dd>
+    </dl>
+    <p>Gaussian smooth softens everything evenly. Every key is blended with the keys around it, so small and large moves are rounded alike, and the result is a gentle, uniform softening. It runs the same tool as <a href="#f-smooth">Butterworth Smooth</a> with the Gaussian filter chosen, and every option of that tool applies here too.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Width</dt>
+      <dd>For the Gaussian filter, how many frames each key is blended over, from 0.3 to 20. Wider is smoother. The default is 1.5.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, if small shakes remain after a Butterworth pass, a Gaussian smooth with a Width of 2 rounds them off.</p>
+  </article>
+
+  <article class="tool" id="f-peaks">
+    <h3>Peak Removal</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Clean up ‣ Peak removal</dd>
+    </dl>
+    <p>A peak is a pose that jumps far away from the line between its neighbours for a frame or two and then comes back. Peak removal puts each peak back on the line between the frames either side of it. It works on the selected keys, the selected limb or every limb, and it changes only the peaks.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Peaks over</dt>
+      <dd>A turn further than this many degrees off the line between its neighbours is a peak, from 0.2 to 45. The default is 4.</dd>
+      <dt>Moves over</dt>
+      <dd>A move further than this many studs off the line between its neighbours is a peak, from 0.005 to 2. The default is 0.12.</dd>
+      <dt>Longest peak</dt>
+      <dd>A run of up to this many frames off the line counts as one peak, from 1 to 8. The default is 1.</dd>
+      <dt>Rotation X, Rotation Y, Rotation Z, Position X, Position Y, Position Z</dt>
+      <dd>The channels to check. All six are on at first.</dd>
+      <dt>Limbs, Frames</dt>
+      <dd>The limbs and the frames to check. They start as the limbs and the range of the selected keys.</dd>
+      <dt>Presets</dt>
+      <dd>Capture pops, Single frames and Turns only.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a clip posed from a video often has single frames where a hand jumps out of place. Peak removal pulls those frames back in without smoothing the rest of the motion.</p>
+  </article>
+
+  <article class="tool" id="f-euler">
+    <h3>Euler Filter</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Clean up ‣ Euler filter</dd>
+    </dl>
+    <p>Euler filter turns back a limb that flips half a turn in one frame. Imported and captured motion can contain a frame where a forearm or a hand spins round and then returns. The filter finds the flipped frames, turns their keys back so the motion runs smoothly, and keeps the limbs that the flipped limb carries where they were in the world. When no flip is found, the message says so.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Flip over</dt>
+      <dd>A turn of more than this many degrees between two frames may be a flip, from 20 to 175. The default is 100.</dd>
+      <dt>Back under</dt>
+      <dd>A turn counts as a flip when a half turn about one of the limb's own axes brings the limb back to within this many degrees, from 1 to 90. The default is 30.</dd>
+      <dt>Limbs, Frames</dt>
+      <dd>Only flips inside these limbs and frames are turned back. They start as the limbs and the range of the selected keys.</dd>
+      <dt>Presets</dt>
+      <dd>Sensitive, Strict and Big flips only.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, if a hand twists through a full spin for one frame in a clip from motion capture, run the Euler filter on that hand and the twist disappears.</p>
+  </article>
+
+  <article class="tool" id="f-unbake">
+    <h3>Unbake at Contacts</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Clean up ‣ Unbake at contacts</dd>
+    </dl>
+    <p>Unbake at contacts turns an animation that has a key on every frame into a few key poses that you can edit. It keeps the frames where the feet land and lift, the frames where a hand, foot, the head or the weapon tip slows to a stop or turns, and then adds whatever frames it needs until every frame plays within the Error you allow. The keys at the start and end of the stretch and at foot contacts are Keys, and the keys at turning points and at frames added to keep the error down are Breakdowns.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Error</dt>
+      <dd>The most a frame may be off after the keys are thinned, in degrees, from 0.1 to 10. The default is 1.5.</dd>
+      <dt>Studs a degree</dt>
+      <dd>How many studs of travel count as one degree of error, from 0.005 to 0.5. The default is 0.03.</dd>
+      <dt>Foot contacts</dt>
+      <dd>Keys where a foot lands and lifts. It is on at first.</dd>
+      <dt>Contact height</dt>
+      <dd>A sole this many studs from the floor or closer is in contact, from 0.01 to 2. The default is 0.25.</dd>
+      <dt>Slide under</dt>
+      <dd>A sole in contact that moves less than this many studs in a frame is planted, from 0.005 to 0.5. The default is 0.03.</dd>
+      <dt>Turning points</dt>
+      <dd>Keys where a limb slows to a stop or turns. It is on at first.</dd>
+      <dt>Slow under</dt>
+      <dd>A hand, foot, head or weapon tip moving slower than this share of its top speed is at a turning point, from 1 to 100 %. The default is 35 %.</dd>
+      <dt>Turn over</dt>
+      <dd>A change of direction bigger than this many degrees while moving at speed is a turning point, from 5 to 175. The default is about 73.</dd>
+      <dt>Moving over</dt>
+      <dd>A move counts as at speed above this share of the top speed, from 0 to 50 %. The default is 10 %.</dd>
+      <dt>Same frames</dt>
+      <dd>Keys every limb on the same frames. When it is off, each limb gets the frames it needs. It is on at first.</dd>
+      <dt>New keys</dt>
+      <dd>Smooth, which is auto clamped, or Linear. This sets how the kept keys move into each other.</dd>
+      <dt>Limbs</dt>
+      <dd>The limbs to unbake. They start as the selected limbs, and an empty list means every keyed limb.</dd>
+      <dt>Presets</dt>
+      <dd>Tight, Loose, Contacts only and Turns only.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, an imported or captured animation with a key on every frame is hard to adjust. Unbake it, and a run reduces to the poses at the foot contacts and at the turning points of the arms, which you can edit pose by pose.</p>
+  </article>
+
+  <article class="tool" id="f-capture-cleanup">
+    <h3>Mocap Cleanup</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Clean up ‣ Mocap cleanup</dd>
+      <dt>Needs</dt><dd>A rig with legs</dd>
+    </dl>
+    <p>Mocap cleanup prepares a captured animation, from a video or a motion capture file, in one step. It smooths the motion, puts the body at the right height so that planted feet stand on the floor, plants feet that slide and, if you choose In place, takes out the body's travel over the floor. Jumps keep their height. The whole cleanup is one undo step.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Smooth</dt>
+      <dd>How hard to smooth every limb, from 0 to 100 %. At 0 the motion is left as it is and at 100 it is smoothed hardest. The default is 40 %.</dd>
+      <dt>Order</dt>
+      <dd>How steeply the smoothing cuts the shake. Choose 2 for a gentle cut or 4 for a sharp one. The default is 2.</dd>
+      <dt>Feet on floor</dt>
+      <dd>Raises or lowers the body so that a planted foot stands on the floor. It is on at first.</dd>
+      <dt>Planted under</dt>
+      <dd>A foot that moves less than this many studs in a frame counts as planted, from 0.005 to 0.5. The default is 0.08. It shows while Feet on floor is on.</dd>
+      <dt>Sole within</dt>
+      <dd>A planted foot this close to the lowest sole of that frame stands on the floor, from 0.005 to 0.5 studs. The default is 0.05. It shows while Feet on floor is on.</dd>
+      <dt>Lock feet</dt>
+      <dd>Plants feet that slide. It is on at first.</dd>
+      <dt>Travel</dt>
+      <dd>Keep the travel leaves the body's movement over the floor as it is. In place takes the travel out and keeps the body's height and turning.</dd>
+      <dt>Body turn error, Body move error</dt>
+      <dd>The body's keys are thinned so they play within this many degrees, from 0.01 to 5, and this many studs, from 0.001 to 0.5. The defaults are 0.4 degrees and 0.01 studs.</dd>
+      <dt>Presets</dt>
+      <dd>Light, Heavy, In place and Smooth only.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, after posing a character from a video, run Mocap cleanup with the Light preset. The character stops floating above the floor and its feet stop skating.</p>
+  </article>
+
+  <article class="tool" id="f-cleanchain">
+    <h3>Cleanup Stack</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Clean up ‣ Cleanup stack</dd>
+    </dl>
+    <p>Cleanup stack runs several clean-up tools one after another in one step, each with its own values. It saves you from running the same sequence by hand on every captured animation. The tool runs as soon as you choose it, and the stack opens in Adjust.</p>
+    <p>Each step shows its name with a switch to run or skip it, arrows to run it sooner or later, and a button to take it out. Click a step to open its values. The limbs and frames you set for the whole stack go into every step that has them.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Limbs, Frames</dt>
+      <dd>The limbs and frames that every step works on. They start as the limbs and the range of the selected keys.</dd>
+      <dt>Steps</dt>
+      <dd>The list of steps. A new stack holds Peak removal, a Gaussian smooth and Reduce keys.</dd>
+      <dt>Add a step</dt>
+      <dd>Lists the clean-up tools and adds the one you choose to the end of the stack.</dd>
+      <dt>Presets</dt>
+      <dd>Capture clean-up runs Mocap cleanup, the Euler filter, a Butterworth smooth and Reduce keys. Polish runs Peak removal, a Gaussian smooth and Reduce keys. Game-ready runs the Euler filter and Reduce keys. Stacks you save yourself appear in the same list.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, to prepare every clip you record from video the same way, choose the Capture clean-up preset and save any changes you make as your own preset for the next clip.</p>
+  </article>
+
+  <article class="tool" id="f-reduce">
+    <h3>Reduce Keys</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Clean up ‣ Reduce keys</dd>
+    </dl>
+    <p>Reduce keys removes the keys an animation does not need. A key goes when the keys on either side of it play within the error you allow, so the animation looks the same with far fewer keys. It is meant for an animation that has a key on every frame, such as one from a video or from motion capture. The message afterwards says how many keys were kept.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Reduce by</dt>
+      <dd>Error removes keys while the animation stays within the errors you set. Share of the keys keeps the share of keys you set, and the keys that matter most stay.</dd>
+      <dt>Turn error</dt>
+      <dd>A key goes when the keys either side play within this many degrees of it, from 0.05 to 15. The default is 1. It shows when Reduce by is Error.</dd>
+      <dt>Move error</dt>
+      <dd>A key goes when the keys either side play within this many studs of it, from 0.001 to 1. The default is 0.03. It shows when Reduce by is Error.</dd>
+      <dt>Keep</dt>
+      <dd>The share of the keys to keep, from 1 to 100 %. The default is 50 %. It shows when Reduce by is Share of the keys.</dd>
+      <dt>Limbs, Frames</dt>
+      <dd>The limbs and frames to thin. The frames start as the whole animation.</dd>
+      <dt>Presets</dt>
+      <dd>Fine, Coarse, Rough and Keep a quarter.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a captured run with 600 keys per limb plays the same with a few dozen. Reduce it with the Coarse preset, then check the result and use Fine if it has lost detail.</p>
+  </article>
+
+  <h2 class="part" id="key-modifiers">Curve Modifiers</h2>
+  <p>Curve modifiers add motion to a limb without adding or changing any key. They sit inside Clean up, and the Curve editor has the same rows. Every modifier works on the selected limb, so the Curve modifiers row is greyed until a limb is selected.</p>
+
+  <article class="tool" id="f-mods">
+    <h3>Curve Modifiers</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Clean up ‣ Curve modifiers</dd><dd>The Curve editor's Curve modifiers button</dd>
+    </dl>
+    <p>A curve modifier changes how a limb's track plays while its keys stay exactly as they are. Noise, a wiggle, a repeat of the keyed stretch and more play on top of the keys, so you can add life to a limb and remove it again without losing the original motion. Choose a kind in Add a modifier, set its values in the dialog and confirm. The rig shows the result while you change the values, and confirming is one undo step.</p>
+    <p>A new modifier goes on the selected limb and on every other limb that has selected keys. A limb can have several modifiers, and they work in the order of its list. Cycles, Stepped and the frame limits of Limits change the time first. The other kinds then change the value, each on what the modifiers above it gave, so a later Replace wins.</p>
+    <p>Once a limb has modifiers, the menu lists each of them by a short description, ticked while it is on. Choosing one opens its dialog so you can change it. The rows below the list manage them.</p>
+    <h4>Options</h4>
+    <p>Every kind has these values, apart from the exceptions noted. The values of each kind follow in the articles after this one.</p>
+    <dl class="opts">
+      <dt>Rotation X, Rotation Y, Rotation Z, Position X, Position Y, Position Z</dt>
+      <dd>The channels the modifier changes. A new modifier starts with the channels showing in the Curve editor, or with the three rotation channels when none show. Cycles and Stepped act on every channel and have no channel boxes.</dd>
+      <dt>Influence</dt>
+      <dd>How much of the modifier is used, from 0 to 200 %. The default is 100 %.</dd>
+      <dt>Blend</dt>
+      <dd>For Noise, Wiggle, Function and Generator. Add on top adds the modifier's value to the motion, Replace puts it in place of the motion, Subtract takes it away and Multiply multiplies the motion by it.</dd>
+      <dt>Influence over its frames</dt>
+      <dd>A curve across the modifier's frames that changes its influence over time. Click the curve to add a point, drag a point to move it and right-click a point to remove it.</dd>
+      <dt>Frames</dt>
+      <dd>The first and last frame the modifier is active on.</dd>
+      <dt>Fade</dt>
+      <dd>The number of frames, from 0 to 120, over which the modifier eases in at its first frame and out at its last.</dd>
+    </dl>
+    <p>Number boxes take sums, such as <code>2*pi</code>, <code>90/4</code> or <code>max(1, 3) + 2^2</code>. The rows below the list of a limb's modifiers manage them.</p>
+    <dl class="opts">
+      <dt>Turn on or off</dt>
+      <dd>Lists the limb's modifiers. Choosing one switches it on or off without losing its values.</dd>
+      <dt>Delete</dt>
+      <dd>Lists the limb's modifiers. Choosing one removes it.</dd>
+      <dt>Order</dt>
+      <dd>Appears when the limb has more than one modifier. Move up and Move down change the order in which they work.</dd>
+      <dt>Save as my look</dt>
+      <dd>Keeps a modifier's values under a name you type. The first row keeps it for every place you open, and the In this place row keeps it in the place itself, where everyone who opens the place can use it. Your looks sit beside each kind in Add a modifier. A kind that has looks opens a list with the kind itself first, then My looks and In this place, and each look has Use and Delete.</dd>
+    </dl>
+    <h4>Notes</h4>
+    <p>When you save, the animation your game plays holds the result of the modifiers as keys, and Framez keeps the modifiers beside it, so they open again as modifiers. <a href="#f-modbake">Bake to Keys</a> turns a limb's modifiers into keys for good.</p>
+    <h4>Example</h4>
+    <p>For example, to give an idle some life, add a Noise modifier to the spine and the head with a low Strength. The keys of the idle are untouched, and you can switch the noise off at any time to compare.</p>
+  </article>
+
+  <article class="tool" id="f-modcopy">
+    <h3>Copy Modifiers</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Clean up ‣ Curve modifiers ‣ Copy and paste ‣ Copy modifiers</dd>
+    </dl>
+    <p>Copy modifiers copies every modifier of the selected limb, with their values, for the rest of the Studio session. The row is greyed, and says so, when the limb has no modifiers. Use <a href="#f-modpaste">Paste Modifiers</a> or <a href="#f-modpasterep">Paste and Replace</a> to put them on other limbs.</p>
+  </article>
+
+  <article class="tool" id="f-modpaste">
+    <h3>Paste Modifiers</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Clean up ‣ Curve modifiers ‣ Copy and paste ‣ Paste modifiers</dd>
+    </dl>
+    <p>Paste modifiers adds the copied modifiers to the selected limb and to every other limb that has selected keys, after the modifiers those limbs already have. Locked limbs are skipped. It is one undo step, and the row is greyed until a limb's modifiers have been copied.</p>
+    <h4>Example</h4>
+    <p>For example, copy the Noise from one arm, select keys on the other arm and the head, and paste. All three limbs now move with the same kind of noise.</p>
+  </article>
+
+  <article class="tool" id="f-modpasterep">
+    <h3>Paste and Replace</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Clean up ‣ Curve modifiers ‣ Copy and paste ‣ Paste and replace</dd>
+    </dl>
+    <p>Paste and replace puts the copied modifiers on the selected limb and on every other limb that has selected keys in place of the modifiers those limbs have now. Locked limbs are skipped. It is one undo step, and the row is greyed until a limb's modifiers have been copied.</p>
+  </article>
+
+  <article class="tool" id="f-modnoise">
+    <h3>Noise</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Clean up ‣ Curve modifiers ‣ Add a modifier ‣ Noise...</dd>
+    </dl>
+    <p>Noise adds smooth random motion to the selected channels. The motion drifts up and down by a random amount that changes gradually, never in sudden jumps.</p>
+    <h4>Options</h4>
+    <p>The common values described under <a href="#f-mods">Curve Modifiers</a> apply as well.</p>
+    <dl class="opts">
+      <dt>Strength</dt>
+      <dd>How far the noise moves the limb, in degrees on rotation channels and studs on position channels, from 0 to 180. The default is 2.</dd>
+      <dt>Scale</dt>
+      <dd>The number of frames between bumps, from 0.5 to 240. A larger scale gives slower drift. The default is 8.</dd>
+      <dt>Phase</dt>
+      <dd>Another random pattern for the same settings, from 0 to 9999. Each new Noise starts with its own.</dd>
+      <dt>Offset</dt>
+      <dd>Shifts the pattern in time by a number of frames.</dd>
+      <dt>Depth</dt>
+      <dd>The number of finer layers of detail added on top of the main pattern, from 0 to 8. The default is 1.</dd>
+      <dt>Lacunarity</dt>
+      <dd>How much faster each finer layer varies than the one before it, from 1 to 8. The default is 2.</dd>
+      <dt>Roughness</dt>
+      <dd>How much of the strength each finer layer keeps from the one before it, from 0 to 1. The default is 0.5.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a Strength of 1 with a Scale of 20 on the head of an idle makes it drift slowly and never hold perfectly still.</p>
+  </article>
+
+  <article class="tool" id="f-modwiggle">
+    <h3>Wiggle</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Clean up ‣ Curve modifiers ‣ Add a modifier ‣ Wiggle...</dd>
+    </dl>
+    <p>Wiggle adds a wave to the selected channels that can die out over time. It begins at the frame you choose and swings back and forth at a steady rate, fading according to its Decay. It is what a tail, an antenna or a hanging chain does after a hit.</p>
+    <h4>Options</h4>
+    <p>The common values described under <a href="#f-mods">Curve Modifiers</a> apply as well.</p>
+    <dl class="opts">
+      <dt>Amplitude</dt>
+      <dd>How far the wave swings, in degrees or studs, from 0 to 180. The default is 6.</dd>
+      <dt>Frequency</dt>
+      <dd>How many swings a second, from 0.1 to 30. The default is 3.</dd>
+      <dt>Decay</dt>
+      <dd>How quickly the wave dies out, per second, from 0 to 30. At 0 it never dies out. The default is 3.</dd>
+      <dt>Start</dt>
+      <dd>The frame the wave begins on. A new Wiggle starts at the playhead.</dd>
+      <dt>Phase</dt>
+      <dd>Where in its swing the wave starts, as a fraction of a turn from 0 to 1.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, to make an antenna keep wobbling after a hit lands on frame 30, set Start to 30 and give the Wiggle a Decay of 4, so the wobble fades over about a second.</p>
+  </article>
+
+  <article class="tool" id="f-modfunction">
+    <h3>Function</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Clean up ‣ Curve modifiers ‣ Add a modifier ‣ Function...</dd>
+    </dl>
+    <p>Function adds the value of a mathematical function of the frame number to the selected channels. The value is Amplitude times the function of the Phase multiplier times the frame plus the Phase offset, plus the Value offset. Where the function has no value, for example the square root or logarithm of a negative number, the modifier adds nothing.</p>
+    <h4>Options</h4>
+    <p>The common values described under <a href="#f-mods">Curve Modifiers</a> apply as well.</p>
+    <dl class="opts">
+      <dt>Function</dt>
+      <dd>Sine, Cosine, Tangent, Square root, Natural log or Normalised sine. Sine is the default.</dd>
+      <dt>Amplitude</dt>
+      <dd>What the function is multiplied by, in degrees or studs. The default is 10.</dd>
+      <dt>Phase multiplier</dt>
+      <dd>How quickly the function runs, per frame. The default is 0.2.</dd>
+      <dt>Phase offset</dt>
+      <dd>Shifts the function along the frames.</dd>
+      <dt>Value offset</dt>
+      <dd>A constant added to the result, in degrees or studs.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a Sine with an Amplitude of 5 and a Phase multiplier of 0.3 on a hovering creature's vertical position gives it a steady bob without any keys.</p>
+  </article>
+
+  <article class="tool" id="f-modgenerator">
+    <h3>Generator</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Clean up ‣ Curve modifiers ‣ Add a modifier ‣ Generator...</dd>
+    </dl>
+    <p>Generator adds the value of a polynomial of the frame number to the selected channels, where the frame number is the variable. Higher orders give curves that bend more. A new Generator is a straight line that adds one degree, or one stud, for every frame.</p>
+    <h4>Options</h4>
+    <p>The common values described under <a href="#f-mods">Curve Modifiers</a> apply as well.</p>
+    <dl class="opts">
+      <dt>Form</dt>
+      <dd>Expanded writes the polynomial as a sum of terms, with a row for the Constant, x, x^2 and so on. Factorized writes it as a product of pairs, with an A and a B for each pair that make up (A x + B).</dd>
+      <dt>Order</dt>
+      <dd>The order of the polynomial, from 1 to 10. Changing it adds or removes coefficient rows.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a second-order Generator with a positive x term and a small negative x^2 term on a prop's height adds an arc that rises and then falls over the animation.</p>
+  </article>
+
+  <article class="tool" id="f-modenvelope">
+    <h3>Envelope</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Clean up ‣ Curve modifiers ‣ Add a modifier ‣ Envelope...</dd>
+    </dl>
+    <p>Envelope reshapes the range of a limb's motion over time. The part of the motion between Reference plus Min and Reference plus Max is stretched to the Min and Max set at each point, and the values between points are blended. Points that start close together and end far apart make the motion grow over the animation, and the reverse makes it shrink. A new Envelope has two points, on the first and last frame, with Min -1 and Max 1.</p>
+    <h4>Options</h4>
+    <p>The common values described under <a href="#f-mods">Curve Modifiers</a> apply as well, except Blend.</p>
+    <dl class="opts">
+      <dt>Reference</dt>
+      <dd>The value that Min and Max are measured from, in degrees or studs. The default is 0.</dd>
+      <dt>Min, Max</dt>
+      <dd>The range of the original motion that is reshaped, measured from the Reference. The defaults are -1 and 1.</dd>
+      <dt>Point</dt>
+      <dd>Each point has a frame, a min and a max. The min and max are where the range is stretched to at that frame. A delete button on the row removes the point.</dd>
+      <dt>Add a point at the playhead</dt>
+      <dd>Adds a point on the current frame with the min and max the envelope has there.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a sway keyed at a constant size can be made to settle by adding a point near the end with a smaller min and max, so the sway shrinks toward the end of the animation.</p>
+  </article>
+
+  <article class="tool" id="f-modlimits">
+    <h3>Limits</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Clean up ‣ Curve modifiers ‣ Add a modifier ‣ Limits...</dd>
+    </dl>
+    <p>Limits keeps a limb's value between a lowest and a highest value, and can hold the time before or after a frame. A value past a limit stays at the limit. A time limit shows the pose of the limit frame for every frame before or after it.</p>
+    <h4>Options</h4>
+    <p>The common values described under <a href="#f-mods">Curve Modifiers</a> apply as well, except Blend.</p>
+    <dl class="opts">
+      <dt>Lowest</dt>
+      <dd>A tick and a value, in degrees or studs. When ticked, the value cannot go below it. It is on at -30 at first.</dd>
+      <dt>Highest</dt>
+      <dd>A tick and a value, in degrees or studs. When ticked, the value cannot go above it. It is on at 30 at first.</dd>
+      <dt>Hold before</dt>
+      <dd>A tick and a frame. When ticked, every frame before this frame shows the motion of this frame.</dd>
+      <dt>Hold after</dt>
+      <dd>A tick and a frame. When ticked, every frame after this frame shows the motion of this frame.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, after adding a Wiggle to an elbow, add Limits with a Lowest of 0, so the elbow can swing about but never bends backwards.</p>
+  </article>
+
+  <article class="tool" id="f-modcycles">
+    <h3>Cycles</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Clean up ‣ Curve modifiers ‣ Add a modifier ‣ Cycles...</dd>
+    </dl>
+    <p>Cycles plays the keyed stretch of a limb again before its first key and after its last key. The keyed stretch is the part from the limb's first key to its last. You can key one cycle of a walk or a spin and have it carry on for as long as the animation lasts.</p>
+    <p>Cycles works on all channels and has no channel boxes. Its Influence blends the time instead of the value.</p>
+    <h4>Options</h4>
+    <p>The common values described under <a href="#f-mods">Curve Modifiers</a> apply as well, except the channels and Blend.</p>
+    <dl class="opts">
+      <dt>Before, After</dt>
+      <dd>What happens before the first key and after the last. None leaves the limb still. Repeat plays the stretch again unchanged. Offset repeats it and adds the change the stretch made each time, so a limb that travels keeps travelling. Mirrored plays every other copy backwards. Linear carries on at the speed the stretch ended with instead of repeating. Both start on Repeat.</dd>
+      <dt>Cycles before, Cycles after</dt>
+      <dd>How many times the stretch repeats before it stops and holds its last pose, from 0 to 999. At 0 it repeats without end.</dd>
+      <dt>Smooth seam</dt>
+      <dd>The number of frames, from 0 to 240, over which the end of a repeat eases into the start of the next so there is no jump. It applies when After is Repeat.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, key a single full turn of a spinning blade and set After to Offset. The blade keeps turning in the same direction for the whole animation.</p>
+  </article>
+
+  <article class="tool" id="f-modloop">
+    <h3>Loop</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Clean up ‣ Curve modifiers ‣ Add a modifier ‣ Loop...</dd>
+    </dl>
+    <p>Loop is the Cycles modifier set to repeat in both directions and to ease the end of each repeat into the start over 6 frames. It opens the same dialog as <a href="#f-modcycles">Cycles</a>, with the same values, and a limb keyed for one breath or one step keeps repeating that motion without a visible seam.</p>
+    <h4>Example</h4>
+    <p>For example, key one breath of a chest over 40 frames, add Loop, and the chest keeps breathing for as long as the animation runs.</p>
+  </article>
+
+  <article class="tool" id="f-modstepped">
+    <h3>Stepped</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Clean up ‣ Curve modifiers ‣ Add a modifier ‣ Stepped...</dd>
+    </dl>
+    <p>Stepped holds a limb's pose for a number of frames at a time, so the motion plays in steps instead of continuously. Stepped acts on all channels and has no channel boxes.</p>
+    <h4>Options</h4>
+    <p>The common values described under <a href="#f-mods">Curve Modifiers</a> apply as well, except the channels and Blend.</p>
+    <dl class="opts">
+      <dt>Step</dt>
+      <dd>The number of frames each pose is held for, from 1 to 60. The default is 2.</dd>
+      <dt>Offset</dt>
+      <dd>The frame the first step starts on, from 0 to 60. The default is 0.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a Step of 2 puts a limb on twos, which gives a smooth animation the look of hand-drawn animation.</p>
+  </article>
+
+  <article class="tool" id="f-modbake">
+    <h3>Bake to Keys</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Key ‣ Clean up ‣ Curve modifiers ‣ Bake to keys</dd>
+    </dl>
+    <p>Bake to keys turns the selected limb's modifiers into keys. It reads the limb as it plays with its modifiers on, writes a key on every frame of the animation, thins the result to the keys the motion needs, and removes the modifiers that were on. Modifiers that were switched off are kept. It is one undo step, and the row is greyed, and says so, when the limb has no modifiers switched on.</p>
+    <h4>Example</h4>
+    <p>For example, once you are happy with the noise on an idle, bake it so the motion is part of the keys and the limb no longer depends on the modifier.</p>
+  </article>
+<nav class="pager" aria-label="More pages"><a class="prev" href="edit.html"><small>Previous</small><span>Edit</span></a><a class="next" href="pose.html"><small>Next</small><span>Pose</span></a></nav><footer class="foot">Framez by soldier. This manual covers Framez 17.99.</footer></article><aside class="toc" aria-label="On this page"><a class="lv0" href="#f-key">Insert Key</a><a class="lv0" href="#f-easing">Easing</a><a class="lv1" href="#key-timing">Timing</a><a class="lv2" href="#f-stretch">Scale Keys</a><a class="lv2" href="#f-movekeys">Move Keys</a><a class="lv2" href="#f-ripple">Ripple Edits</a><a class="lv2" href="#f-retime">Retime Tool</a><a class="lv2" href="#f-retimeease">Retime Easing</a><a class="lv2" href="#f-insertframe">Insert Frame</a><a class="lv2" href="#f-removeframe">Remove Frame</a><a class="lv2" href="#f-offset">Offset Limbs</a><a class="lv2" href="#f-snap">Snap Keys to Video Hits</a><a class="lv2" href="#f-stretchbox">Stretch by Dragging</a><a class="lv1" href="#key-range">Range</a><a class="lv2" href="#f-reverse">Reverse</a><a class="lv2" href="#f-repeat">Repeat</a><a class="lv2" href="#f-fill">Fill to Playhead</a><a class="lv2" href="#f-pingpong">Ping-Pong</a><a class="lv2" href="#f-croprange">Delete Range</a><a class="lv2" href="#f-cropto">Crop to Range</a><a class="lv2" href="#f-bake2">Bake Keys</a><a class="lv2" href="#f-reshape">Reshape Keys</a><a class="lv1" href="#key-track">Track</a><a class="lv2" href="#f-track">Select Track</a><a class="lv2" href="#f-trackearlier">Move 1 Frame Earlier</a><a class="lv2" href="#f-tracklater">Move 1 Frame Later</a><a class="lv2" href="#f-tracklock">Lock Track</a><a class="lv1" href="#key-times">Key Times and Types</a><a class="lv2" href="#f-sharetimes">Share Key Times</a><a class="lv2" href="#f-copytimes">Copy Key Times</a><a class="lv2" href="#f-pastetimes">Paste Key Times</a><a class="lv2" href="#f-pastetimesonly">Paste Key Times Only</a><a class="lv2" href="#f-keytypes">Key Types</a><a class="lv2" href="#f-selectbytype">Select by Key Type</a><a class="lv1" href="#key-loop">Loop</a><a class="lv2" href="#f-loops">Looping</a><a class="lv2" href="#f-makeloop">Make Cyclic</a><a class="lv1" href="#key-layers">Layers</a><a class="lv2" href="#f-layersmenu">Add Layer</a><a class="lv2" href="#f-addoverride">Add Override Layer</a><a class="lv2" href="#f-activelayer">Active Layer</a><a class="lv2" href="#f-selectedlayer">Selected Layer</a><a class="lv2" href="#f-watchonly-menu">Preview</a><a class="lv2" href="#f-clipblockrow">Clip Block</a><a class="lv2" href="#f-mergebase">Merge into Base</a><a class="lv1" href="#key-cleanup">Clean Up</a><a class="lv2" href="#f-check-menu">Check Animation</a><a class="lv2" href="#f-smooth">Butterworth Smooth</a><a class="lv2" href="#f-gaussian">Gaussian Smooth</a><a class="lv2" href="#f-peaks">Peak Removal</a><a class="lv2" href="#f-euler">Euler Filter</a><a class="lv2" href="#f-unbake">Unbake at Contacts</a><a class="lv2" href="#f-capture-cleanup">Mocap Cleanup</a><a class="lv2" href="#f-cleanchain">Cleanup Stack</a><a class="lv2" href="#f-reduce">Reduce Keys</a><a class="lv1" href="#key-modifiers">Curve Modifiers</a><a class="lv2" href="#f-mods">Curve Modifiers</a><a class="lv2" href="#f-modcopy">Copy Modifiers</a><a class="lv2" href="#f-modpaste">Paste Modifiers</a><a class="lv2" href="#f-modpasterep">Paste and Replace</a><a class="lv2" href="#f-modnoise">Noise</a><a class="lv2" href="#f-modwiggle">Wiggle</a><a class="lv2" href="#f-modfunction">Function</a><a class="lv2" href="#f-modgenerator">Generator</a><a class="lv2" href="#f-modenvelope">Envelope</a><a class="lv2" href="#f-modlimits">Limits</a><a class="lv2" href="#f-modcycles">Cycles</a><a class="lv2" href="#f-modloop">Loop</a><a class="lv2" href="#f-modstepped">Stepped</a><a class="lv2" href="#f-modbake">Bake to Keys</a></aside></div></div></div><div class="scrim" data-scrim hidden></div><div class="search" id="search" hidden role="dialog" aria-modal="true" aria-label="Search the manual"><div class="search-box"><div class="search-field"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg><input id="search-q" type="search" placeholder="Search the manual" autocomplete="off"><kbd>Esc</kbd></div><div class="search-results" id="search-results"></div></div></div><script src="assets/search-index.js"></script><script src="assets/site.js"></script></body></html>

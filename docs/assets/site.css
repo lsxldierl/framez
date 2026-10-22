@@ -233,3 +233,31 @@ ol.callouts, ol.steps, ul.make { margin: 4px 0 16px; padding-left: 22px; }
 ol.callouts li, ol.steps li, ul.make li { margin: 4px 0; }
 ol.callouts li::marker { color: var(--accent-ink); font-family: var(--f-mono); font-size: 12px; }
 h3.eyebrow { margin: 32px 0 10px; color: var(--t1); font-size: 17px; font-weight: 600; letter-spacing: -0.01em; }
+.doc h2.part { margin: 56px 0 8px; color: var(--t1); font-size: 24px; line-height: 30px; font-weight: 600;
+  letter-spacing: -0.015em; text-wrap: balance; }
+.doc h2.part + p { color: var(--body); }
+article.tool { padding: 28px 0 8px; border-top: 1px solid var(--line); }
+.doc > article.tool:first-of-type, .doc h2.part + article.tool, .doc h2.part + p + article.tool { border-top: 0; padding-top: 12px; }
+article.tool > h3 { margin: 0 0 10px; color: var(--t1); font-size: 19px; line-height: 26px; font-weight: 600; letter-spacing: -0.012em; }
+article.tool h4, .doc section h4 { margin: 20px 0 6px; color: var(--t2); font-size: 11.5px; line-height: 16px; font-weight: 700;
+  letter-spacing: 0.07em; text-transform: uppercase; }
+dl.ref { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 3px 14px; margin: 0 0 14px; padding: 10px 14px;
+  background: var(--card); border: 1px solid var(--card-edge); border-radius: 8px; font-size: 13.5px; line-height: 21px; }
+dl.ref dt { grid-column: 1; color: var(--t3); font-weight: 600; }
+dl.ref dd { grid-column: 2; margin: 0; color: var(--t1); overflow-wrap: anywhere; }
+dl.opts { margin: 0 0 12px; }
+dl.opts dt { color: var(--t1); font-weight: 600; margin-top: 10px; }
+dl.opts dt:first-child { margin-top: 0; }
+dl.opts dd { margin: 2px 0 0 18px; }
+.shot.need { display: none; }
+ol.steps { padding-left: 24px; }
+ol.steps > li { margin: 0 0 14px; }
+ol.steps > li > p { margin: 0 0 4px; }
+ol.steps li::marker { color: var(--t3); font-family: var(--f-mono); font-size: 12px; }
+p.path { font-family: var(--f-mono); font-size: 12.5px; line-height: 19px; color: var(--t2); margin: 2px 0 8px !important; }
+p.needs { font: inherit; text-transform: none; letter-spacing: 0; color: var(--body); background: var(--card);
+  border: 1px solid var(--card-edge); border-radius: 8px; padding: 10px 14px; margin: 0 0 20px !important; }
+.doc ul.tutorials { padding-left: 20px; }
+.doc ul.tutorials li { margin: 0 0 8px; }
+.toc a.lv1 { font-weight: 600; color: var(--t1); margin-top: 6px; }
+.toc a.lv2 { padding-left: 22px; }

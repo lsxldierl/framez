@@ -1,0 +1,371 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Physics - Framez Manual</title><meta name="description" content="The Physics window runs one physics simulation over an animation and writes the result as keys, for a hit, a fall, wind or floating. You build the simulati"><link rel="icon" href="assets/favicon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"><link rel="stylesheet" href="assets/site.css"><script>try{var t=localStorage.getItem("framez-theme");if(t)document.documentElement.dataset.look=t}catch(e){}</script></head><body><div class="shell"><nav class="side" id="side" aria-label="Docs"><div class="side-head"><a class="brand" href="index.html"><svg class="mark" viewBox="-34.0 -34.0 68.0 68.0" aria-hidden="true"><polygon points="-28.00,0.00 0.00,-28.00 28.00,0.00 0.00,28.00" fill="#3c4045"/><polygon points="-18.50,0.00 0.00,-18.50 0.00,0.00" fill="#e8443c"/><polygon points="0.00,-18.50 9.25,-9.25 0.00,0.00" fill="#9e2b2b"/><polygon points="9.25,-9.25 9.25,0.00 0.00,0.00" fill="#ffffff"/><polygon points="9.25,-9.25 18.50,0.00 9.25,0.00" fill="#e8443c"/><polygon points="-18.50,0.00 0.00,0.00 -9.25,9.25" fill="#9e2b2b"/><polygon points="-9.25,9.25 0.00,0.00 0.00,18.50" fill="#ffffff"/><polygon points="0.00,0.00 18.50,0.00 0.00,18.50" fill="#ffffff"/><polygon points="26.30,-22.51 23.03,-18.03 17.70,-16.49 20.97,-20.97" fill="#e8443c"/><polygon points="-16.73,16.57 -17.63,18.42 -19.67,18.63 -18.77,16.78" fill="#e8443c"/></svg><i class="sep"></i><span>Manual</span></a><button class="iconbtn" type="button" data-search aria-label="Search the manual (Ctrl+K)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg></button></div><div class="side-scroll"><details class="grp"><summary><span>Getting Started</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="start.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="5.14,9.23 5.40,8.66 5.70,8.11 6.06,7.59 6.45,7.10 6.89,6.65 7.36,6.24 7.86,5.87 8.40,5.54 8.96,5.25 9.54,5.02 10.14,4.84 10.75,4.71 11.37,4.63 12.00,4.60 12.63,4.63 13.25,4.71 13.86,4.84 14.46,5.02 15.04,5.25 15.60,5.54 16.14,5.87 16.64,6.24 17.11,6.65 17.55,7.10 17.94,7.59 18.30,8.11 18.60,8.66 18.86,9.23"/><polyline points="18.86,14.77 18.60,15.34 18.30,15.89 17.94,16.41 17.55,16.90 17.11,17.35 16.64,17.76 16.14,18.13 15.60,18.46 15.04,18.75 14.46,18.98 13.86,19.16 13.25,19.29 12.63,19.37 12.00,19.40 11.37,19.37 10.75,19.29 10.14,19.16 9.54,18.98 8.96,18.75 8.40,18.46 7.86,18.13 7.36,17.76 6.89,17.35 6.45,16.90 6.06,16.41 5.70,15.89 5.40,15.34 5.14,14.77"/><polyline points="18.86,9.23 16.11,7.23"/><polyline points="18.86,9.23 19.45,5.88"/><polyline points="5.14,14.77 7.89,16.77"/><polyline points="5.14,14.77 4.55,18.12"/></svg><span>Getting Started</span></a><a href="setup.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="9.60,8.60 10.13,8.64 10.65,8.77 11.14,8.97 11.60,9.25 12.00,9.60 12.35,10.00 12.63,10.46 12.83,10.95 12.96,11.47 13.00,12.00 13.00,12.00 12.96,12.53 12.83,13.05 12.63,13.54 12.35,14.00 12.00,14.40 11.60,14.75 11.14,15.03 10.65,15.23 10.13,15.36 9.60,15.40 6.00,15.40 5.47,15.36 4.95,15.23 4.46,15.03 4.00,14.75 3.60,14.40 3.25,14.00 2.97,13.54 2.77,13.05 2.64,12.53 2.60,12.00 2.60,12.00 2.64,11.47 2.77,10.95 2.97,10.46 3.25,10.00 3.60,9.60 4.00,9.25 4.46,8.97 4.95,8.77 5.47,8.64 6.00,8.60"/><polygon points="18.00,8.60 18.53,8.64 19.05,8.77 19.54,8.97 20.00,9.25 20.40,9.60 20.75,10.00 21.03,10.46 21.23,10.95 21.36,11.47 21.40,12.00 21.40,12.00 21.36,12.53 21.23,13.05 21.03,13.54 20.75,14.00 20.40,14.40 20.00,14.75 19.54,15.03 19.05,15.23 18.53,15.36 18.00,15.40 14.40,15.40 13.87,15.36 13.35,15.23 12.86,15.03 12.40,14.75 12.00,14.40 11.65,14.00 11.37,13.54 11.17,13.05 11.04,12.53 11.00,12.00 11.00,12.00 11.04,11.47 11.17,10.95 11.37,10.46 11.65,10.00 12.00,9.60 12.40,9.25 12.86,8.97 13.35,8.77 13.87,8.64 14.40,8.60"/></svg><span>Installing the Framez Helper</span></a></div></details><details class="grp"><summary><span>Interface</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="window.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>The Framez Window</span></a><a href="workspaces.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.40,6.60 19.60,6.60"/><polyline points="4.40,12.00 19.60,12.00"/><polyline points="4.40,17.40 19.60,17.40"/></svg><span>Workspaces</span></a><a href="timeline.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="7.40,5.00 18.60,12.00 7.40,19.00"/></svg><span>Timeline and Toolbar</span></a><a href="anytool.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.40,13.60 4.60,8.80 9.40,4.00"/><polyline points="4.60,8.80 14.40,8.80 15.47,8.92 16.48,9.28 17.39,9.85 18.15,10.61 18.72,11.52 19.08,12.53 19.20,13.60 19.08,14.67 18.72,15.68 18.15,16.59 17.39,17.35 16.48,17.92 15.47,18.28 14.40,18.40 11.00,18.40"/></svg><span>Working with Tools</span></a></div></details><details class="grp"><summary><span>Menus</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="file.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="12.00,3.60 12.00,15.20"/><polyline points="7.20,10.60 12.00,15.40 16.80,10.60"/><polyline points="4.60,20.40 19.40,20.40"/></svg><span>File</span></a><a href="edit.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.40,13.60 4.60,8.80 9.40,4.00"/><polyline points="4.60,8.80 14.40,8.80 15.47,8.92 16.48,9.28 17.39,9.85 18.15,10.61 18.72,11.52 19.08,12.53 19.20,13.60 19.08,14.67 18.72,15.68 18.15,16.59 17.39,17.35 16.48,17.92 15.47,18.28 14.40,18.40 11.00,18.40"/></svg><span>Edit</span></a><a href="key.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon class="f" points="12.00,3.00 21.00,12.00 12.00,21.00 3.00,12.00"/></svg><span>Key</span></a><a href="pose.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="14.60,6.20 14.53,6.78 14.34,7.33 14.03,7.82 13.62,8.23 13.13,8.54 12.58,8.73 12.00,8.80 11.42,8.73 10.87,8.54 10.38,8.23 9.97,7.82 9.66,7.33 9.47,6.78 9.40,6.20 9.47,5.62 9.66,5.07 9.97,4.58 10.38,4.17 10.87,3.86 11.42,3.67 12.00,3.60 12.58,3.67 13.13,3.86 13.62,4.17 14.03,4.58 14.34,5.07 14.53,5.62 14.60,6.20"/><polyline points="12.00,9.40 12.00,15.20"/><polyline points="12.00,15.20 8.60,20.40"/><polyline points="12.00,15.20 15.40,20.40"/><polyline points="7.00,12.00 17.00,12.00"/></svg><span>Pose</span></a><a href="face.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.20,8.00 16.09,8.93 15.78,9.82 15.28,10.62 14.62,11.28 13.82,11.78 12.93,12.09 12.00,12.20 11.07,12.09 10.18,11.78 9.38,11.28 8.72,10.62 8.22,9.82 7.91,8.93 7.80,8.00 7.91,7.07 8.22,6.18 8.72,5.38 9.38,4.72 10.18,4.22 11.07,3.91 12.00,3.80 12.93,3.91 13.82,4.22 14.62,4.72 15.28,5.38 15.78,6.18 16.09,7.07 16.20,8.00"/><polyline points="5.14,18.83 5.40,18.26 5.70,17.71 6.06,17.19 6.45,16.70 6.89,16.25 7.36,15.84 7.86,15.47 8.40,15.14 8.96,14.85 9.54,14.62 10.14,14.44 10.75,14.31 11.37,14.23 12.00,14.20 12.63,14.23 13.25,14.31 13.86,14.44 14.46,14.62 15.04,14.85 15.60,15.14 16.14,15.47 16.64,15.84 17.11,16.25 17.55,16.70 17.94,17.19 18.30,17.71 18.60,18.26 18.86,18.83"/></svg><span>Face</span></a><a href="scene.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13.40,7.00 13.74,7.03 14.08,7.11 14.40,7.24 14.69,7.42 14.96,7.64 15.18,7.91 15.36,8.20 15.49,8.52 15.57,8.86 15.60,9.20 15.60,14.80 15.57,15.14 15.49,15.48 15.36,15.80 15.18,16.09 14.96,16.36 14.69,16.58 14.40,16.76 14.08,16.89 13.74,16.97 13.40,17.00 5.00,17.00 4.66,16.97 4.32,16.89 4.00,16.76 3.71,16.58 3.44,16.36 3.22,16.09 3.04,15.80 2.91,15.48 2.83,15.14 2.80,14.80 2.80,9.20 2.83,8.86 2.91,8.52 3.04,8.20 3.22,7.91 3.44,7.64 3.71,7.42 4.00,7.24 4.32,7.11 4.66,7.03 5.00,7.00"/><polygon points="15.60,10.60 21.20,7.60 21.20,16.40 15.60,13.40"/></svg><span>Scene</span></a><a href="game.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6.00,21.00 6.00,3.80"/><polyline points="6.00,4.60 18.40,4.60 15.60,8.60 18.40,12.60 6.00,12.60"/></svg><span>Game</span></a><a href="view.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="2.60,12.00 3.09,11.26 3.62,10.57 4.19,9.93 4.80,9.36 5.43,8.83 6.09,8.36 6.77,7.95 7.48,7.59 8.21,7.29 8.95,7.04 9.70,6.85 10.46,6.71 11.23,6.63 12.00,6.60 12.77,6.63 13.54,6.71 14.30,6.85 15.05,7.04 15.79,7.29 16.52,7.59 17.23,7.95 17.91,8.36 18.57,8.83 19.20,9.36 19.81,9.93 20.38,10.57 20.91,11.26 21.40,12.00 20.91,12.74 20.38,13.43 19.81,14.07 19.20,14.64 18.57,15.17 17.91,15.64 17.22,16.05 16.52,16.41 15.79,16.71 15.05,16.96 14.30,17.15 13.54,17.29 12.77,17.37 12.00,17.40 11.23,17.37 10.46,17.29 9.70,17.15 8.95,16.96 8.21,16.71 7.48,16.41 6.77,16.05 6.09,15.64 5.43,15.17 4.80,14.64 4.19,14.07 3.62,13.43 3.09,12.74 2.60,12.00"/><polygon points="15.00,12.00 14.92,12.67 14.70,13.30 14.35,13.87 13.87,14.35 13.30,14.70 12.67,14.92 12.00,15.00 11.33,14.92 10.70,14.70 10.13,14.35 9.65,13.87 9.30,13.30 9.08,12.67 9.00,12.00 9.08,11.33 9.30,10.70 9.65,10.13 10.13,9.65 10.70,9.30 11.33,9.08 12.00,9.00 12.67,9.08 13.30,9.30 13.87,9.65 14.35,10.13 14.70,10.70 14.92,11.33 15.00,12.00"/></svg><span>View</span></a><a href="help.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="5.60,12.00 9.80,16.20 18.40,6.80"/></svg><span>Help</span></a></div></details><details class="grp" open><summary><span>Windows</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="inspector.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="19.00,12.00 18.82,13.56 18.31,15.04 17.47,16.36 16.36,17.47 15.04,18.31 13.56,18.82 12.00,19.00 10.44,18.82 8.96,18.31 7.64,17.47 6.53,16.36 5.69,15.04 5.18,13.56 5.00,12.00 5.18,10.44 5.69,8.96 6.53,7.64 7.64,6.53 8.96,5.69 10.44,5.18 12.00,5.00 13.56,5.18 15.04,5.69 16.36,6.53 17.47,7.64 18.31,8.96 18.82,10.44 19.00,12.00"/><ellipse class="f" cx="12.00" cy="12.00" rx="2.40" ry="2.40"/></svg><span>Inspector</span></a><a href="curves.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="3.60,19.00 4.27,18.95 4.91,18.80 5.52,18.55 6.10,18.22 6.67,17.82 7.21,17.35 7.74,16.81 8.26,16.22 8.77,15.59 9.27,14.92 9.76,14.22 10.25,13.49 10.75,12.75 11.25,12.00 11.76,11.25 12.28,10.51 12.81,9.78 13.36,9.08 13.93,8.41 14.52,7.78 15.13,7.19 15.78,6.65 16.45,6.18 17.16,5.78 17.91,5.45 18.69,5.20 19.52,5.05 20.40,5.00"/><ellipse class="f" cx="12.00" cy="12.00" rx="1.60" ry="1.60"/></svg><span>Curve Editor</span></a><a href="modifiers.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Modifiers</span></a><a href="physics.html" aria-current="page"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Physics</span></a><a href="reference.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="18.20,5.20 18.58,5.23 18.94,5.32 19.29,5.46 19.61,5.66 19.90,5.90 20.14,6.19 20.34,6.51 20.48,6.86 20.57,7.22 20.60,7.60 20.60,16.40 20.57,16.78 20.48,17.14 20.34,17.49 20.14,17.81 19.90,18.10 19.61,18.34 19.29,18.54 18.94,18.68 18.58,18.77 18.20,18.80 5.80,18.80 5.42,18.77 5.06,18.68 4.71,18.54 4.39,18.34 4.10,18.10 3.86,17.81 3.66,17.49 3.52,17.14 3.43,16.78 3.40,16.40 3.40,7.60 3.43,7.22 3.52,6.86 3.66,6.51 3.86,6.19 4.10,5.90 4.39,5.66 4.71,5.46 5.06,5.32 5.42,5.23 5.80,5.20"/><polygon points="10.00,9.40 15.00,12.00 10.00,14.60"/></svg><span>Reference Video</span></a><a href="poses.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Poses</span></a><a href="camera.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13.40,7.00 13.74,7.03 14.08,7.11 14.40,7.24 14.69,7.42 14.96,7.64 15.18,7.91 15.36,8.20 15.49,8.52 15.57,8.86 15.60,9.20 15.60,14.80 15.57,15.14 15.49,15.48 15.36,15.80 15.18,16.09 14.96,16.36 14.69,16.58 14.40,16.76 14.08,16.89 13.74,16.97 13.40,17.00 5.00,17.00 4.66,16.97 4.32,16.89 4.00,16.76 3.71,16.58 3.44,16.36 3.22,16.09 3.04,15.80 2.91,15.48 2.83,15.14 2.80,14.80 2.80,9.20 2.83,8.86 2.91,8.52 3.04,8.20 3.22,7.91 3.44,7.64 3.71,7.42 4.00,7.24 4.32,7.11 4.66,7.03 5.00,7.00"/><polygon points="15.60,10.60 21.20,7.60 21.20,16.40 15.60,13.40"/></svg><span>Camera Preview</span></a><a href="sublines.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Subtitle Lines</span></a><a href="bench.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Test Bench</span></a><a href="check.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Check Animation</span></a><a href="prefs.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Preferences</span></a><a href="keyboard.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Keyboard Shortcuts</span></a><a href="scripting.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Scripting</span></a></div></details><details class="grp"><summary><span>Tutorials</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="recipes.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Tutorials</span></a><a href="r-skill.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Combat Skill</span></a><a href="r-animehit.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Hit with Effects</span></a><a href="r-idle.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making an Idle or Fidget</span></a><a href="r-cycle.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Walk, Run, Strafe or Backpedal</span></a><a href="r-video.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Copying a Move from a Video</span></a><a href="r-dance.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating a Dance to Music</span></a><a href="r-ugc.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making an Emote to Sell</span></a><a href="r-pack.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making an Animation Pack</span></a><a href="r-acro.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating Jumps, Flips and Spins</span></a><a href="r-ragdoll.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Ragdoll Fall or Hit Reaction</span></a><a href="r-acting.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating Talking, Reacting and Pointing</span></a><a href="r-cutscene.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Cutscene</span></a><a href="r-grab.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating a Grab, Throw or Finisher</span></a><a href="r-hold.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Picking Up, Passing and Throwing an Object</span></a><a href="r-faces.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating Faces on a Classic Head</span></a><a href="r-dynface.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating Faces on a Dynamic Head</span></a><a href="r-lipsync.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Setting up Lip Sync</span></a><a href="r-capture.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Capturing a Face from a Webcam</span></a><a href="r-bench.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Testing an Animation in the Game</span></a><a href="r-blender.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Editing an Animation in Blender</span></a><a href="r-import.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Starting from an Existing Animation</span></a><a href="r-graph.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Previewing Blends, Layers and Aim Offsets</span></a><a href="r-rig.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Setting up R15, Creature and Custom Rigs</span></a><a href="r-keys.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Setting Your Own Keyboard Shortcuts</span></a></div></details><details class="grp"><summary><span>Reference</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="shortcuts.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="5.40" cy="12.00" rx="1.70" ry="1.70"/><ellipse class="f" cx="12.00" cy="12.00" rx="1.70" ry="1.70"/><ellipse class="f" cx="18.60" cy="12.00" rx="1.70" ry="1.70"/></svg><span>Shortcut List</span></a><a href="trouble.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6.00,21.00 6.00,3.80"/><polyline points="6.00,4.60 18.40,4.60 15.60,8.60 18.40,12.60 6.00,12.60"/></svg><span>Troubleshooting</span></a></div></details></div><div class="side-foot"><a href="index.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Manual</span></a><a href="https://github.com/lsxldierl/framez/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="9.60,8.60 10.13,8.64 10.65,8.77 11.14,8.97 11.60,9.25 12.00,9.60 12.35,10.00 12.63,10.46 12.83,10.95 12.96,11.47 13.00,12.00 13.00,12.00 12.96,12.53 12.83,13.05 12.63,13.54 12.35,14.00 12.00,14.40 11.60,14.75 11.14,15.03 10.65,15.23 10.13,15.36 9.60,15.40 6.00,15.40 5.47,15.36 4.95,15.23 4.46,15.03 4.00,14.75 3.60,14.40 3.25,14.00 2.97,13.54 2.77,13.05 2.64,12.53 2.60,12.00 2.60,12.00 2.64,11.47 2.77,10.95 2.97,10.46 3.25,10.00 3.60,9.60 4.00,9.25 4.46,8.97 4.95,8.77 5.47,8.64 6.00,8.60"/><polygon points="18.00,8.60 18.53,8.64 19.05,8.77 19.54,8.97 20.00,9.25 20.40,9.60 20.75,10.00 21.03,10.46 21.23,10.95 21.36,11.47 21.40,12.00 21.40,12.00 21.36,12.53 21.23,13.05 21.03,13.54 20.75,14.00 20.40,14.40 20.00,14.75 19.54,15.03 19.05,15.23 18.53,15.36 18.00,15.40 14.40,15.40 13.87,15.36 13.35,15.23 12.86,15.03 12.40,14.75 12.00,14.40 11.65,14.00 11.37,13.54 11.17,13.05 11.04,12.53 11.00,12.00 11.00,12.00 11.04,11.47 11.17,10.95 11.37,10.46 11.65,10.00 12.00,9.60 12.40,9.25 12.86,8.97 13.35,8.77 13.87,8.64 14.40,8.60"/></svg><span>Download the helper</span></a></div></nav><div class="main"><header class="topbar"><button class="iconbtn only-narrow" type="button" data-menu aria-label="Menu"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.40,6.60 19.60,6.60"/><polyline points="4.40,12.00 19.60,12.00"/><polyline points="4.40,17.40 19.60,17.40"/></svg></button><div class="crumb"><span>Windows</span><i>/</i><b>Physics</b></div><div class="top-actions"><button class="iconbtn" type="button" data-search aria-label="Search the manual (Ctrl+K)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg></button><button class="iconbtn" type="button" data-theme-toggle aria-label="Light or dark"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg></button><a class="pill" href="https://github.com/lsxldierl/framez/releases/latest">Get the helper</a></div></header><div class="layout"><article class="doc"><h1>Physics</h1><p class="lead">The Physics window runs one physics simulation over an animation and writes the result as keys, for a hit, a fall, wind or floating. You build the simulation from bodies, forces and colliders. The Ragdoll window, described at the end of this page, pushes the body at one frame and lets Roblox physics take it from there.</p>
+<figure class="shot"><img src="img/physics.png" width="898" height="536" alt="The Physics window, with its toolbar along the top and a lane for each part of the body" loading="lazy">
+      <figcaption>The Physics window, with its toolbar along the top and a lane for each part of the body.</figcaption></figure>
+
+  <article class="tool" id="f-physicswin">
+    <h3>Physics Window</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Pose ‣ Physics ‣ Physics window...</dd><dd>View ‣ Windows ‣ Physics</dd>
+    </dl>
+    <p>The Physics window sets up one simulation for the animation from bodies, forces and colliders, shows the result as a purple ghost of the rig, and writes it into the animation as keys. The animation holds at most one Physics item. It is listed in the <a href="modifiers.html">Modifiers</a> window, and the window opens on it, so changing a value and writing the keys again redoes the whole simulation.</p>
+    <p>The simulation runs on an invisible copy of the rig, so the rig itself does not move while it runs. The copy is joined by a ball joint or a hinge at each limb, limited to the same ranges as Ragdoll, and what the rig holds is welded to the hand. Only the simulated parts get new keys.</p>
+    <p>On the left, the tree lists the Body (Head, Spine, Arms and Legs, which each open to their parts), Hold its place, Forces, Colliders and Settings. On the right there is a lane for every row over the whole animation. A body's strength is a filled curve, and a part that plays its keys is a solid bar. A force is a diamond or a span that you drag in time. A green line marks where the simulation starts, and a red line is the playhead. Selecting a row shows its values on the Physics page of the Inspector, which opens by itself. Press <kbd>Enter</kbd> to write the keys, and <kbd>Esc</kbd> closes the window.</p>
+    <p>To build a simulation, choose a preset, select a body part in the tree and set its values, and add forces with the plus button on the Forces row. Click Simulate and scrub the timeline, and the purple ghost shows the result. When it looks right, click Bake to keys.</p>
+    <h4>Notes</h4>
+    <p>Colliders do not move with the animation of other rigs.</p>
+    <h4>Example</h4>
+    <p>For example, to make a character react to a hit, choose the Hit reaction preset, move the green start line to the frame of the hit, press Simulate and judge the ghost, and write the keys when the body gives and recovers the way you want.</p>
+    <h4>See Also</h4>
+    <p><a href="inspector.html#f-inspphysics">Physics page of the Inspector</a>, <a href="#f-ragdoll">Ragdoll</a>, <a href="view.html#f-win-physics">Physics in the View menu</a></p>
+  </article>
+
+  <h2 class="part" id="physics-toolbar">Toolbar</h2>
+  <p>The toolbar runs along the top of the window. Presets and Show are at the left, and Live, Simulate and Bake to keys are at the right.</p>
+
+  <article class="tool" id="f-physics-presets">
+    <h3>Presets</h3>
+    <p><b>Presets</b> opens the list of starting points and your own presets. Choosing one replaces the values in the window. Frames inside a preset are kept relative to its start, so a preset fits wherever the simulation starts in the animation. The colliders you had chosen stay.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Blown by wind</dt>
+      <dd>A body that is mostly pulled toward its keys with a strong hold, pushed by a gusty wind from the left for 240 frames. It does not stop at rest, and it runs for 4 seconds.</dd>
+      <dt>Float</dt>
+      <dd>No gravity and a loose body, given a gentle upward push and thick air, so it drifts slowly for 4 seconds.</dd>
+      <dt>Hit reaction</dt>
+      <dd>A push from behind. The body gives at once, is pulled back toward its keys, and blends back into the animation about 35 frames after the start.</dd>
+      <dt>Knocked back</dt>
+      <dd>A hard push from behind and upward into a nearly limp body. It runs for 3 seconds.</dd>
+      <dt>Legs stay, body takes it</dt>
+      <dd>The legs play their keys and stay planted while the rest of the body takes a push from the front, then blends back into the animation.</dd>
+      <dt>Ragdoll fall</dt>
+      <dd>A completely limp body given a push from behind. It runs for 3 seconds.</dd>
+      <dt>Your own presets</dt>
+      <dd>The values you saved, kept for every place, are listed under their own heading, and so are the presets shared in the current place. You can save the current values under a name, share them in this place for everyone who opens it, or put back the default values.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, start from Knocked back for a character thrown across a room, then lower the push's Speed and add a wind force to turn it into a gentler stumble.</p>
+    <h4>See Also</h4>
+    <p><a href="anytool.html#f-presets">Presets</a> in Adjust lists presets in the same way for the other tools.</p>
+  </article>
+
+  <article class="tool" id="f-physics-show">
+    <h3>Show</h3>
+    <p><b>Show</b> chooses what the simulation draws in the viewport while the window is open. Each choice is a tick, and the choices are remembered.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Bodies</dt>
+      <dd>Blue boxes on the simulated parts. A box is more solid where the part's strength is higher at the playhead. It is on by default.</dd>
+      <dt>Joint limits</dt>
+      <dd>How far each simulated joint can swing, drawn as a cone for a ball joint and as an arc for a hinge. It is off by default.</dd>
+      <dt>Forces</dt>
+      <dd>The arrows and circles that show pushes, wind, pulls, blasts, lifts and black holes. It is on by default.</dd>
+      <dt>Colliders</dt>
+      <dd>The outlines of the objects chosen under Colliders, when the simulation hits only chosen objects. It is off by default.</dd>
+    </dl>
+  </article>
+
+  <article class="tool" id="f-physics-live">
+    <h3>Live</h3>
+    <p><b>Live</b> makes the simulation run again whenever a value changes. A moment after the last change the result on the ghost is replaced. Turning Live on runs the simulation once at once. It is off by default.</p>
+    <h4>Example</h4>
+    <p>For example, with Live on, drag the Speed of a push and watch the ghost change as you let go, until the fall lands where you want it.</p>
+  </article>
+
+  <article class="tool" id="f-physics-simulate">
+    <h3>Simulate</h3>
+    <p><b>Simulate</b> runs the simulation and shows the result on the purple ghost, without touching the animation. While it runs, the button reads Stop, and a bar at the foot of the window shows how far it has got. The foot of the window then says which frames were simulated. Scrub the timeline or play to watch the ghost.</p>
+    <p>The simulation starts at the start frame with the motion the body has there if Keep the motion at the start is on. It stops at the time set in Settings, or sooner when the body comes to rest, if Stop when it comes to rest is on. A force that is still to come keeps it going.</p>
+  </article>
+
+  <article class="tool" id="f-physics-bake">
+    <h3>Bake to Keys</h3>
+    <p><b>Bake to keys</b> writes the simulation into the animation as its Physics item. Keys are written on the simulated joints only, and a part set to Plays its keys keeps its own keys. The new keys are one for every frame from the start of the simulation, thinned to the keys the motion needs, and the whole step is one undo step. If the last Simulate used the same values, its result is reused. If not, the simulation runs first.</p>
+    <p>If the simulation ends after the last frame, the animation grows to fit. Without Blend back, the keys after the end of the simulation are removed, so the body stays where physics left it. With Blend back, the motion eases into the animation's own keys. See Settings.</p>
+    <h4>Example</h4>
+    <p>For example, after a Hit reaction preset looks right on the ghost, Bake to keys writes it into the animation, and later you can open the Modifiers window, change the push's Speed and write it again.</p>
+  </article>
+
+  <h2 class="part" id="physics-body">Body</h2>
+  <p>The Body rows decide how each part of the rig behaves in the simulation.</p>
+
+  <article class="tool" id="f-physics-body">
+    <h3>Body</h3>
+    <p>The Body lists four regions, Head, Spine, Arms and Legs. Click the arrow of a region to open its parts. Every part of the rig is a body, and so is what the rig holds, which is welded to its hand. A part uses its own values if it has any, then its region's values, and then the default Mass, Friction and Bounce listed below.</p>
+    <p>A part is either <b>Simulated</b> or <b>Plays its keys</b>. A simulated part is pulled toward its keyed pose as strongly as its strength curve says, where 0 is completely limp and 100 % is pulled hard. A part that plays its keys is held exactly on its keys and pushes whatever it touches. A locked limb always plays its keys.</p>
+    <p>Hold Ctrl or Shift and click a second body to select two. Right-click then offers Collide with each other for the pair. Two parts that are joined do not collide unless you tick it, and any other two parts do collide unless you clear it. The choice is saved with the preset.</p>
+    <h4>Options</h4>
+    <p>These values are on the Physics page of the Inspector when a region or a part is selected.</p>
+    <dl class="opts">
+      <dt>Mode</dt>
+      <dd>Simulated or Plays its keys.</dd>
+      <dt>Strength over the clip</dt>
+      <dd>A curve over the animation. It sets how hard the part is pulled toward its keys at each frame. The defaults are 50 % for the head, 60 % for the spine, 40 % for the arms and 60 % for the legs.</dd>
+      <dt>Mass</dt>
+      <dd>How heavy the part is, from 1 to 1000 %. The default is 100 %.</dd>
+      <dt>Friction</dt>
+      <dd>How much the part grips what it touches, from 0 to 200 %. The default is 50 %.</dd>
+      <dt>Bounce</dt>
+      <dd>How much the part rebounds, from 0 to 100 %. The default is 10 %.</dd>
+      <dt>Swing, Twist from, Twist to</dt>
+      <dd>For a part joined by a ball joint, how far it swings from its rest line and how far it twists about itself, in degrees.</dd>
+      <dt>Bends from, Bends to</dt>
+      <dd>For a part joined by a hinge, such as an R15 elbow or knee, the range it bends through, in degrees.</dd>
+      <dt>Use the region's values, Reset the joint</dt>
+      <dd>Go back to the region's values for the part, and to the default limits of the joint.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, set the Legs region to Plays its keys so the character stays planted while the Spine and Arms stay limp and are knocked about by a push.</p>
+  </article>
+
+  <article class="tool" id="f-physics-hold">
+    <h3>Hold Its Place</h3>
+    <p><b>Hold its place</b> is how hard the whole body is pulled to the place its keys put it in the world, as a curve over the animation. At 0 the body falls freely, and at 100 % it stays where it is keyed. It acts on the torso and carries the rest of the body with it.</p>
+    <p>The default is 0. The Hit reaction preset starts with a full hold and eases it off for a moment as the body gives.</p>
+    <h4>Example</h4>
+    <p>For example, a character knocked off its feet by an explosion uses a hold of 0 so it flies freely, while a character leaning into a gale uses a high hold so it only sways.</p>
+  </article>
+
+  <h2 class="part" id="physics-forces">Forces</h2>
+  <p>Forces push the simulated body. Each force has a row in the tree and a lane that you drag in time.</p>
+
+  <article class="tool" id="f-forces">
+    <h3>Forces</h3>
+    <p>The plus button on the Forces row adds a force. The choices are Push, Wind, Pull, Blast, Lift, Black hole and Drag. A new force starts at the playhead, or at the start of the simulation if the playhead is earlier. Its row names the force, and its lane shows a diamond for a push or blast at one frame, and a span for the others.</p>
+    <p>Drag a diamond or a span to move it in time. Drag an end of a span to change its frames. Right-click a force's row to Turn it off or on, Duplicate it or Delete it. A force that is turned off stays in the list and has no effect.</p>
+    <p>Wind, Pull, Blast, Lift and Black hole have a Radius, and Pull, Blast, Lift and Black hole also have a Falloff. A Pull, Blast, Lift or Black hole can also be centred on an object, or ride a path that you draw.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Radius</dt>
+      <dd>How far the force reaches from its centre, in studs. 0 reaches everywhere, except for a Blast, which needs a radius of at least 0.5 studs.</dd>
+      <dt>Falloff to the edge</dt>
+      <dd>A curve that sets how strong the force is from its centre at the left to its radius at the right. By default it fades evenly to the edge. Wind has no falloff curve.</dd>
+      <dt>Centre on the selected object</dt>
+      <dd>For Pull, Blast, Lift and Black hole. Centres the force on the part or model selected in the Explorer.</dd>
+      <dt>Draw its path, Clear its path</dt>
+      <dd>For Pull, Blast, Lift and Black hole. Draw its path lets you draw a stroke on the ground, and the force's centre follows it from the force's first frame to its last. Clear its path takes it off.</dd>
+    </dl>
+    <h4>See Also</h4>
+    <p><a href="#f-force-push">Push</a>, <a href="#f-force-wind">Wind</a>, <a href="#f-force-pull">Pull</a>, <a href="#f-force-blast">Blast</a>, <a href="#f-force-lift">Lift</a>, <a href="#f-force-blackhole">Black Hole</a>, <a href="#f-force-drag">Drag</a></p>
+  </article>
+
+  <article class="tool" id="f-force-push">
+    <h3>Push</h3>
+    <p>A <b>Push</b> is a hit. It gives one body part a sudden shove at a point on it, away from where the hit comes from, at one frame or spread over several frames.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>At frame, Over frames</dt>
+      <dd>The frame where the push lands. Over frames spreads it across that many frames, and 1 means all at once. A push spread over frames is a span.</dd>
+      <dt>Part</dt>
+      <dd>The body part that is hit. It starts as the root part.</dd>
+      <dt>Aim on the body</dt>
+      <dd>Click the body where it is hit. The push goes away from the camera, through that point. The button reads Click the body... while it waits, and <kbd>Esc</kbd> cancels.</dd>
+      <dt>Around</dt>
+      <dd>The direction the hit comes from around the rig, from 0 to 360°. 0 is from the front, 90 from the left, 180 from behind and 270 from the right. The default is 180.</dd>
+      <dt>Up</dt>
+      <dd>How steeply the hit points upward, from −90 to 90°. The default is 10°.</dd>
+      <dt>Speed</dt>
+      <dd>How hard the hit is, from 0 to 400 studs a second. The default is 14.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a punch to the chest from the front is a push on the torso with Around at 0, a Speed of 20 and a little Up.</p>
+  </article>
+
+  <article class="tool" id="f-force-wind">
+    <h3>Wind</h3>
+    <p><b>Wind</b> blows steadily on the whole body over a span of frames, with gusts that come and go. With a radius it blows only near its centre.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>From, To</dt>
+      <dd>The frames the wind blows. A new wind runs from the playhead to the end of the animation.</dd>
+      <dt>Around, Up</dt>
+      <dd>The direction the wind blows toward, as for a push. The defaults are 90° and 0°.</dd>
+      <dt>Strength</dt>
+      <dd>How strong the wind is, in studs a second squared, from 0 to 2000. The default is 40.</dd>
+      <dt>Radius</dt>
+      <dd>0 blows everywhere. A larger value blows only within that many studs of the wind's centre.</dd>
+      <dt>Gusts</dt>
+      <dd>How much the strength comes and goes, from 0 to 300 %. The default is 50 %.</dd>
+      <dt>A gust every</dt>
+      <dd>How many frames pass between gusts, from 1 to 600. The default is 20.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a cloak-wearing character on a cliff is given a wind of 60 from the side with gusts at 80 % over the whole animation.</p>
+  </article>
+
+  <article class="tool" id="f-force-pull">
+    <h3>Pull</h3>
+    <p>A <b>Pull</b> draws the body toward a point over a span of frames. The point can be centred on an object or can ride a path.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>From, To</dt>
+      <dd>The frames the pull acts. A new pull lasts 30 frames from the playhead.</dd>
+      <dt>Strength</dt>
+      <dd>How strongly it pulls, from −2000 to 2000 studs a second squared. A value below 0 pushes away. The default is 40.</dd>
+      <dt>Radius, Falloff to the edge</dt>
+      <dd>How far the pull reaches and how it fades. A new pull starts 4 studs above the rig's root.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a pull centred on a magnet prop makes a character's arms and torso lean toward it while the legs stay planted.</p>
+  </article>
+
+  <article class="tool" id="f-force-blast">
+    <h3>Blast</h3>
+    <p>A <b>Blast</b> throws the body outward from a point, at one frame or spread over several. A part closer to the centre is thrown harder.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>At frame, Over frames</dt>
+      <dd>As for a push.</dd>
+      <dt>Speed</dt>
+      <dd>How fast it throws things, from 0 to 1000 studs a second. The default is 40.</dd>
+      <dt>Launch</dt>
+      <dd>How much it throws things upward, from 0 to 500 %. The default is 0.</dd>
+      <dt>Spin</dt>
+      <dd>How much it turns things round the up axis, in turns a second, from −10 to 10.</dd>
+      <dt>Radius, Falloff to the edge</dt>
+      <dd>The reach of the blast. The radius starts at 12 studs and must be at least 0.5. A new blast starts 3 studs in front of the rig and 1 stud below its root.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, an explosion placed directly behind a character, with a Launch of 100 %, throws it forward and up.</p>
+  </article>
+
+  <article class="tool" id="f-force-lift">
+    <h3>Lift</h3>
+    <p>A <b>Lift</b> pushes the body upward over a span of frames, inside its radius. Set Around and Up to push it in any other direction.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>From, To</dt>
+      <dd>The frames the lift acts. A new lift lasts 30 frames.</dd>
+      <dt>Around, Up</dt>
+      <dd>The direction of the lift. Until you set them, the lift goes straight up.</dd>
+      <dt>Strength</dt>
+      <dd>How strongly it lifts, from −2000 to 2000 studs a second squared. The default is 60.</dd>
+      <dt>Radius, Falloff to the edge</dt>
+      <dd>The reach of the lift. A new lift starts with a radius of 12 studs, centred 2 studs below the rig.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a lift beneath a character in a rising updraft raises its body over 30 frames and lets it settle.</p>
+  </article>
+
+  <article class="tool" id="f-force-blackhole">
+    <h3>Black Hole</h3>
+    <p>A <b>Black hole</b> is a pull that also swirls what it draws in round its centre, over a span of frames.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>From, To</dt>
+      <dd>The frames it acts. A new black hole lasts 45 frames.</dd>
+      <dt>Strength</dt>
+      <dd>How strongly it pulls, from −2000 to 2000 studs a second squared. The default is 60.</dd>
+      <dt>Spin</dt>
+      <dd>How fast it swirls, in turns a second, from −10 to 10. A negative value turns the other way. The default is 1.</dd>
+      <dt>Radius, Falloff to the edge</dt>
+      <dd>The reach of the force. A new black hole starts with a radius of 16 studs and its centre 2 studs above and 6 studs in front of the rig.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a magic vortex in front of a character drags its body in and spins it before it is released.</p>
+  </article>
+
+  <article class="tool" id="f-force-drag">
+    <h3>Drag</h3>
+    <p><b>Drag</b> slows everything down, like thick air or water, over a span of frames. It has no centre and no radius.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>From, To</dt>
+      <dd>The frames the drag acts. A new drag runs from the playhead to the end of the animation.</dd>
+      <dt>Thickness</dt>
+      <dd>How much it slows things, from 0 to 60. 0 is air, and a higher value is like water. The default is 2.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a character floating in a pool is given a thickness of 20 so its limbs drift slowly and settle.</p>
+  </article>
+
+  <h2 class="part" id="physics-colliders">Colliders and Settings</h2>
+  <p>These two rows set what the body hits and how long the simulation runs.</p>
+
+  <article class="tool" id="f-physics-colliders">
+    <h3>Colliders</h3>
+    <p><b>Colliders</b> sets what the simulated body can hit. The simulation can hit the whole place, or only the objects you choose, and the floor under the rig can be added to those.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Hits</dt>
+      <dd>The whole place, or Selected objects only.</dd>
+      <dt>And the floor under the rig</dt>
+      <dd>With Selected objects only, adds the floor the rig stands on. It is on by default.</dd>
+      <dt>Objects</dt>
+      <dd>The objects the body hits, when Hits is set to Selected objects only. Select parts or models in the Explorer and add them here.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, to have a character fall onto one crate, set Hits to Selected objects only, add the crate and keep the floor, and the body ignores the rest of the scene.</p>
+  </article>
+
+  <article class="tool" id="f-physics-settings">
+    <h3>Settings</h3>
+    <p><b>Settings</b> sets when the simulation starts, how long it lasts, how gravity acts, and how the body returns to the animation afterwards. The row shows the start frame beside it.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Start at</dt>
+      <dd>The frame where the simulation starts. Before it, the animation plays its keys. It starts as the playhead frame the first time you open the window.</dd>
+      <dt>Up to</dt>
+      <dd>The longest the simulation can run, in seconds, from 0.1 to 30. The default is 2.</dd>
+      <dt>Stop when it comes to rest</dt>
+      <dd>Ends the simulation early when the body has stopped moving for a moment and no force is still to come. It is on by default.</dd>
+      <dt>Keep the motion at the start</dt>
+      <dd>Gives the body the speed it had at the start frame. It is on by default.</dd>
+      <dt>Gravity: Strength</dt>
+      <dd>How strong gravity is, from −500 to 500 %. 100 % is the place's gravity, and 0 means no gravity.</dd>
+      <dt>Gravity: Way</dt>
+      <dd>Which way gravity pulls, which is Down, Up, Forward, Back, Left or Right. Forward, Back, Left and Right follow the way the rig faces.</dd>
+      <dt>Blend back into the clip</dt>
+      <dd>Eases the body from the simulation back into the animation's own keys. Without it the body stays where physics left it. It is off by default.</dd>
+      <dt>From frame, Over</dt>
+      <dd>For Blend back, the frame where the easing begins, and the number of frames it takes. The default is 15 frames.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, a character stumbling after a hit uses Blend back from about 35 frames after the start, over 15 frames, so it recovers into the next pose instead of staying down.</p>
+  </article>
+
+  <h2 class="part" id="physics-ragdoll">Ragdoll</h2>
+  <p>The Ragdoll window is a quicker tool for one kind of simulation, a body that is pushed and falls.</p>
+
+  <article class="tool" id="f-ragdoll">
+    <h3>Ragdoll</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Pose ‣ Physics ‣ Ragdoll...</dd><dd>Pose ‣ This limb ‣ Ragdoll...</dd>
+      <dt>Right-click</dt><dd>A limb ‣ Ragdoll...</dd>
+    </dl>
+    <p><b>Ragdoll...</b> pushes the body at a frame and lets Roblox physics take it, for falls, deaths, knockdowns and hit reactions. The result is baked to keys. Right-click the limb that is hit and choose Ragdoll..., or choose it from the Physics menu and choose the part in the window.</p>
+    <p>The rig does not move while it simulates. A copy of it falls and collides with the parts of the place. Each joint has limits, and an R15 elbow or knee bends one way only. A locked limb keeps its keyed pose, and a held object stays in the hand. The window works on R6 and R15 rigs and on other Motor6D rigs, which use generic limits. The result plays on a purple ghost, so you can scrub the timeline to judge it before baking.</p>
+<figure class="shot"><img src="img/ragdoll.png" width="298" height="616" alt="The Ragdoll window before a simulation, with its Start, Push, Body and Length sections and the Simulate button" loading="lazy">
+      <figcaption>The Ragdoll window before a simulation, with its Start, Push, Body and Length sections and the Simulate button.</figcaption></figure>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Start at</dt>
+      <dd>The frame where the push lands. It starts as the playhead frame.</dd>
+      <dt>Keep the motion at this frame</dt>
+      <dd>Gives the body the speed it had on that frame. It is on by default.</dd>
+      <dt>Part, Aim</dt>
+      <dd>The first button names the part that is hit, and clicking it opens a list of parts. Aim lets you press on the body where the hit lands and drag the way it goes in the viewport. A longer drag pushes harder.</dd>
+      <dt>Front, Back, Left, Right, Up</dt>
+      <dd>Set the direction the push comes from in one click. Front pushes from the front, Back from behind, Left and Right from either side, and Up pushes straight up.</dd>
+      <dt>Around, Up, Speed</dt>
+      <dd>The direction and strength of the push. Around is 0 from the front, 90 from the left, 180 from behind and 270 from the right, and the default is 180. Up tilts it, from −90 to 90°, and the default is 10°. Speed is in studs a second, from 0 to 400, and the default is 12.</dd>
+      <dt>Limp, Powered</dt>
+      <dd>Limp lets every joint go slack. Powered keeps part of the pose, with a strength from 0 to 100 % for the Head, Spine, Arms and Legs, which start at 60 %, and a Keep standing value that pulls the torso toward its keyed place. Keep standing starts at 0.</dd>
+      <dt>Up to</dt>
+      <dd>The longest the simulation can run, in seconds, from 0.2 to 10. The default is 2.</dd>
+      <dt>Stop when it comes to rest</dt>
+      <dd>Ends the simulation early once the body has stopped moving. It is on by default.</dd>
+      <dt>Simulate, Discard</dt>
+      <dd>Simulate runs the fall and shows it on the ghost, and while it runs the button becomes Stop. After a run, Simulate runs it again, and Discard throws the result away.</dd>
+      <dt>Blend back, At, Over</dt>
+      <dd>After a run, Blend back eases the fall into the animation's own keys. At is the frame where the easing starts, and Over is the number of frames it takes, from 1 to 240. Without Blend back, the keys after the fall are removed, so the body stays down.</dd>
+      <dt>Bake into</dt>
+      <dd>After a run, The keys writes the fall into the animation's own keys. A new layer writes it onto an Add layer named Ragdoll instead, so you can mute the layer to see the animation without the fall. The choice only appears when animation layers are available.</dd>
+      <dt>Bake</dt>
+      <dd>Writes a key on every frame of the fall on every limb, thins the keys, and takes one undo step. Only the rotations are written, so the joints never come apart, and the root follows the torso. <kbd>Enter</kbd> presses the main button, and <kbd>Esc</kbd> closes the window.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, to make a character fall when it is struck, go to the frame of the hit, right-click the chest, choose Ragdoll..., drag Aim across the body in the direction of the blow, click Simulate, scrub to check the ghost, turn on Blend back if the character should stand up again, and click Bake.</p>
+    <h4>See Also</h4>
+    <p><a href="#f-physicswin">Physics Window</a>, <a href="r-ragdoll.html">Making a Ragdoll Fall or Hit Reaction</a></p>
+  </article>
+<nav class="pager" aria-label="More pages"><a class="prev" href="modifiers.html"><small>Previous</small><span>Modifiers</span></a><a class="next" href="reference.html"><small>Next</small><span>Reference Video</span></a></nav><footer class="foot">Framez by soldier. This manual covers Framez 17.99.</footer></article><aside class="toc" aria-label="On this page"><a class="lv0" href="#f-physicswin">Physics Window</a><a class="lv1" href="#physics-toolbar">Toolbar</a><a class="lv2" href="#f-physics-presets">Presets</a><a class="lv2" href="#f-physics-show">Show</a><a class="lv2" href="#f-physics-live">Live</a><a class="lv2" href="#f-physics-simulate">Simulate</a><a class="lv2" href="#f-physics-bake">Bake to Keys</a><a class="lv1" href="#physics-body">Body</a><a class="lv2" href="#f-physics-body">Body</a><a class="lv2" href="#f-physics-hold">Hold Its Place</a><a class="lv1" href="#physics-forces">Forces</a><a class="lv2" href="#f-forces">Forces</a><a class="lv2" href="#f-force-push">Push</a><a class="lv2" href="#f-force-wind">Wind</a><a class="lv2" href="#f-force-pull">Pull</a><a class="lv2" href="#f-force-blast">Blast</a><a class="lv2" href="#f-force-lift">Lift</a><a class="lv2" href="#f-force-blackhole">Black Hole</a><a class="lv2" href="#f-force-drag">Drag</a><a class="lv1" href="#physics-colliders">Colliders and Settings</a><a class="lv2" href="#f-physics-colliders">Colliders</a><a class="lv2" href="#f-physics-settings">Settings</a><a class="lv1" href="#physics-ragdoll">Ragdoll</a><a class="lv2" href="#f-ragdoll">Ragdoll</a></aside></div></div></div><div class="scrim" data-scrim hidden></div><div class="search" id="search" hidden role="dialog" aria-modal="true" aria-label="Search the manual"><div class="search-box"><div class="search-field"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg><input id="search-q" type="search" placeholder="Search the manual" autocomplete="off"><kbd>Esc</kbd></div><div class="search-results" id="search-results"></div></div></div><script src="assets/search-index.js"></script><script src="assets/site.js"></script></body></html>

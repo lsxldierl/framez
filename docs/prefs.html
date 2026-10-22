@@ -1,0 +1,426 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Preferences - Framez Manual</title><meta name="description" content="The Preferences window holds every setting that you set once and keep. They cover how the handles look, how the timeline and viewport behave, what new anim"><link rel="icon" href="assets/favicon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"><link rel="stylesheet" href="assets/site.css"><script>try{var t=localStorage.getItem("framez-theme");if(t)document.documentElement.dataset.look=t}catch(e){}</script></head><body><div class="shell"><nav class="side" id="side" aria-label="Docs"><div class="side-head"><a class="brand" href="index.html"><svg class="mark" viewBox="-34.0 -34.0 68.0 68.0" aria-hidden="true"><polygon points="-28.00,0.00 0.00,-28.00 28.00,0.00 0.00,28.00" fill="#3c4045"/><polygon points="-18.50,0.00 0.00,-18.50 0.00,0.00" fill="#e8443c"/><polygon points="0.00,-18.50 9.25,-9.25 0.00,0.00" fill="#9e2b2b"/><polygon points="9.25,-9.25 9.25,0.00 0.00,0.00" fill="#ffffff"/><polygon points="9.25,-9.25 18.50,0.00 9.25,0.00" fill="#e8443c"/><polygon points="-18.50,0.00 0.00,0.00 -9.25,9.25" fill="#9e2b2b"/><polygon points="-9.25,9.25 0.00,0.00 0.00,18.50" fill="#ffffff"/><polygon points="0.00,0.00 18.50,0.00 0.00,18.50" fill="#ffffff"/><polygon points="26.30,-22.51 23.03,-18.03 17.70,-16.49 20.97,-20.97" fill="#e8443c"/><polygon points="-16.73,16.57 -17.63,18.42 -19.67,18.63 -18.77,16.78" fill="#e8443c"/></svg><i class="sep"></i><span>Manual</span></a><button class="iconbtn" type="button" data-search aria-label="Search the manual (Ctrl+K)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg></button></div><div class="side-scroll"><details class="grp"><summary><span>Getting Started</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="start.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="5.14,9.23 5.40,8.66 5.70,8.11 6.06,7.59 6.45,7.10 6.89,6.65 7.36,6.24 7.86,5.87 8.40,5.54 8.96,5.25 9.54,5.02 10.14,4.84 10.75,4.71 11.37,4.63 12.00,4.60 12.63,4.63 13.25,4.71 13.86,4.84 14.46,5.02 15.04,5.25 15.60,5.54 16.14,5.87 16.64,6.24 17.11,6.65 17.55,7.10 17.94,7.59 18.30,8.11 18.60,8.66 18.86,9.23"/><polyline points="18.86,14.77 18.60,15.34 18.30,15.89 17.94,16.41 17.55,16.90 17.11,17.35 16.64,17.76 16.14,18.13 15.60,18.46 15.04,18.75 14.46,18.98 13.86,19.16 13.25,19.29 12.63,19.37 12.00,19.40 11.37,19.37 10.75,19.29 10.14,19.16 9.54,18.98 8.96,18.75 8.40,18.46 7.86,18.13 7.36,17.76 6.89,17.35 6.45,16.90 6.06,16.41 5.70,15.89 5.40,15.34 5.14,14.77"/><polyline points="18.86,9.23 16.11,7.23"/><polyline points="18.86,9.23 19.45,5.88"/><polyline points="5.14,14.77 7.89,16.77"/><polyline points="5.14,14.77 4.55,18.12"/></svg><span>Getting Started</span></a><a href="setup.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="9.60,8.60 10.13,8.64 10.65,8.77 11.14,8.97 11.60,9.25 12.00,9.60 12.35,10.00 12.63,10.46 12.83,10.95 12.96,11.47 13.00,12.00 13.00,12.00 12.96,12.53 12.83,13.05 12.63,13.54 12.35,14.00 12.00,14.40 11.60,14.75 11.14,15.03 10.65,15.23 10.13,15.36 9.60,15.40 6.00,15.40 5.47,15.36 4.95,15.23 4.46,15.03 4.00,14.75 3.60,14.40 3.25,14.00 2.97,13.54 2.77,13.05 2.64,12.53 2.60,12.00 2.60,12.00 2.64,11.47 2.77,10.95 2.97,10.46 3.25,10.00 3.60,9.60 4.00,9.25 4.46,8.97 4.95,8.77 5.47,8.64 6.00,8.60"/><polygon points="18.00,8.60 18.53,8.64 19.05,8.77 19.54,8.97 20.00,9.25 20.40,9.60 20.75,10.00 21.03,10.46 21.23,10.95 21.36,11.47 21.40,12.00 21.40,12.00 21.36,12.53 21.23,13.05 21.03,13.54 20.75,14.00 20.40,14.40 20.00,14.75 19.54,15.03 19.05,15.23 18.53,15.36 18.00,15.40 14.40,15.40 13.87,15.36 13.35,15.23 12.86,15.03 12.40,14.75 12.00,14.40 11.65,14.00 11.37,13.54 11.17,13.05 11.04,12.53 11.00,12.00 11.00,12.00 11.04,11.47 11.17,10.95 11.37,10.46 11.65,10.00 12.00,9.60 12.40,9.25 12.86,8.97 13.35,8.77 13.87,8.64 14.40,8.60"/></svg><span>Installing the Framez Helper</span></a></div></details><details class="grp"><summary><span>Interface</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="window.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>The Framez Window</span></a><a href="workspaces.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.40,6.60 19.60,6.60"/><polyline points="4.40,12.00 19.60,12.00"/><polyline points="4.40,17.40 19.60,17.40"/></svg><span>Workspaces</span></a><a href="timeline.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="7.40,5.00 18.60,12.00 7.40,19.00"/></svg><span>Timeline and Toolbar</span></a><a href="anytool.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.40,13.60 4.60,8.80 9.40,4.00"/><polyline points="4.60,8.80 14.40,8.80 15.47,8.92 16.48,9.28 17.39,9.85 18.15,10.61 18.72,11.52 19.08,12.53 19.20,13.60 19.08,14.67 18.72,15.68 18.15,16.59 17.39,17.35 16.48,17.92 15.47,18.28 14.40,18.40 11.00,18.40"/></svg><span>Working with Tools</span></a></div></details><details class="grp"><summary><span>Menus</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="file.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="12.00,3.60 12.00,15.20"/><polyline points="7.20,10.60 12.00,15.40 16.80,10.60"/><polyline points="4.60,20.40 19.40,20.40"/></svg><span>File</span></a><a href="edit.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.40,13.60 4.60,8.80 9.40,4.00"/><polyline points="4.60,8.80 14.40,8.80 15.47,8.92 16.48,9.28 17.39,9.85 18.15,10.61 18.72,11.52 19.08,12.53 19.20,13.60 19.08,14.67 18.72,15.68 18.15,16.59 17.39,17.35 16.48,17.92 15.47,18.28 14.40,18.40 11.00,18.40"/></svg><span>Edit</span></a><a href="key.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon class="f" points="12.00,3.00 21.00,12.00 12.00,21.00 3.00,12.00"/></svg><span>Key</span></a><a href="pose.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="14.60,6.20 14.53,6.78 14.34,7.33 14.03,7.82 13.62,8.23 13.13,8.54 12.58,8.73 12.00,8.80 11.42,8.73 10.87,8.54 10.38,8.23 9.97,7.82 9.66,7.33 9.47,6.78 9.40,6.20 9.47,5.62 9.66,5.07 9.97,4.58 10.38,4.17 10.87,3.86 11.42,3.67 12.00,3.60 12.58,3.67 13.13,3.86 13.62,4.17 14.03,4.58 14.34,5.07 14.53,5.62 14.60,6.20"/><polyline points="12.00,9.40 12.00,15.20"/><polyline points="12.00,15.20 8.60,20.40"/><polyline points="12.00,15.20 15.40,20.40"/><polyline points="7.00,12.00 17.00,12.00"/></svg><span>Pose</span></a><a href="face.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.20,8.00 16.09,8.93 15.78,9.82 15.28,10.62 14.62,11.28 13.82,11.78 12.93,12.09 12.00,12.20 11.07,12.09 10.18,11.78 9.38,11.28 8.72,10.62 8.22,9.82 7.91,8.93 7.80,8.00 7.91,7.07 8.22,6.18 8.72,5.38 9.38,4.72 10.18,4.22 11.07,3.91 12.00,3.80 12.93,3.91 13.82,4.22 14.62,4.72 15.28,5.38 15.78,6.18 16.09,7.07 16.20,8.00"/><polyline points="5.14,18.83 5.40,18.26 5.70,17.71 6.06,17.19 6.45,16.70 6.89,16.25 7.36,15.84 7.86,15.47 8.40,15.14 8.96,14.85 9.54,14.62 10.14,14.44 10.75,14.31 11.37,14.23 12.00,14.20 12.63,14.23 13.25,14.31 13.86,14.44 14.46,14.62 15.04,14.85 15.60,15.14 16.14,15.47 16.64,15.84 17.11,16.25 17.55,16.70 17.94,17.19 18.30,17.71 18.60,18.26 18.86,18.83"/></svg><span>Face</span></a><a href="scene.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13.40,7.00 13.74,7.03 14.08,7.11 14.40,7.24 14.69,7.42 14.96,7.64 15.18,7.91 15.36,8.20 15.49,8.52 15.57,8.86 15.60,9.20 15.60,14.80 15.57,15.14 15.49,15.48 15.36,15.80 15.18,16.09 14.96,16.36 14.69,16.58 14.40,16.76 14.08,16.89 13.74,16.97 13.40,17.00 5.00,17.00 4.66,16.97 4.32,16.89 4.00,16.76 3.71,16.58 3.44,16.36 3.22,16.09 3.04,15.80 2.91,15.48 2.83,15.14 2.80,14.80 2.80,9.20 2.83,8.86 2.91,8.52 3.04,8.20 3.22,7.91 3.44,7.64 3.71,7.42 4.00,7.24 4.32,7.11 4.66,7.03 5.00,7.00"/><polygon points="15.60,10.60 21.20,7.60 21.20,16.40 15.60,13.40"/></svg><span>Scene</span></a><a href="game.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6.00,21.00 6.00,3.80"/><polyline points="6.00,4.60 18.40,4.60 15.60,8.60 18.40,12.60 6.00,12.60"/></svg><span>Game</span></a><a href="view.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="2.60,12.00 3.09,11.26 3.62,10.57 4.19,9.93 4.80,9.36 5.43,8.83 6.09,8.36 6.77,7.95 7.48,7.59 8.21,7.29 8.95,7.04 9.70,6.85 10.46,6.71 11.23,6.63 12.00,6.60 12.77,6.63 13.54,6.71 14.30,6.85 15.05,7.04 15.79,7.29 16.52,7.59 17.23,7.95 17.91,8.36 18.57,8.83 19.20,9.36 19.81,9.93 20.38,10.57 20.91,11.26 21.40,12.00 20.91,12.74 20.38,13.43 19.81,14.07 19.20,14.64 18.57,15.17 17.91,15.64 17.22,16.05 16.52,16.41 15.79,16.71 15.05,16.96 14.30,17.15 13.54,17.29 12.77,17.37 12.00,17.40 11.23,17.37 10.46,17.29 9.70,17.15 8.95,16.96 8.21,16.71 7.48,16.41 6.77,16.05 6.09,15.64 5.43,15.17 4.80,14.64 4.19,14.07 3.62,13.43 3.09,12.74 2.60,12.00"/><polygon points="15.00,12.00 14.92,12.67 14.70,13.30 14.35,13.87 13.87,14.35 13.30,14.70 12.67,14.92 12.00,15.00 11.33,14.92 10.70,14.70 10.13,14.35 9.65,13.87 9.30,13.30 9.08,12.67 9.00,12.00 9.08,11.33 9.30,10.70 9.65,10.13 10.13,9.65 10.70,9.30 11.33,9.08 12.00,9.00 12.67,9.08 13.30,9.30 13.87,9.65 14.35,10.13 14.70,10.70 14.92,11.33 15.00,12.00"/></svg><span>View</span></a><a href="help.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="5.60,12.00 9.80,16.20 18.40,6.80"/></svg><span>Help</span></a></div></details><details class="grp" open><summary><span>Windows</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="inspector.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="19.00,12.00 18.82,13.56 18.31,15.04 17.47,16.36 16.36,17.47 15.04,18.31 13.56,18.82 12.00,19.00 10.44,18.82 8.96,18.31 7.64,17.47 6.53,16.36 5.69,15.04 5.18,13.56 5.00,12.00 5.18,10.44 5.69,8.96 6.53,7.64 7.64,6.53 8.96,5.69 10.44,5.18 12.00,5.00 13.56,5.18 15.04,5.69 16.36,6.53 17.47,7.64 18.31,8.96 18.82,10.44 19.00,12.00"/><ellipse class="f" cx="12.00" cy="12.00" rx="2.40" ry="2.40"/></svg><span>Inspector</span></a><a href="curves.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="3.60,19.00 4.27,18.95 4.91,18.80 5.52,18.55 6.10,18.22 6.67,17.82 7.21,17.35 7.74,16.81 8.26,16.22 8.77,15.59 9.27,14.92 9.76,14.22 10.25,13.49 10.75,12.75 11.25,12.00 11.76,11.25 12.28,10.51 12.81,9.78 13.36,9.08 13.93,8.41 14.52,7.78 15.13,7.19 15.78,6.65 16.45,6.18 17.16,5.78 17.91,5.45 18.69,5.20 19.52,5.05 20.40,5.00"/><ellipse class="f" cx="12.00" cy="12.00" rx="1.60" ry="1.60"/></svg><span>Curve Editor</span></a><a href="modifiers.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Modifiers</span></a><a href="physics.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Physics</span></a><a href="reference.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="18.20,5.20 18.58,5.23 18.94,5.32 19.29,5.46 19.61,5.66 19.90,5.90 20.14,6.19 20.34,6.51 20.48,6.86 20.57,7.22 20.60,7.60 20.60,16.40 20.57,16.78 20.48,17.14 20.34,17.49 20.14,17.81 19.90,18.10 19.61,18.34 19.29,18.54 18.94,18.68 18.58,18.77 18.20,18.80 5.80,18.80 5.42,18.77 5.06,18.68 4.71,18.54 4.39,18.34 4.10,18.10 3.86,17.81 3.66,17.49 3.52,17.14 3.43,16.78 3.40,16.40 3.40,7.60 3.43,7.22 3.52,6.86 3.66,6.51 3.86,6.19 4.10,5.90 4.39,5.66 4.71,5.46 5.06,5.32 5.42,5.23 5.80,5.20"/><polygon points="10.00,9.40 15.00,12.00 10.00,14.60"/></svg><span>Reference Video</span></a><a href="poses.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Poses</span></a><a href="camera.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13.40,7.00 13.74,7.03 14.08,7.11 14.40,7.24 14.69,7.42 14.96,7.64 15.18,7.91 15.36,8.20 15.49,8.52 15.57,8.86 15.60,9.20 15.60,14.80 15.57,15.14 15.49,15.48 15.36,15.80 15.18,16.09 14.96,16.36 14.69,16.58 14.40,16.76 14.08,16.89 13.74,16.97 13.40,17.00 5.00,17.00 4.66,16.97 4.32,16.89 4.00,16.76 3.71,16.58 3.44,16.36 3.22,16.09 3.04,15.80 2.91,15.48 2.83,15.14 2.80,14.80 2.80,9.20 2.83,8.86 2.91,8.52 3.04,8.20 3.22,7.91 3.44,7.64 3.71,7.42 4.00,7.24 4.32,7.11 4.66,7.03 5.00,7.00"/><polygon points="15.60,10.60 21.20,7.60 21.20,16.40 15.60,13.40"/></svg><span>Camera Preview</span></a><a href="sublines.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Subtitle Lines</span></a><a href="bench.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Test Bench</span></a><a href="check.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Check Animation</span></a><a href="prefs.html" aria-current="page"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Preferences</span></a><a href="keyboard.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Keyboard Shortcuts</span></a><a href="scripting.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Scripting</span></a></div></details><details class="grp"><summary><span>Tutorials</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="recipes.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Tutorials</span></a><a href="r-skill.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Combat Skill</span></a><a href="r-animehit.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Hit with Effects</span></a><a href="r-idle.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making an Idle or Fidget</span></a><a href="r-cycle.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Walk, Run, Strafe or Backpedal</span></a><a href="r-video.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Copying a Move from a Video</span></a><a href="r-dance.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating a Dance to Music</span></a><a href="r-ugc.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making an Emote to Sell</span></a><a href="r-pack.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making an Animation Pack</span></a><a href="r-acro.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating Jumps, Flips and Spins</span></a><a href="r-ragdoll.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Ragdoll Fall or Hit Reaction</span></a><a href="r-acting.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating Talking, Reacting and Pointing</span></a><a href="r-cutscene.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Making a Cutscene</span></a><a href="r-grab.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating a Grab, Throw or Finisher</span></a><a href="r-hold.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Picking Up, Passing and Throwing an Object</span></a><a href="r-faces.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating Faces on a Classic Head</span></a><a href="r-dynface.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Animating Faces on a Dynamic Head</span></a><a href="r-lipsync.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Setting up Lip Sync</span></a><a href="r-capture.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Capturing a Face from a Webcam</span></a><a href="r-bench.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Testing an Animation in the Game</span></a><a href="r-blender.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Editing an Animation in Blender</span></a><a href="r-import.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Starting from an Existing Animation</span></a><a href="r-graph.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Previewing Blends, Layers and Aim Offsets</span></a><a href="r-rig.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Setting up R15, Creature and Custom Rigs</span></a><a href="r-keys.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="4.00" cy="19.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="5.39" cy="14.53" rx="1.15" ry="1.15"/><ellipse class="f" cx="7.48" cy="11.06" rx="1.15" ry="1.15"/><ellipse class="f" cx="10.12" cy="8.47" rx="1.15" ry="1.15"/><ellipse class="f" cx="13.19" cy="6.67" rx="1.15" ry="1.15"/><ellipse class="f" cx="16.52" cy="5.55" rx="1.15" ry="1.15"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.15" ry="1.15"/><ellipse class="f" cx="4.00" cy="19.00" rx="1.90" ry="1.90"/><ellipse class="f" cx="20.00" cy="5.00" rx="1.90" ry="1.90"/></svg><span>Setting Your Own Keyboard Shortcuts</span></a></div></details><details class="grp"><summary><span>Reference</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.60,5.60 16.00,12.00 9.60,18.40"/></svg></summary><div class="items"><a href="shortcuts.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse class="f" cx="5.40" cy="12.00" rx="1.70" ry="1.70"/><ellipse class="f" cx="12.00" cy="12.00" rx="1.70" ry="1.70"/><ellipse class="f" cx="18.60" cy="12.00" rx="1.70" ry="1.70"/></svg><span>Shortcut List</span></a><a href="trouble.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6.00,21.00 6.00,3.80"/><polyline points="6.00,4.60 18.40,4.60 15.60,8.60 18.40,12.60 6.00,12.60"/></svg><span>Troubleshooting</span></a></div></details></div><div class="side-foot"><a href="index.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.20,9.00 4.20,4.20 9.00,4.20"/><polyline points="15.00,4.20 19.80,4.20 19.80,9.00"/><polyline points="19.80,15.00 19.80,19.80 15.00,19.80"/><polyline points="9.00,19.80 4.20,19.80 4.20,15.00"/></svg><span>Manual</span></a><a href="https://github.com/lsxldierl/framez/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="9.60,8.60 10.13,8.64 10.65,8.77 11.14,8.97 11.60,9.25 12.00,9.60 12.35,10.00 12.63,10.46 12.83,10.95 12.96,11.47 13.00,12.00 13.00,12.00 12.96,12.53 12.83,13.05 12.63,13.54 12.35,14.00 12.00,14.40 11.60,14.75 11.14,15.03 10.65,15.23 10.13,15.36 9.60,15.40 6.00,15.40 5.47,15.36 4.95,15.23 4.46,15.03 4.00,14.75 3.60,14.40 3.25,14.00 2.97,13.54 2.77,13.05 2.64,12.53 2.60,12.00 2.60,12.00 2.64,11.47 2.77,10.95 2.97,10.46 3.25,10.00 3.60,9.60 4.00,9.25 4.46,8.97 4.95,8.77 5.47,8.64 6.00,8.60"/><polygon points="18.00,8.60 18.53,8.64 19.05,8.77 19.54,8.97 20.00,9.25 20.40,9.60 20.75,10.00 21.03,10.46 21.23,10.95 21.36,11.47 21.40,12.00 21.40,12.00 21.36,12.53 21.23,13.05 21.03,13.54 20.75,14.00 20.40,14.40 20.00,14.75 19.54,15.03 19.05,15.23 18.53,15.36 18.00,15.40 14.40,15.40 13.87,15.36 13.35,15.23 12.86,15.03 12.40,14.75 12.00,14.40 11.65,14.00 11.37,13.54 11.17,13.05 11.04,12.53 11.00,12.00 11.00,12.00 11.04,11.47 11.17,10.95 11.37,10.46 11.65,10.00 12.00,9.60 12.40,9.25 12.86,8.97 13.35,8.77 13.87,8.64 14.40,8.60"/></svg><span>Download the helper</span></a></div></nav><div class="main"><header class="topbar"><button class="iconbtn only-narrow" type="button" data-menu aria-label="Menu"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4.40,6.60 19.60,6.60"/><polyline points="4.40,12.00 19.60,12.00"/><polyline points="4.40,17.40 19.60,17.40"/></svg></button><div class="crumb"><span>Windows</span><i>/</i><b>Preferences</b></div><div class="top-actions"><button class="iconbtn" type="button" data-search aria-label="Search the manual (Ctrl+K)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg></button><button class="iconbtn" type="button" data-theme-toggle aria-label="Light or dark"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg></button><a class="pill" href="https://github.com/lsxldierl/framez/releases/latest">Get the helper</a></div></header><div class="layout"><article class="doc"><h1>Preferences</h1><p class="lead">The Preferences window holds every setting that you set once and keep. They cover how the handles look, how the timeline and viewport behave, what new animations start with, which overlays show, and how Framez saves your work. Settings that change while you pose, such as IK and joint limits, live on the Posing page of the Inspector instead.</p>
+
+  <article class="tool" id="f-settings">
+    <h3>The Preferences Window</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences...</dd>
+    </dl>
+    <p>The <b>Framez Preferences</b> window opens as a floating window. A search box runs across the top, and down the left is a list of categories that begins with All. Choosing All lists every setting in category order, and choosing any other category shows only its settings. The settings are on the right. Each has its name, a line saying what it does, its control, and its own reset button, which returns that one setting to its default.</p>
+    <p>Typing in the search box looks through the setting names, their descriptions and their choices, and lists the matching settings from every category. Changes apply at once and are kept between sessions. They belong to your copy of Framez, so they are the same in every place. Number boxes accept sums such as <code>2*pi</code> or <code>90/4</code>.</p>
+<figure class="shot"><img src="img/prefs.png" width="618" height="456" alt="The Preferences window with every category listed on the left" loading="lazy">
+      <figcaption>The Preferences window with every category listed on the left.</figcaption></figure>
+  </article>
+
+  <h2 class="part" id="prefs-handles">Handles and Posing</h2>
+  <p>These settings change the rings and arrows you drag to pose a limb, and whether letting go of a handle keys the pose.</p>
+
+  <article class="tool" id="f-pref-handlestyle">
+    <h3>Handle Style</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Handles and posing</dd>
+    </dl>
+    <p><b>Handle style</b> sets how the rotate rings and the move arrows look and how they are sized. The default is Screen size.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Screen size</dt>
+      <dd>The rings stay the same size on the screen at any distance. Only the half of each ring that faces the camera is drawn, a white ring turns the limb about the view direction, and there is one arrow for each axis, on the positive side.</dd>
+      <dt>Rig size</dt>
+      <dd>The rings have balls on them and the arrows point both ways. They are sized to the rig, so they grow and shrink as the camera moves closer or further away.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, choose Screen size to keep the handles easy to grab when you zoom far out on a long scene, and Rig size when you want handles that stay in proportion to the character.</p>
+  </article>
+
+  <article class="tool" id="f-pref-handlesize">
+    <h3>Handle Size</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Handles and posing</dd>
+    </dl>
+    <p>The <b>Size</b> setting changes how big the rings and arrows are. With the Screen size handle style the handles keep that size on the screen at any distance. The default is Normal.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Small, Normal, Large</dt>
+      <dd>Small draws the handles at three quarters of the normal size, and Large at one and four tenths of it.</dd>
+    </dl>
+  </article>
+
+  <article class="tool" id="f-pref-precision">
+    <h3>Precision and Snapping</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Handles and posing</dd>
+    </dl>
+    <p><b>Precision and snapping</b> sets how holding a modifier key changes a handle drag. Three boxes sit side by side. They can be typed into or dragged, and one reset button returns all three to their defaults.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Shift (x)</dt>
+      <dd>The speed of a drag while <kbd>Shift</kbd> is held, as a fraction of the normal speed, from 0.01 to 1. The default is 0.2, so the handle moves a fifth as far as the pointer.</dd>
+      <dt>Ctrl turn (deg)</dt>
+      <dd>The step that a ring snaps to while <kbd>Ctrl</kbd> is held, from 0.01° to 90°. The default is 5°.</dd>
+      <dt>Ctrl move (studs)</dt>
+      <dd>The step that an arrow snaps to while <kbd>Ctrl</kbd> is held, from 0.001 to 10 studs. The default is 0.1 studs.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, set the turn step to 15° to place a head turn on exact angles, then hold <kbd>Ctrl</kbd> while dragging the ring.</p>
+  </article>
+
+  <article class="tool" id="f-pref-autokey">
+    <h3>Auto Key</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Handles and posing</dd>
+    </dl>
+    <p><b>Auto key</b> decides whether a pose made with the handles is keyed when you let go. The default is On.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>On</dt>
+      <dd>Letting go of a handle keys the limb at the playhead.</dd>
+      <dt>Off</dt>
+      <dd>The pose is applied to the rig but not keyed, and the status line says to press <kbd>K</kbd> to key it.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, turn Auto key off to try a pose with the handles without disturbing the animation, and press <kbd>K</kbd> only when you like it.</p>
+  </article>
+
+  <h2 class="part" id="prefs-timeline">Timeline</h2>
+  <p>These settings change how the mouse wheel and the stepping commands move along the timeline.</p>
+
+  <article class="tool" id="f-pref-wheelzoom">
+    <h3>Wheel Zoom</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Timeline</dd>
+    </dl>
+    <p><b>Wheel zoom</b> sets how much one notch of the mouse wheel zooms the timeline, as a factor from 1.05 to 3. The default is 1.25, so each notch zooms the timeline by that factor.</p>
+  </article>
+
+  <article class="tool" id="f-pref-framestep">
+    <h3>Frame Step</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Timeline</dd>
+    </dl>
+    <p><b>Frame step</b> sets how many frames the Previous frame and Next frame commands move, from 1 to 100. The default is 1. Their keys are <kbd>Alt</kbd>+<kbd>Left</kbd> and <kbd>Alt</kbd>+<kbd>Right</kbd>.</p>
+    <h4>Example</h4>
+    <p>For example, set Frame step to 5 to scrub through a long idle in larger steps.</p>
+  </article>
+
+  <article class="tool" id="f-pref-keyjump">
+    <h3>Key Jump</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Timeline</dd>
+    </dl>
+    <p><b>Key jump</b> sets how many keys the Previous key and Next key commands move, from 1 to 20. The default is 1. Their keys are <kbd>Left</kbd> and <kbd>Right</kbd>.</p>
+  </article>
+
+  <h2 class="part" id="prefs-newclips">New Clips and Keys</h2>
+  <p>These settings decide how a new key behaves and what a new animation starts with.</p>
+
+  <article class="tool" id="f-pref-newkeys">
+    <h3>How a New Key Plays into the Next</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ New clips and keys</dd>
+    </dl>
+    <p>This setting chooses the easing that a newly made key gets, which decides how the motion travels from that key to the next one. It does not change keys that already exist. The default is Linear.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Linear</dt>
+      <dd>Keeps the timing of your poses. The limb moves at a steady speed from one key to the next.</dd>
+      <dt>Smooth</dt>
+      <dd>Eases through each key. The motion rounds off at every key and stays flat at a peak, so it never passes the pose.</dd>
+      <dt>As the key before</dt>
+      <dd>Copies the easing of the key before the new one.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, choose Smooth when you pose organic motion such as an idle or a wave, where every pose should flow into the next, and keep Linear for snappy combat poses that you refine with <a href="key.html#f-easing">Easing</a>.</p>
+  </article>
+
+  <article class="tool" id="f-pref-newfps">
+    <h3>New Animation Frame Rate</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ New clips and keys</dd>
+    </dl>
+    <p>The <b>Frame rate</b> under New animations sets the frames per second of every animation started with <a href="file.html#f-new">New Animation</a>, from 1 to 240. The default is 60. The frame rate of an animation that already exists is changed on the Clip page of the Inspector.</p>
+  </article>
+
+  <article class="tool" id="f-pref-newlength">
+    <h3>New Animation Length</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ New clips and keys</dd>
+    </dl>
+    <p>The <b>Length</b> under New animations sets how long the timeline of a new animation is, from 0.1 to 600 seconds. The default is 1 second.</p>
+    <h4>Example</h4>
+    <p>For example, if most of your animations are 2 second attacks at 30 fps, set Frame rate to 30 and Length to 2 so each new animation starts that size.</p>
+  </article>
+
+  <h2 class="part" id="prefs-navigation">Navigation</h2>
+  <p>Navigation changes how the middle mouse button, the wheel and the number pad move the view in the viewport.</p>
+
+  <article class="tool" id="f-pref-viewport">
+    <h3>Viewport</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Navigation</dd>
+    </dl>
+    <p>The <b>Viewport</b> setting chooses how the middle mouse button and the wheel move the view. The default is Studio. The same switch is the Blender navigation row of the View menu.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Studio</dt>
+      <dd>Studio's own navigation is left untouched.</dd>
+      <dt>Blender</dt>
+      <dd>Dragging with the middle mouse button orbits the view about a pivot. Holding <kbd>Shift</kbd> pans, and holding <kbd>Ctrl</kbd> zooms. The wheel zooms toward the pivot, <kbd>Ctrl</kbd> with the wheel pans across, and <kbd>Shift</kbd> with the wheel pans up and down. On the number pad, <kbd>Num 4</kbd>, <kbd>Num 6</kbd>, <kbd>Num 8</kbd> and <kbd>Num 2</kbd> orbit by 15°, <kbd>Num +</kbd> and <kbd>Num -</kbd> zoom, and <kbd>Num .</kbd> frames the selected limb. The pivot is the selected limb's joint, or the middle of what was last framed.</dd>
+    </dl>
+    <h4>See Also</h4>
+    <p><a href="view.html#f-blender-nav">Blender Navigation</a> describes the same switch in the View menu.</p>
+  </article>
+
+  <article class="tool" id="f-pref-orbit">
+    <h3>Orbit Speed</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Navigation</dd>
+    </dl>
+    <p><b>Orbit speed</b> sets how far a drag with the middle mouse button turns the view, as a percentage from 10 to 400. The default is 100. It applies when Viewport is set to Blender.</p>
+  </article>
+
+  <article class="tool" id="f-pref-pan">
+    <h3>Pan Speed</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Navigation</dd>
+    </dl>
+    <p><b>Pan speed</b> sets how far <kbd>Shift</kbd> with a middle drag, <kbd>Ctrl</kbd> with the wheel and <kbd>Shift</kbd> with the wheel slide the view, as a percentage from 10 to 400. The default is 100. It applies when Viewport is set to Blender.</p>
+  </article>
+
+  <article class="tool" id="f-pref-zoomcursor">
+    <h3>Zoom Toward the Cursor</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Navigation</dd>
+    </dl>
+    <p><b>Zoom toward the cursor</b> decides which point the wheel closes in on. With Off, the default, the wheel zooms toward the pivot. With On, it closes in on the point under the mouse pointer instead. It applies when Viewport is set to Blender.</p>
+    <h4>Example</h4>
+    <p>For example, turn it on to zoom in on a hand at the edge of the viewport without first moving the pivot to it.</p>
+  </article>
+
+  <h2 class="part" id="prefs-overlays">Overlays</h2>
+  <p>These settings change how motion paths, the onion skin and bones are drawn. The overlays themselves are switched on in the View menu.</p>
+
+  <article class="tool" id="f-pref-pathlength">
+    <h3>Motion Path Length</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Overlays</dd>
+    </dl>
+    <p>The <b>Length</b> under Motion paths chooses how much of each path is drawn. The default is Whole clip.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Whole clip</dt>
+      <dd>Each path covers the whole animation.</dd>
+      <dt>Around current frame</dt>
+      <dd>Each path covers only the frames either side of the playhead, as many as Frames each side sets.</dd>
+    </dl>
+    <h4>See Also</h4>
+    <p><a href="view.html#f-paths">Motion Paths</a> describes the overlay.</p>
+  </article>
+
+  <article class="tool" id="f-pref-pathwindow">
+    <h3>Motion Path Frames Each Side</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Overlays</dd>
+    </dl>
+    <p><b>Frames each side</b> sets how far a motion path reaches before and after the playhead when its length is Around current frame, from 1 to 600 frames. The default is 30.</p>
+  </article>
+
+  <article class="tool" id="f-pref-pathnumbers">
+    <h3>Motion Path Frame Numbers</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Overlays</dd>
+    </dl>
+    <p><b>Frame numbers</b> draws frame numbers beside the selected limb's motion path. The default is Off.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Off</dt>
+      <dd>No numbers are drawn.</dd>
+      <dt>Every key</dt>
+      <dd>A number is drawn at each key of the path.</dd>
+      <dt>Every 5 frames</dt>
+      <dd>A number is drawn at every fifth frame.</dd>
+    </dl>
+  </article>
+
+  <article class="tool" id="f-pref-onionbefore">
+    <h3>Onion Skin Before Colour</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Overlays</dd>
+    </dl>
+    <p><b>Before colour</b> is the tint of the onion skin ghosts that show the frames before the playhead. It is a colour of six hexadecimal digits, such as 282A30, shown next to a swatch. Anything that is not six hexadecimal digits is refused, and the status line says so. The default is 282A30.</p>
+  </article>
+
+  <article class="tool" id="f-pref-onionafter">
+    <h3>Onion Skin After Colour</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Overlays</dd>
+    </dl>
+    <p><b>After colour</b> is the tint of the ghosts that show the frames after the playhead, entered the same way as Before colour. The default is F0F0F5.</p>
+  </article>
+
+  <article class="tool" id="f-pref-onionstrength">
+    <h3>Onion Skin Ghost Strength</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Overlays</dd>
+    </dl>
+    <p><b>Ghost strength</b> sets how solid the onion skin ghosts are, as a percentage from 10 to 200. The default is 100. A lower value makes the ghosts fainter, and a higher one makes them stand out against a busy scene.</p>
+    <h4>See Also</h4>
+    <p><a href="view.html#f-onion">Onion Skin</a> describes the overlay.</p>
+  </article>
+
+  <article class="tool" id="f-pref-bonestyle">
+    <h3>Bone Style</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Overlays</dd>
+    </dl>
+    <p><b>Bone style</b> draws each joint as a bone over the rig. The default is Off. The same choice is in the Bones overlay of the View menu.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Off</dt>
+      <dd>No bones are drawn.</dd>
+      <dt>Octahedral</dt>
+      <dd>A diamond-shaped bone from each joint to the next joint down the chain, or to the far end of the part for a hand, a foot, the head or a weapon.</dd>
+      <dt>Stick</dt>
+      <dd>A thin rod with a ball at the joint.</dd>
+    </dl>
+    <h4>See Also</h4>
+    <p><a href="view.html#f-bones">Bones</a> describes the overlay.</p>
+  </article>
+
+  <article class="tool" id="f-pref-bonexray">
+    <h3>Bone X-Ray</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Overlays</dd>
+    </dl>
+    <p><b>X-ray</b> decides whether bones are drawn through the body or hidden behind it. With On, the default, they show through the body. With Off, the parts of a bone that lie behind the body are hidden.</p>
+  </article>
+
+  <h2 class="part" id="prefs-curves">Curves and Drawing</h2>
+  <p>These settings change how automatic handles are placed in the Curve editor and how strokes drawn with the Annotate pen are smoothed.</p>
+
+  <article class="tool" id="f-pref-autohandles">
+    <h3>Auto Handles</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Curves and drawing</dd>
+    </dl>
+    <p><b>Auto handles</b> sets how an automatic handle slopes through the keys on either side of it. It applies to every automatic and clamped key in the <a href="curves.html">Curve editor</a>. The default is Standard.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Standard</dt>
+      <dd>The handle follows the straight slope from the key before to the key after.</dd>
+      <dt>Even acceleration</dt>
+      <dd>The handle follows the slope of the curve through the key and its two neighbours, weighted by the gaps between them, so keys that are spaced unevenly in time still speed up and slow down smoothly.</dd>
+    </dl>
+  </article>
+
+  <article class="tool" id="f-pref-pen">
+    <h3>Pen Smoothing</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Curves and drawing</dd>
+    </dl>
+    <p><b>Pen smoothing</b> sets how many times a stroke drawn with the Annotate pen is smoothed when you let go of it, from 0 to 8. The default is 1. With 0 the stroke stays exactly as drawn, and each extra pass rounds off small wobbles further while keeping both ends in place.</p>
+    <h4>See Also</h4>
+    <p><a href="view.html#f-annotate">Annotate</a> describes the pen.</p>
+  </article>
+
+  <h2 class="part" id="prefs-capture">Capture</h2>
+  <p>The Capture category holds the setting for recording and keying out the rigs.</p>
+
+  <article class="tool" id="f-pref-greenscreen">
+    <h3>Green Screen Colour</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Capture</dd>
+    </dl>
+    <p>The <b>Colour</b> under Green screen sets the flat colour behind the rigs when the green screen is on. The default is Green.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Green, Blue</dt>
+      <dd>A standard keying green or blue.</dd>
+      <dt>Your own</dt>
+      <dd>A colour you set in the Green screen settings of the View menu.</dd>
+    </dl>
+    <h4>See Also</h4>
+    <p><a href="view.html#f-greenscreen">Green Screen</a> describes the camera mode.</p>
+  </article>
+
+  <h2 class="part" id="prefs-saving">Saving</h2>
+  <p>These settings control the safety copies Framez keeps of your work.</p>
+
+  <article class="tool" id="f-pref-recovery">
+    <h3>Auto-Recovery</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Saving</dd>
+    </dl>
+    <p><b>Auto-recovery</b> sets how often Framez keeps a copy of unsaved work on this computer while the animation changes. A copy is made a few seconds after your last edit, and no more often than this setting allows. The default is Every 30 s.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Every 30 s, Every minute, Every 2 minutes</dt>
+      <dd>The shortest time between two recovery copies.</dd>
+      <dt>Off</dt>
+      <dd>No recovery copies are made.</dd>
+    </dl>
+    <h4>See Also</h4>
+    <p><a href="file.html#f-recover">Unsaved Work and Recovery</a> explains how to get a copy back.</p>
+  </article>
+
+  <article class="tool" id="f-pref-kept">
+    <h3>Recovery Copies Kept</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Saving</dd>
+    </dl>
+    <p>The <b>Kept</b> setting sets how many unsaved animations are kept as recovery copies. When there are more, the oldest copy goes. The choices are 3, 5 and 10, and the default is 5.</p>
+  </article>
+
+  <article class="tool" id="f-pref-versions">
+    <h3>Versions Kept</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Saving</dd>
+    </dl>
+    <p><b>Versions kept</b> sets how many saved versions of each animation are kept in the place, in the FramezHistory folder of ServerStorage. The choices are 5, 10, 25 and 50, and the default is 10. When there are more versions, the oldest goes.</p>
+    <h4>See Also</h4>
+    <p><a href="file.html#f-history">Version History</a> lists the versions.</p>
+  </article>
+
+  <article class="tool" id="f-pref-backup">
+    <h3>Backup Folder</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Saving</dd>
+      <dt>Needs</dt><dd>The Framez Helper</dd>
+    </dl>
+    <p>The <b>Backup folder</b> is the folder where the Framez Helper copies every Save. Each save is written there as a .json file with the keys and an .rbxm file that can be dragged back into Studio. Leave the box empty to use the helper's own folder, which is Framez backups inside your Documents folder. The reset button returns the setting to the helper's folder.</p>
+    <p>Under the name, a line says whether the last copy succeeded and where it went, or why it failed. Copies are made in the background, so a missing helper never slows a Save.</p>
+    <h4>Example</h4>
+    <p>For example, set the folder to a synced drive so that every saved animation is also backed up off your computer.</p>
+  </article>
+
+  <h2 class="part" id="prefs-workspaces">Workspaces</h2>
+  <p>The Workspaces category decides how much of Framez each workspace shows.</p>
+
+  <article class="tool" id="f-pref-workspaces">
+    <h3>Menus and Tools</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Workspaces</dd>
+    </dl>
+    <p><b>Menus and tools</b> sets what each workspace shows. The default is Its own.</p>
+    <h4>Options</h4>
+    <dl class="opts">
+      <dt>Its own</dt>
+      <dd>Each workspace shows its own menus and tools.</dd>
+      <dt>All</dt>
+      <dd>Every workspace shows every menu, tool, track and Inspector section.</dd>
+    </dl>
+    <h4>Example</h4>
+    <p>For example, choose All when you want the Scene tools available while you work in the Animate workspace, or when a menu you remember seems to be missing.</p>
+    <h4>See Also</h4>
+    <p><a href="workspaces.html">Workspaces</a> explains what each workspace shows.</p>
+  </article>
+
+  <h2 class="part" id="prefs-keyboard">Keyboard</h2>
+  <p>The Keyboard category opens the shortcuts window.</p>
+
+  <article class="tool" id="f-pref-keyboard">
+    <h3>Keyboard Shortcuts Button</h3>
+    <dl class="ref">
+      <dt>Menu</dt><dd>Edit ‣ Settings ‣ Preferences... ‣ Keyboard</dd>
+    </dl>
+    <p>The <b>Keyboard shortcuts...</b> button opens the <a href="keyboard.html#f-shortcutswin">Keyboard Shortcuts</a> window. Choosing the Keyboard category in the list opens the same window.</p>
+  </article>
+<nav class="pager" aria-label="More pages"><a class="prev" href="check.html"><small>Previous</small><span>Check Animation</span></a><a class="next" href="keyboard.html"><small>Next</small><span>Keyboard Shortcuts</span></a></nav><footer class="foot">Framez by soldier. This manual covers Framez 17.99.</footer></article><aside class="toc" aria-label="On this page"><a class="lv0" href="#f-settings">The Preferences Window</a><a class="lv1" href="#prefs-handles">Handles and Posing</a><a class="lv2" href="#f-pref-handlestyle">Handle Style</a><a class="lv2" href="#f-pref-handlesize">Handle Size</a><a class="lv2" href="#f-pref-precision">Precision and Snapping</a><a class="lv2" href="#f-pref-autokey">Auto Key</a><a class="lv1" href="#prefs-timeline">Timeline</a><a class="lv2" href="#f-pref-wheelzoom">Wheel Zoom</a><a class="lv2" href="#f-pref-framestep">Frame Step</a><a class="lv2" href="#f-pref-keyjump">Key Jump</a><a class="lv1" href="#prefs-newclips">New Clips and Keys</a><a class="lv2" href="#f-pref-newkeys">How a New Key Plays into the Next</a><a class="lv2" href="#f-pref-newfps">New Animation Frame Rate</a><a class="lv2" href="#f-pref-newlength">New Animation Length</a><a class="lv1" href="#prefs-navigation">Navigation</a><a class="lv2" href="#f-pref-viewport">Viewport</a><a class="lv2" href="#f-pref-orbit">Orbit Speed</a><a class="lv2" href="#f-pref-pan">Pan Speed</a><a class="lv2" href="#f-pref-zoomcursor">Zoom Toward the Cursor</a><a class="lv1" href="#prefs-overlays">Overlays</a><a class="lv2" href="#f-pref-pathlength">Motion Path Length</a><a class="lv2" href="#f-pref-pathwindow">Motion Path Frames Each Side</a><a class="lv2" href="#f-pref-pathnumbers">Motion Path Frame Numbers</a><a class="lv2" href="#f-pref-onionbefore">Onion Skin Before Colour</a><a class="lv2" href="#f-pref-onionafter">Onion Skin After Colour</a><a class="lv2" href="#f-pref-onionstrength">Onion Skin Ghost Strength</a><a class="lv2" href="#f-pref-bonestyle">Bone Style</a><a class="lv2" href="#f-pref-bonexray">Bone X-Ray</a><a class="lv1" href="#prefs-curves">Curves and Drawing</a><a class="lv2" href="#f-pref-autohandles">Auto Handles</a><a class="lv2" href="#f-pref-pen">Pen Smoothing</a><a class="lv1" href="#prefs-capture">Capture</a><a class="lv2" href="#f-pref-greenscreen">Green Screen Colour</a><a class="lv1" href="#prefs-saving">Saving</a><a class="lv2" href="#f-pref-recovery">Auto-Recovery</a><a class="lv2" href="#f-pref-kept">Recovery Copies Kept</a><a class="lv2" href="#f-pref-versions">Versions Kept</a><a class="lv2" href="#f-pref-backup">Backup Folder</a><a class="lv1" href="#prefs-workspaces">Workspaces</a><a class="lv2" href="#f-pref-workspaces">Menus and Tools</a><a class="lv1" href="#prefs-keyboard">Keyboard</a><a class="lv2" href="#f-pref-keyboard">Keyboard Shortcuts Button</a></aside></div></div></div><div class="scrim" data-scrim hidden></div><div class="search" id="search" hidden role="dialog" aria-modal="true" aria-label="Search the manual"><div class="search-box"><div class="search-field"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><polygon points="16.80,10.40 16.64,11.82 16.17,13.18 15.40,14.39 14.39,15.40 13.18,16.17 11.82,16.64 10.40,16.80 8.98,16.64 7.62,16.17 6.41,15.40 5.40,14.39 4.63,13.18 4.16,11.82 4.00,10.40 4.16,8.98 4.63,7.62 5.40,6.41 6.41,5.40 7.62,4.63 8.98,4.16 10.40,4.00 11.82,4.16 13.18,4.63 14.39,5.40 15.40,6.41 16.17,7.62 16.64,8.98 16.80,10.40"/><polyline points="15.10,15.10 20.40,20.40"/></svg><input id="search-q" type="search" placeholder="Search the manual" autocomplete="off"><kbd>Esc</kbd></div><div class="search-results" id="search-results"></div></div></div><script src="assets/search-index.js"></script><script src="assets/site.js"></script></body></html>
