@@ -22,7 +22,7 @@ A free Windows app that runs beside Studio. Framez works without it; the Helper 
 
 Windows 10 or 11, 64-bit. Once per PC, no admin rights needed.
 
-1. Download `FramezHelperSetup-1.4.0.exe` from the [latest release](https://github.com/lsxldierl/framez/releases/latest).
+1. Download `FramezHelperSetup-<version>.exe` from the [latest release](https://github.com/lsxldierl/framez/releases/latest).
 2. Run it. If Windows says "Windows protected your PC", click **More info**, then **Run anyway**.
 3. On the **Clip folder** page, pick the folder your videos are in.
 4. If you use Blender, leave **Add the Framez tab to Blender** ticked, and close Blender first.
