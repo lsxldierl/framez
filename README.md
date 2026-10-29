@@ -2,44 +2,44 @@
 
 Framez is an animation plugin for Roblox Studio. Get it from the Creator Store, then open it from the Plugins tab.
 
-This repository has the **Framez Helper** and the **Framez Manual**.
+This repo has the **Framez Helper** and the **Framez Manual**.
 
 Manual: https://lsxldierl.github.io/framez/
 
 ## Framez Helper
 
-A free Windows app that runs beside Studio. Framez works without it; the Helper adds:
+A free Windows app that runs next to Studio. You don't need it for Framez, but it unlocks:
 
-- video reference: play a recording frame by frame beside your animation, with its beats and sound hits
-- joints from video: pose a rig from a person in a video
-- lip sync timed to a voice line
-- face capture from a webcam
-- exporting an animation as an MP4 or PNG frames
-- the link to Blender (the Framez tab in Blender 4.2 and newer)
-- a copy of every save on disk
+- video reference: scrub a recording frame by frame next to your animation (beats and sound hits too)
+- joints from video: pose a rig from someone in a video
+- lip sync to a voice line
+- face capture with your webcam
+- exporting your animation as an MP4 or PNG frames
+- the Blender link (the Framez tab in Blender 4.2+)
+- a backup of every save on your disk
 
 ### Install
 
-Windows 10 or 11, 64-bit. Once per PC, no admin rights needed.
+Windows 10 or 11, 64-bit. Once per PC, no admin needed.
 
 1. Download `FramezHelperSetup-<version>.exe` from the [latest release](https://github.com/lsxldierl/framez/releases/latest).
 2. Run it. If Windows says "Windows protected your PC", click **More info**, then **Run anyway**.
 3. On the **Clip folder** page, pick the folder your videos are in.
-4. If you use Blender, leave **Add the Framez tab to Blender** ticked, and close Blender first.
-5. In Studio, open Framez, then **View > Windows > Reference video**. The first time, Studio asks whether Framez may
-   connect to 127.0.0.1: allow it.
+4. Using Blender? Leave **Add the Framez tab to Blender** ticked, and close Blender first.
+5. In Studio, open Framez, then **View > Windows > Reference video**. The first time, Studio asks if Framez can
+   connect to 127.0.0.1. Hit allow.
 
-It installs for the current Windows user and starts with Windows. It has no window: it waits in the background and
-answers only programs on this PC (127.0.0.1, port 34880). If Framez says the Helper is not running, start
+It installs just for your Windows user and starts with Windows. There's no window, it just sits in the background
+and only talks to programs on your own PC (127.0.0.1, port 34880). If Framez says the Helper isn't running, start
 **Framez Helper** from the Start menu.
 
 ### Uninstall
 
-Windows **Settings > Apps > Framez Helper > Uninstall**. It also takes the Framez tab out of Blender.
+Windows **Settings > Apps > Framez Helper > Uninstall**. That also takes the Framez tab out of Blender.
 
 ### Check a download
 
-Each release has `SHA256SUMS.txt` with the checksum of every file in it.
+Every release has `SHA256SUMS.txt` with the checksum of each file.
 
 ## Licences
 
